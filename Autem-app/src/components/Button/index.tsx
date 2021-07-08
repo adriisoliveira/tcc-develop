@@ -7,7 +7,6 @@ import {
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-
 import Apple from '../../assets/Apple.png';
 import Google from '../../assets/Google.png';
 import Facebook from "../../assets/Facebook.png";
@@ -17,7 +16,7 @@ import { styles } from './styles';
 import { theme } from '../global/styles/theme';
 
 type Props = RectButtonProps & {
-  title: string;
+  title?: string;
 }
 
 export function Button({ title, ...rest }: Props) {
@@ -37,10 +36,11 @@ export function Button({ title, ...rest }: Props) {
   )
 }
 
-export function ButtonCreateAc() {
+export function ButtonCreateAc({ ...rest }: Props) {
   return (
     <RectButton
       style={styles.buttonAc}
+      {...rest}
     >
       <View style={styles.buttonAc}>
         <Image source={CreateAc} style={styles.buttonAc} />

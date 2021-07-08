@@ -1,7 +1,9 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
+import { Register } from '../screens/Register'
 import { SignIn } from '../screens/SignIn';
 import { Login } from '../screens/Login';
+import { theme } from '../components/global/styles/theme';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -11,7 +13,7 @@ export function AppRoutes() {
       headerMode="none"
       screenOptions={{
         cardStyle: {
-          backgroundColor: 'transparent'
+          backgroundColor: theme.colors.secondary
         }
       }}
     >
@@ -23,6 +25,11 @@ export function AppRoutes() {
       <Screen
         name="Login"
         component={Login}
+      />
+
+      <Screen
+        name="Register"
+        component={Register}
       />
     </Navigator>
   )

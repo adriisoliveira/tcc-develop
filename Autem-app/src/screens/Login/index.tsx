@@ -25,12 +25,18 @@ export function Login() {
     navigation.navigate('SignIn');
   }
 
+  function handleRegister() {
+    navigation.navigate('Register');
+  }
+
   return (
     <Background>
       <View style={styles.container}>
         <View style={styles.createAccount}>
           <Text style={styles.text}>Criar Conta</Text>
-          <ButtonCreateAc />
+          <ButtonCreateAc
+            onPress={handleRegister}
+          />
         </View>
 
         <View style={styles.inputs}>
