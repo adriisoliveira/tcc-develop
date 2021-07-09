@@ -29,7 +29,8 @@ export const styles = StyleSheet.create({
   },
   textInput: {
     height: 40,
-    borderColor: 'black',
+    color: theme.colors.heading,
+    borderColor: theme.colors.heading,
     borderWidth: 1,
     fontFamily: theme.fonts.title700,
     fontSize: 20,
@@ -42,7 +43,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center'
   },
   buttonEnter: {
-    marginTop: 14,
+    marginTop: 110,
     alignItems: 'center'
   },
   buttonSocialMidia: {

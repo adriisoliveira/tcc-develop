@@ -17,9 +17,11 @@ import {
   ButtonFacebook
 } from "../../components/Button"
 import { useNavigation } from "@react-navigation/native";
+import { theme } from "../../components/global/styles/theme";
 
 export function Login() {
   const navigation = useNavigation();
+  const { heading } = theme.colors;
 
   function handleSignIn() {
     navigation.navigate('SignIn');
@@ -27,6 +29,10 @@ export function Login() {
 
   function handleRegister() {
     navigation.navigate('Register');
+  }
+
+  function handleHome() {
+    navigation.navigate('Home');
   }
 
   return (
@@ -42,11 +48,13 @@ export function Login() {
         <View style={styles.inputs}>
           <TextInput
             style={styles.textInput}
-            defaultValue="Email"
+            placeholder="Email"
+            placeholderTextColor={heading}
           />
           <TextInput
             style={styles.textInput}
-            defaultValue="Senha"
+            placeholder="Senha"
+            placeholderTextColor={heading}
           />
         </View>
 
@@ -60,7 +68,7 @@ export function Login() {
           <View style={styles.buttonEnter}>
             <ButtonEnter
               title="Entrar"
-              onPress={handleSignIn}
+              onPress={handleHome}
             />
           </View>
         </View>

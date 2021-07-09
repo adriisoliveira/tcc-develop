@@ -54,6 +54,7 @@ export function ButtonEnter({ title, ...rest }: Props) {
   return (
     <RectButton
       style={styles.buttonEnter}
+      {...rest}
     >
       <Text style={styles.textEnter}>
         {title}
@@ -62,10 +63,11 @@ export function ButtonEnter({ title, ...rest }: Props) {
   );
 }
 
-export function ButtonGoogle() {
+export function ButtonGoogle({ ...rest }: Props) {
   return (
     <RectButton
       style={styles.buttonGg}
+      {...rest}
     >
       <View style={styles.buttonGg}>
         <Image source={Google} style={styles.buttonGg} />
@@ -74,10 +76,11 @@ export function ButtonGoogle() {
   );
 }
 
-export function ButtonFacebook() {
+export function ButtonFacebook({ ...rest }: Props) {
   return (
     <RectButton
       style={styles.buttonFc}
+      {...rest}
     >
       <View style={styles.buttonFc}>
         <Image source={Facebook} style={styles.buttonFc} />
@@ -86,10 +89,11 @@ export function ButtonFacebook() {
   );
 }
 
-export function ButtonICloud() {
+export function ButtonICloud({ ...rest }: Props) {
   return (
     <RectButton
       style={styles.buttonIc}
+      {...rest}
     >
       <View style={styles.buttonIc}>
         <Image source={Apple} style={styles.buttonIc} />

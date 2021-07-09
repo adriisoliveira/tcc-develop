@@ -1,8 +1,11 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
+
 import { Register } from '../screens/Register'
 import { SignIn } from '../screens/SignIn';
 import { Login } from '../screens/Login';
+import { Home } from '../screens/Home';
+
 import { theme } from '../components/global/styles/theme';
 
 const { Navigator, Screen } = createStackNavigator();
@@ -30,6 +33,11 @@ export function AppRoutes() {
       <Screen
         name="Register"
         component={Register}
+      />
+
+      <Screen
+        name="Home"
+        component={Home}
       />
     </Navigator>
   )

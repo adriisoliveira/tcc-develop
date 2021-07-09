@@ -28,7 +28,8 @@ export const styles = StyleSheet.create({
   },
   textInput: {
     height: 40,
-    borderColor: 'black',
+    color: theme.colors.heading,
+    borderColor: theme.colors.heading,
     borderWidth: 1,
     fontFamily: theme.fonts.title700,
     fontSize: 20,
