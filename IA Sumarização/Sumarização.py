@@ -12,6 +12,7 @@ texto_formatado = ''
 
 nltk.download('punkt')
 nltk.download('stopwords')
+nota_sentencas = {}
 stopwords = nltk.corpus.stopwords.words('portuguese')
 lista_sentencas = nltk.sent_tokenize(texto_original)
 frequencia_palavras = nltk.FreqDist(nltk.word_tokenize(texto_formatado))
@@ -59,10 +60,6 @@ def sumarizar(texto, quantidade_sentencas):
           nota_sentencas[sentenca] = frequencia_palavras[palavra]
         else:
           nota_sentencas[sentenca] += frequencia_palavras[palavra]
-
-  import heapq
-  melhores_sentencas = heapq.nlargest(quantidade_sentencas, nota_sentencas, key=nota_sentencas.get)
-
   return lista_sentencas, melhores_sentencas, frequencia_palavras, nota_sentencas
 
 lista_sentencas, melhores_sentencas, frequencia_palavras, nota_sentencas = sumarizar(artigo_original, 5)
@@ -112,10 +109,6 @@ def sumarizar_lematizacao(texto, quantidade_sentencas):
           nota_sentencas[sentenca] = frequencia_palavras[palavra]
         else:
           nota_sentencas[sentenca] += frequencia_palavras[palavra]
-
-  import heapq
-  melhores_sentencas = heapq.nlargest(quantidade_sentencas, nota_sentencas, key=nota_sentencas.get)
-
   return lista_sentencas, melhores_sentencas, frequencia_palavras, nota_sentencas
 
 
