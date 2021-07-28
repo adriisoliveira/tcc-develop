@@ -58,7 +58,14 @@ create table url_palavra (
 
 create index idx_url_palavra_idpalavra on url_palavra(idpalavra);
 
+create table page_rank(
+	idurl int not null,
+    nota float not null,
+    constraint pk_page_rank_idurl primary key (idurl),
+    constraint fk_page_rank_idurl foreign key (idurl) references urls(idurl)
+);
 
+insert into page_rank select idurl, 1.0 from urls;
 
 
 
