@@ -1,6 +1,9 @@
 import nltk
 import pymysql
-   
+
+from conexao import conexaoBanco
+conexao = conexaoBanco()
+
 def normalizaMaior(notas):
     menor = 0.00001
     maximo = max(notas.values())
@@ -14,7 +17,6 @@ def normalizaMenor(notas):
     return dict([(id, float(minimo) / max(menor, nota)) for (id, nota) in notas.items()])
     
 def calculaPageRank(iteracoes):
-    conexao = pymysql.connect(host='localhost', user='root', passwd='bahia', db='indice', autocommit = True)
     cursorLimpaTabela = conexao.cursor()
     cursorLimpaTabela.execute('delete from page_rank')
     cursorLimpaTabela.execute('insert into page_rank select idurl, 1.0 from urls')
