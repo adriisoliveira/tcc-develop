@@ -28,7 +28,7 @@ lista_artigos = ['https://iaexpert.academy/2020/11/06/ia-detecta-deep-fakes-prod
                  'https://iaexpert.academy/2020/11/13/facebook-apresenta-novo-algoritmo-deteccao-fake-news/',
                  'https://iaexpert.academy/2020/11/16/automl-aspectos-aplicacoes/']
 
-pln = spacy.load('pt')
+pln = spacy.load("pt_core_news_sm")
 
 
 def preprocessamento(texto):
