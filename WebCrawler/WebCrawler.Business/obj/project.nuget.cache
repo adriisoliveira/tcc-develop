@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fC/UQdUCgsv96U5/qigDuek1IE/aGUAxYgoYCRahJmyQbAEbJ4K4/wLRaSAAs8CLJ7glQpueovCJAnNrPgdD/Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Logan\\.nuget\\packages\\htmlagilitypack\\1.11.34\\htmlagilitypack.1.11.34.nupkg.sha512"
+  ],
+  "logs": []
+}

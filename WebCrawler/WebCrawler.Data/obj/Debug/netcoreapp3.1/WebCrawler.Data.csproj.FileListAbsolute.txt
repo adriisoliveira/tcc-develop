@@ -1,0 +1,15 @@
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Data.deps.json
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Data.runtimeconfig.json
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Data.runtimeconfig.dev.json
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Data.dll
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Data.pdb
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Business.dll
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Business.pdb
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.csprojAssemblyReference.cache
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.AssemblyInfoInputs.cache
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.AssemblyInfo.cs
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.csproj.CoreCompileInputs.cache
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.csproj.CopyComplete
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.dll
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.pdb
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\bin\Debug\netcoreapp3.1\Scraper.exe
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\bin\Debug\netcoreapp3.1\Scraper.deps.json
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\bin\Debug\netcoreapp3.1\Scraper.runtimeconfig.json
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\bin\Debug\netcoreapp3.1\Scraper.runtimeconfig.dev.json
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\bin\Debug\netcoreapp3.1\Scraper.dll
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\bin\Debug\netcoreapp3.1\Scraper.pdb
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\obj\Debug\netcoreapp3.1\Scraper.AssemblyInfoInputs.cache
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\obj\Debug\netcoreapp3.1\Scraper.AssemblyInfo.cs
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\obj\Debug\netcoreapp3.1\Scraper.csproj.CoreCompileInputs.cache
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\obj\Debug\netcoreapp3.1\Scraper.dll
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\obj\Debug\netcoreapp3.1\Scraper.pdb
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Scrapper\obj\Debug\netcoreapp3.1\Scraper.genruntimeconfig.cache
