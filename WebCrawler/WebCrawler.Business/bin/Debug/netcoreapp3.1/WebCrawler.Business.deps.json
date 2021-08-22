@@ -8,10 +8,22 @@
     ".NETCoreApp,Version=v3.1": {
       "WebCrawler.Business/1.0.0": {
         "dependencies": {
-          "HtmlAgilityPack": "1.11.34"
+          "HtmlAgilityPack": "1.11.34",
+          "dotnet-stop-words": "1.1.0"
         },
         "runtime": {
           "WebCrawler.Business.dll": {}
+        }
+      },
+      "dotnet-stop-words/1.1.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/src.dll": {
+            "assemblyVersion": "1.0.5.0",
+            "fileVersion": "1.0.5.0"
+          }
         }
       },
       "HtmlAgilityPack/1.11.34": {
@@ -19,6 +31,14 @@
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "assemblyVersion": "1.11.34.0",
             "fileVersion": "1.11.34.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
           }
         }
       }
@@ -30,12 +50,26 @@
       "serviceable": false,
       "sha512": ""
     },
+    "dotnet-stop-words/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ujqMmZGqm3FihQB5uqFqT+OvXTrkP9cWNx9/ck/B/DJA50xHnMAd6kIFg4LC+q87cYF4aWyVbdGgtfw/y2zGeQ==",
+      "path": "dotnet-stop-words/1.1.0",
+      "hashPath": "dotnet-stop-words.1.1.0.nupkg.sha512"
+    },
     "HtmlAgilityPack/1.11.34": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-LJyKMPuQVRi68RnPRmptSSJa1r3adpIfII/tfyMkismDhgmdS0i2ruOGF3Y7Ocxt4IfnhG76BNIa4dzMfR+KYw==",
       "path": "htmlagilitypack/1.11.34",
       "hashPath": "htmlagilitypack.1.11.34.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     }
   }
 }

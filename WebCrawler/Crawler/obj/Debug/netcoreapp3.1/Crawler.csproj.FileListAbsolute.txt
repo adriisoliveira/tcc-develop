@@ -5,6 +5,7 @@ C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Crawler\bin\Debug
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Crawler\bin\Debug\netcoreapp3.1\Crawler.runtimeconfig.dev.json
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Crawler\bin\Debug\netcoreapp3.1\Crawler.dll
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Crawler\bin\Debug\netcoreapp3.1\Crawler.pdb
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Crawler\bin\Debug\netcoreapp3.1\src.dll
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Crawler\bin\Debug\netcoreapp3.1\HtmlAgilityPack.dll
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Crawler\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\Crawler\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll

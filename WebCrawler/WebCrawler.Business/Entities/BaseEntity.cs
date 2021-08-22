@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace WebCrawler.Business.Entities
 {
@@ -8,7 +6,6 @@ namespace WebCrawler.Business.Entities
     {
         public Guid Id { get; set; }
         public DateTime WhenCreated { get; set; }
-        public DateTime? WhenUpdated { get; set; }
 
         public void PreCreate()
         {

@@ -1,9 +1,9 @@
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Business\bin\Debug\netcoreapp3.1\WebCrawler.Business.deps.json
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Business\bin\Debug\netcoreapp3.1\WebCrawler.Business.dll
-C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Business\bin\Debug\netcoreapp3.1\WebCrawler.Business.pdb
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.csprojAssemblyReference.cache
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.AssemblyInfoInputs.cache
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.AssemblyInfo.cs
+C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Business\bin\Debug\netcoreapp3.1\WebCrawler.Business.pdb
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.csproj.CoreCompileInputs.cache
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.dll
 C:\Users\Logan\source\repos\tcc-develop\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.pdb

@@ -23,7 +23,11 @@ namespace WebCrawler.Data.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("PageUrlId");
+
+                    b.Property<DateTime?>("LastIndexing")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Url")
                         .IsRequired()
@@ -33,13 +37,176 @@ namespace WebCrawler.Data.Migrations
                     b.Property<DateTime>("WhenCreated")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("WhenUpdated")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id")
-                        .HasName("PageUrlId");
+                    b.HasKey("Id");
 
                     b.ToTable("PageUrls");
+                });
+
+            modelBuilder.Entity("WebCrawler.Business.Entities.PageUrlPageWord", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("PageUrlPageWordId");
+
+                    b.Property<Guid>("PageUrlId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PageWordId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("WhenCreated")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PageUrlId");
+
+                    b.HasIndex("PageWordId");
+
+                    b.ToTable("PageUrlPageWords");
+                });
+
+            modelBuilder.Entity("WebCrawler.Business.Entities.PageUrlRelation", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("PageUrlRelationId");
+
+                    b.Property<Guid>("PageUrlDestinationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PageUrlOriginId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("WhenCreated")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PageUrlDestinationId");
+
+                    b.HasIndex("PageUrlOriginId");
+
+                    b.ToTable("PageUrlRelations");
+                });
+
+            modelBuilder.Entity("WebCrawler.Business.Entities.PageWord", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("PageWordId");
+
+                    b.Property<DateTime>("WhenCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Word")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PageWords");
+                });
+
+            modelBuilder.Entity("WebCrawler.Business.Entities.PageWordLocalization", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("PageWordLocalizationId");
+
+                    b.Property<int>("Localization")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("PageUrlId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PageWordId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("WhenCreated")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PageUrlId");
+
+                    b.HasIndex("PageWordId");
+
+                    b.ToTable("PageWordLocalizations");
+                });
+
+            modelBuilder.Entity("WebCrawler.Business.Entities.PageUrlPageWord", b =>
+                {
+                    b.HasOne("WebCrawler.Business.Entities.PageUrl", "PageUrl")
+                        .WithMany("Words")
+                        .HasForeignKey("PageUrlId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebCrawler.Business.Entities.PageWord", "PageWord")
+                        .WithMany("Urls")
+                        .HasForeignKey("PageWordId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PageUrl");
+
+                    b.Navigation("PageWord");
+                });
+
+            modelBuilder.Entity("WebCrawler.Business.Entities.PageUrlRelation", b =>
+                {
+                    b.HasOne("WebCrawler.Business.Entities.PageUrl", "PageUrlDestination")
+                        .WithMany()
+                        .HasForeignKey("PageUrlDestinationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebCrawler.Business.Entities.PageUrl", "PageUrlOrigin")
+                        .WithMany("RelatedUrls")
+                        .HasForeignKey("PageUrlOriginId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("PageUrlDestination");
+
+                    b.Navigation("PageUrlOrigin");
+                });
+
+            modelBuilder.Entity("WebCrawler.Business.Entities.PageWordLocalization", b =>
+                {
+                    b.HasOne("WebCrawler.Business.Entities.PageUrl", "PageUrl")
+                        .WithMany()
+                        .HasForeignKey("PageUrlId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebCrawler.Business.Entities.PageWord", "PageWord")
+                        .WithMany()
+                        .HasForeignKey("PageWordId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PageUrl");
+
+                    b.Navigation("PageWord");
+                });
+
+            modelBuilder.Entity("WebCrawler.Business.Entities.PageUrl", b =>
+                {
+                    b.Navigation("RelatedUrls");
+
+                    b.Navigation("Words");
+                });
+
+            modelBuilder.Entity("WebCrawler.Business.Entities.PageWord", b =>
+                {
+                    b.Navigation("Urls");
                 });
 #pragma warning restore 612, 618
         }

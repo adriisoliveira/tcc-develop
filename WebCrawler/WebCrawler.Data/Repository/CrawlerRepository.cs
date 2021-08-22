@@ -1,10 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
 using WebCrawler.Business.Entities;
 using WebCrawler.Business.Interfaces.Repository;
 using WebCrawler.Data.DataContext;
 
 namespace WebCrawler.Data.Repository
 {
+    [Obsolete("ISSO DEVE VIRAR PAGEURLREPOSITORY")]
     public class CrawlerRepository : ICrawlerRepository
     {
         private WebCrawlerDataContext _context;
@@ -14,11 +17,6 @@ namespace WebCrawler.Data.Repository
         {
             _context = context;
         }
-        public void Add(PageUrl url)
-        {
-            //url.PreCreate();
-            //DbSet.Add(url);
-            //_context.SaveChanges();
-        }
+        
     }
 }
