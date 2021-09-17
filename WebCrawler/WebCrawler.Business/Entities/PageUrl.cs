@@ -17,8 +17,9 @@ namespace WebCrawler.Business.Entities
         public string Url { get; set; }
 
         public DateTime? LastIndexing { get; set; }
-
         public ICollection<PageUrlRelation> RelatedUrls { get; set; }
         public ICollection<PageUrlPageWord> Words { get; set; }
+
+        public PageRank Rank { get; set; }
     }
 }

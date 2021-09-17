@@ -8,7 +8,7 @@ namespace WebCrawler.Business.Entities
         {
             Id = Guid.NewGuid();
         }
-        public PageUrlRelation(Guid originId, Guid destinationId)
+        public PageUrlRelation(Guid originId, Guid destinationId) : this()
         {
             PageUrlOriginId = originId;
             PageUrlDestinationId = destinationId;

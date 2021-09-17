@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using WebCrawler.Business.Entities;
 using WebCrawler.Business.Helpers;
+using WebCrawler.Business.Interfaces;
 using WebCrawler.Business.Interfaces.Repository.Url;
 using WebCrawler.Business.Interfaces.Services;
 
@@ -14,64 +15,76 @@ namespace WebCrawler.Business.Services
     {
         #region :: Constantes
         private const string CRAWLER_OUTPUT_PREFFIX = "[Crawler]";
-        private const int PAGES_LIMIT = 50;
+        private const int PAGES_LIMIT = 200;
         #endregion
 
-        protected string[] lastPages;
-        protected int pagesCount;
+        protected string[] _lastPages;
+        protected int _pagesCount;
         protected IPageUrlRepository _urlRepository;
-
-        public CrawlerService(IPageUrlRepository urlRepository)
+        protected IUnitOfWork _uow;
+        public CrawlerService(IPageUrlRepository urlRepository, IUnitOfWork uow)
         {
-            lastPages = new string[10];
-            pagesCount = 0;
+            _lastPages = new string[10];
+            _pagesCount = 0;
             _urlRepository = urlRepository;
+            _uow = uow;
+        }
+
+        private bool ValidateUrlToCrawler(string url)
+        {
+            if (_lastPages.Contains(url))
+                return false;
+
+            var urlSplittedByBar = url.Split('/');
+            if (urlSplittedByBar.Count() > urlSplittedByBar.Distinct().Count() + 1)            
+                return false;
+
+            return true;
         }
 
         public void CrawlThrough(string urlBase)
         {
             try
             {
-                pagesCount++;
-                if (pagesCount >= PAGES_LIMIT)
-                    return;
-
                 var url = TextFormattingUtils.UrlConformer(urlBase);
-
-                if (lastPages.Contains(url) || _urlRepository.Exists(url))
+                _pagesCount++;
+                
+                if (_pagesCount >= PAGES_LIMIT || !ValidateUrlToCrawler(url))
+                {
+                    ConsoleUtils.OutputConsole(CRAWLER_OUTPUT_PREFFIX, "Encerrado o acesso à página \"{0}\".", ConsoleColor.Yellow, url);
                     return;
+                }
+
                 ConsoleUtils.OutputConsole(CRAWLER_OUTPUT_PREFFIX, "Acessando a página \"{0}\".", url);
                 LastPagesManage(url);
 
                 //Salva em banco
-                _urlRepository.Add(new PageUrl(url));
+                if(!_urlRepository.Exists(url))
+                    _urlRepository.Add(new PageUrl(url));
 
                 string page = new WebClient().DownloadString(url);
                 var htmlDoc = new HtmlDocument();
 
                 htmlDoc.LoadHtml(page);
+                
+                //TODO: avaliar a possibilidade de pegar apenas dominios externos após uma certa quantidade de iteração
+                var pageLinks = HTMLDocHelper.GetHtmlDocumentLinks(htmlDoc);
 
-                var anchors = htmlDoc
-                    .DocumentNode
-                    .SelectNodes("//a")?
-                    .Where(e => e.Attributes["href"] != null && !e.Attributes["href"].Value.StartsWith("#")
-                        && (e.Attributes["href"].Value.StartsWith("https://") || e.Attributes["href"].Value.StartsWith("http://")));
-
+                _uow.Commit();
                 ConsoleUtils.OutputConsole(CRAWLER_OUTPUT_PREFFIX, "Encerrado o acesso à página \"{0}\".", ConsoleColor.Yellow, url);
 
-                if (anchors?.Any() ?? false)
-                    foreach (var a in anchors.Where(e => !lastPages.Contains(e.Attributes["href"].Value.Trim('/'))))
+                if (pageLinks?.Any() ?? false)
+                    foreach (var pageLink in pageLinks.Where(e => !_lastPages.Contains(e)))
                     {
-                        var link = a.Attributes["href"];
-
-                        if (link.Value.StartsWith("/"))
-                            CrawlThrough(string.Format("{0}{1}", url, link.Value)); //Links pro mesmo site
+                        if (pageLink.StartsWith("/"))
+                            CrawlThrough(string.Format("{0}{1}", url, pageLink)); //Links pro mesmo site
                         else
-                            CrawlThrough(link.Value); //Links externos
+                            CrawlThrough(pageLink); //Links externos
                     }
             }
             catch (Exception e)
             {
+                _uow.Rollback();
                 ConsoleUtils.OutputConsole(CRAWLER_OUTPUT_PREFFIX, "Erro ao acessar a página \"{0}\". \nDetalhes do erro: {1}", ConsoleColor.Red, urlBase, e.Message);
             }
         }
@@ -88,14 +101,14 @@ namespace WebCrawler.Business.Services
         #region :: Métodos Privados
         private void LastPagesManage(string url)
         {
-            var lastPagesCount = lastPages.Where(e => e != null).Count();
+            var lastPagesCount = _lastPages.Where(e => e != null).Count();
             if (lastPagesCount == 10)
             {
                 lastPagesCount = 0;
-                lastPages = new string[10];
+                _lastPages = new string[10];
             }
 
-            lastPages[lastPagesCount] = url.Trim('/');
+            _lastPages[lastPagesCount] = url.Trim('/');
         }
         #endregion
     }

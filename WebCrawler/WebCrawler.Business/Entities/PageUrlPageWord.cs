@@ -19,5 +19,6 @@ namespace WebCrawler.Business.Entities
         public PageUrl PageUrl { get; set; }
         public Guid PageWordId { get; set; }
         public PageWord PageWord { get; set; }
+        public DateTime? WhenUpdated { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace WebCrawler.Business.Helpers
         public static string UrlConformer(string unformattedUrl)
         {
             var uri = new Uri(unformattedUrl);
-            return (uri.Scheme + "://" + uri.Host + uri.PathAndQuery + uri.Fragment).Trim('/');
+            return (uri.Scheme + "://" + uri.Host + uri.PathAndQuery + uri.Fragment).TrimEnd('/').Trim();
         }
 
     }

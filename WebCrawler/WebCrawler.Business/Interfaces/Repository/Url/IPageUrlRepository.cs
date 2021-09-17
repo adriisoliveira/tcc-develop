@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using WebCrawler.Business.DTO;
 using WebCrawler.Business.Entities;
 
 namespace WebCrawler.Business.Interfaces.Repository.Url
@@ -14,8 +15,23 @@ namespace WebCrawler.Business.Interfaces.Repository.Url
         IEnumerable<PageUrl> GetAll();
         IEnumerable<PageUrl> GetAllToIndex();
 
-        void AddRelated(PageUrlRelation urlRelated);
+        void AddRelation(PageUrlRelation urlRelated);
+        void RemoveRelationRange(IEnumerable<PageUrlRelation> urlRelations);
 
-        void AddPageUrlPageWord(PageUrlPageWord urlPageWord);
+        void AddWord(PageUrlPageWord urlPageWord);
+        void RemoveWordRange(IEnumerable<PageUrlPageWord> urlPageWords);
+
+        PageUrlRankDTO GetPageUrlRankDTOByPageUrlId(Guid pageUrlId);
+        IEnumerable<PageUrlRankDTO> GetAllPageUrlRankDTOByPageUrlIds(IEnumerable<Guid> pageUrlIds);
+        PageUrlRankDTO GetPageUrlRankDTOByUrl(string url);
+        IEnumerable<PageUrlBasicInfoDTO> GetAllBasicInfoByIds(IEnumerable<Guid> ids);
+
+        Guid? GetPageUrlIdByUrl(string url);
+
+        bool RelationExists(Guid firstPageUrlId, Guid secondPageUrlId);
+
+        PageRank GetPageRankByPageUrlId(Guid pageUrlId);
+        void AddPageRank(PageRank pageRank);
+        void UpdatePageRank(PageRank pageRank);
     }
 }

@@ -19,6 +19,23 @@ namespace WebCrawler.Data.Migrations
                 .HasAnnotation("ProductVersion", "5.0.9")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("WebCrawler.Business.Entities.PageRank", b =>
+                {
+                    b.Property<Guid>("PageUrlId")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("PageUrlId");
+
+                    b.Property<DateTime>("LastRanking")
+                        .HasColumnType("datetime2");
+
+                    b.Property<float>("Ponctuation")
+                        .HasColumnType("real");
+
+                    b.HasKey("PageUrlId");
+
+                    b.ToTable("PageRanks");
+                });
+
             modelBuilder.Entity("WebCrawler.Business.Entities.PageUrl", b =>
                 {
                     b.Property<Guid>("Id")
@@ -56,6 +73,9 @@ namespace WebCrawler.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("WhenCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("WhenUpdated")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -140,6 +160,17 @@ namespace WebCrawler.Data.Migrations
                     b.ToTable("PageWordLocalizations");
                 });
 
+            modelBuilder.Entity("WebCrawler.Business.Entities.PageRank", b =>
+                {
+                    b.HasOne("WebCrawler.Business.Entities.PageUrl", "PageUrl")
+                        .WithOne("Rank")
+                        .HasForeignKey("WebCrawler.Business.Entities.PageRank", "PageUrlId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PageUrl");
+                });
+
             modelBuilder.Entity("WebCrawler.Business.Entities.PageUrlPageWord", b =>
                 {
                     b.HasOne("WebCrawler.Business.Entities.PageUrl", "PageUrl")
@@ -199,6 +230,8 @@ namespace WebCrawler.Data.Migrations
 
             modelBuilder.Entity("WebCrawler.Business.Entities.PageUrl", b =>
                 {
+                    b.Navigation("Rank");
+
                     b.Navigation("RelatedUrls");
 
                     b.Navigation("Words");

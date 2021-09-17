@@ -17,7 +17,6 @@ namespace WebCrawler.Business.Entities
         }
 
         public string Word { get; set; }
-
         public ICollection<PageUrlPageWord> Urls { get; set; }
     }
 }

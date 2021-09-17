@@ -15,17 +15,22 @@ namespace Scraper
         public static void Main(string[] args)
         {
             ConsoleUtils.OutputConsole("[Indexer]", "Iniciado o serviço.", ConsoleColor.Cyan);
+            var context = new WebCrawlerDataContext();
+            var uow = new UnitOfWork(context);
 
             _scrapperService = new ScrapperService(
-                new PageUrlRepository(new WebCrawlerDataContext()),
-                new PageWordRepository(new WebCrawlerDataContext())
+                new PageUrlRepository(context),
+                new PageWordRepository(context),
+                new UnitOfWork(context)
                 ); // Injeção de dependência
 
-            _crawlerService = new CrawlerService(new PageUrlRepository(new WebCrawlerDataContext()));// Injeção de dependência
-            var pages = _crawlerService.GetAllPageUrlsToIndex(); ///TODO: trazer um DTO
+            _crawlerService = new CrawlerService(new PageUrlRepository(context), uow);// Injeção de dependência
 
-            foreach(var page in pages)
-                _scrapperService.IndexPage(page.Url);
+            var pages = _crawlerService.GetAllPageUrlsToIndex(); ///TODO: trazer um DTO
+            //foreach (var page in pages)
+            //    _scrapperService.IndexPage(page.Url);
+            foreach (var page in pages)
+                _scrapperService.PageRank(page.Url);
 
             ConsoleUtils.OutputConsole("[Indexer]", "Fim da execução do serviço.", ConsoleColor.Cyan);
 

@@ -13,7 +13,6 @@ namespace WebCrawler.Data.Repository.Word
         {
             word.PreCreate();
             DbSet.Add(word);
-            Db.SaveChanges();
         }
 
         ///TODO: isto não deveria estar no seu próprio repositório?
@@ -21,7 +20,6 @@ namespace WebCrawler.Data.Repository.Word
         {
             wordLocalization.PreCreate();
             Db.PageWordLocalizations.Add(wordLocalization);
-            Db.SaveChanges();
         }
     }
 }
