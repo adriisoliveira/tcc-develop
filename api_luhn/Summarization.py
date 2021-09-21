@@ -8,6 +8,8 @@ import nltk
 import spacy
 import heapq
 import string
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -101,3 +103,10 @@ def sumarizar_lematizacao(texto, top_n_palavras, distancia, quantidade_sentencas
   melhores_sentencas = [sentencas_originais[i] for (nota, i) in melhores_sentencas]
 
   return melhores_sentencas
+
+def wordcloud(texto):
+  conteudo_formatado = preprocessamento(texto)
+  plt.figure(figsize=(50,50))
+  plt.axis('off')
+  plt.imshow(WordCloud().generate(conteudo_formatado))
+  return plt.savefig('cloud.jpg')

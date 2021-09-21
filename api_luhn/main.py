@@ -17,6 +17,12 @@ def summyLuhn():
     summy = sumarizar_lematizacao(new_text,topWords,distancia,qnt_linhas)
     return {"Text":summy}
 
+@app.route("/word", methods=['POST'])
+def word():
+    text = json.loads(request.data)
+    new_text = text['new_text']
+    wordcloud(new_text)
+    return {"summy":"A imagem foi salva"}
 
 if __name__ == '__main__':
     app.run(debug=True)
