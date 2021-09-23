@@ -1,0 +1,63 @@
+gle-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+
+	<script>
+	  $(window).load(function(){
+	    $('a').each (function () {
+	      href = $(this).attr ('href');
+	      if (href !== undefined && href.substring (0, 4) == 'http' && href.indexOf ('https://www.arduino.cc/en/Reference/arduino.cc') == -1)
+	        $(this).attr ('target', '_blank');
+	    });
+
+	    // js for language dropdown
+	    $('.language-dropdown .current').on('click', function(e){
+          e.stopPropagation();
+          $('.language-dropdown ul').toggle();
+        });
+
+        $('.language-dropdown .selector').on('click', function(e){
+          e.stopPropagation();
+          $('.language-dropdown ul').toggle();
+        });
+
+        $(document).on('click', function(){
+          $('.language-dropdown ul:visible').hide();  
+        });
+
+        $('.language-dropdown li a').on('click', function(e){
+        	$('.language-dropdown .current').text($(this).text());
+        });
+
+        //js for product pages navbar
+        var menu = $(".product-page-nav");
+	    var menuItems = menu.find("a");
+	    var timeoutId = null;
+	    var limitTop = 600;
+
+	    var menuOffset = $('.product-page-nav li').first().offset();
+	    if(menuOffset) {
+	    	limitTop = menuOffset.top;
+	    }
+	    var limitBottom = $('.addthis_toolbox').offset().top;
+
+	    var activateSection = function($sectionToActivate) {
+	      var label=$sectionToActivate.attr('label');
+
+	      $(".product-page-nav").find('li').removeClass('active');
+	      $sectionToActivate.addClass('active');
+	    };
+
+	    menuItems.click(function(e){
+
+	     e.preventDefault();
+	      var href = $(this).attr("href"),
+	          offsetTop = href === "#" ? 0 : $(href).offset().top,
+	          adjust = 0;
+	      if($(this).parent('li').hasClass('active') === false) {
+
+	          adjust = 80;
+
+	          $('html, body').animate({
+	                scro

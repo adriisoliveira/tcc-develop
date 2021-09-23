@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.divPrincipal
+{
+	position: center;
+	border-width: 1px;  
+    border-style: ridge;
+	border-color: #000;	
+	height: 842px;
+	width: 730px;
+}
+
+.nomedainstituicao
+{
+	text-align: center;
+font-family: 'Arial Black';
+font-size: 19px;
+text-transform: uppercase;
+margin: 90px 80px 220px 80px;
+ 
+}
+
+.titulodotcc
+{
+	text-align: center; 
+    font:Arial, Helvetica, sans-serif;
+	font-family:'Arial Black', Gadget, sans-serif;
+	font-size:20px;	
+	margin top: 90px;
+	margin-bottom: 0px;
+}
+
+.subtitulodotcc 
+{
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 180px;
+
+}
+.subtitulodotcc2
+{
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 120px;
+
+}
+
+.nomedointegrante1
+{
+	margin-top: 50px;
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+.nomedointegrante
+{
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 16px;
+}
+
+.cidadeestado {
+	margin-top: 60px;
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 16px;
+}
+
+.ano {
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 16px;
+	
+}
+.lat
+{
+	text-align: right;
+	margin-right: 70px;
+	font-family: 'Arial Black';
+	font-size: 14px;
+	
+}
+.lat2
+{
+	text-align: right;
+	margin-right: 70px;
+	font-family: 'Arial Black';
+	font-size: 14px;
+	margin-bottom: 100px;
+}
+.textinholateral
+{
+	text-align: right;
+	margin-right: 70px;
+	font-size: 14px;
+	font-family: 'Arial';
+
+}
+.intro
+{
+margin: 90px 80px 40px 80px;	
+	font-weight: bold;
+	font-family: 'Arial';
+	font-size: 16px;
+	text-align: left;
+}
+.primeiroparagrafo
+{
+	margin: 10px 60px 40px 80px;
+	text-align: justify;
+	font-family: 'Arial';
+	font-size: 15px;
+}

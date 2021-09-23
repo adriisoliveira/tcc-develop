@@ -1,0 +1,53 @@
+        if _arguments.get('errn', 0):
+            raise aetools.Error, aetools.decodeerror(_arguments)
+        # XXXX Optionally decode result
+        if _arguments.has_key('----'):
+            return _arguments['----']
+
+    _argmap_Set_Modification_Date = {
+        'to' : 'MDat',
+    }
+
+    def Set_Modification_Date(self, _object, _attributes={}, **_arguments):
+        """Set Modification Date: Changes the internal modification date of the specified file(s)
+        Required argument: List of files
+        Keyword argument to: undocumented, typecode 'ldt '
+        Keyword argument _attributes: AppleEvent attribute dictionary
+        Returns: Error code for each modified file
+        """
+        _code = 'MMPR'
+        _subcode = 'SMod'
+
+        aetools.keysubst(_arguments, self._argmap_Set_Modification_Date)
+        _arguments['----'] = _object
+
+
+        _reply, _arguments, _attributes = self.send(_code, _subcode,
+                _arguments, _attributes)
+        if _arguments.get('errn', 0):
+            raise aetools.Error, aetools.decodeerror(_arguments)
+        # XXXX Optionally decode result
+        if _arguments.has_key('----'):
+            return _arguments['----']
+
+    _argmap_Set_Preferences = {
+        'of_panel' : 'PNam',
+        'to' : 'PRec',
+    }
+
+    def Set_Preferences(self, _no_object=None, _attributes={}, **_arguments):
+        """Set Preferences: Set the preferences for the current project
+        Keyword argument of_panel: Name of the preference panel
+        Keyword argument to: Preferences settings
+        Keyword argument _attributes: AppleEvent attribute dictionary
+        """
+        _code = 'MMPR'
+        _subcode = 'Pref'
+
+        aetools.keysubst(_arguments, self._argmap_Set_Preferences)
+        if _no_object is not None: raise TypeError, 'No direct arg expected'
+
+
+        _reply, _arguments, _attributes = self.send(_code, _subcode,
+                _arguments, _attributes)
+        if 

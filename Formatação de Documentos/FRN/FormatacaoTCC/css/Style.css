@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.cab1 {
+	margin: 90px 80px 270px 80px;	
+}
+.cab1l {
+	margin: 90px 80px 40px 80px;	
+	font-weight: bold;
+	font-family: 'Arial';
+	font-size: 16px;
+}
+.cab1lo {
+	margin: 60px 80px 40px 80px;	
+	font-weight: bold;
+	font-family: 'Arial';
+	font-size: 16px;
+}
+.textointro {
+	margin: 10px 60px 40px 80px;
+	text-align: justify;
+	font-family: 'Arial';
+	font-size: 15px;
+}
+
+.cab2 {
+	position: absolute;
+	left: 338px;
+	top: 109px;
+	width: 352px;
+	height: 80px;
+	z-index: 1;
+}
+
+.nomedainstituicao {
+text-align: center;
+font-family: 'Arial Black';
+font-size: 19px;
+text-transform: uppercase;
+margin: 90px 80px 270px 80px;	
+
+}
+
+.titulo {
+	text-align: center; 
+    font:Arial, Helvetica, sans-serif;
+	font-family:'Arial Black', Gadget, sans-serif;
+	font-size:20px;	
+	margin: 90px 80px 10px 80px;
+
+}
+
+.tituloficha {
+    text-align: center; 
+    font:Arial, Helvetica, sans-serif;
+	font-family:'Arial Black', Gadget, sans-serif;
+	font-size:12px;	
+	margin: 350px 0px 0px 0px;	
+
+}
+
+.subtitulo {
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 20px;
+	margin: 0px 0px 270px 0px;	
+}
+
+.subtitulo2 {
+    text-align: center;
+	font-family: 'Arial';
+	font-size: 20px;
+	margin: 0px 0px 220px 0px;
+}
+
+.subtituloficha {
+text-align: center;
+font-family: 'Arial';
+font-size: 12px;
+margin: 0px 0px 10px 0px;
+}
+
+.nome{
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 16px;
+
+}
+
+.ultimonome {
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 16px;
+	margin: 0px 0px 60px 0px;
+}
+
+.finalcapa {
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 16px;
+}
+
+.finalcapa2 {
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 16px;
+	margin: 0px 0px 90px 0px;
+}
+
+.textinho {
+	text-align: right;
+	font-family: 'Arial';
+	font-size: 16px;
+	margin: 60px 60px 60px 60px;
+}
+
+.textinhoficha {
+	text-align: justify;
+	font-family: 'Arial';
+	font-size: 16px;
+    margin: 30px 60px 0px 90px;
+}
+
+.imagempequena {
+	
+	height: 108px;
+	width: 300px;
+	margin: 10px 80px 40px 80px;
+}

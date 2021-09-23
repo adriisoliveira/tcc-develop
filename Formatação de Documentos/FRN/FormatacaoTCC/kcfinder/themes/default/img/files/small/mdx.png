@@ -1,0 +1,49 @@
+uments)
+        # XXXX Optionally decode result
+        if _arguments.has_key('----'):
+            return _arguments['----']
+
+    def Reset_File_Paths(self, _no_object=None, _attributes={}, **_arguments):
+        """Reset File Paths: Resets access paths for all files belonging to open project.
+        Keyword argument _attributes: AppleEvent attribute dictionary
+        """
+        _code = 'MMPR'
+        _subcode = 'ReFP'
+
+        if _arguments: raise TypeError, 'No optional args expected'
+        if _no_object is not None: raise TypeError, 'No direct arg expected'
+
+
+        _reply, _arguments, _attributes = self.send(_code, _subcode,
+                _arguments, _attributes)
+        if _arguments.get('errn', 0):
+            raise aetools.Error, aetools.decodeerror(_arguments)
+        # XXXX Optionally decode result
+        if _arguments.has_key('----'):
+            return _arguments['----']
+
+    _argmap_Run_Project = {
+        'ExternalEditor' : 'Errs',
+        'SourceDebugger' : 'DeBg',
+    }
+
+    def Run_Project(self, _no_object=None, _attributes={}, **_arguments):
+        """Run Project: Run the current project
+        Keyword argument ExternalEditor: Should the contents of the message window be returned to the caller?
+        Keyword argument SourceDebugger: Run the application under the control of the source-level debugger
+        Keyword argument _attributes: AppleEvent attribute dictionary
+        Returns: Errors that occurred when running the project
+        """
+        _code = 'MMPR'
+        _subcode = 'RunP'
+
+        aetools.keysubst(_arguments, self._argmap_Run_Project)
+        if _no_object is not None: raise TypeError, 'No direct arg expected'
+
+
+        _reply, _arguments, _attributes = self.send(_code, _subcode,
+                _arguments, _attributes)
+        if _arguments.get('errn', 0):
+            raise aetools.Error, aetools.decodeerror(_arguments)
+        # XXXX Optionally decode result
+   

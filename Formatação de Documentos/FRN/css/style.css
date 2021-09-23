@@ -1,0 +1,286 @@
+
+/*Body Index*/
+
+.tituindex{
+	width:1080px;
+	height:auto;
+	font-size:10;
+	border-bottom:1px solid #000;
+	margin-left:15%;
+	margin-top:90px;
+}
+.contindex{
+	width:140px;
+	height:auto;
+	border-bottom:1px solid #000;
+	margin-left:5%;
+	margin-top:10px;
+	margin-bottom:10px;
+	float:left;
+	font-family:arial;
+}
+.contest{
+	width:200px;
+	height:auto;
+	margin-left:15%;
+	margin-top:10px;	
+	margin-bottom:90px;
+	float:left;
+}
+.butt{
+	width:140px;
+	height:30px;
+	float:left;
+	text-align:center;
+	background-color:black;
+	border:3px solid #000;
+	margin-left:5%;
+	border-radius:10px;
+}
+.butt a{
+	color:#fff;
+	text-decoration:none;
+}
+.butt img{
+	border-radius:10px;
+}
+.tituloliv{
+	width:auto;
+	height:40px;
+	margin-top:20px;
+	margin-left:240px;
+	word-wrap: break-word;
+	float:left;
+	border-bottom:1px solid #000;
+	font-size:28;
+	font-family:Arial;
+}
+.contsinop{
+	width:600px;
+	height:600px;
+	margin-top:20px;
+	margin-left:80px;
+	word-wrap: break-word;
+	float:left;
+	font-size:16;
+	text-align:left;
+	font-family:Arial;
+	border-radius:10px;
+	}
+#disp{
+	width:auto;
+	border-bottom:1px solid #000;
+	height:60px;
+	float:left;
+	margin-left:280px;
+}
+.davi{
+	height:690px;
+	width:980px;
+	margin-left:20%;
+	text-align:center;
+
+}
+.imgliv{
+	height:auto;
+	width:auto;
+	margin-left:0px;
+	float:left;
+	margin-top:30px;
+}
+.limao{
+	height:490px;
+	width:auto;
+}
+.lop{
+	width:490px;
+	height:auto;
+	margin-left:100px;
+}
+.disp{
+	color:green;
+	font-size:20
+}
+.indisp{
+	color:red;
+	font-size:20
+}
+/*Body Livros */
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 650px;
+    float: left;
+  margin-top:20px;
+  margin-left:10%;
+  background: #f1f1f1;
+  position:relative;
+  
+}
+form.search button {
+  float: left;
+  width: 5%;
+  padding:10px;
+  background: #fff;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+  margin-top:20px;
+
+}
+form.search button:hover {
+  background: #0b7dda;
+}
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.butsearch{
+	width:20px;
+	height:20px;
+	background-image:img("lupa.png");
+}
+.luiz{
+	height:100%;
+	width:1180px;
+	margin-left:20%;
+	text-align:center;
+}
+.luiz2{
+	height:610px;
+	width:1180px;
+	margin-left:20%;
+	text-align:center;
+}
+.gui{
+	height:100%;
+	width:1180px;
+	margin-left:10%;
+	text-align:center;
+}
+.another {
+  height: 300px; 
+  width: 200px;
+  position: fixed;
+  margin-left:40px;
+  margin-top:138px;
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  padding-top:10px;
+  transition: 0.5s; 
+  border-radius:10px;
+  text-align:center;
+  font-family:Arial;
+  position:fixed;
+}
+.another a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  display: block;
+  transition: 0s;
+}
+.another a:hover {
+  color: #666B6E;
+}
+.another {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  font-size: 36px;
+}
+.another li a {
+	height:133px;
+    display: block;
+    color: #000;
+	padding-bottom:10px;
+    text-align: center;
+    text-decoration: none;
+	font-family:arial;
+	font-size:18px;
+}
+.another h1{
+	font-size:18;
+	padding:0;
+	border-bottom:2px solid #000;
+}
+@media screen and (max-height: 450px) {
+  .another{padding-top: 15px;}
+  .another{font-size: 18px;}
+}
+.filters{
+	font-size:12;
+	padding:0;
+	border-bottom:1px solid #000;
+	font-family:arial;
+
+}
+/* Quem Somos Index*/
+.titulx{
+	font-size:28px;
+	border-bottom:1px solid #000;
+	font-family:arial;
+}
+/*Menu index*/
+.sidenav {
+ height: 0; 
+  width: 0;
+  position: fixed;
+  margin-left:460px;
+  margin-top:60px;
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #000	; 
+  overflow-x: hidden; 
+  padding-top: 10px;
+  transition: 0.5s; 
+  font-family:arial;
+  
+}
+.sidenav a {
+  padding: 0px 0px 19px 38px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #fff;
+  display: block;
+  transition: 0s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+    margin:-20px;
+	margin-left:-20px;
+	margin-right:-20px
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*cadastro index*/
+.cadast{
+	height:950px;
+	width:100%;
+	padding-left:35%;
+	padding-left:35%;
+	font-family:arial;
+}
+.cadast label{
+	 display: inline-block;
+    width: 90px;
+}

@@ -1,0 +1,55 @@
+ipo de elemento-raiz deve aparecer ap\u00F3s "<!DOCTYPE" na declara\u00E7\u00E3o do tipo de documento.
+        DoctypedeclUnterminated = A declara\u00E7\u00E3o do tipo de documento do tipo de elemento "{0}" deve terminar com ''>''.
+        DoctypedeclNotClosed = A declara\u00E7\u00E3o do tipo de documento do tipo de elemento "{0}" deve terminar com '']''.
+        PEReferenceWithinMarkup = A refer\u00EAncia da entidade do par\u00E2metro "%{0};" n\u00E3o pode ocorrer na marca\u00E7\u00E3o no subconjunto interno do DTD.
+        MSG_MARKUP_NOT_RECOGNIZED_IN_DTD = As declara\u00E7\u00F5es de marca\u00E7\u00E3o contidas ou apontadas pela declara\u00E7\u00E3o do tipo de documento devem estar corretas.
+#
+        MSG_XML_SPACE_DECLARATION_ILLEGAL = Deve ser fornecida a declara\u00E7\u00E3o do atributo para "xml:space" como um tipo enumerado, cujo os \u00FAnicos valores poss\u00EDveis s\u00E3o "padr\u00E3o" e "preserve".
+#
+        MSG_SPACE_REQUIRED_BEFORE_ELEMENT_TYPE_IN_ELEMENTDECL = O espa\u00E7o em branco \u00E9 necess\u00E1rio ap\u00F3s "<!ELEMENT" na declara\u00E7\u00E3o do tipo de elemento.
+        MSG_ELEMENT_TYPE_REQUIRED_IN_ELEMENTDECL = O tipo de elemento \u00E9 necess\u00E1rio na declara\u00E7\u00E3o do tipo de elemento.
+        MSG_SPACE_REQUIRED_BEFORE_CONTENTSPEC_IN_ELEMENTDECL = O espa\u00E7o em branco \u00E9 necess\u00E1rio ap\u00F3s o tipo de elemento "{0}" na declara\u00E7\u00E3o do tipo de elemento.
+        MSG_CONTENTSPEC_REQUIRED_IN_ELEMENTDECL = A restri\u00E7\u00E3o \u00E9 necess\u00E1ria ap\u00F3s o tipo de elemento "{0}" na declara\u00E7\u00E3o do tipo de elemento.
+        ElementDeclUnterminated = A declara\u00E7\u00E3o do tipo de elemento "{0}" deve terminar com ''>''.
+#
+        MSG_OPEN_PAREN_OR_ELEMENT_TYPE_REQUIRED_IN_CHILDREN = \u00C9 necess\u00E1rio um caractere ''('' ou um tipo de elemento na declara\u00E7\u00E3o do tipo de elemento "{0}".
+        MSG_CLOSE_PAREN_REQUIRED_IN_CHILDREN = \u00C9 necess\u00E1rio um caractere '')'' na declara\u00E7\u00E3o do tipo de elemento "{0}".
+#
+        MSG_ELEMENT_TYPE_REQUIRED_IN_MIXED_CONTENT = \u00C9 necess\u00E1rio um tipo de elemento na declara\u00E7\u00E3o do tipo de elemento "{0}".
+        MSG_CLOSE_PAREN_REQUIRED_IN_MIXED = \u00C9 necess\u00E1rio um caractere '')'' na declara\u00E7\u00E3o do tipo de elemento "{0}".
+        MixedContentUnterminated = O modelo de conte\u00FAdo misto "{0}" deve terminar com ")*" quando os tipos de elementos filhos forem restringidos.
+#
+        MSG_SPACE_REQUIRED_BEFORE_ELEMENT_TYPE_IN_ATTLISTDECL = O espa\u00E7o em branco \u00E9 necess\u00E1rio ap\u00F3s "<!ATTLIST" na declara\u00E7\u00E3o da lista de atributos.
+        MSG_ELEMENT_TYPE_REQUIRED_IN_ATTLISTDECL = \u00C9 necess\u00E1rio o tipo de elemento na declara\u00E7\u00E3o da lista de atributos.
+        MSG_SPACE_REQUIRED_BEFORE_ATTRIBUTE_NAME_IN_ATTDEF = \u00C9 necess\u00E1rio o espa\u00E7o em branco antes do nome do atributo na declara\u00E7\u00E3o da lista de atributos do elemento "{0}".
+        AttNameRequiredInAttDef = O nome do atributo deve ser especificado na declara\u00E7\u00E3o da lista de atributos do elemento "{0}".
+        MSG_SPACE_REQUIRED_BEFORE_ATTTYPE_IN_ATTDEF = \u00C9 necess\u00E1rio o espa\u00E7o em branco antes do tipo de atributo na declara\u00E7\u00E3o do atributo "{1}" do elemento "{0}".
+        AttTypeRequiredInAttDef = \u00C9 necess\u00E1rio o tipo de atributo na declara\u00E7\u00E3o do atributo "{1}" do elemento "{0}".
+        MSG_SPACE_REQUIRED_BEFORE_DEFAULTDECL_IN_ATTDEF = \u00C9 necess\u00E1rio o espa\u00E7o em branco antes do padr\u00E3o do atributo na declara\u00E7\u00E3o do atributo "{1}" do elemento "{0}".
+        MSG_DUPLICATE_ATTRIBUTE_DEFINITION = Mais de uma defini\u00E7\u00E3o de atributo fornecida para o mesmo atributo "{1}" de um determinado elemento "{0}".
+#
+        MSG_SPACE_REQUIRED_AFTER_NOTATION_IN_NOTATIONTYPE = O espa\u00E7o em branco deve aparecer ap\u00F3s "NOTATION" na declara\u00E7\u00E3o do atributo "{1}".
+        MSG_OPEN_PAREN_REQUIRED_IN_NOTATIONTYPE = O caractere ''('' deve estar ap\u00F3s "NOTATION" na declara\u00E7\u00E3o do atributo "{1}".
+        MSG_NAME_REQUIRED_IN_NOTATIONTYPE = \u00C9 necess\u00E1rio o nome da nota\u00E7\u00E3o na lista de tipos de nota\u00E7\u00E3o para a declara\u00E7\u00E3o do atributo "{1}".
+        NotationTypeUnterminated = A lista de tipos de nota\u00E7\u00E3o deve terminar com '')'' na declara\u00E7\u00E3o do atributo "{1}".
+        MSG_NMTOKEN_REQUIRED_IN_ENUMERATION = O token do nome \u00E9 obrigat\u00F3rio na lista de tipos enumerada para a declara\u00E7\u00E3o do atributo "{1}".
+        EnumerationUnterminated = A lista de tipos enumerada deve terminar com '')'' na declara\u00E7\u00E3o do atributo "{1}".
+        MSG_DISTINCT_TOKENS_IN_ENUMERATION = O valor da enumera\u00E7\u00E3o "{1}" foi especificado mais de uma vez na declara\u00E7\u00E3o do atributo "{2}" do elemento "{0}". Os NMTOKENS em uma declara\u00E7\u00E3o de atributo de Enumera\u00E7\u00E3o \u00FAnica devem ser todos distintos.
+        MSG_DISTINCT_NOTATION_IN_ENUMERATION = O valor da enumera\u00E7\u00E3o "{1}" foi especificado mais de uma vez na declara\u00E7\u00E3o do atributo "{2}" do elemento "{0}". Os nomes da NOTATION em uma declara\u00E7\u00E3o do atributo NotationType \u00FAnica devem ser todos distintos.
+#
+        MSG_SPACE_REQUIRED_AFTER_FIXED_IN_DEFAULTDECL = O espa\u00E7o em branco deve aparecer ap\u00F3s "FIXED" na declara\u00E7\u00E3o do atributo "{1}".
+#
+        IncludeSectUnterminated = A se\u00E7\u00E3o condicional inclu\u00EDda deve terminar com "]]>".
+        IgnoreSectUnterminated = A se\u00E7\u00E3o condicional exclu\u00EDda deve terminar com "]]>".
+#
+        NameRequiredInPEReference = O nome da entidade deve seguir imediatamente o '%' na refer\u00EAncia da entidade do par\u00E2metro.
+        SemicolonRequiredInPEReference = A refer\u00EAncia da entidade do par\u00E2metro "%{0};" deve terminar com o delimitador '';".
+#
+        MSG_SPACE_REQUIRED_BEFORE_ENTITY_NAME_IN_ENTITYDECL = O espa\u00E7o em branco \u00E9 necess\u00E1rio ap\u00F3s "<!ENTITY" na declara\u00E7\u00E3o da entidade.
+        MSG_SPACE_REQUIRED_BEFORE_PERCENT_IN_PEDECL = O espa\u00E7o em branco \u00E9 necess\u00E1rio entre "<!ENTITY" e o caractere '%' na declara\u00E7\u00E3o da entidade do par\u00E2metro.
+        MSG_SPACE_REQUIRED_BEFORE_ENTITY_NAME_IN_PEDECL = O espa\u00E7o em branco \u00E9 necess\u00E1rio entre '%' e o nome da entidade na declara\u00E7\u00E3o da entidade do par\u00E2metro.
+        MSG_ENTITY_NAME_REQUIRED_IN_ENTITYDECL = O nome da entidade \u00E9 necess\u00E1rio na declara\u00E7\u00E3o da entidade.
+        MSG_SPACE_REQUIRED_AFTER_ENTITY_NAME_IN_ENTITYDECL = O espa\u00E7o em branco \u00E9 necess\u00E1rio entre o nome da entidade "{0}" e a defini\u00E7\u00E3o da declara\u00E7\u00E3o da entidade.
+        MSG_SPACE_REQUIRED_BEFORE_NOTATION_NAME_IN_UNPARSED_ENTITYDECL = \u00C9 necess\u00E1rio um espa\u00E7o em branco entre "NDATA" e o nome da nota\u00E7\u00E3o na declara\u00E7\u00E3o da entidade "{0}".
+        MSG_SPACE_REQUIRED_BEFORE_NDATA_IN_UNPARSED_ENTITYDECL = O espa\u00E7o em branco \u00E9 necess\u00E1rio antes de "NDATA" na declara\u00E7\u00E3o da entidade "{0}".
+        M
