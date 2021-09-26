@@ -1,56 +1,64 @@
-<!--Duas caixas de texto com botoes para ações-->
-<!--<label for="story">Escreva ai:</label>
-<textarea id="story" name="story">
-    <p>resumo-texto works!</p>
+<!--Duas caixas de texto com botoes para ações
+<textarea pInputTextarea>
+
 </textarea>
-<br>
-<button         
-    pButton
-    type="button"
-    label="Entrar"
-    class="p-col-12"
->
-</button>
+<h5>Float Label</h5>
+<span class="p-float-label">
+<textarea id="float-input" rows="5" cols="30" pInputTextarea></textarea>
+<label for="float-input">Summary</label>
+</span>
+agr resolveu funcionar
 -->
-<!--<label for="story">Tell us your story:</label>-->
-<!--<textarea id="story" name="story">
-    
-</textarea>
-    <button 
-        pButton
-        type="button"
-        label="Entrar"
-        class="p-col-12"
-    >
-    </button>-->
     <!--no form a action="/pagina-processa-dados-do-form o uma URL-->
-    <form class="p-col-10 p-sm-6 p-md-4" method="post" action="">
-            <div id="divForm">
-                <label><strong>o texto ali submite n funciona ainda</strong> </label>
-                <div id="DivResumoBox1">
-                <textarea id="resumoBox1" name="resumoBox1" rows="20" style="width: 30em" 
-                  placeholder="Insira aqui o texto para o resumo" >
+    <form id ="FormResumo"class="p-col-10 p-sm-6 p-md-4" method="post" action="">
+        <div id="divFormResumo1">
+            <label><strong>o texto ali submite n funciona ainda</strong> </label>
+            <div id="DivResumoBox1">
+                <textarea id="TxtAreaResumoBox1" class="txtArea" name="resumoBox1" rows="20" style="width: 30em" 
+                placeholder="Insira aqui o texto para o resumo">
                 </textarea>
-                </div><br>
+            </div><br>
+
+            <div id="DivSelectLines">
+                <label>coloque o valor de linhas do resumo </label>
+                <select id="SelectLine" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option id="1">1</option>
+                    <option id="2">2</option>
+                    <option id="3">3</option>
+                    <option id="4">4</option>
+                    <option id="5">5</option>
+                    <option id="6">6</option>
+                    <option id="7">7</option>
+                    <option id="8">8</option>
+                    <option id="9">9</option>
+                    <option id="10">10</option>
+                </select>
+            </div><br>
+
+            <div id="DivBtnSubmit"> 
+                  <button class="btnSubmit" type="submit">enviar resumo</button>
+            </div><br>
+
+            
+
+            <div class="DivBtnUpFile">
+            <button class="btnFileUpload" id="btnFileUpload" type="button">
+                <img src="./assets/Logo_PNG.png" width="20px" height="20px" alt="Ícone de Upload">
+                <span class="SpanUpload">Fazer upload do texto</span>
+            </button><br>
+            <!--espaço pro metodo que faz a -->
+            </div>
+
+            
+        </div><br>
+        <div>
+            <div id="DivResumoBox2">
+                <textarea id="resumoBox2" name="resumoBox2" rows="20" style="width: 30em" >
+                </textarea>
+                </div>
                 <div>
                       <button class="btnSubmit" type="submit">enviar</button>
-                </div><br>
-                
-                <div class="upFile">
-                <button class="btn" id="btnFileUpload" type="button">
-                    <img src="./assets/Logo_PNG.png" width="20px" height="20px" alt="Ícone de Upload">
-                    <span class="upload">Fazer upload do texto</span>
-                </button><br>
-                <!--espaço pro metodo que faz a -->
                 </div>
-            </div><br>
-            <div>
-                <div id="DivResumoBox2">
-                    <textarea id="resumoBox2" name="resumoBox2" rows="20" style="width: 30em" >
-                    </textarea>
-                    </div>
-                    <div>
-                          <button class="btnSubmit" type="submit">enviar</button>
-                    </div>
-            </div>
-    </form>
+        </div>
+</form>
