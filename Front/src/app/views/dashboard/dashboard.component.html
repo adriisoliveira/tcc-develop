@@ -1,5 +1,15 @@
+<p-menubar [model]="items">
+    <ng-template pTemplate="start">
+        <img src="../../../favicon1.ico" height="40" class="p-mr-2">
+    </ng-template>
+    <ng-template pTemplate="end">
+        <input type="text" pInputText placeholder="Search">
+    </ng-template>
+</p-menubar>
+<!--next step organizar essa ou trocar sei la e colocar em geral pages-->
 <p>dashboard works!</p>
 <!--Botão de teste que usa o metodo no Dashborad COmponents levando a tela de Resumo texto-->
 <button (click)="doResumo()" pButton type="button" label="Entrar" class="p-col-12">SUMMARIZATION</button>
 
 <button (click)="doRank()" pButton type="button" label="Entrar" class="p-col-12">PAGE RANK</button>
+
