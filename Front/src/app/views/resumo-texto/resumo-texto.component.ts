@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-resumo-texto',
@@ -8,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumoTextoComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public doBackToMenu(): void{
+    this.router.navigate(['dashboard'])
   }
 
 }

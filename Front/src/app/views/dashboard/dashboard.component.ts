@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-
+//to use for get a menuBar for PrimeNG
 import {MenuItem} from 'primeng/api';
 
 @Component({
