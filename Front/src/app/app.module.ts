@@ -9,9 +9,11 @@ import { InputTextModule } from 'primeng/inputtext';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './views/login/login.component';
+import { BookDataComponent } from './book-data/book-data.component';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, BookDataComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -21,6 +23,7 @@ import { LoginComponent } from './views/login/login.component';
     CardModule,
     InputTextModule,
     ButtonModule,
+    TableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
