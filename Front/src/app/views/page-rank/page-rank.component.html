@@ -33,3 +33,19 @@
     </ng-template>
 </p-panel>-->
 
+<p-table [value]="books">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Price In Dollars</th>          
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-book>
+        <tr>
+            <td>{{book.name}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.price}}</td>          
+        </tr>
+    </ng-template>
+  </p-table>

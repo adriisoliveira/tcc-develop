@@ -11,9 +11,11 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './views/login/login.component';
 import { BookDataComponent } from './book-data/book-data.component';
 import { TableModule } from 'primeng/table';
+import { PageRankComponent } from './views/page-rank/page-rank.component';
+import {DropdownModule} from 'primeng/dropdown';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, BookDataComponent],
+  declarations: [AppComponent, LoginComponent, BookDataComponent, PageRankComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -24,6 +26,7 @@ import { TableModule } from 'primeng/table';
     InputTextModule,
     ButtonModule,
     TableModule,
+    DropdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
