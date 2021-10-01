@@ -17,7 +17,7 @@ exports.authorize = (req, res, next) => {
   try {
     let token = req.headers['authorization'];
     if (!token) {
-      res.status(403).json({ message: 'Acesso restrito!' });
+      res.status(403).json({ message: 'Acesso restrito!!' });
     } else {
       jwt.verify(
         token.replace('Bearer ', ''),
