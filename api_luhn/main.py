@@ -19,6 +19,12 @@ def summyLuhn():
     return json.dumps({"Text":summy})
     #return jsonify(summy)
 
+@app.route("/word", methods=['POST'])
+def word():
+    text = json.loads(request.data)
+    new_text = text['new_text']
+    wordcloud(new_text)
+    return {"summy":"A imagem foi salva"}
 
 @app.route("/teste", methods=['GET','POST'])
 def teste():
