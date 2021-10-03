@@ -101,8 +101,8 @@ def sumarizar_lematizacao(texto, top_n_palavras, distancia, quantidade_sentencas
   notas_sentencas = calcula_nota_sentenca(sentencas_formatadas, top_n_palavras, distancia)
   melhores_sentencas = heapq.nlargest(quantidade_sentencas, notas_sentencas)
   melhores_sentencas = [sentencas_originais[i] for (nota, i) in melhores_sentencas]
-
-  return melhores_sentencas
+  texto_sumarizado = ' '.join([str(melhores_sentencas) for melhores_sentencas in melhores_sentencas])
+  return texto_sumarizado
 
 def wordcloud(texto):
   conteudo_formatado = preprocessamento(texto)
