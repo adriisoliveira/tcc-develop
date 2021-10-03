@@ -1,0 +1,9 @@
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.deps.json
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.pdb
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csprojAssemblyReference.cache
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.AssemblyInfoInputs.cache
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.AssemblyInfo.cs
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csproj.CoreCompileInputs.cache
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.pdb
