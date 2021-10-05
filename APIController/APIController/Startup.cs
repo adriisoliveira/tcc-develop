@@ -38,7 +38,7 @@ namespace APIController
             services.AddTransient<APIControllerDataContext, APIControllerDataContext>();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IUserService, UserService>();
-
+            services.AddCors(c => c.AddPolicy("EnableAllCrossOriginRequests", builder => { builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader(); }));
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -83,6 +83,8 @@ namespace APIController
             app.UseAuthentication();
 
             app.UseRouting();
+
+            app.UseCors("EnableAllCrossOriginRequests");
 
             app.UseAuthorization();
 

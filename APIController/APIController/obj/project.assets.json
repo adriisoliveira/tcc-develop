@@ -5384,44 +5384,45 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Logan\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\johny\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController\\APIController.csproj",
+      "projectUniqueName": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController\\APIController.csproj",
       "projectName": "APIController",
-      "projectPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController\\APIController.csproj",
-      "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController\\obj\\",
+      "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController\\APIController.csproj",
+      "packagesPath": "C:\\Users\\johny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Logan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\johny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {
-              "projectPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj"
+            "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {
+              "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj"
             },
-            "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj": {
-              "projectPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj"
+            "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj": {
+              "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj"
             },
-            "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
-              "projectPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj"
+            "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
+              "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj"
             }
           }
         }
@@ -5434,6 +5435,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -5462,7 +5464,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

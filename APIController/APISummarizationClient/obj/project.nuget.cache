@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XIJD735TzFQ65ssx82QH+hlD0MBwv3fenKJkUH4ZfxXwMYNPQYGeaT3MW/BpoHAD8vgnBt4EHA2sEk2wZ1j3EQ==",
+  "dgSpecHash": "bAIamDO4wDYQzyjA9mi5KPp+phndAeglJ5vdAWT1qAbjybwggozacliVFSuNgziHAtEilPzCWjYk/7WECMsuvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+  "projectFilePath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Logan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\johny\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }
