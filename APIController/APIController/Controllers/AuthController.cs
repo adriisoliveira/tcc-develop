@@ -1,5 +1,7 @@
 ﻿using APIController.Business.Entity.Users;
+using APIController.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -9,9 +11,9 @@ using System.Text;
 
 namespace APIController.Controllers
 {
-    [Authorize()]
     [ApiController]
     [Route("auth")]
+    [EnableCors("EnableAllCrossOriginRequests")]
     public class AuthController : ControllerBase
     {
         private readonly Microsoft.Extensions.Configuration.IConfiguration _config;
@@ -23,14 +25,13 @@ namespace APIController.Controllers
         [Route("authenticate")]
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult RequestToken([FromBody] User user)
+        public IActionResult RequestToken([FromBody] UserLogin user)
         {
-            if (user.Name == "admin" && user.Password == "admin")
+            if (user.Login == "admin" && user.Password == "admin")
             {
                 var claims = new[]
                 {
-                    new Claim(ClaimTypes.Name, user.Name),
-                    new Claim(ClaimTypes.Role, user.Type.ToString())
+                    new Claim(ClaimTypes.Name, user.Login),
                 };
 
                 var credential = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["SecretKey"])),
