@@ -1,5 +1,6 @@
 ﻿using APIController.Business.Entity.Users;
 using APIController.Models;
+using APIController.Models.User;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -25,7 +26,7 @@ namespace APIController.Controllers
         [Route("authenticate")]
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult RequestToken([FromBody] UserLogin user)
+        public IActionResult RequestToken([FromBody] UserLoginApiModel user)
         {
             if (user.Login == "admin" && user.Password == "admin")
             {
@@ -41,10 +42,11 @@ namespace APIController.Controllers
                     issuer: "apicontroller",
                     audience: "apicontroller",
                     claims: claims,
-                    expires: DateTime.Now.AddSeconds(60),
+                    expires: DateTime.Now.AddMinutes(20),
                     signingCredentials: credential);
 
-                return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
+                return StatusCode(201, new { jwt = new JwtSecurityTokenHandler().WriteToken(token) });
+                //return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
             }
             return BadRequest("E-mail ou senha incorretos");
         }

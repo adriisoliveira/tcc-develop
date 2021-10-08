@@ -1,24 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using APIController.Business.Interfaces.Repository.Users;
 using APIController.Business.Interfaces.Service.Users;
 using APIController.Business.Services.Users;
 using APIController.Data.DataContext;
 using APIController.Data.Repository.Users;
+using APISummarizationClient.Client;
+using APISummarizationClient.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using System;
+using System.Diagnostics;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace APIController
 {
@@ -38,6 +35,9 @@ namespace APIController
             services.AddTransient<APIControllerDataContext, APIControllerDataContext>();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IApiClient, ApiClient>();
+            services.AddTransient<ISummarizationClient, SummarizationClient>();
+
             services.AddCors(c => c.AddPolicy("EnableAllCrossOriginRequests", builder => { builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader(); }));
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>

@@ -25,6 +25,8 @@ namespace APISummarizationClient.Client
         }
 
         #region :: Métodos privados
+        ///TODO: permitir enviar queryString
+        ///permitir adicionar mais fragments à url
         private TModel Call<TModel>(IDictionary<string, string> parameters)
         {
             using (var client = new HttpClient())
