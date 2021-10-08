@@ -26,7 +26,7 @@ import {DropdownModule} from 'primeng/dropdown';
     InputTextModule,
     ButtonModule,
     TableModule,
-    DropdownModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent],

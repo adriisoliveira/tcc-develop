@@ -5,7 +5,6 @@ import { AuthGuardService } from './resources/services/auth-guard.service';
 import { LoginComponent } from './views/login/login.component';
 import { ResumoTextoModule } from './views/resumo-texto/resumo-texto.module';
 
-
 /**Declarar o obj dos modulos */
 const routes: Routes = [
   { path: '', component: LoginComponent },//rota raiz sem guard rote onde todos tem acesso

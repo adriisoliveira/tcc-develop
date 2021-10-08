@@ -10,58 +10,40 @@
 agr resolveu funcionar
 -->
     <!--no form a action="/pagina-processa-dados-do-form o uma URL usando Callback de test-->
-    <div>
-        <button id="BtnDoResumo" (click)="doBackToMenu()"
-         pButton type="button" label="Entrar" class="p-col-12">Volatr ao Menu</button>
-    </div>
-    <form id ="FormResumo"class="p-col-10 p-sm-6 p-md-4" method="post" action="http://localhost:5000/teste/">
-        <div id="divFormResumo1" >
-            <label><strong>Insira o texto para o resumo</strong> </label>
-            <div id="DivResumoBox1">
-                <textarea id="TxtAreaResumoBox1" class="txtArea" name="resumoBox1" rows="20" style="width: 30em" 
-                placeholder="Insira aqui o texto para o resumo"></textarea>
-            </div><br>
-
-            <div id="DivSelectLines">
-                <label>coloque o valor de linhas do resumo </label>
-                <select id="SelectLine" required>
-                    <option selected disabled value="">Selecione</option>
-                    <option id="1">1</option>
-                    <option id="2">2</option>
-                    <option id="3">3</option>
-                    <option id="4">4</option>
-                    <option id="5">5</option>
-                    <option id="6">6</option>
-                    <option id="7">7</option>
-                    <option id="8">8</option>
-                    <option id="9">9</option>
-                    <option id="10">10</option>
-                </select>
-            </div><br>
-
-            <div id="DivBtnSubmit"> 
-                  <button class="btnSubmit" type="submit">enviar resumo</button>
-            </div><br>
-
-            
-
-            <div class="DivBtnUpFile">
-            <button class="btnFileUpload" id="btnFileUpload" type="button">
-                <img src="./assets/Logo_PNG.png" width="20px" height="20px" alt="Ícone de Upload">
-                <span class="SpanUpload">Fazer upload do texto</span>
-            </button><br>
-            <!--espaço pro metodo que faz a -->
-            </div>
-
-            
-        </div><br>
-        <div>
-            <div id="DivResumoBox2">
-                <textarea id="resumoBox2" name="resumoBox2" rows="20" style="width: 30em" >
-                </textarea>
-                </div>
-                <div>
-                      <button class="btnSubmit" type="submit">enviar</button>
-                </div>
+<div>
+    <button id="BtnDoResumo" (click)="doBackToMenu()"
+        pButton type="button" label="Entrar" class="p-col-12">Volatr ao Menu</button>
+</div>
+<div class="p-col-10 p-sm-6 p-md-4 content">
+    <div id="divFormResumo1" >
+        <label><strong>Insira o texto para o resumo</strong> </label>
+        <div id="DivResumoBox1">
+            <textarea id="TxtAreaResumoBox1" class="txtArea" name="resumoBox1" rows="20" style="width: 30em" 
+            placeholder="Insira aqui o texto para o resumo" [(ngModel)]="toSummarizeText"></textarea>
         </div>
-</form> 
+        <br />
+
+        <div id="DivSelectLines">
+            <label>Quantidade de Linhas </label><br />
+            <input type="number" [(ngModel)]="lineQuantity" placeholder="Quantidade de Linhas" min="1" max="10"/>
+        </div>
+        <br />
+
+        <div id="DivBtnSubmit">
+            <button class="btnSubmit" type="button" (click)="setSummarizedText()">Enviar Resumo</button>
+        </div>
+        <br />
+        
+        <div class="DivBtnUpFile">
+        <button class="btnFileUpload" id="btnFileUpload" type="button">
+            <img src="./assets/Logo_PNG.png" width="20px" height="20px" alt="Ícone de Upload">
+            <span class="SpanUpload">Fazer upload do texto</span>
+        </button><br>
+        <!--espaço pro metodo que faz a -->
+        </div>    
+    </div>
+    <br />
+    <div id="DivResumoBox2">
+        <textarea id="resumoBox2" name="resumoBox2" rows="20" style="width: 30em" >{{ summarizedText }}</textarea>
+    </div>
+</div>

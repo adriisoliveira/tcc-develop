@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { RequestLogin } from '../models/RequestLogin';
@@ -14,10 +14,11 @@ export class LoginService {
 
   //com o pipe tap o login é encaspulado e fica aqui a resposabilidade atraves do service
   public doLogin(requestLogin: RequestLogin): Observable<ResponseLogin> {
+    let headers = new HttpHeaders(); headers = headers.set('Content-Type', 'application/json; charset=utf-8');
+
     return this.httpClient.post<ResponseLogin>(
-      'http://localhost:8080/api/login',/*"https://localhost:5001/teste/api/login",*/
-      requestLogin
-    ).pipe(tap(loginResponse => this.authService.loginResponse = loginResponse));/**///comentar para usar sem o esquema de rotas
+      'https://localhost:44312/auth/authenticate',
+      requestLogin, { headers }
+    ).pipe(tap(loginResponse => this.authService.saveLoginResponseJwt(loginResponse['jwt'])));/**///comentar para usar sem o esquema de rotas
   }
 }
-8
