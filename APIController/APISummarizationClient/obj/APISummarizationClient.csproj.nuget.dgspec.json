@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {}
+    "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
+    "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+        "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
         "projectName": "APISummarizationClient",
-        "projectPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+        "projectPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
         "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APISummarizationClient\\obj\\",
+        "outputPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APISummarizationClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

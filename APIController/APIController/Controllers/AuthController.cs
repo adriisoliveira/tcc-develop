@@ -1,9 +1,12 @@
 ﻿using APIController.Business.Entity.Users;
+using APIController.Models.User;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net;
+using System.Net.Http;
 using System.Security.Claims;
 using System.Text;
 
@@ -12,7 +15,7 @@ namespace APIController.Controllers
     [Authorize()]
     [ApiController]
     [Route("auth")]
-    public class AuthController : ControllerBase
+    public class AuthController : BaseController
     {
         private readonly Microsoft.Extensions.Configuration.IConfiguration _config;
         public AuthController(Microsoft.Extensions.Configuration.IConfiguration config)
@@ -23,14 +26,14 @@ namespace APIController.Controllers
         [Route("authenticate")]
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult RequestToken([FromBody] User user)
+        public HttpResponseMessage RequestToken([FromBody] UserLoginModel user)
         {
-            if (user.Name == "admin" && user.Password == "admin")
+            if (user.Login == "admin" && user.Password == "admin")
             {
                 var claims = new[]
                 {
-                    new Claim(ClaimTypes.Name, user.Name),
-                    new Claim(ClaimTypes.Role, user.Type.ToString())
+                    new Claim(ClaimTypes.NameIdentifier, user.Login),
+                    //new Claim(ClaimTypes.Role, user.Type.ToString())
                 };
 
                 var credential = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["SecretKey"])),
@@ -42,10 +45,10 @@ namespace APIController.Controllers
                     claims: claims,
                     expires: DateTime.Now.AddSeconds(60),
                     signingCredentials: credential);
-
-                return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
+                return Request.CreateResponse(HttpStatusCode.OK,
+                    new { token = new JwtSecurityTokenHandler().WriteToken(token) });
             }
-            return BadRequest("E-mail ou senha incorretos");
+            return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "E-mail ou senha incorretos");
         }
     }
 }

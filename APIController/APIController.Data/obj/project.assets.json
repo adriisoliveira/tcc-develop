@@ -5820,11 +5820,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj",
       "projectName": "APIController.Data",
-      "projectPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj",
+      "projectPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj",
       "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Data\\obj\\",
+      "outputPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APIController.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -5844,8 +5844,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {
-              "projectPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj"
+            "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {
+              "projectPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj"
             }
           }
         }
