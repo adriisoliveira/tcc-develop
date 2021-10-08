@@ -28,6 +28,7 @@ export class ResumoTextoComponent implements OnInit {
   }
 
   public setSummarizedText():void{
+    console.log('funcional');
     this.summarizationService.summy(this.toSummarizeText, this.lineQuantity).subscribe(data => {this.summarizedText = data});
   }
 }
