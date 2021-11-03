@@ -12,7 +12,7 @@ export class SummarizationService {
     summy(text, lineQuantity): Observable<String> {      
       let headers = new HttpHeaders({
         'Content-Type' : 'application/json; charset=utf-8',
-        'Authorization' : 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE2MzM2NTAxMTUsImlzcyI6ImFwaWNvbnRyb2xsZXIiLCJhdWQiOiJhcGljb250cm9sbGVyIn0.xJl__TTTeqIUTJwqLPmhoyob8yJeHzdww1ii4Dkj0I4'
+        'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
       });
       
       var requestData = {
