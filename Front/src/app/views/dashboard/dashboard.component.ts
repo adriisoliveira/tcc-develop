@@ -24,80 +24,17 @@ import {MenuItem} from 'primeng/api';
       //menu bar itens
       this.items = [
           
-        /* {
-          label:'Arquivos',
-          icon:'pi pi-fw pi-file',
-          items:[
-              {
-                  label:'New',
-                  icon:'pi pi-fw pi-plus',
-                  items:[
-                  {
-                      label:'Bookmark',
-                      icon:'pi pi-fw pi-bookmark'
-                  },
-                  {
-                      label:'Video',
-                      icon:'pi pi-fw pi-video'
-                  },
-  
-                  ]
-              },
-              {
-                  label:'Delete',
-                  icon:'pi pi-fw pi-trash'
-              },
-              {
-                  separator:true
-              },
-              {
-                  label:'Export',
-                  icon:'pi pi-fw pi-external-link'
-              }
-          ]
+      {
+          label:'Home',
+          icon:'pi pi-fw pi-home',
+          id: 'btnDashboard',
+          url: '/#/dashboard',
       },
-      
       {
-          label:'Usuarios',
-          icon:'pi pi-fw pi-user',
-          items:[
-              {
-                  label:'Novo',
-                  icon:'pi pi-fw pi-user-plus',
-                  
-              },
-              {
-                  label:'Deletar',
-                  icon:'pi pi-fw pi-user-minus',
-  
-              },
-              {
-                  label:'Busca',
-                  icon:'pi pi-fw pi-users',
-                  items:[
-                  {
-                      label:'Filter',
-                      icon:'pi pi-fw pi-filter',
-                      items:[
-                          {
-                              label:'Print',
-                              icon:'pi pi-fw pi-print'
-                          }
-                      ]
-                  },
-                  {
-                      icon:'pi pi-fw pi-bars',
-                      label:'List'
-                  }
-                  ]
-              }
-          ]
-      }, */
-      {
-          label:'Resumo',
-          icon:'pi pi-fw pi-book',
-          id: 'btnResumo',
-          url: '/#/resumo-texto',
+        label:'Resumo',
+        icon:'pi pi-fw pi-book',
+        id: 'btnResumo',
+        url: '/#/resumo-texto',
       },
       {
           label:'Sugestionador',
@@ -109,7 +46,7 @@ import {MenuItem} from 'primeng/api';
           label:'Sobre Nós',
           icon:'pi pi-fw pi-info-circle',
           id: 'btnSugestionador',
-          url: '/#/books',
+          url: '/#/about',
       },
       {
           label:'Sair',
@@ -122,13 +59,13 @@ import {MenuItem} from 'primeng/api';
   }
   
     /*Metodo para modificar a a tela de Dashbord para Resumo */
-    public doResumo(): void{
-      this.router.navigate(['resumo-texto'])
-    }
+    // public doResumo(): void{
+    //   this.router.navigate(['resumo-texto'])
+    // }
   
-    /*Metodo para modificar a a tela de Dashbord para Page Rank */
-    public doRank(): void{
-      this.router.navigate(['page-rank'])
-    }
+    // /*Metodo para modificar a a tela de Dashbord para Page Rank */
+    // public doRank(): void{
+    //   this.router.navigate(['page-rank'])
+    // }
   }
   

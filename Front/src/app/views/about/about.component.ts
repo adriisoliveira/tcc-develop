@@ -1,30 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SummarizationService } from 'src/app/resources/services/summarization.service';
 
+//to use for get a menuBar for PrimeNG
 import {MenuItem} from 'primeng/api';
 
 @Component({
-  selector: 'app-resumo-texto',
-  templateUrl: './resumo-texto.component.html',
-  styleUrls: ['./resumo-texto.component.scss']
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss']
 })
-export class ResumoTextoComponent implements OnInit {  
+export class AboutComponent implements OnInit {
 
   items: MenuItem[]; 
 
-  toSummarizeText: String;
-  summarizedText: String;
-  lineQuantity: number;
   constructor(
-    private router: Router,
-    private summarizationService: SummarizationService
-  )
-  {
-    this.toSummarizeText = "";
-    this.summarizedText = "";
-    this.lineQuantity = 1;
-  }
+      private router: Router
+      ) { }
+
   ngOnInit(): void {
     this.items = [
           
@@ -62,12 +54,4 @@ export class ResumoTextoComponent implements OnInit {
   ];
   }
 
-  // public doBackToMenu(): void{
-  //   this.router.navigate(['dashboard'])
-  // }
-
-  public setSummarizedText():void{
-    console.log('funcional');
-    this.summarizationService.summy(this.toSummarizeText, this.lineQuantity).subscribe(data => {this.summarizedText = data});
-  }
 }

@@ -4,6 +4,7 @@ import { BookDataComponent } from './book-data/book-data.component';
 import { AuthGuardService } from './resources/services/auth-guard.service';
 import { LoginComponent } from './views/login/login.component';
 import { ResumoTextoModule } from './views/resumo-texto/resumo-texto.module';
+import { AboutComponent } from './views/about/about.component';
 
 /**Declarar o obj dos modulos */
 const routes: Routes = [
@@ -37,6 +38,12 @@ const routes: Routes = [
     ),
   },
   
+  {path:'about', 
+  loadChildren: () =>
+    import('./views/about/about.module').then(
+      (m) => m.AboutModule
+    ),
+  },
 
   //redirecionamento caso n ache uma rota
   {path:'**', redirectTo: ''},

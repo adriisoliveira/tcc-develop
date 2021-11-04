@@ -1,3 +1,12 @@
+<p-menubar [model]="items">
+    <ng-template pTemplate="start">
+        <img src="../../../favicon1.ico" height="40" class="p-mr-2">
+    </ng-template>
+    <ng-template pTemplate="end">
+        <input type="text" pInputText placeholder="Search">
+    </ng-template>
+</p-menubar>
+aaa 
 <!--Duas caixas de texto com botoes para ações
 <textarea pInputTextarea>
 
@@ -10,10 +19,10 @@
 agr resolveu funcionar
 -->
     <!--no form a action="/pagina-processa-dados-do-form o uma URL usando Callback de test-->
-<div>
+<!-- <div>
     <button id="BtnDoResumo" (click)="doBackToMenu()"
         pButton type="button" label="Entrar" class="p-col-12">Volatr ao Menu</button>
-</div>
+</div> -->
 <div class="p-col-10 p-sm-6 p-md-4 content">
     <div id="divFormResumo1" >
         <label><strong>Insira o texto para o resumo</strong> </label>

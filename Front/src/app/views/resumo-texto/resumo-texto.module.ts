@@ -6,7 +6,7 @@ import { ResumoTextoComponent } from './resumo-texto.component';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import { FormsModule }   from '@angular/forms';
 
-
+import {MenubarModule} from 'primeng/menubar';
 
 @NgModule({
   declarations: [ResumoTextoComponent],
@@ -14,7 +14,8 @@ import { FormsModule }   from '@angular/forms';
     CommonModule,
     ResumoTextoRoutingModule,
     InputTextareaModule,
-    FormsModule
+    FormsModule,
+    MenubarModule
   ]
 })
 export class ResumoTextoModule { }

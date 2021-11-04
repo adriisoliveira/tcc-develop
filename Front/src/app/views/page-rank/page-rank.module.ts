@@ -6,6 +6,8 @@ import { PageRankComponent } from './page-rank.component';
 import {CardModule} from 'primeng/card';
 import {PanelModule} from 'primeng/panel';
 
+import {MenubarModule} from 'primeng/menubar';
+
 @NgModule({
   declarations: [PageRankComponent],
   imports: [
@@ -13,6 +15,7 @@ import {PanelModule} from 'primeng/panel';
     PageRankRoutingModule,
     CardModule,
     PanelModule,
+    MenubarModule
   ],
   
 })

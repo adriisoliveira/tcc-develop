@@ -1,9 +1,14 @@
-<div>
-    <button id="BtnDoResumo" (click)="doBackToMenu()"
-     pButton type="button" label="Entrar" class="p-col-12">Volatr ao Menu</button>
-</div>
-<div>
-</div>
+<p-menubar [model]="items">
+  <ng-template pTemplate="start">
+      <img src="../../../favicon1.ico" height="40" class="p-mr-2">
+  </ng-template>
+  <ng-template pTemplate="end">
+      <input type="text" pInputText placeholder="Search">
+  </ng-template>
+</p-menubar>
+<p>
+aaaa
+<p>
 <!--Barra de busca e table para rankear-->
 <!-- erro no componente ts, mesmo importando e colocando o schemas: [
 
@@ -63,7 +68,7 @@ Create a local variable for the datatable and name it dt.
 Define the global filter for the datatable. For input specify the filter type as contains.
 The keyup event of global filter input will be listened to for filtering.
  -->
-
+<div>
 <p-table #dt [columns]="cols" [value]="books" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
 totalRecords="totalRecords" pageLinks="3">
 <ng-template pTemplate="caption">
@@ -110,3 +115,4 @@ totalRecords="totalRecords" pageLinks="3">
   </tr>
 </ng-template>
 </p-table>
+</div>
