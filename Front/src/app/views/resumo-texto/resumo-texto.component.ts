@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-//parte do 31 front
 import { SummarizationService } from 'src/app/resources/services/summarization.service';
 
 
@@ -9,7 +8,6 @@ import { SummarizationService } from 'src/app/resources/services/summarization.s
   templateUrl: './resumo-texto.component.html',
   styleUrls: ['./resumo-texto.component.scss']
 })
-//parte do 31 front
 export class ResumoTextoComponent implements OnInit {  
   toSummarizeText: String;
   summarizedText: String;
@@ -28,7 +26,7 @@ export class ResumoTextoComponent implements OnInit {
   public doBackToMenu(): void{
     this.router.navigate(['dashboard'])
   }
-//parte do 31 front
+
   public setSummarizedText():void{
     console.log('funcional');
     this.summarizationService.summy(this.toSummarizeText, this.lineQuantity).subscribe(data => {this.summarizedText = data});
