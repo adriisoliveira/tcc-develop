@@ -1,5 +1,9 @@
-﻿using APIController.Business.Entity.Users;
+﻿
+using APIController.Business.Entity.Users;
+using APIController.Models;
+using APIController.Models.User;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -14,36 +18,49 @@ namespace APIController.Controllers
     [Route("auth")]
     public class AuthController : ControllerBase
     {
-        private readonly Microsoft.Extensions.Configuration.IConfiguration _config;
-        public AuthController(Microsoft.Extensions.Configuration.IConfiguration config)
+        private readonly Microsoft.Extensions.Configuration.IConfiguration _config; 
+
+        public AuthController(Microsoft.Extensions.Configuration.IConfiguration config )
         {
-            _config = config;
+            _config = config; 
         }
 
         [Route("authenticate")]
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult RequestToken([FromBody] User user)
+        public IActionResult GenerateToken([FromBody] UserLoginModel user)
         {
-            if (user.Name == "admin" && user.Password == "admin")
+            if (user.Login == "admin" && user.Password == "admin")
             {
                 var claims = new[]
                 {
-                    new Claim(ClaimTypes.Name, user.Name),
-                    new Claim(ClaimTypes.Role, user.Type.ToString())
+                    new Claim(ClaimTypes.Name, user.Login),
                 };
 
                 var credential = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["SecretKey"])),
                     SecurityAlgorithms.HmacSha256);
 
+                var tokenExpireDate = DateTime.Now.AddMinutes(20);
+
                 var token = new JwtSecurityToken(
                     issuer: "apicontroller",
                     audience: "apicontroller",
                     claims: claims,
-                    expires: DateTime.Now.AddSeconds(60),
+                    expires: tokenExpireDate,
                     signingCredentials: credential);
 
-                return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
+                var jwt = new JwtSecurityTokenHandler().WriteToken(token);
+
+                //_apiTokenLogService.Add(new ApiTokenLog(
+                //    Request.HttpContext.Connection.RemoteIpAddress.Address.ToString(),
+                //    Request.Headers["User-Agent"].ToString(),
+                //    jwt,
+                //    tokenExpireDate,
+                //    DateTime.UtcNow
+                //    ));
+
+                return StatusCode(201, new { jwt = jwt });
+                //return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
             }
             return BadRequest("E-mail ou senha incorretos");
         }

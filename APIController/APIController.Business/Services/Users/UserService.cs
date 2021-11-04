@@ -1,7 +1,6 @@
 ﻿using APIController.Business.Entity.Users;
 using APIController.Business.Interfaces.Repository.Users;
 using APIController.Business.Interfaces.Service.Users;
-using System;
 using System.Collections.Generic;
 
 namespace APIController.Business.Services.Users
