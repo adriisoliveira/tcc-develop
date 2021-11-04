@@ -1,57 +1,57 @@
 <div>
-    <button id="BtnDoResumo" (click)="doBackToMenu()"
-     pButton type="button" label="Entrar" class="p-col-12">Volatr ao Menu</button>
+  <button id="BtnDoResumo" (click)="doBackToMenu()"
+   pButton type="button" label="Entrar" class="p-col-12">Voltar ao Menu</button>
 </div>
 <div>
 </div>
 <!--Barra de busca e table para rankear-->
 <!-- erro no componente ts, mesmo importando e colocando o schemas: [
 
-    CUSTOM_ELEMENTS_SCHEMA
-  ], no module.ts e o custum ou No elements no @angular/core
- <p-card>
-    <div class="p-grid">
-        <div class="p-col-12 text-center">
-          <img src="./assets/Logo_PNG.png" width="40%" height="50%">
-          /*<i class="fas fa-car fa-4x" style="color: #007ad9;"></i>*/
-          <h2>Collectio</h2>
-        </div>
-         
-         
-         
+  CUSTOM_ELEMENTS_SCHEMA
+], no module.ts e o custum ou No elements no @angular/core
+<p-card>
+  <div class="p-grid">
+      <div class="p-col-12 text-center">
+        <img src="./assets/Logo_PNG.png" width="40%" height="50%">
+        /*<i class="fas fa-car fa-4x" style="color: #007ad9;"></i>*/
+        <h2>Collectio</h2>
       </div>
- </p-card>
- <p-panel >
-    <ng-template pTemplate="header">
-        Header content here
-    </ng-template>
-    Body Content
-    <ng-template pTemplate="footer">
-        Footer content here
-    </ng-template>
+       
+       
+       
+    </div>
+</p-card>
+<p-panel >
+  <ng-template pTemplate="header">
+      Header content here
+  </ng-template>
+  Body Content
+  <ng-template pTemplate="footer">
+      Footer content here
+  </ng-template>
 </p-panel>-->
 
 <!-- a Simple table to remember
-  <p-table [value]="books">
-    <ng-template pTemplate="header">
-        <tr>
-            <th>Name</th>
-            <th>Author</th>
-            <th>Price In Dollars</th>          
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-book>
-        <tr>
-            <td>{{book.name}}</td>
-            <td>{{book.author}}</td>
-            <td>{{book.price}}</td>          
-        </tr>
-    </ng-template>
-  </p-table> -->
-  <!-- use of the angular ng for directive to iterate the 
-    cols field to get the column headers as well as the row data. -->
+<p-table [value]="books">
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Name</th>
+          <th>Author</th>
+          <th>Price In Dollars</th>          
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-book>
+      <tr>
+          <td>{{book.name}}</td>
+          <td>{{book.author}}</td>
+          <td>{{book.price}}</td>          
+      </tr>
+  </ng-template>
+</p-table> -->
+<!-- use of the angular ng for directive to iterate the 
+  cols field to get the column headers as well as the row data. -->
 <!-- Details datatable
-    attributes for the datatable-
+  attributes for the datatable-
 paginator - We set the paginate property to true to enable Pagination for the datatable
 rows - We define how many rows should be displayed per page.
 rowsPerPageOptions - Allow the user to choose the number of rows he wants per page.
@@ -62,51 +62,51 @@ to Filter
 Create a local variable for the datatable and name it dt.
 Define the global filter for the datatable. For input specify the filter type as contains.
 The keyup event of global filter input will be listened to for filtering.
- -->
+-->
 
 <p-table #dt [columns]="cols" [value]="books" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
 totalRecords="totalRecords" pageLinks="3">
 <ng-template pTemplate="caption">
-  <div style="text-align: right">        
-      <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
-      <input type="text" pInputText size="50" placeholder="Global Filter" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
-  </div>
+<div style="text-align: right">        
+    <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+    <input type="text" pInputText size="50" placeholder="Pesquisa Geral" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
+</div>
 </ng-template>
 <!-- Delete #dt and this part of code is dont use the global search
-    <ng-template pTemplate="caption">
-  <div style="text-align: right">        
-      <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
-      <input type="text" pInputText size="50" placeholder="Global Filter" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
-  </div>
+  <ng-template pTemplate="caption">
+<div style="text-align: right">        
+    <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+    <input type="text" pInputText size="50" placeholder="Global Filter" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
+</div>
 </ng-template>
- -->
+-->
 <ng-template pTemplate="header" let-columns>
-  <tr>
-    <th *ngFor="let col of columns">
-      {{col.header}}
+<tr>
+  <th *ngFor="let col of columns">
+    {{col.header}}
+  </th>
+</tr>
+
+<!-- If needed use to filter inside a colun -->
+<tr>
+    <th *ngFor="let col of columns" [ngSwitch]="col.field">
+      <input *ngSwitchCase="'name'" pInputText type="text"
+        (input)="dt.filter($event.target.value, col.field, 'contains')" placeholder="pesquisar por coluna" />
+
+        <!-- use this if we need a costum search, if dont delete te allAuthos
+        from component too used the Dropdown module tu this work -->
+          
+    <!-- <p-dropdown *ngSwitchCase="'author'" [options]="allAuthors" 
+    [style]="{'width':'100%'}" (onChange)="dt.filter($event.value, col.field, 'equals')"></p-dropdown> -->
     </th>
-  </tr>
-
-  <!-- If needed use to filter inside a colun -->
-  <tr>
-      <th *ngFor="let col of columns" [ngSwitch]="col.field">
-        <input *ngSwitchCase="'name'" pInputText type="text"
-          (input)="dt.filter($event.target.value, col.field, 'contains')" />
-
-          <!-- use this if we need a costum search, if dont delete te allAuthos
-          from component too used the Dropdown module tu this work -->
-            
-      <p-dropdown *ngSwitchCase="'author'" [options]="allAuthors" 
-      [style]="{'width':'100%'}" (onChange)="dt.filter($event.value, col.field, 'equals')"></p-dropdown>
-      </th>
-  </tr>
+</tr>
 
 </ng-template>
 <ng-template pTemplate="body" let-rowData let-columns="columns">
-  <tr>
-    <td *ngFor="let col of columns">
-      {{rowData[col.field]}}
-    </td>
-  </tr>
+<tr>
+  <td *ngFor="let col of columns">
+    {{rowData[col.field]}}
+  </td>
+</tr>
 </ng-template>
 </p-table>

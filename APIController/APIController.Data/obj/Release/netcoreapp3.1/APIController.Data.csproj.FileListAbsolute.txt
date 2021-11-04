@@ -1,0 +1,16 @@
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\bin\Release\netcoreapp3.1\APIController.Data.deps.json
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\bin\Release\netcoreapp3.1\APIController.Data.runtimeconfig.json
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\bin\Release\netcoreapp3.1\APIController.Data.runtimeconfig.dev.json
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\bin\Release\netcoreapp3.1\APIController.Data.dll
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\bin\Release\netcoreapp3.1\APIController.Data.pdb
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\bin\Release\netcoreapp3.1\APIController.Business.dll
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\bin\Release\netcoreapp3.1\APIController.Business.pdb
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\obj\Release\netcoreapp3.1\APIController.Data.csproj.AssemblyReference.cache
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\obj\Release\netcoreapp3.1\APIController.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\obj\Release\netcoreapp3.1\APIController.Data.AssemblyInfoInputs.cache
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\obj\Release\netcoreapp3.1\APIController.Data.AssemblyInfo.cs
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\obj\Release\netcoreapp3.1\APIController.Data.csproj.CoreCompileInputs.cache
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\obj\Release\netcoreapp3.1\APIController.Data.csproj.CopyComplete
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\obj\Release\netcoreapp3.1\APIController.Data.dll
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\obj\Release\netcoreapp3.1\APIController.Data.pdb
+C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController.Data\obj\Release\netcoreapp3.1\APIController.Data.genruntimeconfig.cache

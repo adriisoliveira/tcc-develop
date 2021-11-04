@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router'; 
+import { ButtonModule } from 'primeng';
 
 //to use for get a menuBar for PrimeNG
-import {MenuItem} from 'primeng/api';
+import {MenuItem } from 'primeng/api';
+import {Menubar} from 'primeng/primeng';
+import { Button } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,7 +14,7 @@ import {MenuItem} from 'primeng/api';
 })
 export class DashboardComponent implements OnInit {
 
-  items: MenuItem[];
+  items: MenuItem[]; 
 
   constructor(
     private router: Router
@@ -22,7 +25,7 @@ export class DashboardComponent implements OnInit {
     //menu bar itens
     this.items = [
       {
-        label:'File',
+        label:'Arquivos',
         icon:'pi pi-fw pi-file',
         items:[
             {
@@ -53,45 +56,23 @@ export class DashboardComponent implements OnInit {
             }
         ]
     },
+    
     {
-        label:'Edit',
-        icon:'pi pi-fw pi-pencil',
-        items:[
-            {
-                label:'Left',
-                icon:'pi pi-fw pi-align-left'
-            },
-            {
-                label:'Right',
-                icon:'pi pi-fw pi-align-right'
-            },
-            {
-                label:'Center',
-                icon:'pi pi-fw pi-align-center'
-            },
-            {
-                label:'Justify',
-                icon:'pi pi-fw pi-align-justify'
-            },
-
-        ]
-    },
-    {
-        label:'Users',
+        label:'Usuarios',
         icon:'pi pi-fw pi-user',
         items:[
             {
-                label:'New',
+                label:'Novo',
                 icon:'pi pi-fw pi-user-plus',
-
+                
             },
             {
-                label:'Delete',
+                label:'Deletar',
                 icon:'pi pi-fw pi-user-minus',
 
             },
             {
-                label:'Search',
+                label:'Busca',
                 icon:'pi pi-fw pi-users',
                 items:[
                 {
@@ -113,40 +94,30 @@ export class DashboardComponent implements OnInit {
         ]
     },
     {
-        label:'Events',
-        icon:'pi pi-fw pi-calendar',
-        items:[
-            {
-                label:'Edit',
-                icon:'pi pi-fw pi-pencil',
-                items:[
-                {
-                    label:'Save',
-                    icon:'pi pi-fw pi-calendar-plus'
-                },
-                {
-                    label:'Delete',
-                    icon:'pi pi-fw pi-calendar-minus'
-                },
-
-                ]
-            },
-            {
-                label:'Archieve',
-                icon:'pi pi-fw pi-calendar-times',
-                items:[
-                {
-                    label:'Remove',
-                    icon:'pi pi-fw pi-calendar-minus'
-                }
-                ]
-            }
-        ]
+        label:'Resumo',
+        icon:'pi pi-fw pi-book',
+        id: 'btnResumo',
+        url: '/resumo-texto',
     },
     {
-        label:'Quit',
-        icon:'pi pi-fw pi-power-off'
-    }
+        label:'Sugestionador',
+        icon:'pi pi-fw pi-search-plus',
+        id: 'btnSugestionador',
+        url: '/page-rank',
+    },
+    {
+        label:'Sobre Nós',
+        icon:'pi pi-fw pi-info-circle',
+        id: 'btnSugestionador',
+        url: '/books',
+    },
+    {
+        label:'Sair',
+        icon:'pi pi-fw pi-power-off',
+        url: '/login',
+        id: 'btnQuit',
+    },
+    
 ];
 }
 
