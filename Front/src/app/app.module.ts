@@ -12,7 +12,9 @@ import { LoginComponent } from './views/login/login.component';
 import { BookDataComponent } from './book-data/book-data.component';
 import { TableModule } from 'primeng/table';
 import { PageRankComponent } from './views/page-rank/page-rank.component';
-import {DropdownModule} from 'primeng/dropdown';
+import {DropdownModule} from 'primeng/dropdown'; 
+
+import {MenubarModule} from 'primeng/menubar';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, BookDataComponent, PageRankComponent],
@@ -26,7 +28,8 @@ import {DropdownModule} from 'primeng/dropdown';
     InputTextModule,
     ButtonModule,
     TableModule,
-    DropdownModule
+    DropdownModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent],

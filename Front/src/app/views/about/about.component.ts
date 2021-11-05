@@ -21,19 +21,19 @@ export class AboutComponent implements OnInit {
     this.items = [
           
       {
-        label:'Home',
-        icon:'pi pi-fw pi-home',
-        id: 'btnDashboard',
-        url: '/#/dashboard',
-    },
-    {
-      label:'Resumo',
-      icon:'pi pi-fw pi-book',
-      id: 'btnResumo',
-      url: '/#/resumo-texto',
-    },
+          label:'Home',
+          icon:'pi pi-fw pi-home',
+          id: 'btnDashboard',
+          url: '/#/dashboard',
+      },
       {
-          label:'Sugestionador',
+        label:'Resumo',
+        icon:'pi pi-fw pi-book',
+        id: 'btnResumo',
+        url: '/#/resumo-texto',
+      },
+      {
+          label:'Recomendador',
           icon:'pi pi-fw pi-search-plus',
           id: 'btnSugestionador',
           url: '/#/page-rank',

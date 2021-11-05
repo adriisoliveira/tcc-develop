@@ -45,6 +45,7 @@ const routes: Routes = [
     ),
   },
 
+  
   //redirecionamento caso n ache uma rota
   {path:'**', redirectTo: ''},
 ];

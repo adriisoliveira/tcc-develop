@@ -36,8 +36,9 @@ import {MenuItem} from 'primeng/api';
         id: 'btnResumo',
         url: '/#/resumo-texto',
       },
+      
       {
-          label:'Sugestionador',
+          label:'Recomendador',
           icon:'pi pi-fw pi-search-plus',
           id: 'btnSugestionador',
           url: '/#/page-rank',
