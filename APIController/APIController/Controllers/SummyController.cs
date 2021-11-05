@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace APIController.Controllers
 {
-    [Authorize()]
+    //[Authorize()]
     [ApiController]
     [Route("summarization")]
     public class SummyController : ControllerBase

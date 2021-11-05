@@ -1,5 +1,6 @@
 ﻿using APISummarizationClient.Interfaces;
 using APISummarizationClient.Model;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace APISummarizationClient.Client
 {
     public class SummarizationClient : BaseClient, ISummarizationClient
     {
-        public SummarizationClient() : base("summy") { }
+        public SummarizationClient(IConfiguration configuration) : base("summy", configuration) { }
 
         public SummyLuhnData SummyLuhn(string text, int lineQuantity)
         {

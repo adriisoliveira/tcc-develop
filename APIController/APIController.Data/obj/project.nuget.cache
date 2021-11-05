@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "T5QAE484HGCxWT0B6fPDmcMSJesOuYoO7Spswc9wOnk/wWPbRCHwLDbIuiQqtn+VzRccouG8tgB7pfeHG6wKIg==",
+  "dgSpecHash": "WZIywDPh+7X97bLyskqroiMIbLIxo3kPZ9Y/vioargZhyx2fyV8lGK79+LzBI2MhdQmxBbCfgSvsH+DTe7tRDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\Logan\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.10\\microsoft.entityframeworkcore.tools.5.0.10.nupkg.sha512",
     "C:\\Users\\Logan\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Logan\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "C:\\Users\\Logan\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\Logan\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Logan\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\Logan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",

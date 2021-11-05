@@ -1,4 +1,6 @@
-﻿using APIController.Business.Entity.Users;
+﻿using APIController.Business.Entity.Logs;
+using APIController.Business.Entity.Users;
+using APIController.Business.Interfaces.Service.Logs;
 using APIController.Models;
 using APIController.Models.User;
 using Microsoft.AspNetCore.Authorization;
@@ -12,21 +14,22 @@ using System.Text;
 
 namespace APIController.Controllers
 {
-    [ApiController]
     [Route("auth")]
-    [EnableCors("EnableAllCrossOriginRequests")]
-    public class AuthController : ControllerBase
+    public class AuthController : BaseController
     {
         private readonly Microsoft.Extensions.Configuration.IConfiguration _config;
-        public AuthController(Microsoft.Extensions.Configuration.IConfiguration config)
+        private readonly IApiTokenLogService _apiTokenLogService;
+
+        public AuthController(Microsoft.Extensions.Configuration.IConfiguration config, IApiTokenLogService apiTokenLogService)
         {
             _config = config;
+            _apiTokenLogService = apiTokenLogService;
         }
 
         [Route("authenticate")]
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult RequestToken([FromBody] UserLoginApiModel user)
+        public IActionResult GenerateToken([FromBody] UserLoginApiModel user)
         {
             if (user.Login == "admin" && user.Password == "admin")
             {
@@ -38,14 +41,26 @@ namespace APIController.Controllers
                 var credential = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["SecretKey"])),
                     SecurityAlgorithms.HmacSha256);
 
+                var tokenExpireDate = DateTime.Now.AddMinutes(20);
+
                 var token = new JwtSecurityToken(
                     issuer: "apicontroller",
                     audience: "apicontroller",
                     claims: claims,
-                    expires: DateTime.Now.AddMinutes(20),
+                    expires: tokenExpireDate,
                     signingCredentials: credential);
+                
+                var jwt = new JwtSecurityTokenHandler().WriteToken(token);
 
-                return StatusCode(201, new { jwt = new JwtSecurityTokenHandler().WriteToken(token) });
+                _apiTokenLogService.Add(new ApiTokenLog(
+                    Request.HttpContext.Connection.RemoteIpAddress.ToString(),
+                    Request.Headers["User-Agent"].ToString(),
+                    jwt,
+                    tokenExpireDate,
+                    DateTime.UtcNow
+                    ));
+                
+                return StatusCode(201, new { jwt = jwt });
                 //return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
             }
             return BadRequest("E-mail ou senha incorretos");

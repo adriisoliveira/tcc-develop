@@ -198,5 +198,12 @@ C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\ob
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.dll
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.pdb
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.genruntimeconfig.cache
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.xml
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.csproj.CoreCompileInputs.cache
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll

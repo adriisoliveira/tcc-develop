@@ -23,7 +23,6 @@ C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIControlle
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.csprojAssemblyReference.cache
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.AssemblyInfoInputs.cache
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.AssemblyInfo.cs
-C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.csproj.CoreCompileInputs.cache
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.csproj.CopyComplete
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.pdb
@@ -44,3 +43,4 @@ C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Da
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.dll
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.pdb
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.genruntimeconfig.cache
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.csproj.CoreCompileInputs.cache
