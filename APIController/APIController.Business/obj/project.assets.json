@@ -8,44 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\johny\\.nuget\\packages\\": {},
+    "C:\\Users\\Dri\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
-=======
-    "C:\\Users\\alqueiroz\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
+      "projectUniqueName": "H:\\Repository\\tcc-develop-tcc57\\APIController\\APIController.Business\\APIController.Business.csproj",
       "projectName": "APIController.Business",
-      "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
-      "packagesPath": "C:\\Users\\johny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Business\\obj\\",
+      "projectPath": "H:\\Repository\\tcc-develop-tcc57\\APIController\\APIController.Business\\APIController.Business.csproj",
+      "packagesPath": "C:\\Users\\Dri\\.nuget\\packages\\",
+      "outputPath": "H:\\Repository\\tcc-develop-tcc57\\APIController\\APIController.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\johny\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj",
-      "projectName": "APIController.Business",
-      "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj",
-      "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\obj\\",
-      "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
-      "configFilePaths": [
-        "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
+        "C:\\Users\\Dri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -54,13 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-<<<<<<< HEAD
-        "https://www.nuget.org/api/v2": {}
-=======
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.rdisoftware.com/nuget": {},
-        "https://repo.rdisoftware.com/artifactory/api/nuget/rdi-nuget-virtual": {}
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -92,11 +65,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
       }
     }
   }

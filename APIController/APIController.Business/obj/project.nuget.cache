@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "oBESKis/DJ+AbYV9rLo0ppUFjEUfADUMBKAayFeOQNPikKQ6nM1sJP5hwx9afGC+PsDvWBW8SB73gYTMN5ZeSA==",
+  "dgSpecHash": "8tV3Fvfn37CkZZ4rQKcdi1wGtytrIs9y/iaOOwNhnWzTybLAqSpXVqWJ1Pp+Jxhcd+W5rWGWNkYFBvM0bk3vZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
-=======
-  "dgSpecHash": "fR/aacFaFm1B/CXL6zVtpSM0klkQlOnB/bh9OjOl4r2VftRcJO3CoFAj1ahV/MEGRZIdoooMugcZjL1IetNzbQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj",
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
+  "projectFilePath": "H:\\Repository\\tcc-develop-tcc57\\APIController\\APIController.Business\\APIController.Business.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

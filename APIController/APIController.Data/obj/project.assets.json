@@ -208,6 +208,19 @@
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
+      "Microsoft.Extensions.Configuration/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -1845,6 +1858,26 @@
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
         "microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/5.0.0": {
+      "sha512": "LN322qEKHjuVEhhXueTUe7RNePooZmS8aGid5aK2woX3NPjSnONFyKUc6+JknOS6ce6h2tCLfKPTBXE3mN/6Ag==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -5810,48 +5843,28 @@
       "APIController.Business >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.10",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.10"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.10",
+      "Microsoft.Extensions.Configuration >= 5.0.0"
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\johny\\.nuget\\packages\\": {},
+    "C:\\Users\\Dri\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
-=======
-    "C:\\Users\\alqueiroz\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj",
+      "projectUniqueName": "H:\\Repository\\tcc-develop-tcc57\\APIController\\APIController.Data\\APIController.Data.csproj",
       "projectName": "APIController.Data",
-      "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj",
-      "packagesPath": "C:\\Users\\johny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Data\\obj\\",
+      "projectPath": "H:\\Repository\\tcc-develop-tcc57\\APIController\\APIController.Data\\APIController.Data.csproj",
+      "packagesPath": "C:\\Users\\Dri\\.nuget\\packages\\",
+      "outputPath": "H:\\Repository\\tcc-develop-tcc57\\APIController\\APIController.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\johny\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Data\\APIController.Data.csproj",
-      "projectName": "APIController.Data",
-      "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Data\\APIController.Data.csproj",
-      "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Data\\obj\\",
-      "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
-      "configFilePaths": [
-        "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
+        "C:\\Users\\Dri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5860,25 +5873,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-<<<<<<< HEAD
-        "https://www.nuget.org/api/v2": {}
-=======
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.rdisoftware.com/nuget": {},
-        "https://repo.rdisoftware.com/artifactory/api/nuget/rdi-nuget-virtual": {}
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-<<<<<<< HEAD
-            "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {
-              "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj"
-=======
-            "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj": {
-              "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj"
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
+            "H:\\Repository\\tcc-develop-tcc57\\APIController\\APIController.Business\\APIController.Business.csproj": {
+              "projectPath": "H:\\Repository\\tcc-develop-tcc57\\APIController\\APIController.Business\\APIController.Business.csproj"
             }
           }
         }
@@ -5906,6 +5908,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.10, )"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           }
         },
         "imports": [
@@ -5923,11 +5929,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
       }
     }
   }

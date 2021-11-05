@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-﻿using APIController.Business.Entity.Users;
-using APIController.Models;
-=======
-﻿
+﻿using APIController.Business.Entity.Logs;
 using APIController.Business.Entity.Users;
+using APIController.Business.Interfaces.Service.Logs;
 using APIController.Models;
 using APIController.Models.User;
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -18,26 +14,22 @@ using System.Text;
 
 namespace APIController.Controllers
 {
-    [ApiController]
     [Route("auth")]
-    [EnableCors("EnableAllCrossOriginRequests")]
-    public class AuthController : ControllerBase
+    public class AuthController : BaseController
     {
-        private readonly Microsoft.Extensions.Configuration.IConfiguration _config; 
+        private readonly Microsoft.Extensions.Configuration.IConfiguration _config;
+        private readonly IApiTokenLogService _apiTokenLogService;
 
-        public AuthController(Microsoft.Extensions.Configuration.IConfiguration config )
+        public AuthController(Microsoft.Extensions.Configuration.IConfiguration config, IApiTokenLogService apiTokenLogService)
         {
-            _config = config; 
+            _config = config;
+            _apiTokenLogService = apiTokenLogService;
         }
 
         [Route("authenticate")]
         [AllowAnonymous]
         [HttpPost]
-<<<<<<< HEAD
-        public IActionResult RequestToken([FromBody] UserLogin user)
-=======
-        public IActionResult GenerateToken([FromBody] UserLoginModel user)
->>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
+        public IActionResult GenerateToken([FromBody] UserLoginApiModel user)
         {
             if (user.Login == "admin" && user.Password == "admin")
             {
@@ -57,17 +49,17 @@ namespace APIController.Controllers
                     claims: claims,
                     expires: tokenExpireDate,
                     signingCredentials: credential);
-
+                
                 var jwt = new JwtSecurityTokenHandler().WriteToken(token);
 
-                //_apiTokenLogService.Add(new ApiTokenLog(
-                //    Request.HttpContext.Connection.RemoteIpAddress.Address.ToString(),
-                //    Request.Headers["User-Agent"].ToString(),
-                //    jwt,
-                //    tokenExpireDate,
-                //    DateTime.UtcNow
-                //    ));
-
+                _apiTokenLogService.Add(new ApiTokenLog(
+                    Request.HttpContext.Connection.RemoteIpAddress.ToString(),
+                    Request.Headers["User-Agent"].ToString(),
+                    jwt,
+                    tokenExpireDate,
+                    DateTime.UtcNow
+                    ));
+                
                 return StatusCode(201, new { jwt = jwt });
                 //return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
             }
