@@ -1,0 +1,10 @@
+{
+  "api": {
+<<<<<<< HEAD
+    "host": "http://localhost:4200"
+=======
+    "host": "http://localhost:5000"
+    //"host": "https://localhost:44312"
+>>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
+  }
+}
