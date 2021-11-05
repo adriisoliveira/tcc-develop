@@ -1,7 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 
-
+import {MenuItem} from 'primeng/api';
 import { Book, BookService } from '../../resources/services/book.service';
 
 @Component({
@@ -11,6 +11,7 @@ import { Book, BookService } from '../../resources/services/book.service';
 })
 export class PageRankComponent implements OnInit {
 
+  items: MenuItem[];
   books: Book[];
 
   //to use a Dynamic table inpute any coluns, coluns do html
@@ -27,6 +28,41 @@ export class PageRankComponent implements OnInit {
   ) { }
 
   ngOnInit()  {
+    this.items = [
+          
+      {
+        label:'Home',
+        icon:'pi pi-fw pi-home',
+        id: 'btnDashboard',
+        url: '/#/dashboard',
+    },
+    {
+      label:'Resumo',
+      icon:'pi pi-fw pi-book',
+      id: 'btnResumo',
+      url: '/#/resumo-texto',
+    },
+      {
+          label:'Sugestionador',
+          icon:'pi pi-fw pi-search-plus',
+          id: 'btnSugestionador',
+          url: '/#/page-rank',
+      },
+      {
+          label:'Sobre Nós',
+          icon:'pi pi-fw pi-info-circle',
+          id: 'btnSugestionador',
+          url: '/#/about',
+      },
+      {
+          label:'Sair',
+          icon:'pi pi-fw pi-power-off',
+          url: '/#/login',
+          id: 'btnQuit',
+      },
+      
+    ];
+
     this.bookService.getBooks().
       then(books => this.books = books);
 
@@ -55,8 +91,8 @@ export class PageRankComponent implements OnInit {
 
   }
 
-  public doBackToMenu(): void{
-      this.router.navigate(['dashboard'])
-  }
+  // public doBackToMenu(): void{
+  //     this.router.navigate(['dashboard'])
+  // }
 
 }

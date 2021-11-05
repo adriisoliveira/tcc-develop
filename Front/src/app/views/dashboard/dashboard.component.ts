@@ -1,162 +1,71 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 //to use for get a menuBar for PrimeNG
 import {MenuItem} from 'primeng/api';
 
+
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
-})
-export class DashboardComponent implements OnInit {
-
-  items: MenuItem[];
-
-  constructor(
-    private router: Router
-    ) { }
-
-  //norvamente :void
-  ngOnInit(){
-    //menu bar itens
-    this.items = [
+    selector: 'app-dashboard',
+    templateUrl: './dashboard.component.html',
+    styleUrls: ['./dashboard.component.scss']
+  })
+  export class DashboardComponent implements OnInit {
+  
+    items: MenuItem[]; 
+  
+    constructor(
+      private router: Router
+      ) { }
+  
+    //norvamente :void
+    ngOnInit(){
+      //menu bar itens
+      this.items = [
+          
       {
-        label:'File',
-        icon:'pi pi-fw pi-file',
-        items:[
-            {
-                label:'New',
-                icon:'pi pi-fw pi-plus',
-                items:[
-                {
-                    label:'Bookmark',
-                    icon:'pi pi-fw pi-bookmark'
-                },
-                {
-                    label:'Video',
-                    icon:'pi pi-fw pi-video'
-                },
-
-                ]
-            },
-            {
-                label:'Delete',
-                icon:'pi pi-fw pi-trash'
-            },
-            {
-                separator:true
-            },
-            {
-                label:'Export',
-                icon:'pi pi-fw pi-external-link'
-            }
-        ]
-    },
-    {
-        label:'Edit',
-        icon:'pi pi-fw pi-pencil',
-        items:[
-            {
-                label:'Left',
-                icon:'pi pi-fw pi-align-left'
-            },
-            {
-                label:'Right',
-                icon:'pi pi-fw pi-align-right'
-            },
-            {
-                label:'Center',
-                icon:'pi pi-fw pi-align-center'
-            },
-            {
-                label:'Justify',
-                icon:'pi pi-fw pi-align-justify'
-            },
-
-        ]
-    },
-    {
-        label:'Users',
-        icon:'pi pi-fw pi-user',
-        items:[
-            {
-                label:'New',
-                icon:'pi pi-fw pi-user-plus',
-
-            },
-            {
-                label:'Delete',
-                icon:'pi pi-fw pi-user-minus',
-
-            },
-            {
-                label:'Search',
-                icon:'pi pi-fw pi-users',
-                items:[
-                {
-                    label:'Filter',
-                    icon:'pi pi-fw pi-filter',
-                    items:[
-                        {
-                            label:'Print',
-                            icon:'pi pi-fw pi-print'
-                        }
-                    ]
-                },
-                {
-                    icon:'pi pi-fw pi-bars',
-                    label:'List'
-                }
-                ]
-            }
-        ]
-    },
-    {
-        label:'Events',
-        icon:'pi pi-fw pi-calendar',
-        items:[
-            {
-                label:'Edit',
-                icon:'pi pi-fw pi-pencil',
-                items:[
-                {
-                    label:'Save',
-                    icon:'pi pi-fw pi-calendar-plus'
-                },
-                {
-                    label:'Delete',
-                    icon:'pi pi-fw pi-calendar-minus'
-                },
-
-                ]
-            },
-            {
-                label:'Archieve',
-                icon:'pi pi-fw pi-calendar-times',
-                items:[
-                {
-                    label:'Remove',
-                    icon:'pi pi-fw pi-calendar-minus'
-                }
-                ]
-            }
-        ]
-    },
-    {
-        label:'Quit',
-        icon:'pi pi-fw pi-power-off'
-    }
-];
-}
-
-  /*Metodo para modificar a a tela de Dashbord para Resumo */
-  public doResumo(): void{
-    this.router.navigate(['resumo-texto'])
+          label:'Home',
+          icon:'pi pi-fw pi-home',
+          id: 'btnDashboard',
+          url: '/#/dashboard',
+      },
+      {
+        label:'Resumo',
+        icon:'pi pi-fw pi-book',
+        id: 'btnResumo',
+        url: '/#/resumo-texto',
+      },
+      {
+          label:'Sugestionador',
+          icon:'pi pi-fw pi-search-plus',
+          id: 'btnSugestionador',
+          url: '/#/page-rank',
+      },
+      {
+          label:'Sobre Nós',
+          icon:'pi pi-fw pi-info-circle',
+          id: 'btnSugestionador',
+          url: '/#/about',
+      },
+      {
+          label:'Sair',
+          icon:'pi pi-fw pi-power-off',
+          url: '/#/login',
+          id: 'btnQuit',
+      },
+      
+  ];
   }
-
-  /*Metodo para modificar a a tela de Dashbord para Page Rank */
-  public doRank(): void{
-    this.router.navigate(['page-rank'])
+  
+    /*Metodo para modificar a a tela de Dashbord para Resumo */
+    // public doResumo(): void{
+    //   this.router.navigate(['resumo-texto'])
+    // }
+  
+    // /*Metodo para modificar a a tela de Dashbord para Page Rank */
+    // public doRank(): void{
+    //   this.router.navigate(['page-rank'])
+    // }
   }
-}
+  

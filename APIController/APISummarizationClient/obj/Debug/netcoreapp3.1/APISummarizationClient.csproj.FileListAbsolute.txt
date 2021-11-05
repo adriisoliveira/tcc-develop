@@ -7,6 +7,7 @@ C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummariza
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csproj.CoreCompileInputs.cache
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.pdb
+<<<<<<< HEAD
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.deps.json
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.dll
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.pdb
@@ -17,3 +18,15 @@ C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APISummarization
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csproj.CoreCompileInputs.cache
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.dll
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.pdb
+=======
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.deps.json
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.dll
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.pdb
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csproj.AssemblyReference.cache
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.AssemblyInfoInputs.cache
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.AssemblyInfo.cs
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csproj.CoreCompileInputs.cache
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.dll
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.pdb
+>>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI

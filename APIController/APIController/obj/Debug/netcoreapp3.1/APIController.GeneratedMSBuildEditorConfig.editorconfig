@@ -1,3 +1,7 @@
 is_global = true
 build_property.RootNamespace = APIController
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\
+=======
+build_property.ProjectDir = C:\Users\alqueiroz\Documents\TCC\JuntandoOsFuncionais\APIController\APIController\
+>>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI

@@ -28,6 +28,7 @@ C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIControlle
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.pdb
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.deps.json
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.runtimeconfig.json
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.runtimeconfig.dev.json
@@ -44,3 +45,21 @@ C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Da
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.dll
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.pdb
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.genruntimeconfig.cache
+=======
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.deps.json
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.runtimeconfig.json
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.runtimeconfig.dev.json
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.dll
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.pdb
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Business.dll
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Business.pdb
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.csproj.AssemblyReference.cache
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.AssemblyInfoInputs.cache
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.AssemblyInfo.cs
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.csproj.CoreCompileInputs.cache
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.csproj.CopyComplete
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.dll
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.pdb
+C:\Users\alqueiroz\Documents\TCC\novembro - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.genruntimeconfig.cache
+>>>>>>> feature/develop/TCC-31-Front-Controller-PythonAPI
