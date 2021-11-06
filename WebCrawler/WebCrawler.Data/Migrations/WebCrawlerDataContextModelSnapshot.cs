@@ -46,6 +46,11 @@ namespace WebCrawler.Data.Migrations
                     b.Property<DateTime?>("LastIndexing")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
                     b.Property<string>("Url")
                         .IsRequired()
                         .HasMaxLength(2048)
@@ -158,6 +163,27 @@ namespace WebCrawler.Data.Migrations
                     b.HasIndex("PageWordId");
 
                     b.ToTable("PageWordLocalizations");
+                });
+
+            modelBuilder.Entity("WebCrawler.Business.Entities.UrlCrawlerQueue", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("UrlCrawlerQueueId");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("WhenCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("WhenQueued")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UrlCrawlerQueue");
                 });
 
             modelBuilder.Entity("WebCrawler.Business.Entities.PageRank", b =>

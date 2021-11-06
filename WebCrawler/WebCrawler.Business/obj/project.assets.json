@@ -140,11 +140,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
+      "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
       "projectName": "WebCrawler.Business",
-      "projectPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
+      "projectPath": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
       "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Business\\obj\\",
+      "outputPath": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -1,15 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
+using System.IO;
+using WebCrawler.Business.Interfaces;
+using WebCrawler.Business.Interfaces.Repository.Url;
+using WebCrawler.Business.Interfaces.Repository.Word;
+using WebCrawler.Business.Interfaces.Services;
+using WebCrawler.Business.Services;
+using WebCrawler.Data.DataContext;
+using WebCrawler.Data.Repository.Url;
+using WebCrawler.Data.Repository.Word;
 
 namespace WebCrawler.API
 {
@@ -26,6 +29,29 @@ namespace WebCrawler.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            #region :: Injeção de Dependência
+            services.AddTransient<IScrapperService, ScrapperService>();
+            services.AddTransient<ICrawlerService, CrawlerService>();
+            services.AddTransient<IPageUrlService, PageUrlService>();
+            services.AddTransient<IUrlCrawlerQueueRepository, UrlCrawlerQueueRepository>();
+
+            services.AddTransient<IPageUrlRepository, PageUrlRepository>();
+            services.AddTransient<IPageWordRepository, PageWordRepository>();
+            services.AddTransient<IUrlCrawlerQueueRepository, UrlCrawlerQueueRepository>();
+
+            services.AddSingleton<IUnitOfWork, UnitOfWork>();
+            services.AddSingleton<WebCrawlerDataContext, WebCrawlerDataContext>();
+            
+            #endregion
+
+            services.AddMvc();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.IncludeXmlComments(Path.Combine(System.AppContext.BaseDirectory, "WebCrawler.API.xml"));
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebCrawler.API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +71,14 @@ namespace WebCrawler.API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.RoutePrefix = "swagger";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebCrawler.API");
             });
         }
     }

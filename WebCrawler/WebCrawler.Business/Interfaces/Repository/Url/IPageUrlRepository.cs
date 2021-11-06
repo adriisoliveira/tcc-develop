@@ -14,7 +14,7 @@ namespace WebCrawler.Business.Interfaces.Repository.Url
         PageUrl GetByUrl(string url);
         IEnumerable<PageUrl> GetAll();
         IEnumerable<PageUrl> GetAllToIndex();
-
+        IEnumerable<PageUrlBasicInfoDTO> GetAllBasicInfo(string searchText);
         void AddRelation(PageUrlRelation urlRelated);
         void RemoveRelationRange(IEnumerable<PageUrlRelation> urlRelations);
 

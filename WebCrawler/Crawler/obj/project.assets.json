@@ -5438,11 +5438,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\Crawler\\Crawler.csproj",
+      "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\Crawler\\Crawler.csproj",
       "projectName": "Crawler",
-      "projectPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\Crawler\\Crawler.csproj",
+      "projectPath": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\Crawler\\Crawler.csproj",
       "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\Crawler\\obj\\",
+      "outputPath": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\Crawler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -5462,11 +5462,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
-              "projectPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
+            "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
+              "projectPath": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
             },
-            "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
-              "projectPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj"
+            "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
+              "projectPath": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj"
             }
           }
         }

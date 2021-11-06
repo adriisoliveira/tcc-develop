@@ -9,12 +9,14 @@ namespace WebCrawler.Business.Entities
         {
             Id = Guid.NewGuid();
         }
-        public PageUrl(string url) : this()
+        public PageUrl(string title, string url) : this()
         {
+            Title = title;
             Url = url;
         }
 
         public string Url { get; set; }
+        public string Title { get; set; }
 
         public DateTime? LastIndexing { get; set; }
         public ICollection<PageUrlRelation> RelatedUrls { get; set; }

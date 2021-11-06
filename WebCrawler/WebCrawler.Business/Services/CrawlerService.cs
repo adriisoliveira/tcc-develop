@@ -21,13 +21,15 @@ namespace WebCrawler.Business.Services
         protected string[] _lastPages;
         protected int _pagesCount;
         protected IPageUrlRepository _urlRepository;
+        protected IUrlCrawlerQueueRepository _urlCrawlerQueueRepository;
         protected IUnitOfWork _uow;
-        public CrawlerService(IPageUrlRepository urlRepository, IUnitOfWork uow)
+        public CrawlerService(IPageUrlRepository urlRepository, IUnitOfWork uow, IUrlCrawlerQueueRepository urlCrawlerQueueRepository)
         {
             _lastPages = new string[10];
             _pagesCount = 0;
             _urlRepository = urlRepository;
             _uow = uow;
+            _urlCrawlerQueueRepository = urlCrawlerQueueRepository;
         }
 
         private bool ValidateUrlToCrawler(string url)
@@ -58,15 +60,17 @@ namespace WebCrawler.Business.Services
                 ConsoleUtils.OutputConsole(CRAWLER_OUTPUT_PREFFIX, "Acessando a página \"{0}\".", url);
                 LastPagesManage(url);
 
-                //Salva em banco
-                if(!_urlRepository.Exists(url))
-                    _urlRepository.Add(new PageUrl(url));
-
                 string page = new WebClient().DownloadString(url);
                 var htmlDoc = new HtmlDocument();
 
                 htmlDoc.LoadHtml(page);
                 
+                var pageTitle = htmlDoc.DocumentNode.SelectSingleNode("//title").InnerText;
+
+                //Salva em banco
+                if (!_urlRepository.Exists(url))
+                    _urlRepository.Add(new PageUrl(pageTitle, url));
+
                 //TODO: avaliar a possibilidade de pegar apenas dominios externos após uma certa quantidade de iteração
                 var pageLinks = HTMLDocHelper.GetHtmlDocumentLinks(htmlDoc);
 
@@ -98,6 +102,25 @@ namespace WebCrawler.Business.Services
         {
             return _urlRepository.GetAllToIndex();
         }
+
+        public IEnumerable<UrlCrawlerQueue> GetAllUrlCrawlerQueue()
+        {
+            return _urlCrawlerQueueRepository.GetAll();
+        }
+
+        public string PopUrlCrawlerQueue()
+        {
+            return _urlCrawlerQueueRepository.PopUrlCrawlerQueue();
+        }
+
+        public UrlCrawlerQueue EnqueueUrl(string url)
+        {
+            var urlToQueue = new UrlCrawlerQueue(url);
+            urlToQueue.WhenQueued = DateTime.UtcNow;
+
+            return _urlCrawlerQueueRepository.Add(urlToQueue);
+        }
+
         #region :: Métodos Privados
         private void LastPagesManage(string url)
         {

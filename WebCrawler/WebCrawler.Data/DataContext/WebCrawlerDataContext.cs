@@ -17,6 +17,7 @@ namespace WebCrawler.Data.DataContext
         public DbSet<PageWord> PageWords { get; set; }
         public DbSet<PageWordLocalization> PageWordLocalizations { get; set; }
         public DbSet<PageRank> PageRanks { get; set; }
+        public DbSet<UrlCrawlerQueue> UrlCrawlerQueue { get; set; }
         #endregion
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -32,6 +33,7 @@ namespace WebCrawler.Data.DataContext
             modelBuilder.ApplyConfiguration(new PageUrlPageWordConfig());
             modelBuilder.ApplyConfiguration(new PageWordLocalizationConfig());
             modelBuilder.ApplyConfiguration(new PageRankConfig());
+            modelBuilder.ApplyConfiguration(new UrlCrawlerQueueConfig());
 
             base.OnModelCreating(modelBuilder);
         }

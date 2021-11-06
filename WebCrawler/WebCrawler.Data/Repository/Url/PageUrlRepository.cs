@@ -49,6 +49,32 @@ namespace WebCrawler.Data.Repository.Url
         {
             return DbSet.OrderBy(e => e.LastIndexing).ToList();
         }
+
+        public IEnumerable<PageUrlBasicInfoDTO> GetAllBasicInfo(string searchText)
+        {
+            //var result2 = Db
+            //    .PageWords
+            //    .Where(e => e.Word.Contains(searchText))
+            //    .Select(e => e.Id);
+            //var result3 = DbSet.Where(e => e.Words.Any(x => result2.Contains(x.PageWordId)));
+
+            return DbSet
+                .Include(e => e.Words)
+                .Include(e => e.Rank)
+                //.Include(e => e.Words.Select(e => e.PageWord))
+                .Where(e => e.Words.Any(w => w.PageWord.Word.Contains(searchText)))
+                .Select(e => new PageUrlBasicInfoDTO
+                {
+                    PageUrlId = e.Id,
+                    LastIndexing = e.LastIndexing,
+                    LastRanking = e.Rank.LastRanking,
+                    PageRankPonctuation = e.Rank.Ponctuation,
+                    Url = e.Url
+                })
+                .ToList();
+                //.OrderBy(e => e.LastIndexing).ToList();
+        }
+
         public Guid? GetPageUrlIdByUrl(string url)
         {
             return DbSet.Where(e => e.Url == url).Select(e => e.Id).FirstOrDefault();

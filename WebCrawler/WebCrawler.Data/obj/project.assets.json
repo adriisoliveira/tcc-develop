@@ -5514,11 +5514,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
       "projectName": "WebCrawler.Data",
-      "projectPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
+      "projectPath": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
       "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Data\\obj\\",
+      "outputPath": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -5538,8 +5538,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
-              "projectPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
+            "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
+              "projectPath": "C:\\Users\\Logan\\source\\repos\\Crawler\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
             }
           }
         }

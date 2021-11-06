@@ -11,6 +11,7 @@ namespace WebCrawler.Data.EntityConfig
             builder.HasKey(e => e.Id);
             builder.Property(e => e.Id).HasColumnName("PageUrlId");
             builder.Property(e => e.Url).IsRequired().HasMaxLength(2048);
+            builder.Property(e => e.Title).IsRequired().HasMaxLength(255);
 
             builder.HasMany(e => e.RelatedUrls).WithOne(e => e.PageUrlOrigin).OnDelete(DeleteBehavior.Restrict);
         }
