@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8o0jdGy+uZpVzyJJkxX5qpz4X7Gb8BPyT2Oqd+3ihs/KmsTsb0tNdeRBx4BmbnTuPITOal15WhSCN38BLlRk7g==",
+  "dgSpecHash": "EEQWfSzYMHKysUiGl7WS4h1jAcL/CAvENIIIlEsKe1Pq5dG4JX1jAssBzzKuF2oZ0GZeQrrJxIacnFyGeKQODA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+  "projectFilePath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johny\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\johny\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",

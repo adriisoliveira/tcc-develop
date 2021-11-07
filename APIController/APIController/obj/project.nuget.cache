@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZYUOO+aCiZxajXqvF0vCHypJ5wreMEkp9r6pZ8Y8Y4m8krnzwuaEL5UiQVlozJ5mKokmniQ324ExYZmrcdbK4w==",
+  "dgSpecHash": "C7BcvF9NdaVJi1zFov3qxRdMvzse5TTYd8YjlvLmMPJLpJvzcPhu4k1aP2BVtnB7u380eRWVQibRYJMoY0nhGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController\\APIController.csproj",
+  "projectFilePath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController\\APIController.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johny\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.0\\microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",
     "C:\\Users\\johny\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -23,7 +23,7 @@ namespace APIController.Controllers
         public AuthController(Microsoft.Extensions.Configuration.IConfiguration config, IApiTokenLogService apiTokenLogService)
         {
             _config = config;
-            _apiTokenLogService = apiTokenLogService;
+            //_apiTokenLogService = apiTokenLogService;
         }
 
         [Route("authenticate")]
@@ -52,13 +52,13 @@ namespace APIController.Controllers
                 
                 var jwt = new JwtSecurityTokenHandler().WriteToken(token);
 
-                _apiTokenLogService.Add(new ApiTokenLog(
+                /*_apiTokenLogService.Add(new ApiTokenLog(
                     Request.HttpContext.Connection.RemoteIpAddress.ToString(),
                     Request.Headers["User-Agent"].ToString(),
                     jwt,
                     tokenExpireDate,
                     DateTime.UtcNow
-                    ));
+                    ));*/
                 
                 return StatusCode(201, new { jwt = jwt });
                 //return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });

@@ -1,7 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 
-import {MenuItem} from 'primeng/api';
+import { MenuItem } from 'primeng/api';
 import { Book, BookService } from '../../resources/services/book.service';
 
 @Component({
@@ -29,12 +29,11 @@ export class PageRankComponent implements OnInit {
 
   ngOnInit()  {
     this.items = [
-          
       {
-          label:'Home',
-          icon:'pi pi-fw pi-home',
-          id: 'btnDashboard',
-          url: '/#/dashboard',
+        label:'Home',
+        icon:'pi pi-fw pi-home',
+        id: 'btnDashboard',
+        url: '/#/dashboard',
       },
       {
         label:'Resumo',
@@ -43,25 +42,24 @@ export class PageRankComponent implements OnInit {
         url: '/#/resumo-texto',
       },
       {
-          label:'Recomendador',
-          icon:'pi pi-fw pi-search-plus',
-          id: 'btnSugestionador',
-          url: '/#/page-rank',
+        label:'Recomendador',
+        icon:'pi pi-fw pi-search-plus',
+        id: 'btnSugestionador',
+        url: '/#/page-rank',
       },
       {
-          label:'Sobre Nós',
-          icon:'pi pi-fw pi-info-circle',
-          id: 'btnSugestionador',
-          url: '/#/about',
+        label:'Sobre Nós',
+        icon:'pi pi-fw pi-info-circle',
+        id: 'btnSugestionador',
+        url: '/#/about',
       },
       {
-          label:'Sair',
-          icon:'pi pi-fw pi-power-off',
-          url: '/#/login',
-          id: 'btnQuit',
+        label:'Sair',
+        icon:'pi pi-fw pi-power-off',
+        url: '/#/login',
+        id: 'btnQuit',
       },
-      
-  ];
+    ];
 
     this.bookService.getBooks().
       then(books => this.books = books);
@@ -70,7 +68,7 @@ export class PageRankComponent implements OnInit {
     //to inicialize the filter from colun by field
     this.cols = [
       { field: 'name', header: 'Name' },
-      {field: 'author', header: 'Author' },
+      { field: 'author', header: 'Author' },
       { field: 'price', header: 'Price' }      
     ];
 

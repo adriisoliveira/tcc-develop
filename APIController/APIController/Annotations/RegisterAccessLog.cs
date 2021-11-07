@@ -13,7 +13,7 @@ namespace APIController.Annotations
     {
         public override void OnActionExecuted(ActionExecutedContext filterContext)
         {
-            var ip = filterContext.HttpContext.Connection.RemoteIpAddress.ToString();
+            /*var ip = filterContext.HttpContext.Connection.RemoteIpAddress.ToString();
             var userAgent = filterContext.HttpContext.Request.Headers["User-Agent"].ToString();
             var actionDescriptorSplitted = filterContext.ActionDescriptor?.DisplayName.Split('.');
 
@@ -25,7 +25,7 @@ namespace APIController.Annotations
             repository.Add(new ApiAccessLog(ip, userAgent, action, DateTime.UtcNow));
             uow.Commit();
 
-            base.OnActionExecuted(filterContext);
+            base.OnActionExecuted(filterContext);*/
         }
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {

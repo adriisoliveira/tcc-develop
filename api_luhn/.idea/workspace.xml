@@ -2,6 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5f7f391-b8e0-4660-ade5-cf8de046cd36" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../APIController/.vs/APIController/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/.vs/APIController/config/applicationhost.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/.vs/APIController/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/.vs/APIController/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Business/obj/APIController.Business.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Business/obj/APIController.Business.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Business/obj/Debug/netcoreapp3.1/APIController.Business.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Business/obj/Debug/netcoreapp3.1/APIController.Business.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Business/obj/Debug/netcoreapp3.1/APIController.Business.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Business/obj/Debug/netcoreapp3.1/APIController.Business.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Business/obj/Debug/netcoreapp3.1/APIController.Business.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Business/obj/Debug/netcoreapp3.1/APIController.Business.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Business/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Business/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Business/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Business/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Data/obj/APIController.Data.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Data/obj/APIController.Data.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Data/obj/Debug/netcoreapp3.1/APIController.Data.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Data/obj/Debug/netcoreapp3.1/APIController.Data.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Data/obj/Debug/netcoreapp3.1/APIController.Data.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Data/obj/Debug/netcoreapp3.1/APIController.Data.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Data/obj/Debug/netcoreapp3.1/APIController.Data.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Data/obj/Debug/netcoreapp3.1/APIController.Data.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Data/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Data/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController.Data/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController.Data/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/APIController.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/APIController.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/bin/Debug/netcoreapp3.1/APIController.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/bin/Debug/netcoreapp3.1/APIController.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/bin/Debug/netcoreapp3.1/APIController.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/bin/Debug/netcoreapp3.1/APIController.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/obj/APIController.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/obj/APIController.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/obj/Debug/netcoreapp3.1/APIController.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APIController/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APIController/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APISummarizationClient/obj/APISummarizationClient.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APISummarizationClient/obj/APISummarizationClient.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APISummarizationClient/obj/Debug/netcoreapp3.1/APISummarizationClient.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APISummarizationClient/obj/Debug/netcoreapp3.1/APISummarizationClient.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APISummarizationClient/obj/Debug/netcoreapp3.1/APISummarizationClient.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APISummarizationClient/obj/Debug/netcoreapp3.1/APISummarizationClient.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APISummarizationClient/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APISummarizationClient/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIController/APISummarizationClient/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../APIController/APISummarizationClient/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Front/node_modules/__ngcc_entry_points__.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Front/node_modules/__ngcc_entry_points__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Front/src/app/views/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Front/src/app/views/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Front/src/app/views/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Front/src/app/views/dashboard/dashboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Front/src/app/views/dashboard/dashboard.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Front/src/app/views/dashboard/dashboard.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/api_luhn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api_luhn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,20 +61,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="api_luhn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\alqueiroz\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\johny\AppData\Local\Programs\Python\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />

@@ -14,9 +14,9 @@ export class BookService {
   constructor(private http: HttpClient) {}
 
   getBooks() {
-    return this.http.get<any>('assets/books.json')
+    return this.http.get<any>('/src/assets/books.json')
       .toPromise()
-      .then(res => <Book[]>res.data)
+      .then(res => <Book[]>res.json().data.any)
       .then(data => { return data; });
     }
 }

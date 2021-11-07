@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController.Data\\APIController.Data.csproj": {}
+    "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController.Data\\APIController.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController.Business\\APIController.Business.csproj": {
+    "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController.Business\\APIController.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "projectUniqueName": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController.Business\\APIController.Business.csproj",
         "projectName": "APIController.Business",
-        "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController.Business\\APIController.Business.csproj",
         "packagesPath": "C:\\Users\\johny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController.Business\\obj\\",
+        "outputPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController.Data\\APIController.Data.csproj": {
+    "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController.Data\\APIController.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController.Data\\APIController.Data.csproj",
+        "projectUniqueName": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController.Data\\APIController.Data.csproj",
         "projectName": "APIController.Data",
-        "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController.Data\\APIController.Data.csproj",
+        "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController.Data\\APIController.Data.csproj",
         "packagesPath": "C:\\Users\\johny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController.Data\\obj\\",
+        "outputPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -94,8 +94,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController.Business\\APIController.Business.csproj": {
-                "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test\\APIController\\APIController.Business\\APIController.Business.csproj"
+              "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController.Business\\APIController.Business.csproj": {
+                "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop Test - Copy\\APIController\\APIController.Business\\APIController.Business.csproj"
               }
             }
           }
