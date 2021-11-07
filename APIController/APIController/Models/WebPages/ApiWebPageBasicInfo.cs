@@ -9,6 +9,9 @@ namespace APIController.Models.WebPages
         [JsonProperty("PageUrlId")]
         public Guid Id { get; set; }
 
+        [JsonProperty("Title")]
+        public string Title { get; set; }
+
         [JsonProperty("Url")]
         public string Url { get; set; }
 

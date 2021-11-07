@@ -14,7 +14,7 @@ namespace APIController.Controllers
     [Authorize()]
     [ApiController]
     [Route("webpages")]
-    public class WebPagesController : ControllerBase
+    public class WebPagesController : BaseController
     {
         protected IApiClient _client;
         protected string _crawlerHost;
@@ -28,17 +28,16 @@ namespace APIController.Controllers
         /// Retorna todas as páginas que contenham o texto pesquisado (ranqueadas)
         /// </summary>
         /// <param name="search">Pesquisa por texto</param>
-        /// <param name="max">Máximo de valores a serem retornados</param>
         [HttpGet]
         [Route("get/{search}")]
-        public List<ApiWebPageBasicInfo> GetWebPages(string search, int max)
+        public  List<ApiWebPageBasicInfo> GetWebPages(string search)
         {
             using (var client = new HttpClient())
             {
                 HttpRequestMessage request = new HttpRequestMessage
                 {
                     Method = HttpMethod.Get,
-                    RequestUri = new Uri(string.Format("{0}/pages/search?searchText={1}&max={2}", _crawlerHost, search, max))
+                    RequestUri = new Uri(string.Format("{0}/pages/search?searchText={1}", _crawlerHost, search))
                 };
 
                 request.Headers.Add("Access-Control-Allow-Origin", "*");
@@ -46,7 +45,7 @@ namespace APIController.Controllers
                 var responseContent = client.SendAsync(request).Result;
                 var requestResult = responseContent.Content.ReadAsStringAsync().Result;
                 var result = JsonConvert.DeserializeObject<List<ApiWebPageBasicInfo>>(requestResult);
-                return result.OrderByDescending(e => e.PageRankPonctuation).ToList();
+                return result;
             }
         }
 

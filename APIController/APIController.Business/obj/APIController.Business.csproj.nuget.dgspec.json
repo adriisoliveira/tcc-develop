@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {}
+    "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {
+    "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
         "projectName": "APIController.Business",
-        "projectPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "projectPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
         "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Logan\\source\\repos\\tcc-develop\\tcc-develop\\APIController\\APIController.Business\\obj\\",
+        "outputPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

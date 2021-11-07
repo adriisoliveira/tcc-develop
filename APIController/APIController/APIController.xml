@@ -4,12 +4,19 @@
         <name>APIController</name>
     </assembly>
     <members>
-        <member name="M:APIController.Controllers.WebPagesController.GetWebPages(System.String,System.Int32)">
+        <member name="M:APIController.Controllers.AuthController.GenerateToken(APIController.Models.User.UserLoginApiModel)">
+            <summary>
+            Método de geração de token JWT para autenticação.
+            Obs: não necessário informar o JWT anterior.
+            </summary>
+            <param name="user">Dados de login</param>
+            <returns>Token JWT</returns>
+        </member>
+        <member name="M:APIController.Controllers.WebPagesController.GetWebPages(System.String)">
             <summary>
             Retorna todas as páginas que contenham o texto pesquisado (ranqueadas)
             </summary>
             <param name="search">Pesquisa por texto</param>
-            <param name="max">Máximo de valores a serem retornados</param>
         </member>
     </members>
 </doc>
