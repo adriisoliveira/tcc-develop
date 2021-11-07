@@ -17,7 +17,7 @@ namespace APIController.Business.Entity.Users
         public string Password { get; set; }
 
         [Required]
-        [MaxLength(11)]
+        [MaxLength(15)]
         public string CPF { get; set; }
 
         public UserType Type { get; set; }

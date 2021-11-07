@@ -1,0 +1,6 @@
+{
+  "api": {
+    "host": "http://localhost:5000"
+    //"host": "https://localhost:44312"
+  }
+}

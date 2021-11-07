@@ -2,10 +2,12 @@
 using APISummarizationClient.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using System.Net.Http;
 
 namespace APIController.Controllers
 {
-    //[Authorize()]
+    [Authorize()]
     [ApiController]
     [Route("summarization")]
     public class SummyController : ControllerBase
@@ -18,7 +20,7 @@ namespace APIController.Controllers
         public string Summy([FromBody] SummyApiModel summy)
         {
             var summyData = _client.Summarization.SummyLuhn(summy.Text, summy.LineQuantity);
-            return summyData.Text;
+            return ( summyData.Text);
         }
     }
 }

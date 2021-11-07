@@ -1,6 +1,5 @@
-﻿using APIController.Business.Entity.Logs;
+﻿
 using APIController.Business.Entity.Users;
-using APIController.Business.Interfaces.Service.Logs;
 using APIController.Models;
 using APIController.Models.User;
 using Microsoft.AspNetCore.Authorization;
@@ -14,22 +13,22 @@ using System.Text;
 
 namespace APIController.Controllers
 {
+    [Authorize()]
+    [ApiController]
     [Route("auth")]
-    public class AuthController : BaseController
+    public class AuthController : ControllerBase
     {
-        private readonly Microsoft.Extensions.Configuration.IConfiguration _config;
-        private readonly IApiTokenLogService _apiTokenLogService;
+        private readonly Microsoft.Extensions.Configuration.IConfiguration _config; 
 
-        public AuthController(Microsoft.Extensions.Configuration.IConfiguration config, IApiTokenLogService apiTokenLogService)
+        public AuthController(Microsoft.Extensions.Configuration.IConfiguration config )
         {
-            _config = config;
-            _apiTokenLogService = apiTokenLogService;
+            _config = config; 
         }
 
         [Route("authenticate")]
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult GenerateToken([FromBody] UserLoginApiModel user)
+        public IActionResult GenerateToken([FromBody] UserLoginModel user)
         {
             if (user.Login == "admin" && user.Password == "admin")
             {
@@ -49,17 +48,17 @@ namespace APIController.Controllers
                     claims: claims,
                     expires: tokenExpireDate,
                     signingCredentials: credential);
-                
+
                 var jwt = new JwtSecurityTokenHandler().WriteToken(token);
 
-                _apiTokenLogService.Add(new ApiTokenLog(
-                    Request.HttpContext.Connection.RemoteIpAddress.ToString(),
-                    Request.Headers["User-Agent"].ToString(),
-                    jwt,
-                    tokenExpireDate,
-                    DateTime.UtcNow
-                    ));
-                
+                //_apiTokenLogService.Add(new ApiTokenLog(
+                //    Request.HttpContext.Connection.RemoteIpAddress.Address.ToString(),
+                //    Request.Headers["User-Agent"].ToString(),
+                //    jwt,
+                //    tokenExpireDate,
+                //    DateTime.UtcNow
+                //    ));
+
                 return StatusCode(201, new { jwt = jwt });
                 //return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
             }

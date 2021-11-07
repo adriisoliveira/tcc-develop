@@ -1,16 +1,20 @@
-﻿using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using System.IO;
 
 namespace APISummarizationClient.Client
 {
     public class BaseClient
     {
-        public BaseClient(IConfiguration configuration)
+        public BaseClient()
         {
-            Host = configuration.GetSection("ClientConnections:Summy")["Host"];
+            JObject jObject = JObject.Parse(File.ReadAllText(
+                   Path.Combine(
+                       Directory.GetParent(
+                           System.IO.Directory.GetCurrentDirectory())
+                       .FullName, "APISummarizationClient\\apiconnection.json")));
+            Host = jObject["api"]["host"].ToString().Trim().Trim('/');
         }
-        public BaseClient(string controllerPath, IConfiguration configuration) : this(configuration)
+        public BaseClient(string controllerPath) : this()
         {
             ControllerPath = controllerPath;
         }
