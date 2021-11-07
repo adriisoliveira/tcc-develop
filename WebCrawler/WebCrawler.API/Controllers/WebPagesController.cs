@@ -23,7 +23,6 @@ namespace WebCrawler.API.Controllers
         /// </summary>
         /// <param name="searchText">Texto de pesquisa</param>
         /// <param name="max">Máximo de resultados</param>
-        ///// <param name="page"></param>
         [HttpGet]
         [Route("search")]
         public List<PageUrlBasicInfoDTO> SearchForPages(string searchText, int max = 0)

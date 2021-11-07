@@ -52,27 +52,27 @@ namespace WebCrawler.Data.Repository.Url
 
         public IEnumerable<PageUrlBasicInfoDTO> GetAllBasicInfo(string searchText)
         {
-            //var result2 = Db
-            //    .PageWords
-            //    .Where(e => e.Word.Contains(searchText))
-            //    .Select(e => e.Id);
-            //var result3 = DbSet.Where(e => e.Words.Any(x => result2.Contains(x.PageWordId)));
-
-            return DbSet
+            var pagesWithSpecifiedWord = DbSet
                 .Include(e => e.Words)
+                .SelectMany(e => e.Words)
+                .Where(e => e.PageWord.Word.Contains(searchText))
+                .Select(e => e.PageUrlId);
+
+            var result = DbSet
                 .Include(e => e.Rank)
-                //.Include(e => e.Words.Select(e => e.PageWord))
-                .Where(e => e.Words.Any(w => w.PageWord.Word.Contains(searchText)))
                 .Select(e => new PageUrlBasicInfoDTO
                 {
                     PageUrlId = e.Id,
+                    Title = e.Title,
                     LastIndexing = e.LastIndexing,
                     LastRanking = e.Rank.LastRanking,
-                    PageRankPonctuation = e.Rank.Ponctuation,
+                    PageRankPonctuation = e.Rank == null ? 0 : e.Rank.Ponctuation,
                     Url = e.Url
                 })
+                .OrderByDescending(e => e.PageRankPonctuation)
                 .ToList();
-                //.OrderBy(e => e.LastIndexing).ToList();
+
+            return result.Where(e => pagesWithSpecifiedWord.Contains(e.PageUrlId));
         }
 
         public Guid? GetPageUrlIdByUrl(string url)
