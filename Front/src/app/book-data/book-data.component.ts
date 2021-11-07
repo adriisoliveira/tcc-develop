@@ -21,32 +21,33 @@ export class BookDataComponent implements OnInit {
   constructor(private bookService: BookService) { }
 
   ngOnInit() {
-      this.bookService.getBooks().
-      then(books => this.books = books);
+    // this.bookService.get('').
+    // toPromise().
+    // then(data => this.books = data);
   
 
   /*Create a backing object named cols. It will be an array of name-value pairs for the columnn header names. */
   //to inicialize the filter from colun by field
-  this.cols = [
-    { field: 'name', header: 'Name' },
-    {field: 'author', header: 'Author' },
-    { field: 'price', header: 'Price' }      
-  ];
+  // this.cols = [
+  //   { field: 'name', header: 'Name' },
+  //   {field: 'author', header: 'Author' },
+  //   { field: 'price', header: 'Price' }      
+  // ];
 
   //no momento error no console browser
   //core.js:6241 ERROR TypeError: Cannot read properties of undefined (reading 'length')
   this.totalRecords=this.books.length;
 
-  //used tu imput a costum filtler inside a colun for HTML
-  this.allAuthors = [
-    { label: 'All Authors', value: null },
-    { label: 'Mario Puzo', value: 'Mario Puzo' },
-    { label: 'J.R.R. Tolkien', value: 'J.R.R. Tolkien' },
-    { label: 'J.K. Rowling', value: 'J.K. Rowling' },
-    { label: 'author1', value: 'author1' },
-    { label: 'author2', value: 'author2' },
-    { label: 'author3', value: 'author3' },   
-  ];
+  // //used tu imput a costum filtler inside a colun for HTML
+  // this.allAuthors = [
+  //   { label: 'All Authors', value: null },
+  //   { label: 'Mario Puzo', value: 'Mario Puzo' },
+  //   { label: 'J.R.R. Tolkien', value: 'J.R.R. Tolkien' },
+  //   { label: 'J.K. Rowling', value: 'J.K. Rowling' },
+  //   { label: 'author1', value: 'author1' },
+  //   { label: 'author2', value: 'author2' },
+  //   { label: 'author3', value: 'author3' },   
+  // ];
 
   }
   

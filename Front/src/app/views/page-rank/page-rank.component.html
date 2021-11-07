@@ -13,8 +13,11 @@
 totalRecords="totalRecords" pageLinks="3">
 <ng-template pTemplate="caption">
   <div style="text-align: right">        
-      <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
-      <input type="text" pInputText size="50" placeholder="Global Filter" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
+      
+      <input type="text" pInputText size="50" placeholder="Global Filter" style="width:auto" [(ngModel)]="searchText">
+      <button type="button" pButton class="search" (click)="search()" style="width: 40px; height: 30px;">
+        <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+      </button>
   </div>
 </ng-template>
 <!-- Delete #dt and this part of code is dont use the global search
@@ -50,7 +53,13 @@ totalRecords="totalRecords" pageLinks="3">
 <ng-template pTemplate="body" let-rowData let-columns="columns">
   <tr>
     <td *ngFor="let col of columns">
-      {{rowData[col.field]}}
+      <ng-container *ngIf="col.field === 'url'">
+        <a href="{{rowData[col.field]}}">{{rowData[col.field]}}</a>
+      </ng-container>
+
+      <ng-container *ngIf="col.field === 'title'">
+        {{rowData[col.field]}}
+      </ng-container>
     </td>
   </tr>
 </ng-template>

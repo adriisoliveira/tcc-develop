@@ -19,6 +19,9 @@ export class AlertService {
     this.showAlert(title, message, 'error');
   }
 
+  public close() : void{
+    Swal.close();
+  }
   private showAlert(
     title: string,
     message: string,

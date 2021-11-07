@@ -2,6 +2,7 @@ import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 
 import {MenuItem} from 'primeng/api';
+import {AlertService} from '../../resources/services/alert.service';
 import { Book, BookService } from '../../resources/services/book.service';
 
 @Component({
@@ -13,6 +14,8 @@ export class PageRankComponent implements OnInit {
 
   items: MenuItem[];
   books: Book[];
+  searchText: String;
+  alertService: AlertService;
 
   //to use a Dynamic table inpute any coluns, coluns do html
   cols: any[];
@@ -25,11 +28,13 @@ export class PageRankComponent implements OnInit {
   constructor(
     private router: Router,
     private bookService: BookService
-  ) { }
+  ) {
+    this.searchText = "";
+    this.alertService = new AlertService();
+  }
 
   ngOnInit()  {
     this.items = [
-          
       {
           label:'Home',
           icon:'pi pi-fw pi-home',
@@ -63,20 +68,14 @@ export class PageRankComponent implements OnInit {
       
   ];
 
-    this.bookService.getBooks().
-      then(books => this.books = books);
-
-    /*Create a backing object named cols. It will be an array of name-value pairs for the columnn header names. */
-    //to inicialize the filter from colun by field
     this.cols = [
-      { field: 'name', header: 'Name' },
-      {field: 'author', header: 'Author' },
-      { field: 'price', header: 'Price' }      
+      { field: 'title', header: 'Title' },
+      { field: 'url', header: 'Link' }
     ];
 
     //no momento error no console browser
     //core.js:6241 ERROR TypeError: Cannot read properties of undefined (reading 'length')
-    this.totalRecords=this.books.length;
+    // this.totalRecords=this.books.length;
 
     //used tu imput a costum filtler inside a colun for HTML
     this.allAuthors = [
@@ -91,6 +90,17 @@ export class PageRankComponent implements OnInit {
 
   }
 
+  public search():void{
+    this.alertService.info('Aguarde...', 'Pesquisando');
+    this.bookService.get(this.searchText).
+    toPromise().
+    then(data => this.books = data).
+    catch(data => this.alertService.error('Erro'));
+    setTimeout(()=>{
+      this.alertService.close()
+    }, 3000);
+
+  }
   // public doBackToMenu(): void{
   //     this.router.navigate(['dashboard'])
   // }

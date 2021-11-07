@@ -1,9 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-export interface Book {
-  name;
-  price;
-  author;
+import { Observable } from 'rxjs';
+export class Book {
+  id: String;
+  title: String;
+  url: String;
+  pageRankPonctuation: number;
+  
+  constructor(id: String, title: String, url: String, pageRankPonctuation: number) {
+    this.id = id;
+    this.title = title;
+    this.url = url;
+    this.pageRankPonctuation = pageRankPonctuation;
+  }
 }
 
 @Injectable({
@@ -13,10 +22,13 @@ export class BookService {
 
   constructor(private http: HttpClient) {}
 
-  getBooks() {
-    return this.http.get<any>('assets/books.json')
-      .toPromise()
-      .then(res => <Book[]>res.data)
-      .then(data => { return data; });
+  get(search): Observable<Book[]> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
+      })
     }
+
+    return this.http.get<Book[]>('https://localhost:44312/webpages/get/' + search, httpOptions);
+  }
 }
