@@ -1,0 +1,101 @@
+<p-menubar [model]="items">
+    <ng-template pTemplate="start">
+        <img src="../../../favicon1.ico" height="40" class="p-mr-2">
+    </ng-template>
+    <ng-template pTemplate="end">
+        <input type="text" pInputText placeholder="Search">
+    </ng-template>
+</p-menubar>
+
+
+
+<div>
+
+    <div style="align-items: center;">
+        <b><p style="font-family: Open Sans; font-size: 24px; color:#333333;margin-left: 150px;">FORMATADOR COLLECTIO</p></b>
+    </div>
+    
+    <div>
+        <p-fieldset legend="Como usar" [toggleable]="true">
+            <p>O formatador Collectio permite que voce gere um pdf na hora com todas as informações que precisa, ja no formato ABNT.
+                Para tal, informe conforme a marca d'água no campo a informação pedida. 
+            </p>
+            <p>Os campos em que exigem digitação mais longa, são ajustáveis, deslise o canto inferior direito para aumentar a visualização.</p>
+        </p-fieldset>
+    </div>
+    <div style="margin-top: 16px; padding-top: 16px;">
+        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Elementos pré-textuais</p></b>
+        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Capa/Folha de Rosto /Ficha de aprovação</p></b>
+        <input placeholder="Nome da Instituição" size="165" type="text" pInputText [(ngModel)]="instituicao"> 
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Nome(s) do(s) aluno(s) - coloque um ENTER entre cada um" rows="1" cols="166" pInputTextarea [(ngModel)]="alunos"></textarea>
+        </div>
+        <input 
+            style="margin-right: 16px; margin-top: 24px;"
+
+        placeholder="Titulo do trabalho" size="60" type="text" pInputText [(ngModel)]="titulo"> 
+        <!-- <span class="p-ml-2">{{value1}}</span> -->
+        <input placeholder="Subtitulo do trabalho" size="50" type="text" pInputText [(ngModel)]="subtitulo">
+        <input style="margin-left: 24px;" placeholder="Cidade" size="25" type="text" pInputText [(ngModel)]="cidade"> 
+        <!-- <span class="p-ml-2">{{value1}}</span> -->
+        <input style="margin-left: 24px;" placeholder="Ano" size="8" type="text" pInputText [(ngModel)]="ano"> 
+    </div>
+        
+        
+    <div style="margin-top: 16px; padding-top: 16px;">
+        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Elementos pré-textuais</p></b>
+        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Dedicatória / Resumo / Abstract / Listas</p></b>
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Dedicatória" rows="3" cols="166" pInputTextarea [(ngModel)]="dedicatoria"></textarea>
+        </div>
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Resumo" rows="3" cols="166" pInputTextarea [(ngModel)]="resumo"></textarea>
+        </div>
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Abstract" rows="3" cols="166" pInputTextarea [(ngModel)]="abstract"></textarea>
+        </div>
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Lista de Ilustrações" rows="3" cols="166" pInputTextarea [(ngModel)]="listaIlustracao"></textarea>
+        </div>
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Lista de Tabelas" rows="3" cols="166" pInputTextarea [(ngModel)]="listaTabelas"></textarea>
+        </div>
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Lista de Abreviaturas e siglas" rows="3" cols="166" pInputTextarea [(ngModel)]="abreviaturas"></textarea>
+        </div>
+    
+    <div>
+
+
+
+
+
+
+        <button (click)="salvarDados()">Salvar</button>
+
+    </div>
+    <div style="height: 220px; width: 200px;margin-top: 36px;">
+        <p>Resumo</p>
+        <!-- <p-editor [(ngModel)]="text1" [style]="{'height':'320px'}">
+            <ng-template pTemplate="header">
+                <span class="ql-formats">
+                    <button type="button" class="ql-bold" aria-label="Bold"></button>
+                    <button type="button" class="ql-italic" aria-label="Italic"></button>
+                    <button type="button" class="ql-underline" aria-label="Underline"></button>
+                </span>
+            </ng-template>
+        </p-editor> -->
+        <p-editor name="custom" [(ngModel)]="text1" styleClass="editor-dimensions">
+            <p-header>
+              <span class="ql-formats">
+                <button class="ql-bold"></button>
+                <button class="ql-italic"></button>
+                <button class="ql-underline"></button>
+                <button class="ql-clean"></button>
+              </span>
+              
+            </p-header>
+          </p-editor>
+    </div>
+</div>
+

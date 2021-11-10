@@ -5,6 +5,7 @@ import { AuthGuardService } from './resources/services/auth-guard.service';
 import { LoginComponent } from './views/login/login.component';
 import { ResumoTextoModule } from './views/resumo-texto/resumo-texto.module';
 import { AboutComponent } from './views/about/about.component';
+import {FormatacaoComponent} from './views/formatacao/formatacao.component'
 
 /**Declarar o obj dos modulos */
 const routes: Routes = [
@@ -16,7 +17,7 @@ const routes: Routes = [
   {
     path: 'dashboard',//só acessar se estiver logado, autorizado o mesmo nos outros
     //chama passa aray e diz qual guarda do componets
-    canActivate: [AuthGuardService],//com isso configura a guarde rota
+    //canActivate: [AuthGuardService],//com isso configura a guarde rota
     loadChildren: () =>
       import('./views/dashboard/dashboard.module').then(
         (m) => m.DashboardModule
@@ -38,6 +39,13 @@ const routes: Routes = [
     ),
   },
   
+  {path:'formatacao', 
+  loadChildren: () =>
+    import('./views/formatacao/formatacao.module').then(
+      (m) => m.FormatacaoModule
+    ),
+  },
+
   {path:'about', 
   loadChildren: () =>
     import('./views/about/about.module').then(
@@ -47,13 +55,13 @@ const routes: Routes = [
 
   
   //redirecionamento caso n ache uma rota
-  {path:'**', redirectTo: ''},
+  //{path:'**', redirectTo: ''},
 ];
 
 //comentar o useHash ou setar dalse para usar diretamente pela url sem logar
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
-  //imports: [RouterModule.forRoot(routes)],
+  //imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
