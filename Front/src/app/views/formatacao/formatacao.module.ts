@@ -15,6 +15,8 @@ import {FieldsetModule} from 'primeng/fieldset';
 import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
 import {ToastModule} from 'primeng/toast';
+import {CardModule} from 'primeng/card';
+import {ButtonModule} from 'primeng/button';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import {ToastModule} from 'primeng/toast';
     FieldsetModule,
     MessagesModule,
     MessageModule,
-    ToastModule
+    ToastModule,
+    CardModule,
+    ButtonModule
   ]
 })
 export class FormatacaoModule { }

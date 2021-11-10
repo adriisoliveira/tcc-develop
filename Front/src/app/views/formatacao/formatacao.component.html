@@ -27,9 +27,15 @@
         <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Elementos pré-textuais</p></b>
         <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Capa/Folha de Rosto /Ficha de aprovação</p></b>
         <input placeholder="Nome da Instituição" size="165" type="text" pInputText [(ngModel)]="instituicao"> 
-        <div style="margin-top: 16px;">
+        <input style="margin-right: 20px; margin-top: 16px;" placeholder="Nome e sobrenome  do Integrante 1 - RA" size="79" type="text" pInputText [(ngModel)]="aluno1"> 
+        <input placeholder="Nome e sobrenome  do Integrante 2 - RA" size="79" type="text" pInputText [(ngModel)]="aluno2"> 
+        <input style="margin-right: 20px; margin-top: 16px;" placeholder="Nome e sobrenome  do Integrante 3 - RA" size="79" type="text" pInputText [(ngModel)]="aluno3"> 
+        <input placeholder="Nome e sobrenome  do Integrante 4 - RA" size="79" type="text" pInputText [(ngModel)]="aluno4"> 
+        <input style="margin-right: 20px; margin-top: 16px;" placeholder="Nome e sobrenome  do Integrante 5 - RA" size="79" type="text" pInputText [(ngModel)]="aluno5"> 
+        <input placeholder="Nome e sobrenome  do Integrante 6 - RA" size="79" type="text" pInputText [(ngModel)]="aluno6"> 
+        <!-- <div style="margin-top: 16px;">
             <textarea placeholder="Nome(s) do(s) aluno(s) - coloque um ENTER entre cada um" rows="1" cols="166" pInputTextarea [(ngModel)]="alunos"></textarea>
-        </div>
+        </div> -->
         <input 
             style="margin-right: 16px; margin-top: 24px;"
 
@@ -39,6 +45,9 @@
         <input style="margin-left: 24px;" placeholder="Cidade" size="25" type="text" pInputText [(ngModel)]="cidade"> 
         <!-- <span class="p-ml-2">{{value1}}</span> -->
         <input style="margin-left: 24px;" placeholder="Ano" size="8" type="text" pInputText [(ngModel)]="ano"> 
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Texto da Folha de Rosto" rows="3" cols="166" pInputTextarea [(ngModel)]="textoFolha"></textarea>
+        </div>
     </div>
         
         
@@ -63,7 +72,36 @@
         <div style="margin-top: 16px;">
             <textarea placeholder="Lista de Abreviaturas e siglas" rows="3" cols="166" pInputTextarea [(ngModel)]="abreviaturas"></textarea>
         </div>
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Sumário" rows="3" cols="166" pInputTextarea [(ngModel)]="sumario"></textarea>
+        </div>
     
+    </div>
+
+    <div style="margin-top: 16px; padding-top: 16px;">
+        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Elementos textuais</p></b>
+        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Introdução / Desenvolvimento / Conclusão</p></b>
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Introdução" rows="3" cols="166" pInputTextarea [(ngModel)]="introducao"></textarea>
+        </div>
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Desenvolvimento" rows="3" cols="166" pInputTextarea [(ngModel)]="desenvolvimento"></textarea>
+        </div>
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Conclusão" rows="3" cols="166" pInputTextarea [(ngModel)]="conclusao"></textarea>
+        </div>
+    
+    </div>
+
+    <div style="margin-top: 16px; padding-top: 16px;">
+        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Elementos pós-textuais</p></b>
+        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Referências</p></b>
+        <div style="margin-top: 16px;">
+            <textarea placeholder="Referências" rows="3" cols="166" pInputTextarea [(ngModel)]="referencias"></textarea>
+        </div>
+    </div>
+
+
     <div>
 
 
@@ -71,12 +109,270 @@
 
 
 
-        <button (click)="salvarDados()">Salvar</button>
+    <!-- <button (click)="salvarDados()">Salvar</button> -->
 
+    </div >
+     
+    <div  style="margin-bottom: 15px; margin-top: 15px; justify-content: space-between; padding-top: 15px;">
+        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Visualização prévia do documento</p></b>
+        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Cliique para expandir o elemento que deseja visualizar antes do download</p></b>
+        <div style="margin-top: 16px;">
+            <p-fieldset  legend="Capa" [toggleable]="true">
+                <div id="capaDocument">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">{{instituicao}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno3}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno4}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno5}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno6}}</p></b>                  
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">{{cidade}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{ano}}</p></b>   
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printCapa()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+        
+        <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Folha de Rosto" [toggleable]="true">
+                <div id="folhaRosto">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno3}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno4}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno5}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno6}}</p></b>                  
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
+                    <div style="align-items: center; margin-right: 75px;margin-left:284px; margin-top: 36px;">
+                        <p style="font-family: Arial; font-size: 12px;text-align: right;margin-right: 75px;align-content: justify;">{{textoFolha}}</p>          
+                    </div> 
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">{{cidade}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{ano}}</p></b>   
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printFolhaRosto()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+        
+        <div  style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Ficha de Aprovacão" [toggleable]="true">
+                <div id="fichaAprovacao" style="width: 248px; height: 351px;justify-content: center;justify-items: center; align-items: center; align-content: center;">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno3}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno4}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno5}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno6}}</p></b>                  
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
+                    <div style="align-items: center; margin-right: 75px;margin-left:284px; margin-top: 36px;">
+                        <p style="font-family: Arial; font-size: 12px;text-align: right;margin-right: 75px;align-content: justify;">{{textoFolha}}</p>          
+                    </div> 
+                    <p style="text-align:left;font-family: Arial; font-size: 12px; margin-top: 36px;">Aprovado em:</p> 
+            <div>
+                <p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">BANCA EXAMINADORA</p>
+                <div style="text-align: center;font-family: Arial; font-size: 12px;">
+                    <p>_____________________________/__/___</p>
+                    <p>(nome do professor)</p>
+                    <p>Universidade Paulista - UNIP</p>
+                </div>
+                <div style="text-align: center;font-family: Arial; font-size: 12px;">
+                    <p>_____________________________/__/___</p>
+                    <p>(nome do professor)</p>
+                    <p>Universidade Paulista - UNIP</p>
+                </div>
+                <div style="text-align: center;font-family: Arial; font-size: 12px;">
+                    <p>_____________________________/__/___</p>
+                    <p>(nome do professor)</p>
+                    <p>Universidade Paulista - UNIP</p>
+                </div>
+            </div>
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printFichaAprovacao()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+
+        <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Dedicatoria" [toggleable]="true">
+                <div id="dedicatoria">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">DEDICATÓRIA</p></b>
+                    <p>{{dedicatoria}}</p>
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printDedicatoria()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+
+        <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Resumo" [toggleable]="true">
+                <div id="resumo">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">RESUMO</p></b>
+                    <p>{{resumo}}</p>
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printResumo()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+
+        <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Abstract" [toggleable]="true">
+                <div id="abstract">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">ABSTRACT</p></b>
+                    <p>{{abstract}}</p>
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printCapa()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+
+        
+        
+        <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Sumario" [toggleable]="true">
+                <div id="abstract">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">SUMÁRIO</p></b>
+                    <p>{{abstract}}</p>
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printAbstract()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+
+        <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Listas" [toggleable]="true">
+                <div id="listas">
+                    <div id="listaIlustracoes">
+                        <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">Lista de Ilustracoes</p></b>
+                    </div>
+                    
+                
+                    <div id="listaTabelas">
+                        <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">Lista de Tabelas</p></b>
+                    </div>
+                    
+                
+                    <div id="listaAbreviaturas">
+                        <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">Lista de Abreviaturas</p></b>
+                    </div>
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printListas()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+
+        <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Introdução" [toggleable]="true">
+                <div id="sumario">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">SUMARIO</p></b>
+                    <p>{{sumario}}</p>
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printSumario()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+
+        <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Introdução" [toggleable]="true">
+                <div id="introducao">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">Introdução</p></b>
+                    <p>{{introducao}}</p>
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printIntroducao()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+
+        <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Desenvolvimento" [toggleable]="true">
+                <div id="desenvolvimento">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">Desenvolvimento</p></b>
+                    <p>{{desenvolvimento}}</p>
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printDesenvolvimento()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+
+
+        <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Conclusão" [toggleable]="true">
+                <div id="conclusao">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">CONCLUSÃO</p></b>
+                    <p>{{conclusao}}</p>
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printConclusao()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+
+        <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Referências" [toggleable]="true">
+                <div id="referencias">
+                    <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">REFERENCIAS</p></b>
+                    <p>{{referencias}}</p>
+                </div>
+            </p-fieldset>
+        </div>
+        <p-button (click)="printReferencias()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+
+        <!-- <div style="margin-top: 16px;">
+            <p-fieldset style="margin-top: 16px;" legend="Folha de Rosto" [toggleable]="true">
+                <div id="folhaRosto">
+                    
+                </div>
+            </p-fieldset>
+        </div> -->
+        
+
+        <!-- <div id="folhaDeRosto">
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">NOME DO ALUNO 1</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 2</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 3</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 4</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO5</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO6</p></b>           
+             
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">TITULO DO TRABALHO</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">Subtitulo</p></b>
+            <div style="align-items: center; margin-right: 75px;margin-left:284px; margin-top: 36px;">
+                <p style="font-family: Arial; font-size: 12px;text-align: right;margin-right: 75px;align-content: justify;">Trabalho de conclusão de curso
+                    para obtenção do título de
+                    graduação em (nome do curso)
+                    apresentado à Universidade
+                    Paulista – UNIP. </p>          
+            </div> 
+            
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">CIDADE</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">ANO</p></b>   
+        </div> -->
     </div>
+    <!-- <div hidden=true id="visualizacao">
+        <div id="documentPrint" class="document" title="document">
+            <div id="capa">
+                <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">{{instituicao}}</p></b>
+                <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
+                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 2</p></b>
+                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 3</p></b>
+                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 4</p></b>
+                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO5</p></b>
+                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO6</p></b>                  
+                <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
+                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
+                <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">{{cidade}}</p></b>
+                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{ano}}</p></b>   
+            </div>
+        </div>
+    </div> -->
+    
+
+    <!-- <button (click)="printPDF()">download </button> -->
+    <!-- <p-button (click)="printPDF()" label="Download" icon="pi pi-download" iconPos="right"></p-button> -->
+
+<!-- <div style="margin-top: 50px;">
+    <ckeditor
+    [(ngModel)]="ckeditorContent">
+        
+        
+    </ckeditor>
+</div>
+    
+
     <div style="height: 220px; width: 200px;margin-top: 36px;">
         <p>Resumo</p>
-        <!-- <p-editor [(ngModel)]="text1" [style]="{'height':'320px'}">
+        <p-editor [(ngModel)]="text1" [style]="{'height':'320px'}">
             <ng-template pTemplate="header">
                 <span class="ql-formats">
                     <button type="button" class="ql-bold" aria-label="Bold"></button>
@@ -84,7 +380,7 @@
                     <button type="button" class="ql-underline" aria-label="Underline"></button>
                 </span>
             </ng-template>
-        </p-editor> -->
+        </p-editor>
         <p-editor name="custom" [(ngModel)]="text1" styleClass="editor-dimensions">
             <p-header>
               <span class="ql-formats">
@@ -96,6 +392,5 @@
               
             </p-header>
           </p-editor>
-    </div>
+    </div> -->
 </div>
-
