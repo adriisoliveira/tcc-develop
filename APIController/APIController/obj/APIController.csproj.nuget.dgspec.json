@@ -204,6 +204,25 @@
               "target": "Package",
               "version": "[3.1.0, )"
             },
+<<<<<<< HEAD
+=======
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+>>>>>>> feature/develop/TCC-37-API_Controller_new
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

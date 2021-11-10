@@ -7,6 +7,16 @@ C:\Users\Logan\source\repos\APIController\APIController\APIController.Business\o
 C:\Users\Logan\source\repos\APIController\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.csproj.CoreCompileInputs.cache
 C:\Users\Logan\source\repos\APIController\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.dll
 C:\Users\Logan\source\repos\APIController\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.pdb
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Business\bin\Debug\netcoreapp3.1\APIController.Business.deps.json
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Business\bin\Debug\netcoreapp3.1\APIController.Business.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Business\bin\Debug\netcoreapp3.1\APIController.Business.pdb
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.csproj.AssemblyReference.cache
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.AssemblyInfoInputs.cache
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.AssemblyInfo.cs
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.csproj.CoreCompileInputs.cache
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.pdb
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Business\bin\Debug\netcoreapp3.1\APIController.Business.deps.json
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Business\bin\Debug\netcoreapp3.1\APIController.Business.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController.Business\bin\Debug\netcoreapp3.1\APIController.Business.pdb

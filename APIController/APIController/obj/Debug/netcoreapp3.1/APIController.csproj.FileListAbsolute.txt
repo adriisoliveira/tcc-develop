@@ -63,6 +63,75 @@ C:\Users\Logan\source\repos\APIController\APIController\APIController\bin\Debug\
 C:\Users\Logan\source\repos\APIController\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.Business.pdb
 C:\Users\Logan\source\repos\APIController\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.Data.pdb
 C:\Users\Logan\source\repos\APIController\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.csproj.CopyComplete
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.exe
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.deps.json
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.runtimeconfig.json
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.runtimeconfig.dev.json
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.pdb
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.Business.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.Data.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APISummarizationClient.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.Business.pdb
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.Data.pdb
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APISummarizationClient.pdb
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.csproj.AssemblyReference.cache
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.AssemblyInfoInputs.cache
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.AssemblyInfo.cs
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.csproj.CoreCompileInputs.cache
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\staticwebassets\APIController.StaticWebAssets.Manifest.cache
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\staticwebassets\APIController.StaticWebAssets.xml
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\scopedcss\bundle\APIController.styles.css
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.RazorTargetAssemblyInfo.cache
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.csproj.CopyComplete
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.dll
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.pdb
+C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.genruntimeconfig.cache
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -72,13 +141,18 @@ C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIControlle
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.runtimeconfig.dev.json
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.pdb
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\APIController.xml
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -92,7 +166,11 @@ C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIControlle
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
@@ -121,6 +199,9 @@ C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIControlle
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.csprojAssemblyReference.cache
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.AssemblyInfoInputs.cache
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.AssemblyInfo.cs
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.csproj.CoreCompileInputs.cache
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.RazorTargetAssemblyInfo.cache
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.csproj.CopyComplete
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\staticwebassets\APIController.StaticWebAssets.Manifest.cache
@@ -128,6 +209,7 @@ C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIControlle
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.pdb
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\bin\Debug\netcoreapp3.1\appsettings.json
@@ -283,3 +365,5 @@ C:\Users\johny\Documents\TCC Projects\tcc-develop Test\APIController\APIControll
 C:\Users\johny\Documents\TCC Projects\tcc-develop Test\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.dll
 C:\Users\johny\Documents\TCC Projects\tcc-develop Test\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.pdb
 C:\Users\johny\Documents\TCC Projects\tcc-develop Test\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.genruntimeconfig.cache
+=======
+>>>>>>> feature/develop/TCC-37-API_Controller_new

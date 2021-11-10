@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+using APIController.Annotations;
+>>>>>>> feature/develop/TCC-37-API_Controller_new
 using APIController.Business.Interfaces;
 using APIController.Business.Interfaces.Repository.Logs;
 using APIController.Business.Interfaces.Repository.Users;
@@ -19,6 +23,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
+<<<<<<< HEAD
+=======
+using System.Collections.Generic;
+>>>>>>> feature/develop/TCC-37-API_Controller_new
 using System.Diagnostics;
 using System.IO;
 using System.Text;
@@ -92,6 +100,36 @@ namespace APIController
             {
                 c.IncludeXmlComments(Path.Combine(System.AppContext.BaseDirectory, "APIController.xml"));
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "APIController", Version = "v1" });
+<<<<<<< HEAD
+=======
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = @"Autorização via JWT usando o esquema Bearer.
+                      Digite 'Bearer' [espaço] e seu JWT gerado pelo método Auth.Authentication.
+                      nExemplo: 'Bearer 123abc123abc'",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                                {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                                },
+                                Scheme = "oauth2",
+                                Name = "Bearer",
+                                In = ParameterLocation.Header,
+                        },
+                        new List<string>()
+                    }
+                });
+>>>>>>> feature/develop/TCC-37-API_Controller_new
             });
         }
 

@@ -1,3 +1,7 @@
 is_global = true
 build_property.RootNamespace = APIController
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\johny\Documents\TCC Projects\tcc-develop Test\APIController\APIController\
+=======
+build_property.ProjectDir = C:\Users\johny\Documents\TCC Projects\tcc-develop\APIController\APIController\
+>>>>>>> feature/develop/TCC-37-API_Controller_new

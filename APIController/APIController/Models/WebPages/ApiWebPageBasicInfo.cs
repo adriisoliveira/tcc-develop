@@ -9,6 +9,12 @@ namespace APIController.Models.WebPages
         [JsonProperty("PageUrlId")]
         public Guid Id { get; set; }
 
+<<<<<<< HEAD
+=======
+        [JsonProperty("Title")]
+        public string Title { get; set; }
+
+>>>>>>> feature/develop/TCC-37-API_Controller_new
         [JsonProperty("Url")]
         public string Url { get; set; }
 

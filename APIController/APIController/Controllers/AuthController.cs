@@ -26,6 +26,12 @@ namespace APIController.Controllers
             _apiTokenLogService = apiTokenLogService;
         }
 
+        /// <summary>
+        /// Método de geração de token JWT para autenticação.
+        /// Obs: não necessário informar o JWT anterior.
+        /// </summary>
+        /// <param name="user">Dados de login</param>
+        /// <returns>Token JWT</returns>
         [Route("authenticate")]
         [AllowAnonymous]
         [HttpPost]
