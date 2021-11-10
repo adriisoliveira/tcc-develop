@@ -8,12 +8,22 @@
     </ng-template>
 </p-menubar>
 </div>
-<div>
-<p-dataView [value]="books">
-    <ng-template let-book pTemplate="listItem">
-        <div >
-            {{book.name}}
+<br>
+<!--p-dataView [value]="listLocal">
+    <ng-template let-listLocal pTemplate="listItem">
+        {{listLocal.name}}
+    </ng-template>
+</p-dataView-->
+
+<p-dataView [value]="bookLocal">
+    <ng-template let-bookLocal pTemplate="listItem">
+        <div>
+            {{bookLocal.price}}
+        </div>
+    </ng-template>
+    <ng-template let-bookLocal pTemplate="listItem">
+        <div>
+            {{bookLocal.name}}
         </div>
     </ng-template>
 </p-dataView>
-</div>

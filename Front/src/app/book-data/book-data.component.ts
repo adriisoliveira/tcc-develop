@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Book, BookService } from '../resources/services/book.service';
+import { BookService } from '../resources/services/book.service';
+import { Book } from '../resources/models/Book';
 
 @Component({
   selector: 'app-book-data',
@@ -29,7 +30,7 @@ export class BookDataComponent implements OnInit {
   //to inicialize the filter from colun by field
   this.cols = [
     { field: 'name', header: 'Name' },
-    {field: 'author', header: 'Author' },
+    { field: 'author', header: 'Author' },
     { field: 'price', header: 'Price' }      
   ];
 

@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Book } from '../models/Book';
+import { List } from '../models/List';
 
 @Injectable ({
     providedIn: 'root'
 })
 
-export class BookService {
+export class ListService {
     constructor(private http: HttpClient) {}
 
-    getBooks() {
-        return this.http.get<any>('../assets/books.json')
+    getList() {
+        return this.http.get<any>('../assets/list.json')
             .toPromise()
-            .then(res => <Book[]>res.data)
+            .then(res => <List[]>res.data)
             .then(data => { return data; });
     }
 }

@@ -2,7 +2,8 @@ import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 
 import { MenuItem } from 'primeng/api';
-import { Book, BookService } from '../../resources/services/book.service';
+import { BookService } from '../../resources/services/book.service';
+import { Book } from 'src/app/resources/models/Book';
 
 @Component({
   selector: 'app-page-rank',
@@ -61,8 +62,7 @@ export class PageRankComponent implements OnInit {
       },
     ];
 
-    this.bookService.getBooks().
-      then(books => this.books = books);
+    this.bookService.getBooks().then(books => this.books = books);
 
     /*Create a backing object named cols. It will be an array of name-value pairs for the columnn header names. */
     //to inicialize the filter from colun by field
@@ -83,8 +83,7 @@ export class PageRankComponent implements OnInit {
       { label: 'J.R.R. Tolkien', value: 'J.R.R. Tolkien' },
       { label: 'J.K. Rowling', value: 'J.K. Rowling' },
       { label: 'author1', value: 'author1' },
-      { label: 'author2', value: 'author2' },
-      { label: 'author3', value: 'author3' },   
+      { label: 'author2', value: 'author2' },   
     ];
 
   }
