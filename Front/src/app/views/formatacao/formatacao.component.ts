@@ -1,9 +1,11 @@
 import { STRING_TYPE } from '@angular/compiler';
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, Optional } from '@angular/core';
 import { Router } from '@angular/router';
 import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
+import { textAlign } from 'html2canvas/dist/types/css/property-descriptors/text-align';
+import {jsPDF} from 'jspdf';
 import {MenuItem} from 'primeng/api';
+import { Options } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-formatacao',
@@ -28,46 +30,45 @@ export class FormatacaoComponent implements OnInit {
     ngOnInit(){
       //menu bar itens
       this.items = [
-      {
+        {
           label:'Home',
           icon:'pi pi-fw pi-home',
           id: 'btnDashboard',
           url: '/#/dashboard',
-      },
-      {
-        label:'Resumo',
-        icon:'pi pi-fw pi-book',
-        id: 'btnResumo',
-        url: '/#/resumo-texto',
-      },
+        },
+        {
+          label:'Resumo',
+          icon:'pi pi-fw pi-book',
+          id: 'btnResumo',
+          url: '/#/resumo-texto',
+        },
       
-      {
+        {
           label:'Recomendador',
           icon:'pi pi-fw pi-search-plus',
           id: 'btnSugestionador',
           url: '/#/page-rank',
-      },
-      {
-        label:'Formatador',
-        icon:'pi pi-fw pi-pencil',
-        id: 'btnSugestionador',
-        url: '/#/formatacao',
-       },
-      {
+        },
+        {
+          label:'Formatador',
+          icon:'pi pi-fw pi-pencil',
+          id: 'btnSugestionador',
+          url: '/#/formatacao',
+        },
+        {
           label:'Sobre Nós',
           icon:'pi pi-fw pi-info-circle',
           id: 'btnSugestionador',
           url: '/#/about',
-      },
-      {
+        },
+        {
           label:'Sair',
           icon:'pi pi-fw pi-power-off',
           url: '/#/login',
           id: 'btnQuit',
-      },
-      
-  ];
-  }
+        },
+      ];
+    }
 
   // printPDF(){
   //   let pdf = new jsPDF('p', 'pt', 'a4');
@@ -206,32 +207,30 @@ getPDF() {
 }
 
 printCapa(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
+  var pdf = new jsPDF('p', 'pt', 'a4');
   var source = document.getElementById("capaDocument");
   
   pdf.html(source);
 
+  // setTimeout é necessário, sem ele a função não tem tempo o bastante de escrever o conteudo do pdf
   setTimeout(function() {
     pdf.save('Capa.pdf');
-  });
+  }, 2000);
 }
 
 printFolhaRosto(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
+  let pdf = new jsPDF('portrait', 'px', 'a4');
   var source = document.getElementById("folhaRosto");
   
   pdf.html(source);
 
   setTimeout(function() {
-    pdf.save('Folha de Rosto.docx');
-  });
+    pdf.save('Folha de Rosto.pdf');
+  }, 2000);
 }
 
 printFichaAprovacao(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
+  var pdf = new jsPDF('p', 'pt', 'a4');
   var source = document.getElementById("fichaAprovacao");
   
   pdf.html(source);
@@ -249,7 +248,7 @@ printDedicatoria(): void{
   pdf.html(source);
 
   setTimeout(function() {
-    pdf.save('Dedicatoria.docx');
+    pdf.save('Dedicatoria.pdf');
   }, 2000);
 }
 
@@ -309,7 +308,7 @@ printIntroducao(): void{
   pdf.html(source);
 
   setTimeout(function() {
-    pdf.save('Introdução.docx');
+    pdf.save('Introdução.pdf');
   }, 2000);
 }
 
@@ -360,7 +359,4 @@ printReferencias(): void{
 //     pdf.save('Document.docx');
 //   }, 2000);
 // }
-
-
 }
-

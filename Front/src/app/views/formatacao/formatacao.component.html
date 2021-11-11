@@ -46,7 +46,7 @@
         <!-- <span class="p-ml-2">{{value1}}</span> -->
         <input style="margin-left: 24px;" placeholder="Ano" size="8" type="text" pInputText [(ngModel)]="ano"> 
         <div style="margin-top: 16px;">
-            <textarea placeholder="Texto da Folha de Rosto" rows="3" cols="166" pInputTextarea [(ngModel)]="textoFolha"></textarea>
+          <textarea placeholder="Texto da Folha de Rosto" rows="3" cols="166" pInputTextarea [(ngModel)]="textoFolha"></textarea>
         </div>
     </div>
         
@@ -101,104 +101,113 @@
         </div>
     </div>
 
-
     <div>
-
-
-
-
-
-
-    <!-- <button (click)="salvarDados()">Salvar</button> -->
-
+      <!--button (click)="salvarDados()">Salvar</button-->
     </div >
      
-    <div  style="margin-bottom: 15px; margin-top: 15px; justify-content: space-between; padding-top: 15px;">
-        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Visualização prévia do documento</p></b>
-        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Cliique para expandir o elemento que deseja visualizar antes do download</p></b>
-        <div style="margin-top: 16px;">
-            <p-fieldset  legend="Capa" [toggleable]="true">
-                <div id="capaDocument">
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">{{instituicao}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno3}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno4}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno5}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno6}}</p></b>                  
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">{{cidade}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{ano}}</p></b>   
-                </div>
-            </p-fieldset>
-        </div>
-        <p-button (click)="printCapa()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+    <div style="margin-bottom: 15px; margin-top: 15px; justify-content: space-between; padding-top: 15px;">
+      <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Visualização prévia do documento</p></b>
+      <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Cliique para expandir o elemento que deseja visualizar antes do download</p></b>
+      <!--div style="margin-top: 16px;">
+        <p-fieldset  legend="Capa" [toggleable]="true">
+          <div id="capaDocument" style="height: 150mm; justify-content: center;justify-items: center; align-items: center; align-content: center; align-self: center; text-align: center;">
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">{{instituicao}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno3}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno4}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno5}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno6}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">{{cidade}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{ano}}</p></b>
+          </div>
+        </p-fieldset>
+      </div-->
+      <div style="margin-top: 16px;">
+        <p-fieldset  legend="Capa" [toggleable]="true">
+          <div id="capaDocument" style="width: 600px;">
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">{{instituicao}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno3}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno4}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno5}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno6}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">{{cidade}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{ano}}</p></b>
+          </div>
+        </p-fieldset>
+      </div>
+      <p-button (click)="printCapa()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
         
-        <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Folha de Rosto" [toggleable]="true">
-                <div id="folhaRosto">
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno3}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno4}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno5}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno6}}</p></b>                  
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
-                    <div style="align-items: center; margin-right: 75px;margin-left:284px; margin-top: 36px;">
-                        <p style="font-family: Arial; font-size: 12px;text-align: right;margin-right: 75px;align-content: justify;">{{textoFolha}}</p>          
-                    </div> 
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">{{cidade}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{ano}}</p></b>   
-                </div>
-            </p-fieldset>
-        </div>
-        <p-button (click)="printFolhaRosto()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
-        
-        <div  style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Ficha de Aprovacão" [toggleable]="true">
-                <div id="fichaAprovacao" style="width: 248px; height: 351px;justify-content: center;justify-items: center; align-items: center; align-content: center;">
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno3}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno4}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno5}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno6}}</p></b>                  
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
-                    <div style="align-items: center; margin-right: 75px;margin-left:284px; margin-top: 36px;">
-                        <p style="font-family: Arial; font-size: 12px;text-align: right;margin-right: 75px;align-content: justify;">{{textoFolha}}</p>          
-                    </div> 
-                    <p style="text-align:left;font-family: Arial; font-size: 12px; margin-top: 36px;">Aprovado em:</p> 
+      <div style="margin-top: 16px;">
+        <p-fieldset style="margin-top: 16px;" legend="Folha de Rosto" [toggleable]="true">
+          <div id="folhaRosto">
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno3}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno4}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno5}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno6}}</p></b>                  
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
+            <div style="align-items: center; margin-right: 75px;margin-left:284px; margin-top: 36px;">
+              <p style="font-family: Arial; font-size: 12px;text-align: right;margin-right: 75px;align-content: justify;">{{textoFolha}}</p>          
+            </div> 
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">{{cidade}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{ano}}</p></b>   
+          </div>
+        </p-fieldset>
+      </div>
+      <p-button (click)="printFolhaRosto()" label="Download" icon="pi pi-download" iconPos="right" ></p-button>
+         
+      <div  style="margin-top: 16px;">
+        <p-fieldset style="margin-top: 16px;" legend="Ficha de Aprovacão" [toggleable]="true" style="width: 210mm; height: 297mm">
+          <div id="fichaAprovacao" style="width: 600px; justify-content: center;justify-items: center; align-items: center; align-content: center; align-self: center; text-align: center;">
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno3}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno4}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno5}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno6}}</p></b>                  
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
+            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
+            <p style="text-align:left;font-family: Arial; font-size: 12px; margin-top: 36px;">Aprovado em:</p> 
             <div>
-                <p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">BANCA EXAMINADORA</p>
-                <div style="text-align: center;font-family: Arial; font-size: 12px;">
-                    <p>_____________________________/__/___</p>
-                    <p>(nome do professor)</p>
-                    <p>Universidade Paulista - UNIP</p>
-                </div>
-                <div style="text-align: center;font-family: Arial; font-size: 12px;">
-                    <p>_____________________________/__/___</p>
-                    <p>(nome do professor)</p>
-                    <p>Universidade Paulista - UNIP</p>
-                </div>
-                <div style="text-align: center;font-family: Arial; font-size: 12px;">
-                    <p>_____________________________/__/___</p>
-                    <p>(nome do professor)</p>
-                    <p>Universidade Paulista - UNIP</p>
-                </div>
+              <p style="text-align: center;
+                font-family: Arial; font-size: 12px;
+                margin-top: 36px;">BANCA EXAMINADORA
+              </p>
+              <div style="text-align: center;font-family: Arial; font-size: 12px;">
+                <p>_____________________________/__/___</p>
+                <p>(nome do professor)</p>
+                <p>Universidade Paulista - UNIP</p>
+              </div>
+              <div style="text-align: center;font-family: Arial; font-size: 12px;">
+                <p style="text-align: center">_____________________________/__/___</p>
+                <p>(nome do professor)</p>
+                <p>Universidade Paulista - UNIP</p>
+              </div>
+              <div style="text-align: center;font-family: Arial; font-size: 12px;">
+                <p>_____________________________/__/___</p>
+                <p>(nome do professor)</p>
+                <p>Universidade Paulista - UNIP</p>
+              </div>
             </div>
-                </div>
-            </p-fieldset>
-        </div>
-        <p-button (click)="printFichaAprovacao()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
+          </div>
+        </p-fieldset>
+      </div>
+      <p-button (click)="printFichaAprovacao()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
 
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Dedicatoria" [toggleable]="true">
-                <div id="dedicatoria">
+                <div id="dedicatoria" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">DEDICATÓRIA</p></b>
-                    <p>{{dedicatoria}}</p>
+                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{dedicatoria}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -206,9 +215,9 @@
 
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Resumo" [toggleable]="true">
-                <div id="resumo">
+                <div id="resumo" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">RESUMO</p></b>
-                    <p>{{resumo}}</p>
+                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{resumo}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -216,21 +225,19 @@
 
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Abstract" [toggleable]="true">
-                <div id="abstract">
+                <div id="abstract" style="width: 600px;"> 
                     <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">ABSTRACT</p></b>
                     <p>{{abstract}}</p>
                 </div>
             </p-fieldset>
         </div>
         <p-button (click)="printCapa()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
-
-        
         
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Sumario" [toggleable]="true">
-                <div id="abstract">
+                <div id="abstract" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">SUMÁRIO</p></b>
-                    <p>{{abstract}}</p>
+                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{abstract}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -259,9 +266,9 @@
 
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Introdução" [toggleable]="true">
-                <div id="sumario">
+                <div id="sumario" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">SUMARIO</p></b>
-                    <p>{{sumario}}</p>
+                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{sumario}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -269,9 +276,14 @@
 
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Introdução" [toggleable]="true">
-                <div id="introducao">
-                    <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">Introdução</p></b>
-                    <p>{{introducao}}</p>
+                <div id="introducao" style="width: 600px;">
+                    <b><p 
+                      style="text-align: center;
+                      font-family: Arial; font-size: 14px;
+                      margin-top: 30px;">
+                        Introdução
+                    </p></b>
+                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{introducao}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -279,8 +291,8 @@
 
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Desenvolvimento" [toggleable]="true">
-                <div id="desenvolvimento">
-                    <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">Desenvolvimento</p></b>
+                <div id="desenvolvimento" style="width: 600px;">
+                    <b><p  style="text-align: justify;font-family: Arial; font-size: 14px;margin-top: 104px;">Desenvolvimento</p></b>
                     <p>{{desenvolvimento}}</p>
                 </div>
             </p-fieldset>
@@ -290,7 +302,7 @@
 
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Conclusão" [toggleable]="true">
-                <div id="conclusao">
+                <div id="conclusao" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">CONCLUSÃO</p></b>
                     <p>{{conclusao}}</p>
                 </div>
@@ -300,7 +312,7 @@
 
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Referências" [toggleable]="true">
-                <div id="referencias">
+                <div id="referencias" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">REFERENCIAS</p></b>
                     <p>{{referencias}}</p>
                 </div>
