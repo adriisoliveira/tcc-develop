@@ -44,7 +44,7 @@ export class PageRankComponent implements OnInit {
           url: '/#/dashboard',
       },
       {
-        label:'Resumo',
+        label:'Sumarizador',
         icon:'pi pi-fw pi-book',
         id: 'btnResumo',
         url: '/#/resumo-texto',

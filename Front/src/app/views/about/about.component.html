@@ -1,35 +1,181 @@
 <p-menubar [model]="items" >
-    <ng-template pTemplate="start">
-        <img src="../../../favicon1.ico" height="40" class="p-mr-2">
-    </ng-template>
-    <ng-template pTemplate="end">
-        <input type="text" pInputText placeholder="Search">
-    </ng-template>
 </p-menubar>
 <p></p>
-<p-card>
-    <ng-template pTemplate="header">
-        Header content here
-    </ng-template>
-    Body Content
-    <ng-template pTemplate="footer">
-        Footer content here
-    </ng-template>
-</p-card>
-<p></p>
-<p-card   header="Nome da empresa" subheader="Historia bonitinha ?" > 
-    <p></p>
-    <img alt="Card" src="../../../assets/Logo_PNG.png" width="100px"> fotinha dela ?
-    <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+<p-card header="Um pouco sobre nós" subheader="equipe" > 
+    <p>Um texto legal de nós aqui<br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
         quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>    
 </p-card>
 <p></p>
-<p-card header="Sobre nós" subheader="LGPD" >
-     
-    <p></p>
-    Texto da LGPD
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
-    <link rel="stylesheet" href="">    
+<p-card header="Nossos termos de PRIVACIDADE E PROTEÇÂO DE DADOS" subheader="" > 
+    <p-fieldset legend="Header" [toggleable]="true">
+        <br> <b>TERMO DE USO E POLÍTICA DE PRIVACIDADE</b><br><br>
+
+        <b>informações estão presentes neste documento?</b> <br>
+        Neste Termo de Uso, o usuário do serviço Collectio - Repositório Acadêmico  encontrará informações sobre: o funcionamento do serviço e as regras aplicáveis a ele; o arcabouço legal relacionado à prestação do serviço; as responsabilidades do usuário ao utilizar o serviço; as responsabilidades da administração ao prover o serviço; informações para contato, caso exista alguma dúvida ou seja necessário atualizar informações; e o foro responsável por eventuais reclamações caso questões deste Termo de Uso tenham sido violadas.<br>
+        Além disso, na Política de Privacidade, o usuário do serviço da plataforma encontrará informações sobre: quais os tratamentos dos dados pessoais realizados, de forma automatizada ou não, e a sua finalidade; os dados pessoais dos usuários necessários para a prestação do serviço; a forma como eles são coletados; se há o compartilhamento de dados com terceiros; e quais as medidas de segurança implementadas para proteger os dados. 
+        
+        <br><br>Aceitação do Termo de Uso e Política de Privacidade<br>
+        Ao utilizar os serviços, o usuário confirma que leu e compreendeu os Termos e Políticas aplicáveis ao serviço Collectio e concorda em ficar vinculado a eles. Há a assinatura do contrato no momento da matrícula ou contratação do colaborador feitos pela instituição.
+        
+        <br><br>Definições<br>
+        Para melhor compreensão deste documento, neste Termo de Uso e Política de Privacidade, consideram-se:
+        Agentes de tratamento: o controlador e o operador.
+        Banco de dados: Conjunto estruturado de dados pessoais, estabelecido em um ou em vários locais, em suporte eletrônico ou físico.
+        Consentimento: Manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de seus dados pessoais para uma finalidade determinada.
+        Controlador: pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões referentes ao tratamento de dados pessoais.
+        Dado pessoal: informação relacionada a pessoa natural identificada ou identificável.
+        Eliminação: Pessoa indicada pelo controlador e operador para atuar como canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de dados (ANPD).
+        Titular: pessoa natural a quem se referem os dados pessoais que são objeto de tratamento.
+        Uso compartilhado de dados: comunicação, difusão, transferência internacional, interconexão de dados pessoais ou tratamento compartilhado de bancos de dados pessoais por órgãos e entidades públicos no cumprimento de suas competências legais, ou entre esses e entes privados, reciprocamente, com autorização específica, para uma ou mais modalidades de tratamento permitidas por esses entes públicos, ou entres privados.
+        Lei Geral de Proteção de Dados: Lei Federal n. 13.709, de 14 de agosto de 2018, que dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural.
+        Usuários (ou "Usuário", quando individualmente considerado): todas as pessoas naturais que utilizarem o serviço Collectio - Repositório Acadêmico.
+        Violação de dados pessoais: É uma violação de segurança que provoque, de modo acidental ou ilícito, a destruição, a perda, a alteração, a divulgação ou o acesso não autorizado a dados pessoais transmitidos, conservados ou sujeitos a qualquer outro tipo de tratamento.
+        
+        <br><br>Quais são as leis e normativos aplicáveis a esse serviço?<br>
+        -Lei nº 12.965, de 23 de abril de 2014: Marco Civil da Internet – Estabelece princípios, garantias, direitos e deveres para o uso da Internet no Brasil.
+        -Lei nº 12.527, de 18 de novembro de 2011: Lei de Acesso à Informação – Regula o acesso a informações previsto na Constituição Federal
+        -Lei nº 13.709, de 14 de agosto de 2018: Dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural.
+        -Decreto nº 7.724, de 16 de maio de 2012: Regulamenta a Lei no 12.527, de 18 de novembro de 2011 (Lei de Acesso à Informação), que dispõe sobre o acesso a informações previsto na Constituição
+        -Decreto nº 7.845, de 14 de novembro de 2012: Regulamenta procedimentos para credenciamento de segurança e tratamento de informação classificada em qualquer grau de sigilo, e dispõe sobre o Núcleo de Segurança e Credenciamento
+        
+        <br><br>Descrição do serviço<br>
+        Com finalidade de contribuir em processos organizacionais de instituições privadas de ensino que possuem documentos físicos, a PTS implementou o software de automatização online de documentos - Collectio - com atribuição de coletar informações da parte discente, docente e de colaboradores.
+        O registro no sistema nacional promove agilidade e facilidade para gerar e buscar documentos para ambas as partes (aluno, professor e institucional). 
+        A necessidade de possuir ferramentas para auxiliar instituições neste aspecto não é recente, mas com o surgimento do home office devido ao Covid-19 está viabilizada. Será possível dispor uma base de dados consolidados, centralizados e atualizados que serão armazenados em um banco de dados na nuvem. Por meio do software, busca-se ferramentas para ajudar na entrega e disponibilização de documentos institucionais, organização docente e ajudar na preparação de documentos por parte discente.
+        
+        
+        <br><br>Quais são os direitos do usuário do serviço?<br>
+        O usuário do serviço possui os seguintes direitos, conferidos pela Lei de Proteção de Dados Pessoais:
+        - Direito de confirmação e acesso (Art. 18, I e II): é o direito do usuário de obter do serviço a confirmação de que os dados pessoais que lhe digam respeito são ou não objeto de tratamento e, se for esse o caso, o direito de acessar os seus dados pessoais.
+        - Direito de retificação (Art. 18, III): é o direito de solicitar a correção de dados incompletos, inexatos ou desatualizados.
+        - Direito à limitação do tratamento dos dados (Art. 18, IV): é o direito do usuário de limitar o tratamento de seus dados pessoais, podendo exigir a eliminação de dados desnecessários, excessivos ou tratados em desconformidade com o disposto na Lei Geral de Proteção de Dados.
+        - Direito de oposição (Art. 18, § 2º): é o direito do usuário de, a qualquer momento, se opor ao tratamento de dados por motivos relacionados com a sua situação particular, com fundamento em uma das hipóteses de dispensa de consentimento ou em caso de descumprimento ao disposto na Lei Geral de Proteção de Dados.
+        - Direito de portabilidade dos dados (Art. 18, V): é o direito do usuário de realizar a portabilidade dos dados a outro fornecedor de serviço ou produto, mediante requisição expressa, de acordo com a regulamentação da autoridade nacional, observados os segredos comercial e industrial.
+        - Direito de não ser submetido a decisões automatizadas (Art. 20, LGPD): o titular dos dados tem direito a solicitar a revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais que afetem seus interesses, incluídas as decisões destinadas a definir o seu perfil pessoal, profissional, de consumo e de crédito ou os aspectos de sua personalidade. 
+        
+        <br><br>Quais são as obrigações dos usuários que utilizam o serviço?<br>
+        O usuário se responsabiliza pela precisão e veracidade dos dados informados e reconhece que a inconsistência destes poderá implicar a impossibilidade de se utilizar o serviço Collectio - Repositório Acadêmico.
+        Durante a utilização do serviço, a fim de resguardar e de proteger os direitos de terceiros, o usuário se compromete a fornecer somente seus dados pessoais, e não os de terceiros.
+        O login e senha só poderão ser utilizados pelo usuário cadastrado. Ele se compromete em manter o sigilo da senha, que é pessoal e intransferível, não sendo possível, em qualquer hipótese, a alegação de uso indevido, após o ato de compartilhamento.
+        O usuário do serviço é responsável pelas consequências na omissão ou erros nas informações pessoais cadastradas, caso tenha passados dados inverídicos.
+        O Usuário é responsável pela reparação de todos e quaisquer danos, diretos ou indiretos (inclusive decorrentes de violação de quaisquer direitos de outros usuários, de terceiros, inclusive direitos de propriedade intelectual, de sigilo e de personalidade), que sejam causados à Administração Pública, a qualquer outro Usuário, ou, ainda, a qualquer terceiro, inclusive em virtude do descumprimento do disposto nestes Termos de Uso e Política de Privacidade ou de qualquer ato praticado a partir de seu acesso ao serviço.
+        
+        <br>O Órgão não poderá ser responsabilizado pelos seguintes fatos:<br>
+        a.             Equipamento infectado ou invadido por atacantes;
+        b.             Equipamento avariado no momento do consumo de serviços;
+        c.             Proteção do computador;
+        d.             Proteção das informações baseadas nos computadores dos usuários;
+        e.             Abuso de uso dos computadores dos usuários;
+        f.              Monitoração clandestina do computador dos usuários;
+        g.	     Vulnerabilidades ou instabilidades existentes nos sistemas dos usuários;
+        h.             Perímetro inseguro;
+        O uso comercial das expressões utilizadas em aplicativos como marca, nome empresarial ou nome de domínio, além dos conteúdos do serviço, assim como os programas, bancos de dados, redes, arquivos que permitem que o usuário acesse sua conta estão protegidos pelas leis e tratados internacionais de direito autoral, marcas, patentes, modelos e desenhos industriais.
+        Ao acessar o aplicativo, os usuários declaram que irão respeitar todos os direitos de propriedade intelectual e os decorrentes da proteção de marcas, patentes e/ou desenhos industriais, depositados ou registrados em, bem como todos os direitos referentes a terceiros que porventura estejam, ou estiverem de alguma forma, disponíveis no serviço. O simples acesso ao serviço não confere aos usuários qualquer direito ao uso dos nomes, títulos, palavras, frases, marcas, patentes, imagens, dados e informações, dentre outras, que nele estejam ou estiverem disponíveis.
+        A reprodução de conteúdo descritos anteriormente está proibida, salvo com prévia autorização por escrito ou caso se destinem ao uso exclusivamente pessoal e sem que em nenhuma circunstância os usuários adquiram qualquer direito sobre esses conteúdos.
+        É vedada a utilização do serviço para finalidades comerciais, publicitárias ou qualquer outra que contrarie a finalidade para a qual foi concebido, conforme definido neste documento, sob pena de sujeição às sanções cabíveis na Lei nº 9.610/1998, que protege os direitos autorais no Brasil.
+        Os visitantes e usuários assumem toda e qualquer responsabilidade, de caráter civil e/ou criminal, pela utilização indevida das informações, textos, gráficos, marcas, imagens, enfim, todo e qualquer direito de propriedade intelectual ou industrial do serviço.
+        
+        <br><br>Quais são as responsabilidades da administração com meus dados?<br>
+        A administração, no papel de custodiante das informações pessoais dos Usuários, deve cumprir todas as legislações inerentes ao uso correto dos dados pessoais do cidadão de forma a preservar a privacidade dos dados utilizados na plataforma.
+        Publicar e informar ao Usuário as futuras alterações a estes Termos de Uso e Política de Privacidade por meio do sítio (https://sso.acesso.gov.br/), conforme o princípio da publicidade estabelecido no artigo 37, caput, da Constituição Federal.
+        Em nenhuma hipótese, a administração será responsável pela instalação no equipamento do Usuário ou de terceiros, de códigos maliciosos (vírus, trojans, malware, worm, bot, backdoor, spyware, rootkit, ou de quaisquer outros que venham a ser criados), em decorrência da navegação na Internet pelo Usuário.
+        Em hipótese alguma, o serviço e seus colaboradores responsabilizam-se por eventuais danos diretos, indiretos, emergentes, especiais, imprevistos ou multas causadas, em qualquer matéria de responsabilidade, seja contratual, objetiva ou civil (inclusive negligência ou outras), decorrentes de qualquer forma de uso do serviço, mesmo que advertida a possibilidade de tais danos.
+        Tendo em vista que o serviço lida com informações pessoais, o usuário concorda que não usará robôs, sistemas de varredura e armazenamento de dados (como “spiders” ou “scrapers”), links escondidos ou qualquer outro recurso escuso, ferramenta, programa, algoritmo ou método coletor/extrator de dados automático para acessar, adquirir, copiar ou monitorar o serviço, sem permissão expressa por escrito do órgão.
+        Em se tratando de aplicativos em dispositivos móveis sua comercialização é expressamente proibida. Ao concordar com este Termo de Uso e utilizar o aplicativo móvel, o usuário receberá uma permissão do órgão para uso não comercial dos serviços oferecidos pelo aplicativo, o que, em nenhuma hipótese, fará dele proprietário do aplicativo móvel.
+        Caso o usuário descumpra o Termo de Uso ou a Política de Privacidade, ou seja, investigado em razão de má conduta, o órgão poderá restringir seu acesso. O usuário também deverá responder legalmente por essa conduta.  
+        A Administração Pública poderá, quanto às ordens judiciais de pedido de informações, compartilhar informações necessárias para investigações ou tomar medidas relacionadas a atividades ilegais, suspeitas de fraude ou ameaças potenciais contra pessoas, bens ou sistemas que sustentam o serviço ou de outra forma necessária para cumprir com as obrigações legais. Caso ocorra, a Administração Pública notificará os titulares dos dados, salvo quando o processo estiver em segredo de justiça.
+        A Administração pública se compromete a preservar a funcionalidade do serviço ou aplicativo, utilizando um layout que respeite a usabilidade e navegabilidade, facilitando a navegação sempre que possível, e exibir as funcionalidades de maneira completa, precisa e suficiente, de modo que as operações realizadas no serviço sejam claras.
+        
+        <br><br>Qual o contato pelo qual o usuário do serviço pode tirar suas dúvidas?<br>
+        Caso o usuário tenha alguma dúvida sobre este Termo de Uso, ele poderá entrar em contato pelo e-mail ana.simal@aluno.unip.br.
+        <br>POLÍTICA DE PRIVACIDADE<br>
+        Esta Política de Privacidade foi elaborada em conformidade com a Lei Federal n. 12.965 de 23 de abril de 2014 (Marco Civil da Internet) e com a Lei Federal n. 13.709, de 14 de agosto de 2018 (Lei de Proteção de Dados Pessoais).
+        Esta Política de Privacidade poderá ser atualizada em decorrência de eventual atualização normativa, razão pela qual se convida o usuário a consultar periodicamente esta seção.
+        O site se compromete a cumprir as normas previstas na Lei Geral de Proteção de Dados (LGPD), e respeitar os princípios dispostos no Art. 6º:
+        <br>I - finalidade: realização do tratamento para propósitos legítimos, específicos, explícitos e informados ao titular, sem possibilidade de tratamento posterior de forma incompatível com essas finalidades;
+        <br>II - adequação: compatibilidade do tratamento com as finalidades informadas ao titular, de acordo com o contexto do tratamento;
+        <br>III - necessidade: limitação do tratamento ao mínimo necessário para a realização de suas finalidades, com abrangência dos dados pertinentes, proporcionais e não excessivos em relação às finalidades do tratamento de dados;
+        <br>IV - livre acesso: garantia, aos titulares, de consulta facilitada e gratuita sobre a forma e a duração do tratamento, bem como sobre a integralidade de seus dados pessoais;
+        <br>V - qualidade dos dados: garantia, aos titulares, de exatidão, clareza, relevância e atualização dos dados, de acordo com a necessidade e para o cumprimento da finalidade de seu tratamento;
+        <br>VI - transparência: garantia, aos titulares, de informações claras, precisas e facilmente acessíveis sobre a realização do tratamento e os respectivos agentes de tratamento, observados os segredos comercial e industrial;
+        <br>VII - segurança: utilização de medidas técnicas e administrativas aptas a proteger os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou difusão;
+        <br>VIII - prevenção: adoção de medidas para prevenir a ocorrência de danos em virtude do tratamento de dados pessoais;
+        <br>IX - não discriminação: impossibilidade de realização do tratamento para fins discriminatórios ilícitos ou abusivos;
+        <br>X - responsabilização e prestação de contas: demonstração, pelo agente, da adoção de medidas eficazes e capazes de comprovar a observância e o cumprimento das normas de proteção de dados pessoais e, inclusive, da eficácia dessas medidas.
+        
+        <br>Agentes de tratamento<br>
+        A quem compete as decisões referentes ao tratamento de dados pessoais realizado no serviço Collectio - Repositório Acadêmico (Controlador)?
+        A Lei Geral de Proteção de Dados define como controlador, em seu artigo 5º:
+        Art. 5º, VI – controlador: pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões referentes ao tratamento de dados pessoais;
+        
+        <br>Para o serviço Collectio - Repositório Acadêmico, as decisões referentes ao tratamento de dados pessoais são de responsabilidade do UNIP - Universidade Paulista.
+        Endereço: Av. Marquês de São Vicente, 3001 - Água Branca, São Paulo - SP.
+        E-mail: apoio.marques@unip.br.
+        Telefone: (11) 3613-7052.
+        
+        <br><br>Quem realiza o tratamento de dados (Operador)?<br>
+        A Lei Geral de Proteção de Dados define como operador, em seu artigo 5º:
+        Art. 5º, VII - operador: pessoa natural ou jurídica, de direito público ou privado, que realiza o tratamento de dados pessoais em nome do controlador.
+        Para o serviço Collectio - Repositório Acadêmico, quem realiza o tratamento de dados pessoais em nome do controlador é o operador PTS - Potato Technological Solution. Endereço: (Endereço fictício).
+        Quem é o responsável por atuar como canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados (Encarregado).
+        A Lei Geral de Proteção de Dados define como encarregado, em seu artigo 5º:
+        Art. 5º, VIII – pessoa indicada pelo controlador e operador para atuar como canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados (ANPD).
+        Para o serviço Collectio - Repositório Acadêmico, quem é responsável por atuar como canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados é o encarregado Ana Carolina Martins Simal.
+        
+        <br>Quais dados pessoais são tratados pelo serviço?<br>
+        A utilização, pelo usuário, de determinadas funcionalidades do serviço dependerá do tratamento dos seguintes dados pessoais:
+        -Nome completo
+        -Nome social
+        -Data de nascimento
+        -Sexo
+        -Número de inscrição no CPF
+        -Endereço de e-mail
+        -Endereço
+        -Número de telefone
+        -Registro de acesso
+        
+        <br>Como os dados são coletados?<br>
+        Os dados pessoais são coletados pela instituição de ensino no momento da matrícula do aluno ou contratação do professor, onde consta na documentação aviso que será solicitado criação de perfil para uso do software.
+        
+        <br>Para que fim utilizamos seus dados?<br>
+        O dado é necessário para criação do usuário e identificação dentro do serviço, visando melhorar e personalizar a experiência do usuário, além da necessidade de identificação de serviço e o trajeto do usuário logado.
+        
+        <br>Qual o tratamento realizado com os dados pessoais?<br>
+        Nome completo : Classificação, coleta e controle.
+        Nome social : Classificação, coleta e controle.
+        Número de inscrição no CPF : Classificação, coleta e controle.
+        Endereço de e-mail : Classificação, coleta e controle.
+        Endereço : Acesso,
+        Número de telefone : Classificação, coleta e controle.
+        Registro de acesso : Classificação, coleta, controle e armazenamento.
+        
+        <br>Os dados pessoais utilizados no serviço são compartilhados?<br>
+        Os dados pessoais do usuário não são compartilhados com terceiros em nenhuma hipótese.
+        
+        <br>Segurança no tratamento dos dados pessoais do usuário<br>
+        O software se compromete a aplicar as medidas técnicas e organizativas aptas a proteger os dados pessoais de acessos não autorizados e de situações de destruição, perda, alteração, comunicação ou difusão de tais dados.
+        Para a garantia da segurança, serão adotadas soluções que levem em consideração: as técnicas adequadas; os custos de aplicação; a natureza, o âmbito, o contexto e as finalidades do tratamento; e os riscos para os direitos e liberdades do usuário.
+        O site utiliza criptografia para que os dados sejam transmitidos de forma segura e confidencial, de maneira que a transmissão dos dados entre o servidor e o usuário, e em retroalimentação, ocorra de maneira totalmente cifrada ou encriptada.
+        No entanto, o site se exime de responsabilidade por culpa exclusiva de terceiro, como em caso de ataque de hackers ou crackers, ou culpa exclusiva do usuário, como no caso em que ele mesmo transfere seus dados a terceiro. O serviço se compromete, ainda, a comunicar o usuário em prazo adequado caso ocorra algum tipo de violação da segurança de seus dados pessoais que possa lhe causar um alto risco para seus direitos e liberdades pessoais.
+        A violação de dados pessoais é uma violação de segurança que provoque, de modo acidental ou ilícito, a destruição, a perda, a alteração, a divulgação ou o acesso não autorizado a dados pessoais transmitidos, conservados ou sujeitos a qualquer outro tipo de tratamento.
+        Por fim, o site se compromete a tratar os dados pessoais do usuário com confidencialidade, dentro dos limites legais.
+        
+        <br><br> O serviço Collectio - Repositório Acadêmico utiliza cookies? <br>
+        Cookies são pequenos arquivos de texto enviados pelo site ao computador do usuário e que nele ficam armazenados, com informações relacionadas à navegação do site.
+        Por meio dos cookies, pequenas quantidades de informação são armazenadas pelo navegador do usuário para que nosso servidor possa lê-las posteriormente. Podem ser armazenados, por exemplo, dados sobre o dispositivo utilizado pelo usuário, bem como seu local e horário de acesso ao site.
+        É importante ressaltar que nem todo cookie contém dados pessoais do usuário, já que determinados tipos de cookies podem ser utilizados somente para que o serviço funcione corretamente. 
+        As informações eventualmente armazenadas em cookies também são consideradas dados pessoais e todas as regras previstas nesta Política de Privacidade também são aplicáveis a eles.
+        A aplicação não utiliza cookies.
+        
+        <br><br>Este Termo de Uso pode ser alterado? <br>
+        A presente versão desta Política de Privacidade foi atualizada pela última vez em: 25/09/2021
+        O editor se reserva o direito de modificar, a qualquer momento o site as presentes normas, especialmente para adaptá-las às evoluções do serviço, seja pela disponibilização de novas funcionalidades, seja pela supressão ou modificação daquelas já existentes.
+        O usuário será explicitamente notificado em caso de alteração deste Termo de Uso.
+        
+        <br><br>Qual o foro aplicável caso o usuário queira realizar alguma reclamação?<br>
+        Sem prejuízo de qualquer outra via de recurso administrativo ou judicial, todos os titulares de dados têm direito a apresentar reclamação à Autoridade Nacional de Proteção de Dados. 
+        Este Termo será regido pela legislação brasileira. Qualquer reclamação ou controvérsia com base neste Termo será dirimida exclusivamente pela Justiça Estadual, na seção judiciária do domicílio do usuário.
+        
+    </p-fieldset>
 </p-card>

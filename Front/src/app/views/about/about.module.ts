@@ -6,6 +6,7 @@ import { AboutComponent } from './about.component';
 
 import {MenubarModule} from 'primeng/menubar';
 import {CardModule} from 'primeng/card';
+import {FieldsetModule} from 'primeng/fieldset';
 
 @NgModule({
   declarations: [AboutComponent],
@@ -13,7 +14,8 @@ import {CardModule} from 'primeng/card';
     CommonModule,
     AboutRoutingModule,
     MenubarModule,
-    CardModule
+    CardModule,
+    FieldsetModule
   ]
 })
 export class AboutModule { }

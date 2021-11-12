@@ -5,6 +5,9 @@ import { ResumoTextoRoutingModule } from './resumo-texto-routing.module';
 import { ResumoTextoComponent } from './resumo-texto.component';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import { FormsModule }   from '@angular/forms';
+import {FieldsetModule} from 'primeng/fieldset';
+import {CardModule} from 'primeng/card';
+import {ButtonModule} from 'primeng/button';
 
 import {MenubarModule} from 'primeng/menubar';
 
@@ -15,7 +18,10 @@ import {MenubarModule} from 'primeng/menubar';
     ResumoTextoRoutingModule,
     InputTextareaModule,
     FormsModule,
-    MenubarModule
+    MenubarModule,
+    FieldsetModule,
+    CardModule,
+    ButtonModule
   ]
 })
 export class ResumoTextoModule { }

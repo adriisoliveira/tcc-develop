@@ -31,7 +31,7 @@ import {MenuItem} from 'primeng/api';
           url: '/#/dashboard',
       },
       {
-        label:'Resumo',
+        label:'Sumarizador',
         icon:'pi pi-fw pi-book',
         id: 'btnResumo',
         url: '/#/resumo-texto',
