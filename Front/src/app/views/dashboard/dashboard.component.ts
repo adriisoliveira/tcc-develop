@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 
-//to use for get a menuBar for PrimeNG
+import { DataView } from 'src/app/resources/models/DataView';
+import { DataViewService } from 'src/app/resources/services/dataView.service';
 import {MenuItem} from 'primeng/api';
 
 
@@ -14,13 +15,17 @@ import {MenuItem} from 'primeng/api';
   export class DashboardComponent implements OnInit {
   
     items: MenuItem[]; 
-  
+    dataViewComponent: DataView[];
+
     constructor(
-      private router: Router
+      private router: Router,
+      private dataViewService: DataViewService
       ) { }
   
     //norvamente :void
     ngOnInit(){
+
+      this.dataViewService.getDataView().then(dataView =>this.dataViewComponent = dataView);
       //menu bar itens
       this.items = [
           

@@ -6,7 +6,7 @@ import { DashboardComponent } from './dashboard.component';
 
 import {MenubarModule} from 'primeng/menubar';
 import {MenuItem} from 'primeng/api';//item q vai no componet
-
+import { DataViewModule } from 'primeng/dataview';
 
 @NgModule({
   declarations: [DashboardComponent],
@@ -14,6 +14,7 @@ import {MenuItem} from 'primeng/api';//item q vai no componet
     CommonModule,
     DashboardRoutingModule,
     MenubarModule, 
+    DataViewModule
   ]
 })
 export class DashboardModule { }
