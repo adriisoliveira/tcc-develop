@@ -8,6 +8,19 @@
 </p-menubar>
 <br>
 
+<p-card header="Recomendador" [style]="{'width': '78rem', 'margin-bottom': '2em'}">
+  <ng-template pTemplate="header">
+      <img alt="Card" src="assets/showcase/images/usercard.png">
+  </ng-template>
+  <p>O recomendador collectio foi desenvolvido para facilitar a sua busca dentro de páginas imensas, de maneira a filtrar os links e conteudos mais importantes
+    de acordo com o que voce deseja encontrar. É muito simples:
+  </p>
+  <p>1. Cole o link da página no campo "Link de busca"</p>
+  <p>2. Clique em analisar para que o programa possa encontrar as melhores páginas</p>
+  <p>3. Digite o termo que deseja encontrar no campo "Filtro"</p>
+  <p>E pronto, rápido e fácil suas buscas são filtradas</p>
+</p-card>
+
 <div>
 <p-table #dt [columns]="cols" [value]="books" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
 totalRecords="totalRecords" pageLinks="3">
@@ -22,7 +35,7 @@ totalRecords="totalRecords" pageLinks="3">
       
     
 
-      <input type="text" pInputText size="50" placeholder="Global Filter" style="width:auto" [(ngModel)]="searchText">
+      <input type="text" pInputText size="50" placeholder="Filtro" style="width:auto" [(ngModel)]="searchText">
       <button type="button" pButton class="search" (click)="search()" style="width: 40px; height: 30px;">
         <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
       </button>
