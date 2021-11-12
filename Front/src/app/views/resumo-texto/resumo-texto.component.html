@@ -1,0 +1,35 @@
+<p-menubar [model]="items">
+    <ng-template pTemplate="start">
+        <img src="../../../favicon1.ico" height="40" class="p-mr-2">
+    </ng-template>
+    <ng-template pTemplate="end">
+        <input type="text" pInputText placeholder="Search">
+    </ng-template>
+</p-menubar> 
+
+<div class="p-col-10 p-sm-6 p-md-4 content">
+    <div id="divFormResumo1" >
+        <label><strong>Insira o texto para o resumo</strong> </label>
+        <div id="DivResumoBox1">
+            <textarea id="TxtAreaResumoBox1" class="txtArea" name="resumoBox1" rows="20" style="width: 30em" 
+            placeholder="Insira aqui o texto para o resumo" [(ngModel)]="toSummarizeText"></textarea>
+        </div>
+        <br />
+
+        <div id="DivSelectLines">
+            <label>Quantidade de Linhas </label><br />
+            <input type="number" [(ngModel)]="lineQuantity" placeholder="Quantidade de Linhas" min="1" max="10"/>
+        </div>
+        <br />
+
+        <div id="DivBtnSubmit">
+            <button class="btnSubmit" type="button" (click)="setSummarizedText()">Enviar Resumo</button>
+        </div>
+        <br />
+        
+    </div>
+    <br />
+    <div id="DivResumoBox2">
+        <textarea id="resumoBox2" name="resumoBox2" rows="20" style="width: 30em" >{{ summarizedText }}</textarea>
+    </div>
+</div>

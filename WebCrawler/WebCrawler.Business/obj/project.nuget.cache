@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jr8knta957H/eXGsnqpEYfhbAM73C99RtNugZOvEccirSrxrn2T6g7awtDYTyoNEmOTomSfUtHpcRw6M/pwVhw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alqueiroz\\.nuget\\packages\\dotnet-stop-words\\1.1.0\\dotnet-stop-words.1.1.0.nupkg.sha512",
+    "C:\\Users\\alqueiroz\\.nuget\\packages\\htmlagilitypack\\1.11.34\\htmlagilitypack.1.11.34.nupkg.sha512",
+    "C:\\Users\\alqueiroz\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

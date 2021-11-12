@@ -1,0 +1,67 @@
+<p-menubar [model]="items">
+  <ng-template pTemplate="start">
+      <img src="../../../favicon1.ico" height="40" class="p-mr-2">
+  </ng-template>
+  <ng-template pTemplate="end">
+      <input type="text" pInputText placeholder="Search">
+  </ng-template>
+</p-menubar>
+<br>
+
+<div>
+<p-table #dt [columns]="cols" [value]="books" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
+totalRecords="totalRecords" pageLinks="3">
+<ng-template pTemplate="caption">
+  <div style="text-align: right">        
+      
+      <input type="text" pInputText size="50" placeholder="Global Filter" style="width:auto" [(ngModel)]="searchText">
+      <button type="button" pButton class="search" (click)="search()" style="width: 40px; height: 30px;">
+        <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+      </button>
+  </div>
+</ng-template>
+<!-- Delete #dt and this part of code is dont use the global search
+    <ng-template pTemplate="caption">
+  <div style="text-align: right">        
+      <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+      <input type="text" pInputText size="50" placeholder="Global Filter" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
+  </div>
+</ng-template>
+ -->
+<ng-template pTemplate="header" let-columns>
+  <tr>
+    <th *ngFor="let col of columns">
+      {{col.header}}
+    </th>
+  </tr>
+
+  <!-- If needed use to filter inside a colun -->
+  <tr>
+      <th *ngFor="let col of columns" [ngSwitch]="col.field">
+        <!-- <input *ngSwitchCase="'name'" pInputText type="text"
+          (input)="dt.filter($event.target.value, col.field, 'contains')" /> -->
+
+          <!-- use this if we need a costum search, if dont delete te allAuthos
+          from component too used the Dropdown module tu this work -->
+            
+      <!-- <p-dropdown *ngSwitchCase="'author'" [options]="allAuthors" 
+      [style]="{'width':'100%'}" (onChange)="dt.filter($event.value, col.field, 'equals')"></p-dropdown> -->
+      </th>
+  </tr>
+
+</ng-template>
+<ng-template pTemplate="body" let-rowData let-columns="columns">
+  <tr>
+    <td *ngFor="let col of columns">
+      <ng-container *ngIf="col.field === 'url'">
+        <a href="{{rowData[col.field]}}">{{rowData[col.field]}}</a>
+      </ng-container>
+
+      <ng-container *ngIf="col.field === 'title'">
+        {{rowData[col.field]}}
+      </ng-container>
+    </td>
+  </tr>
+</ng-template>
+</p-table>
+</div>
