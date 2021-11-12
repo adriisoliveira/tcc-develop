@@ -39,6 +39,12 @@ export class AboutComponent implements OnInit {
           url: '/#/page-rank',
       },
       {
+        label:'Formatador',
+        icon:'pi pi-fw pi-pencil',
+        id: 'btnSugestionador',
+        url: '/#/formatacao',
+       },
+      {
           label:'Sobre Nós',
           icon:'pi pi-fw pi-info-circle',
           id: 'btnSugestionador',

@@ -24,13 +24,15 @@ namespace Scraper
                 new UnitOfWork(context)
                 ); // Injeção de dependência
 
-            _crawlerService = new CrawlerService(new PageUrlRepository(context), uow);// Injeção de dependência
+            var crawlerQueue = new UrlCrawlerQueueRepository(context);
+            _crawlerService = new CrawlerService(new PageUrlRepository(context), uow, crawlerQueue);// Injeção de dependência
+            
 
             var pages = _crawlerService.GetAllPageUrlsToIndex(); ///TODO: trazer um DTO
-            //foreach (var page in pages)
-            //    _scrapperService.IndexPage(page.Url);
             foreach (var page in pages)
-                _scrapperService.PageRank(page.Url);
+                _scrapperService.IndexPage(page.Url);
+            //foreach (var page in pages)
+            //    _scrapperService.PageRank(page.Url);
 
             ConsoleUtils.OutputConsole("[Indexer]", "Fim da execução do serviço.", ConsoleColor.Cyan);
 
