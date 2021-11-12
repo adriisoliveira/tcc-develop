@@ -219,7 +219,7 @@ printCapa(): void{
 }
 
 printFolhaRosto(): void{
-  let pdf = new jsPDF('portrait', 'px', 'a4');
+  var pdf = new jsPDF('p', 'pt', 'a4');
   var source = document.getElementById("folhaRosto");
   
   pdf.html(source);
@@ -260,7 +260,7 @@ printResumo(): void{
   pdf.html(source);
 
   setTimeout(function() {
-    pdf.save('Resumo.docx');
+    pdf.save('Resumo.pdf');
   }, 2000);
 }
 
@@ -272,7 +272,7 @@ printAbstract(): void{
   pdf.html(source);
 
   setTimeout(function() {
-    pdf.save('Abstract.docx');
+    pdf.save('Abstract.pdf');
   }, 2000);
 }
 
@@ -284,7 +284,7 @@ printListas(): void{
   pdf.html(source);
 
   setTimeout(function() {
-    pdf.save('Listas.docx');
+    pdf.save('Listas.pdf');
   }, 2000);
 }
 
@@ -296,7 +296,7 @@ printSumario(): void{
   pdf.html(source);
 
   setTimeout(function() {
-    pdf.save('Sumario.docx');
+    pdf.save('Sumario.pdf');
   }, 2000);
 }
 
@@ -320,7 +320,7 @@ printDesenvolvimento(): void{
   pdf.html(source);
 
   setTimeout(function() {
-    pdf.save('Desenvolvimento.docx');
+    pdf.save('Desenvolvimento.pdf');
   }, 2000);
 }
 
@@ -332,7 +332,7 @@ printConclusao(): void{
   pdf.html(source);
 
   setTimeout(function() {
-    pdf.save('Conclusao.docx');
+    pdf.save('Conclusao.pdf');
   }, 2000);
 }
 
@@ -344,7 +344,7 @@ printReferencias(): void{
   pdf.html(source);
 
   setTimeout(function() {
-    pdf.save('Referencias.docx');
+    pdf.save('Referencias.pdf');
   }, 2000);
 }
 
