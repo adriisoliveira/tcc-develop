@@ -108,7 +108,7 @@
       <b><p style="font-family: Open sans; font-size: 18px; color:#333333;text-align: center;">Visualização prévia do documento</p></b>
       <b><p style="font-family: Open sans; font-size: 14px; color:#333333;text-align: center;">Cliique para expandir o elemento que deseja visualizar antes do download</p></b>
       <div style="margin-top: 26px;">
-        <p-fieldset  legend="Capa" [toggleable]="true">
+        <p-fieldset  legend="Capa" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
           <div id="capaDocument" style="width: 600px;">
             <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">{{instituicao}}</p></b>
             <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
@@ -127,7 +127,7 @@
       <p-button (click)="printCapa()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
         
       <div style="margin-top: 16px;">
-        <p-fieldset style="margin-top: 16px;" legend="Folha de Rosto" [toggleable]="true">
+        <p-fieldset style="margin-top: 16px;" legend="Folha de Rosto" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
           <div id="folhaRosto">
             <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
             <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
@@ -148,7 +148,7 @@
       <p-button (click)="printFolhaRosto()" label="Download" icon="pi pi-download" iconPos="right" ></p-button>
          
       <div  style="margin-top: 16px;">
-        <p-fieldset style="margin-top: 16px;" legend="Ficha de Aprovacão" [toggleable]="true" style="width: 210mm; height: 297mm">
+        <p-fieldset style="margin-top: 16px;" legend="Ficha de Aprovacão" [toggleable]="true"  collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
           <div id="fichaAprovacao" style="width: 600px; justify-content: center;justify-items: center; align-items: center; align-content: center; align-self: center; text-align: center;">
             <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
             <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
@@ -186,7 +186,7 @@
       <p-button (click)="printFichaAprovacao()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
 
         <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Dedicatoria" [toggleable]="true">
+            <p-fieldset style="margin-top: 16px;" legend="Dedicatoria" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="dedicatoria" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">DEDICATÓRIA</p></b>
                     <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{dedicatoria}}</p>
@@ -196,7 +196,7 @@
         <p-button (click)="printDedicatoria()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
 
         <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Resumo" [toggleable]="true">
+            <p-fieldset style="margin-top: 16px;" legend="Resumo" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="resumo" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">RESUMO</p></b>
                     <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{resumo}}</p>
@@ -206,7 +206,7 @@
         <p-button (click)="printResumo()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
 
         <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Abstract" [toggleable]="true">
+            <p-fieldset style="margin-top: 16px;" legend="Abstract" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="abstract" style="width: 600px;"> 
                     <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">ABSTRACT</p></b>
                     <p>{{abstract}}</p>
@@ -216,7 +216,7 @@
         <p-button (click)="printCapa()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
         
         <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Sumario" [toggleable]="true">
+            <p-fieldset style="margin-top: 16px;" legend="Sumario" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="abstract" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">SUMÁRIO</p></b>
                     <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{abstract}}</p>
@@ -226,7 +226,7 @@
         <p-button (click)="printAbstract()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
 
         <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Listas" [toggleable]="true">
+            <p-fieldset style="margin-top: 16px;" legend="Listas" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="listas">
                     <div id="listaIlustracoes">
                         <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">Lista de Ilustracoes</p></b>
@@ -247,7 +247,7 @@
         <p-button (click)="printListas()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
 
         <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Introdução" [toggleable]="true">
+            <p-fieldset style="margin-top: 16px;" legend="Introdução" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="sumario" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">SUMARIO</p></b>
                     <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{sumario}}</p>
@@ -257,7 +257,7 @@
         <p-button (click)="printSumario()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
 
         <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Introdução" [toggleable]="true">
+            <p-fieldset style="margin-top: 16px;" legend="Introdução" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="introducao" style="width: 600px;">
                     <b><p 
                       style="text-align: center;
@@ -272,7 +272,7 @@
         <p-button (click)="printIntroducao()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
 
         <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Desenvolvimento" [toggleable]="true">
+            <p-fieldset style="margin-top: 16px;" legend="Desenvolvimento" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="desenvolvimento" style="width: 600px;">
                     <b><p  style="text-align: justify;font-family: Arial; font-size: 14px;margin-top: 104px;">Desenvolvimento</p></b>
                     <p>{{desenvolvimento}}</p>
@@ -283,7 +283,7 @@
 
 
         <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Conclusão" [toggleable]="true">
+            <p-fieldset style="margin-top: 16px;" legend="Conclusão" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="conclusao" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">CONCLUSÃO</p></b>
                     <p>{{conclusao}}</p>
@@ -293,7 +293,7 @@
         <p-button (click)="printConclusao()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
 
         <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Referências" [toggleable]="true">
+            <p-fieldset style="margin-top: 16px;" legend="Referências" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="referencias" style="width: 600px;">
                     <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">REFERENCIAS</p></b>
                     <p>{{referencias}}</p>
