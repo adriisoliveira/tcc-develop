@@ -12,8 +12,16 @@
 <p-table #dt [columns]="cols" [value]="books" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
 totalRecords="totalRecords" pageLinks="3">
 <ng-template pTemplate="caption">
-  <div style="text-align: right">        
+  <div style="text-align: left;">        
+    <input type="text" pInputText size="50" placeholder="Link de busca" style="width:auto" [(ngModel)]="renderUrl">
+    <button type="button" pButton class="search" (click)="render()" style="width: 40px; height: 30px;">
+      <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+    </button>  
+    
+      <p-button style="margin-left: 120px; margin-right: 120px;" label="Analisar" icon="pi pi-check-circle" iconPos="right"></p-button>
       
+    
+
       <input type="text" pInputText size="50" placeholder="Global Filter" style="width:auto" [(ngModel)]="searchText">
       <button type="button" pButton class="search" (click)="search()" style="width: 40px; height: 30px;">
         <i class="pi pi-search" style="margin:4px 4px 0 0"></i>

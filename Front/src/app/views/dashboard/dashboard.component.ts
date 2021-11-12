@@ -63,16 +63,17 @@ import {MenuItem} from 'primeng/api';
       },
       
   ];
+  
   (function(d, m){
     var kommunicateSettings = 
-    {"appId":"141HMCZoYKEMgvthhUg3JuJWLHBq8ABjG3","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        {"appId":"dFH1acvKl0NRhqvHmtnOYRxOipIY5lkP","popupWidget":true,"automaticChatOpenOnNavigation":true};
     var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
     s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
     var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
     (window as any).kommunicate = m; m._globals = kommunicateSettings;
-  })(document, (window as any).kommunicate || {});
+})(document, (window as any).kommunicate || {});
+}
 
-  }
   
     /*Metodo para modificar a a tela de Dashbord para Resumo */
     // public doResumo(): void{

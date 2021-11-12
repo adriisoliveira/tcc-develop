@@ -15,6 +15,7 @@ export class PageRankComponent implements OnInit {
   items: MenuItem[];
   books: Book[];
   searchText: String;
+  renderUrl: String;
   alertService: AlertService;
 
   //to use a Dynamic table inpute any coluns, coluns do html
@@ -30,6 +31,7 @@ export class PageRankComponent implements OnInit {
     private bookService: BookService
   ) {
     this.searchText = "";
+    this.renderUrl = "";
     this.alertService = new AlertService();
   }
 
@@ -99,6 +101,18 @@ export class PageRankComponent implements OnInit {
   public search():void{
     this.alertService.info('Aguarde...', 'Pesquisando');
     this.bookService.get(this.searchText).
+    toPromise().
+    then(data => this.books = data).
+    catch(data => this.alertService.error('Erro'));
+    setTimeout(()=>{
+      this.alertService.close()
+    }, 3000);
+
+  }
+  
+  public render():void{
+    this.alertService.info('Aguarde...', 'Renderizando');
+    this.bookService.post(this.renderUrl).
     toPromise().
     then(data => this.books = data).
     catch(data => this.alertService.error('Erro'));

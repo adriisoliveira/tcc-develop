@@ -5,6 +5,7 @@ import { PageRankRoutingModule } from './page-rank-routing.module';
 import { PageRankComponent } from './page-rank.component';
 import {CardModule} from 'primeng/card';
 import {PanelModule} from 'primeng/panel';
+import {ButtonModule} from 'primeng/button';
 
 import {MenubarModule} from 'primeng/menubar';
 
@@ -15,7 +16,8 @@ import {MenubarModule} from 'primeng/menubar';
     PageRankRoutingModule,
     CardModule,
     PanelModule,
-    MenubarModule
+    MenubarModule,
+    ButtonModule
   ],
   
 })
