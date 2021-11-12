@@ -7,25 +7,32 @@
     </ng-template>
 </p-menubar>
 
+<div style="margin-top: 36px;">
+    <p-card header="Formatador" [style]="{'width': '78rem', 'margin-bottom': '2em'}">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="assets/showcase/images/usercard.png">
+        </ng-template>
+        <br/>
+        <p>O formatador collectio foi desenvolvido para que voce possa gerar seus documentos, individualmente, de maneira mais prática, simples e rápida.
+            E é muito simples de utilizar:
+        </p>
+        <br/>
+        <p>1. Insira as informações nos campos que deseja, por exemplo, informações da capa do projeto</p>
+        <p>2. Verifique na sessão de visualização se o conteudo corresponde as expectativas</p>
+        <p>3. Clique em download em baixo da tela na sessão de visualização para realizar o download em pdf do componente</p>
+        <br/>
+        <p>Todos os conteúdos são atualizados instantaneamente, mas lembre-se de fazer o download assim que acabar ;)</p>
+    </p-card>
+</div>
+
 
 
 <div>
-
-    <div style="align-items: center;">
-        <b><p style="font-family: Open Sans; font-size: 24px; color:#333333;margin-left: 150px;">FORMATADOR COLLECTIO</p></b>
-    </div>
     
-    <div>
-        <p-fieldset legend="Como usar" [toggleable]="true">
-            <p>O formatador Collectio permite que voce gere um pdf na hora com todas as informações que precisa, ja no formato ABNT.
-                Para tal, informe conforme a marca d'água no campo a informação pedida. 
-            </p>
-            <p>Os campos em que exigem digitação mais longa, são ajustáveis, deslise o canto inferior direito para aumentar a visualização.</p>
-        </p-fieldset>
-    </div>
+ 
     <div style="margin-top: 16px; padding-top: 16px;">
-        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Elementos pré-textuais</p></b>
-        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Capa/Folha de Rosto /Ficha de aprovação</p></b>
+        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;text-align: center;">Elementos pré-textuais</p></b>
+        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;text-align: center;">Capa/Folha de Rosto /Ficha de aprovação</p></b>
         <input placeholder="Nome da Instituição" size="165" type="text" pInputText [(ngModel)]="instituicao"> 
         <input style="margin-right: 20px; margin-top: 16px;" placeholder="Nome e sobrenome  do Integrante 1 - RA" size="79" type="text" pInputText [(ngModel)]="aluno1"> 
         <input placeholder="Nome e sobrenome  do Integrante 2 - RA" size="79" type="text" pInputText [(ngModel)]="aluno2"> 
@@ -33,17 +40,12 @@
         <input placeholder="Nome e sobrenome  do Integrante 4 - RA" size="79" type="text" pInputText [(ngModel)]="aluno4"> 
         <input style="margin-right: 20px; margin-top: 16px;" placeholder="Nome e sobrenome  do Integrante 5 - RA" size="79" type="text" pInputText [(ngModel)]="aluno5"> 
         <input placeholder="Nome e sobrenome  do Integrante 6 - RA" size="79" type="text" pInputText [(ngModel)]="aluno6"> 
-        <!-- <div style="margin-top: 16px;">
-            <textarea placeholder="Nome(s) do(s) aluno(s) - coloque um ENTER entre cada um" rows="1" cols="166" pInputTextarea [(ngModel)]="alunos"></textarea>
-        </div> -->
         <input 
             style="margin-right: 16px; margin-top: 24px;"
 
         placeholder="Titulo do trabalho" size="60" type="text" pInputText [(ngModel)]="titulo"> 
-        <!-- <span class="p-ml-2">{{value1}}</span> -->
         <input placeholder="Subtitulo do trabalho" size="50" type="text" pInputText [(ngModel)]="subtitulo">
         <input style="margin-left: 24px;" placeholder="Cidade" size="25" type="text" pInputText [(ngModel)]="cidade"> 
-        <!-- <span class="p-ml-2">{{value1}}</span> -->
         <input style="margin-left: 24px;" placeholder="Ano" size="8" type="text" pInputText [(ngModel)]="ano"> 
         <div style="margin-top: 16px;">
           <textarea placeholder="Texto da Folha de Rosto" rows="3" cols="166" pInputTextarea [(ngModel)]="textoFolha"></textarea>
@@ -52,8 +54,8 @@
         
         
     <div style="margin-top: 16px; padding-top: 16px;">
-        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Elementos pré-textuais</p></b>
-        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Dedicatória / Resumo / Abstract / Listas</p></b>
+        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;text-align: center;">Elementos pré-textuais</p></b>
+        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;text-align: center;">Dedicatória / Resumo / Abstract / Listas</p></b>
         <div style="margin-top: 16px;">
             <textarea placeholder="Dedicatória" rows="3" cols="166" pInputTextarea [(ngModel)]="dedicatoria"></textarea>
         </div>
@@ -79,8 +81,8 @@
     </div>
 
     <div style="margin-top: 16px; padding-top: 16px;">
-        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Elementos textuais</p></b>
-        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Introdução / Desenvolvimento / Conclusão</p></b>
+        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;text-align: center;">Elementos textuais</p></b>
+        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;text-align: center;">Introdução / Desenvolvimento / Conclusão</p></b>
         <div style="margin-top: 16px;">
             <textarea placeholder="Introdução" rows="3" cols="166" pInputTextarea [(ngModel)]="introducao"></textarea>
         </div>
@@ -94,38 +96,18 @@
     </div>
 
     <div style="margin-top: 16px; padding-top: 16px;">
-        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Elementos pós-textuais</p></b>
-        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Referências</p></b>
+        <b><p style="font-family: Open sans; font-size: 18px; color:#333333;text-align: center;">Elementos pós-textuais</p></b>
+        <b><p style="font-family: Open sans; font-size: 14px; color:#333333;text-align: center;">Referências</p></b>
         <div style="margin-top: 16px;">
             <textarea placeholder="Referências" rows="3" cols="166" pInputTextarea [(ngModel)]="referencias"></textarea>
         </div>
     </div>
 
-    <div>
-      <!--button (click)="salvarDados()">Salvar</button-->
-    </div >
      
     <div style="margin-bottom: 15px; margin-top: 15px; justify-content: space-between; padding-top: 15px;">
-      <b><p style="font-family: Open sans; font-size: 18px; color:#333333;margin-left: 100px;">Visualização prévia do documento</p></b>
-      <b><p style="font-family: Open sans; font-size: 14px; color:#333333;margin-left: 50px;">Cliique para expandir o elemento que deseja visualizar antes do download</p></b>
-      <!--div style="margin-top: 16px;">
-        <p-fieldset  legend="Capa" [toggleable]="true">
-          <div id="capaDocument" style="height: 150mm; justify-content: center;justify-items: center; align-items: center; align-content: center; align-self: center; text-align: center;">
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">{{instituicao}}</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno2}}</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno3}}</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno4}}</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno5}}</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{aluno6}}</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">{{cidade}}</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{ano}}</p></b>
-          </div>
-        </p-fieldset>
-      </div-->
-      <div style="margin-top: 16px;">
+      <b><p style="font-family: Open sans; font-size: 18px; color:#333333;text-align: center;">Visualização prévia do documento</p></b>
+      <b><p style="font-family: Open sans; font-size: 14px; color:#333333;text-align: center;">Cliique para expandir o elemento que deseja visualizar antes do download</p></b>
+      <div style="margin-top: 26px;">
         <p-fieldset  legend="Capa" [toggleable]="true">
           <div id="capaDocument" style="width: 600px;">
             <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">{{instituicao}}</p></b>
@@ -319,90 +301,5 @@
             </p-fieldset>
         </div>
         <p-button (click)="printReferencias()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
-
-        <!-- <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Folha de Rosto" [toggleable]="true">
-                <div id="folhaRosto">
-                    
-                </div>
-            </p-fieldset>
-        </div> -->
-        
-
-        <!-- <div id="folhaDeRosto">
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">NOME DO ALUNO 1</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 2</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 3</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 4</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO5</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO6</p></b>           
-             
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">TITULO DO TRABALHO</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">Subtitulo</p></b>
-            <div style="align-items: center; margin-right: 75px;margin-left:284px; margin-top: 36px;">
-                <p style="font-family: Arial; font-size: 12px;text-align: right;margin-right: 75px;align-content: justify;">Trabalho de conclusão de curso
-                    para obtenção do título de
-                    graduação em (nome do curso)
-                    apresentado à Universidade
-                    Paulista – UNIP. </p>          
-            </div> 
-            
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">CIDADE</p></b>
-            <b><p style="text-align: center;font-family: Arial; font-size: 12px;">ANO</p></b>   
-        </div> -->
     </div>
-    <!-- <div hidden=true id="visualizacao">
-        <div id="documentPrint" class="document" title="document">
-            <div id="capa">
-                <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">{{instituicao}}</p></b>
-                <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 36px;">{{aluno1}}</p></b>
-                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 2</p></b>
-                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 3</p></b>
-                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO 4</p></b>
-                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO5</p></b>
-                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">NOME DO ALUNO6</p></b>                  
-                <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 114px;">{{titulo}}</p></b>
-                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{subtitulo}}</p></b>
-                <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 154px;">{{cidade}}</p></b>
-                <b><p style="text-align: center;font-family: Arial; font-size: 12px;">{{ano}}</p></b>   
-            </div>
-        </div>
-    </div> -->
-    
-
-    <!-- <button (click)="printPDF()">download </button> -->
-    <!-- <p-button (click)="printPDF()" label="Download" icon="pi pi-download" iconPos="right"></p-button> -->
-
-<!-- <div style="margin-top: 50px;">
-    <ckeditor
-    [(ngModel)]="ckeditorContent">
-        
-        
-    </ckeditor>
-</div>
-    
-
-    <div style="height: 220px; width: 200px;margin-top: 36px;">
-        <p>Resumo</p>
-        <p-editor [(ngModel)]="text1" [style]="{'height':'320px'}">
-            <ng-template pTemplate="header">
-                <span class="ql-formats">
-                    <button type="button" class="ql-bold" aria-label="Bold"></button>
-                    <button type="button" class="ql-italic" aria-label="Italic"></button>
-                    <button type="button" class="ql-underline" aria-label="Underline"></button>
-                </span>
-            </ng-template>
-        </p-editor>
-        <p-editor name="custom" [(ngModel)]="text1" styleClass="editor-dimensions">
-            <p-header>
-              <span class="ql-formats">
-                <button class="ql-bold"></button>
-                <button class="ql-italic"></button>
-                <button class="ql-underline"></button>
-                <button class="ql-clean"></button>
-              </span>
-              
-            </p-header>
-          </p-editor>
-    </div> -->
 </div>
