@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "yOJ0zxBI63DgNwRUHjxeHTSHzOK/BX3DQdPgLfNcpiQ0OZe0pX4VkFjJQuuwuZgjx9RYbmLMvv2Jsqf0mFJj+g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NOVA\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\alqueiroz\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
