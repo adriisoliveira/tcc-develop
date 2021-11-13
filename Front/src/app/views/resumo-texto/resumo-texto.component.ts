@@ -52,6 +52,12 @@ export class ResumoTextoComponent implements OnInit {
         id: 'btnSugestionador',
         url: '/#/formatacao',
        },
+       {
+        label:'Enviar Arquivo',
+        icon:'pi pi-fw pi-search-plus',
+        id: 'btnEnviarArquivo',
+        url: '/#/file-upload',
+      },
       {
           label:'Sobre Nós',
           icon:'pi pi-fw pi-info-circle',

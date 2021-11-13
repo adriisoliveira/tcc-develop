@@ -45,6 +45,13 @@ const routes: Routes = [
       (m) => m.FormatacaoModule
     ),
   },
+  
+  {path:'file-upload', 
+  loadChildren: () =>
+    import('./views/file-upload/file-upload-routing.module').then(
+      (m) => m.FileUploadRoutingModule
+    ),
+  },
 
   {path:'about', 
   loadChildren: () =>

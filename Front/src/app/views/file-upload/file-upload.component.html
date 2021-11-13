@@ -1,0 +1,27 @@
+<p-menubar [model]="items">
+    <ng-template pTemplate="start">
+        <img src="../../../favicon1.ico" height="40" class="p-mr-2">
+    </ng-template>
+    <ng-template pTemplate="end">
+        <input type="text" pInputText placeholder="Search">
+    </ng-template>
+  </p-menubar>
+  <br>
+  
+  <div>
+    <h1>Envio de Arquivos</h1>
+    <form>
+      <button pButton type="button" label="Selecionar" class="p-button-secondary"
+      (click)="fileUpload.click()"></button>
+      <br />
+      <span>{{fileName}}</span>
+
+      <br />
+      <br />
+
+      <button pButton type="submit" label="Enviar" class="p-button-secondary" (click)="upload(fileUpload.files)"></button>
+      
+      <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/>
+    </form>
+  </div>
+
