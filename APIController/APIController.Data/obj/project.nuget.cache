@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qZSF6/KNMrWzBqMpTUr8Qf4zSS9cjIf+sG4Qr3f5YciEfFcEnGhjKS0Xh5mHP6nPLjKD8cUQddHZmy0LVg6O1Q==",
+  "dgSpecHash": "qt40OF0ERjNL4SxDsYioMd8L1t4gMoBJ/zpihm3hZQYtV97nx4P5218N5ExTyKQ6+KXsp48rlBYOyhkc+KH1GQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Data\\APIController.Data.csproj",
+  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Data\\APIController.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alqueiroz\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -17,7 +17,6 @@
     "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.10\\microsoft.entityframeworkcore.tools.5.0.10.nupkg.sha512",
     "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
-    "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
