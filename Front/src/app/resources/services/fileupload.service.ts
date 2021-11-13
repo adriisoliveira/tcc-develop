@@ -10,9 +10,6 @@ export class FileUploadService {
 //   Observable<ResponseLogin>
   public upload(file : File): String {
       return 'c:/asdasdasdsa'
-
-    // let headers = new HttpHeaders(); headers = headers.set('Content-Type', 'application/json; charset=utf-8');
-
     // let headers = new HttpHeaders(); headers = headers.set('Content-Type', 'application/json; charset=utf-8');
 
     // return this.httpClient.post<ResponseLogin>(

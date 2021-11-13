@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\APIController.Data"
   ],
-  "SelectedNode": "\\APIController.sln",
+  "SelectedNode": "\\APIController.Data\\APIController.Data.csproj",
   "PreviewInSolutionExplorer": false
 }

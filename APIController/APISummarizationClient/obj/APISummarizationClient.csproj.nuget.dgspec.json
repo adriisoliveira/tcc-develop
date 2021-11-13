@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {}
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
         "projectName": "APISummarizationClient",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
         "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\obj\\",
+        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -47,6 +47,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"

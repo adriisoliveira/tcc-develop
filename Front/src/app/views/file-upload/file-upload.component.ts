@@ -5,7 +5,7 @@ import {MenuItem} from 'primeng/api';
 import {AlertService} from '../../resources/services/alert.service';
 import { FileUploadService } from '../../resources/services/fileupload.service';
 import {FileUploadModule} from 'primeng/fileupload';
-import {HttpClient, HttpEventType, HttpRequest, HttpClientModule, HttpHeaders} from '@angular/common/http';
+import {HttpClient, HttpEventType, HttpRequest, HttpClientModule} from '@angular/common/http';
 
 @Component({
   selector: 'app-file-upload',
@@ -18,7 +18,6 @@ export class FileUploadComponent implements OnInit {
   fileName: String;
   items: MenuItem[];
   alertService: AlertService;
-  author: String;
 
   constructor(
     private router: Router,
@@ -26,62 +25,35 @@ export class FileUploadComponent implements OnInit {
     private http: HttpClient
   ) {
     this.fileName = "";
-    //this.fileUploadService = new FileUploadService(http);
+    this.fileUploadService = new FileUploadService(http);
     this.alertService = new AlertService();
-    this.author = "";
   }
 
   onFileSelected(event) {
     this.fileName = event.target.files[0].name;
   }
 
-    // upload(files) {  
-    //   if (files.length === 0){
-    //     console.log('nada');
-    //     return;
-    //   }
-
     upload(files) {  
       if (files.length === 0){
-      return;
-    }
+        console.log('nada');
+        return;
+      }
     
       const formData = new FormData();  
     
       for (let file of files)
         formData.append(file.name, file);  
     
-      // const uploadReq = new HttpRequest('POST', 'https://localhost:44312/file/save', formData, {  
-      //   reportProgress: true,
-      // }); 
-
-      formData.append("author", this.author.toString());
-
-      let headers = new HttpHeaders({
-        'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
-      });
+      const uploadReq = new HttpRequest('POST', 'https://localhost:44312/file/save', formData, {  
+        reportProgress: true,
+      }); 
     
-      // this.http.request(uploadReq).subscribe(event => { 
-      //   if (event.type === HttpEventType.Response)
-      //   {
-      //     if(event.status == 200){
-      //       this.alertService.info('Sucesso', 'Arquivo enviado com sucesso');
-      //       this.fileName = "";
-      //     }else{
-      //       this.alertService.error('Erro', 'O arquivo não pôde ser enviado');
-      //     }
-      const uploadReq = new HttpRequest('POST', 'https://localhost:44312/file/save', formData, {
-      headers: headers,
-      reportProgress: true,
-    });
-  
-      this.http.request(uploadReq).subscribe(event => {
+      this.http.request(uploadReq).subscribe(event => { 
         if (event.type === HttpEventType.Response)
         {
           if(event.status == 200){
             this.alertService.info('Sucesso', 'Arquivo enviado com sucesso');
             this.fileName = "";
-            this.author = "";
           }else{
             this.alertService.error('Erro', 'O arquivo não pôde ser enviado');
           }

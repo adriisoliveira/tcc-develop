@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController\\APIController.csproj": {}
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController\\APIController.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj": {
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Business\\APIController.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Business\\APIController.Business.csproj",
         "projectName": "APIController.Business",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Business\\APIController.Business.csproj",
         "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\obj\\",
+        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Data\\APIController.Data.csproj": {
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Data\\APIController.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Data\\APIController.Data.csproj",
+        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Data\\APIController.Data.csproj",
         "projectName": "APIController.Data",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Data\\APIController.Data.csproj",
+        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Data\\APIController.Data.csproj",
         "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Data\\obj\\",
+        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -96,8 +96,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj"
+              "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Business\\APIController.Business.csproj": {
+                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Business\\APIController.Business.csproj"
               }
             }
           }
@@ -125,6 +125,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -146,14 +150,14 @@
         }
       }
     },
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController\\APIController.csproj": {
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController\\APIController.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController\\APIController.csproj",
+        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController\\APIController.csproj",
         "projectName": "APIController",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController\\APIController.csproj",
+        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController\\APIController.csproj",
         "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController\\obj\\",
+        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -177,14 +181,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Business\\APIController.Business.csproj"
+              "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Business\\APIController.Business.csproj": {
+                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Business\\APIController.Business.csproj"
               },
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Data\\APIController.Data.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APIController.Data\\APIController.Data.csproj"
+              "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Data\\APIController.Data.csproj": {
+                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APIController.Data\\APIController.Data.csproj"
               },
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\APISummarizationClient.csproj"
+              "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
+                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\APISummarizationClient.csproj"
               }
             }
           }
@@ -199,13 +203,29 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.AspNet.WebApi.Core": {
-              "target": "Package",
-              "version": "[5.2.7, )"
-            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
@@ -234,14 +254,14 @@
         }
       }
     },
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
         "projectName": "APISummarizationClient",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
         "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\obj\\",
+        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -277,6 +297,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6d+fpmAVyErRhfNOm5D2TVJOlCNuJFPFwXtr0Ws6OhdnUIL7wwN2Z9osdRCh6Z1lLU8zq1+Odnf1whhRQIgOaQ==",
+  "dgSpecHash": "XaqoERIKkChNX1y1SwdZAB+x11XdNme8mwSoQq+nQzX6EnlxPmeFeOl4OugfiDUALRvgZ9zfAVzz76R6kphoMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoOsFuncionais\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\JuntandoLogan37-29-60-front\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\alqueiroz\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
