@@ -50,7 +50,7 @@ Todas as abas possuem cartões de instrução de uso para sua respectiva funçã
 - as duas caixas pequenas ao lado da caixa de subtitulo informe sua cidade e ano da realização do trabalho.
 - A ultima caixa dos elementos pré textuais será o texto da folha de rosto.
 
-- A sguir haverá as caixas respectivas para dedicatória, resumo, abstract, lista de ilustrações, lista de tabelas, lista de abreviaturas e siglas e sumário.
+- A seguir haverá as caixas respectivas para dedicatória, resumo, abstract, lista de ilustrações, lista de tabelas, lista de abreviaturas e siglas e sumário.
 
 - Após a aplicação dos dados anteriores haverá três caixas para escrita da Introdução, Desenvolvimento e Conclusão.
 
