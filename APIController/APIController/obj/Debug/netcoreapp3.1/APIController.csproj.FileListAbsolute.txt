@@ -358,3 +358,4 @@ C:\Users\johny\Documents\TCC Projects\tcc-develop Test - Copy\APIController\APIC
 C:\Users\johny\Documents\TCC Projects\tcc-develop Test - Copy\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.dll
 C:\Users\johny\Documents\TCC Projects\tcc-develop Test - Copy\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.pdb
 C:\Users\johny\Documents\TCC Projects\tcc-develop Test - Copy\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.genruntimeconfig.cache
+C:\Users\johny\Documents\TCC Projects\tcc-develop Test - Copy\APIController\APIController\obj\Debug\netcoreapp3.1\APIController.csproj.CopyComplete

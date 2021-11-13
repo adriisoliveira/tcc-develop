@@ -9,14 +9,19 @@
   </p-menubar>
 </div>
 <br>
+<style>
+  .grid-card{
+    border-width: 1px;
+    border-style: dotted;
+    border-color: black;
+  }
+</style>
 <div>
   <p-dataView [value]="bookLocal" layout="grid">
-    <p-header>
-      Prévia
-    </p-header>
+    <p-header>Prévia</p-header>
     <ng-template let-bookLocal pTemplate="gridItem">
       <div class="p-col-12 p-md-3">
-        <div class="grid-card card" style="border:1px solid black">
+        <div class="grid-card">
           <div class="grid-content">
             <div>Nome: {{bookLocal.name}}</div>
             <div>Autor: {{bookLocal.author}}</div>
