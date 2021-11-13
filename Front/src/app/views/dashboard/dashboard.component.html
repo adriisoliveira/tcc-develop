@@ -9,52 +9,22 @@
   </p-menubar>
 </div>
 <br>
-<style>
-  .grid-card{
-    border-width: 1px;
-    border-style: dotted;
-    border-color: black;
-  }
-</style>
 <div>
   <p-dataView [value]="dataViewComponent" layout="grid">
     <p-header>Prévia</p-header>
     <ng-template let-dataViewComponent pTemplate="gridItem">
-      <div class="p-col-12 p-md-3">
+      <div class="p-col-12 p-md-3" style="justify-content: space-between;">
         <div class="grid-card">
+          <img style="float: left; display: inline" [src]="'assets/' + dataViewComponent.img" [alt]="dataViewComponent.img"/>
           <div class="grid-content">
-            <div>Nome: {{dataViewComponent.name}}</div>
-            <div>Autor: {{dataViewComponent.author}}</div>
-            <div>R$ {{dataViewComponent.price}}</div>
+            <div><b>Nome:</b> {{dataViewComponent.name}}</div>
+            <br>
+            <div><b>Autor:</b> {{dataViewComponent.author}}</div>
+            <br>
+            <div><b>R$</b> {{dataViewComponent.price}}</div>
           </div>
         </div>
       </div>
     </ng-template>
   </p-dataView>
 </div>
-
-<!--REFERÊNCIA, APAGAR DEPOIS-->
-
-<!--ng-template let-product pTemplate="gridItem">
-  <div class="p-col-12 p-md-4">
-      <div class="product-grid-item card">
-          <div class="product-grid-item-top">
-              <div>
-                  <i class="pi pi-tag product-category-icon"></i>
-                  <span class="product-category">{{product.category}}</span>
-              </div>
-              <span [class]="'product-badge status-' + product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span>
-          </div>
-          <div class="product-grid-item-content">
-              <img [src]="'assets/showcase/images/demo/product/' + product.image" [alt]="product.name"/>
-              <div class="product-name">{{product.name}}</div>
-              <div class="product-description">{{product.description}}</div>
-              <p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false"></p-rating>
-          </div>
-          <div class="product-grid-item-bottom">
-              <span class="product-price">${{product.price}}</span>
-              <p-button icon="pi pi-shopping-cart" [disabled]="product.inventoryStatus === 'OUTOFSTOCK'"></p-button>
-          </div>
-      </div>
-  </div>
-</ng-template-->
