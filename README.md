@@ -58,8 +58,6 @@ Todas as abas possuem cartões de instrução de uso para sua respectiva funçã
 
 - A seguir haverá os botões para visualização e download na norma ABNT de suas caixas anteriores.
 
-### XXXXXXXXXX
-
 ### Sobre nós
 - Uma aba para entendimento da empresa, termo e condições de uso, dados e motivos de uso bem como outras informações de relevância.
 
