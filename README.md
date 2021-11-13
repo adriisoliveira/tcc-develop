@@ -5,14 +5,14 @@ Para seu devido manuseio separaremos em topicos.
 
 ## Como rodar o programa em sua maquina
 ### API Controller
-para rodar o projeto é necessário alterar a string de conexão com o banco de dados na appsettings.json
+Para rodar o projeto é necessário alterar a string de conexão com o banco de dados na appsettings.json
 caso necessário criar o banco de dados manualmente com o nome "ApiControllerDb" e usar o comando "update-database" no package manager console do projeto 04-Data
 
 ### API LUHN
 para rodar a api basta iniciar pycharm, adicionar o interpretador nas configurações de execução e rodar a API.
 
 ### Front
-para rodar o front basta abrir o projeto no editor de sua preferencia, usar o comando "npm install / yarn install" para adicionar as dependencias faltantes e depois ng serve para rodar
+Para rodar o front basta abrir o projeto no editor de sua preferencia, usar o comando "npm install / yarn install" para adicionar as dependencias faltantes e depois ng serve para rodar
 
 ### API Crawler
 Quando for utilizar a pagina do sugestionador primeiro insira o link que deseja para treinar a inteligencia artificial e clicar no botão de busca. Após o pressionamento do botão, aguarde o "Scrapper".
@@ -46,9 +46,9 @@ Todas as abas possuem cartões de instrução de uso para sua respectiva funçã
 ### Formatador
 - A primeira caixa dos elementos pré-textuais é o nome da instituição a ser aplicada.
 - Em seguida informe os nomes juntamente ao codigo de identificação do aluno (cada caixa para um aluno respectivo do grupo).
-- abaixo das caixas de nome dos integrantes insira o titulo do trabalho ao lado o subtitulo na caixa seguinte.
-- as duas caixas pequenas ao lado da caixa de subtitulo informe sua cidade e ano da realização do trabalho.
-- A ultima caixa dos elementos pré textuais será o texto da folha de rosto.
+- Abaixo das caixas de nome dos integrantes insira o titulo do trabalho ao lado o subtitulo na caixa seguinte.
+- As duas caixas pequenas ao lado da caixa de subtitulo informe sua cidade e ano da realização do trabalho.
+- A última caixa dos elementos pré textuais será o texto da folha de rosto.
 
 - A seguir haverá as caixas respectivas para dedicatória, resumo, abstract, lista de ilustrações, lista de tabelas, lista de abreviaturas e siglas e sumário.
 
