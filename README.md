@@ -4,16 +4,49 @@ Este projeto inclui um software de repositório, pesquisador e padronizador de a
 Para seu devido manuseio separaremos em topicos
 
 ## Metodos de uso
-Ao iniciar a utilização do programa o usuário se deparará com a tela de login, com possibilidade de 
+Ao iniciar a utilização do programa o usuário se deparará com a tela de login, ao adentrar com seus dados pré cadastrados ele receberá o acesso as demais funcionalidades do programa. 
+
+Na tela principal após o login o usuário terá alguns botões em um menu superior a sua disponibilidade, sendo eles: Home, sumarizador, recomendador, formatador, sobre nós e botão de sair.
+
+Todas as abas possuem cartões de instrução de uso para sua respectiva função. 
+
 
 ### Login
-Ao iniciar 
+- Universidade cria a conta.
+- Há a necessidade de solicitação de pedido de troca de senha caso tenha esquecido.
 
 ### Home
+- Nesta aba o usuário poderá ver os elementos pré-textuais de seu projeto.
+
 ### Sumarizador
+- Há duas telas onde na primeira se inserirá o texto a ser resumido. Em baixo da primeira tela há a opção de proporção de linhas que seu texto vai ser resumido. Ao lado um botão em azul escrito "Enviar resumo" que ativará a função que será transcrita para a segunda tela.
+
 ### Recomendador
+- Na primeira opção há uma caixa escrita "Link de busca" onde se colocará o link de sua pesquisa no google para treinar a inteligencia artificial a entender suas necessidades de busca. Ao lado o botão para realizar a ação.
+- Ao lado clique em Analisar para a Inteligencia artificial começar a busca de seus dados.
+- As informações aparecerão abaixo e caso queira filtrar as opções para buscas mais detalhadas ao lado de "Analisar" há a caixa de "Filtro" com o respectivo botão de confirmação da ação após o inserimento da palavra-chave.
+
 ### Formatador
+- A primeira caixa dos elementos pré-textuais é o nome da instituição a ser aplicada.
+- Em seguida informe os nomes juntamente ao codigo de identificação do aluno (cada caixa para um aluno respectivo do grupo).
+- abaixo das caixas de nome dos integrantes insira o titulo do trabalho ao lado o subtitulo na caixa seguinte.
+- as duas caixas pequenas ao lado da caixa de subtitulo informe sua cidade e ano da realização do trabalho.
+- A ultima caixa dos elementos pré textuais será o texto da folha de rosto.
+
+- A sguir haverá as caixas respectivas para dedicatória, resumo, abstract, lista de ilustrações, lista de tabelas, lista de abreviaturas e siglas e sumário.
+
+- Após a aplicação dos dados anteriores haverá três caixas para escrita da Introdução, Desenvolvimento e Conclusão.
+
+- Por ultimo a caixa para inserção das referências.
+
+- A seguir haverá os botões para visualização e download de suas caixas anteriores.
+
 ### XXXXXXXXXX
+
 ### Sobre nós
+- Uma aba para entendimento da empresa, termo e condições de uso, dados e motivos de uso bem como outras informações de relevância.
+
 ### Sair
+- Neste botão o usuário se retirará de sua conta do software e seguirá de volta para a tela de login.
+
 
