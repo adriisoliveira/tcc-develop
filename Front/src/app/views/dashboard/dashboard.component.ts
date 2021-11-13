@@ -55,6 +55,12 @@ import {MenuItem} from 'primeng/api';
         url: '/#/formatacao',
        },
        {
+        label:'Acervo',
+        icon:'pi pi-fw pi-search-plus',
+        id: 'btnAcervo',
+        url: '/#/acervo',
+      },
+       {
         label:'Enviar Arquivo',
         icon:'pi pi-fw pi-search-plus',
         id: 'btnEnviarArquivo',

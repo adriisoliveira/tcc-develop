@@ -14,11 +14,12 @@ import { TableModule } from 'primeng/table';
 import { PageRankComponent } from './views/page-rank/page-rank.component';
 import {FileUploadComponent} from './views/file-upload/file-upload.component';
 import {DropdownModule} from 'primeng/dropdown'; 
+import { AcervoComponent } from './views/acervo/acervo.component';
 
 import {MenubarModule} from 'primeng/menubar';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, BookDataComponent, PageRankComponent, FileUploadComponent],
+  declarations: [AppComponent, LoginComponent, BookDataComponent, PageRankComponent, FileUploadComponent, AcervoComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
