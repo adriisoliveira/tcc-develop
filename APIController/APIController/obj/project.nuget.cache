@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x4eCJWgUNvVNY7lqPJUyP6Wk7nhxalh06SdS1a1nlC5kJCKmUSuxsDsByI4UGQGJAdAniJ31NwO1Hn0grN+oaw==",
+  "dgSpecHash": "tCpcnWyjcziCNUC+TREd+CMQHUtuWlWS1BqC/ZCNb/sOEs/XKtmXxAgbc4hIW/hzxM52HHKI5+xJai8IP5Zr8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NOVA\\tcc-develop\\APIController\\APIController\\APIController.csproj",
+  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\Atual_Develop_1311\\tcc-develop\\APIController\\APIController\\APIController.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alqueiroz\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.0\\microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",

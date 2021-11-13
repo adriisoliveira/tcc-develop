@@ -1,5 +1,6 @@
 ﻿using APIController.Business.Entity.Logs;
 using APIController.Business.Entity.Users;
+using APIController.Business.Interfaces;
 using APIController.Business.Interfaces.Service.Logs;
 using APIController.Models;
 using APIController.Models.User;
@@ -19,11 +20,15 @@ namespace APIController.Controllers
     {
         private readonly Microsoft.Extensions.Configuration.IConfiguration _config;
         private readonly IApiTokenLogService _apiTokenLogService;
+        private readonly IUnitOfWork _uow;
 
-        public AuthController(Microsoft.Extensions.Configuration.IConfiguration config, IApiTokenLogService apiTokenLogService)
+        public AuthController(Microsoft.Extensions.Configuration.IConfiguration config,
+            IApiTokenLogService apiTokenLogService,
+            IUnitOfWork uow)
         {
             _config = config;
             _apiTokenLogService = apiTokenLogService;
+            _uow = uow;
         }
 
         /// <summary>
@@ -65,7 +70,8 @@ namespace APIController.Controllers
                     tokenExpireDate,
                     DateTime.UtcNow
                     ));
-                
+                _uow.Commit();
+
                 return StatusCode(201, new { jwt = jwt });
                 //return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
             }

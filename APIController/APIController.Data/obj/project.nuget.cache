@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WbTnxPX6WaW2+rPXvU+Bp1wBf4E5XMR/Sp0u0XPLPhEasSTi3cporFKDZDZoMKIb14gMsRyasOnfeXZrwbMLeA==",
+  "dgSpecHash": "kV5Hd1mnvs346+XwVAzYQN+OCFa6wWCqk/9It7+HIil3dIOhXWFK6sWTRhJYR7yAxKy7nN2/N3QUcIrHxqGfBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NOVA\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj",
+  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\Atual_Develop_1311\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alqueiroz\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\alqueiroz\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
