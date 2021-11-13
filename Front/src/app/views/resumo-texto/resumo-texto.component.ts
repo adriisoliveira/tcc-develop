@@ -39,7 +39,8 @@ export class ResumoTextoComponent implements OnInit {
         icon:'pi pi-fw pi-book',
         id: 'btnResumo',
         url: '/#/resumo-texto',
-      }, 
+      },
+      
       {
           label:'Recomendador',
           icon:'pi pi-fw pi-search-plus',
@@ -52,6 +53,12 @@ export class ResumoTextoComponent implements OnInit {
         id: 'btnSugestionador',
         url: '/#/formatacao',
        },
+       {
+        label:'Acervo',
+        icon:'pi pi-fw pi-search-plus',
+        id: 'btnAcervo',
+        url: '/#/acervo',
+      },
        {
         label:'Enviar Arquivo',
         icon:'pi pi-fw pi-search-plus',

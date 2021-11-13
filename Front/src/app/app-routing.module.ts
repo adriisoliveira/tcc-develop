@@ -39,6 +39,13 @@ const routes: Routes = [
     ),
   },
 
+  {path:'acervo', 
+  loadChildren: () =>
+    import('./views/acervo/acervo-routing.module').then(
+      (m) => m.AcervoRoutingModule
+    ),
+  },
+
   {path:'formatacao', 
   loadChildren: () =>
     import('./views/formatacao/formatacao.module').then(

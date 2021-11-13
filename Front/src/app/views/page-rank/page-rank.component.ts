@@ -37,6 +37,7 @@ export class PageRankComponent implements OnInit {
 
   ngOnInit()  {
     this.items = [
+          
       {
           label:'Home',
           icon:'pi pi-fw pi-home',
@@ -49,6 +50,7 @@ export class PageRankComponent implements OnInit {
         id: 'btnResumo',
         url: '/#/resumo-texto',
       },
+      
       {
           label:'Recomendador',
           icon:'pi pi-fw pi-search-plus',
@@ -61,6 +63,12 @@ export class PageRankComponent implements OnInit {
         id: 'btnSugestionador',
         url: '/#/formatacao',
        },
+       {
+        label:'Acervo',
+        icon:'pi pi-fw pi-search-plus',
+        id: 'btnAcervo',
+        url: '/#/acervo',
+      },
        {
         label:'Enviar Arquivo',
         icon:'pi pi-fw pi-search-plus',
