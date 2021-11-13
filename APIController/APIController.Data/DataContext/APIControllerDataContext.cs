@@ -1,4 +1,5 @@
-﻿using APIController.Business.Entity.Logs;
+﻿using APIController.Business.Entity.Files;
+using APIController.Business.Entity.Logs;
 using APIController.Business.Entity.Users;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +17,7 @@ namespace APIController.Data.DataContext
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<UploadedFile> UploadedFiles { get; set; }
         public DbSet<ApiTokenLog> ApiTokenLogs { get; set; }
         public DbSet<ApiAccessLog> ApiAccessLogs { get; set; }
 

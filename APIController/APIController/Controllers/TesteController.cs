@@ -23,11 +23,18 @@ namespace APIController.Controllers
             _client = client;
         }
 
+        //[HttpGet]
+        //public IEnumerable<User> Index()
+        //{
+        //    return _userService.GetAll();
+        //}
+
         [HttpGet]
-        public IEnumerable<User> Index()
+        public bool Teste()
         {
-            return _userService.GetAll();
+            return true;
         }
+
         [HttpGet]
         [Route("luhn")]
         public string luhn()

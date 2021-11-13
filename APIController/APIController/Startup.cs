@@ -1,12 +1,16 @@
 using APIController.Annotations;
 using APIController.Business.Interfaces;
+using APIController.Business.Interfaces.Repository.Files;
 using APIController.Business.Interfaces.Repository.Logs;
 using APIController.Business.Interfaces.Repository.Users;
+using APIController.Business.Interfaces.Service.Files;
 using APIController.Business.Interfaces.Service.Logs;
 using APIController.Business.Interfaces.Service.Users;
+using APIController.Business.Services.Files;
 using APIController.Business.Services.Logs;
 using APIController.Business.Services.Users;
 using APIController.Data.DataContext;
+using APIController.Data.Repository.Files;
 using APIController.Data.Repository.Logs;
 using APIController.Data.Repository.Users;
 using APISummarizationClient.Client;
@@ -25,17 +29,19 @@ using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-
+using NetCoreHosting = Microsoft.AspNetCore.Hosting;
 namespace APIController
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, NetCoreHosting.IWebHostEnvironment webHostEnvironment)
         {
             Configuration = configuration;
+            WebHostEnvironment = webHostEnvironment;
         }
 
         public IConfiguration Configuration { get; }
+        public NetCoreHosting.IWebHostEnvironment WebHostEnvironment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -46,14 +52,17 @@ namespace APIController
             services.AddSingleton<APIControllerDataContext, APIControllerDataContext>();
             services.AddSingleton<IUnitOfWork, UnitOfWork>();
             services.AddSingleton<IConfiguration>(Configuration);
-
+            services.AddSingleton<NetCoreHosting.IWebHostEnvironment>(WebHostEnvironment);
+            
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IApiTokenLogRepository, ApiTokenLogRepository>();
             services.AddTransient<IApiAccessLogRepository, ApiAccessLogRepository>();
+            services.AddTransient<IFileRepository, FileRepository>();
 
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IApiAccessLogService, ApiAccessLogService>();
             services.AddTransient<IApiTokenLogService, ApiTokenLogService>();
+            services.AddTransient<IFileService, FileService>();
 
             services.AddTransient<IApiClient, ApiClient>();
             services.AddTransient<ISummarizationClient, SummarizationClient>();
