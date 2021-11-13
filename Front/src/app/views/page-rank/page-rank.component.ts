@@ -54,6 +54,12 @@ export class PageRankComponent implements OnInit {
           url: '/#/page-rank',
       },
       {
+        label:'Enviar Arquivo',
+        icon:'pi pi-fw pi-search-plus',
+        id: 'btnEnviarArquivo',
+        url: '/#/file-upload',
+      },
+      {
           label:'Sobre Nós',
           icon:'pi pi-fw pi-info-circle',
           id: 'btnSugestionador',

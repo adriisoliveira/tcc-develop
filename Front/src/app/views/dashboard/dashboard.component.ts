@@ -36,12 +36,17 @@ import {MenuItem} from 'primeng/api';
         id: 'btnResumo',
         url: '/#/resumo-texto',
       },
-      
       {
           label:'Recomendador',
           icon:'pi pi-fw pi-search-plus',
           id: 'btnSugestionador',
           url: '/#/page-rank',
+      },
+      {
+        label:'Enviar Arquivo',
+        icon:'pi pi-fw pi-search-plus',
+        id: 'btnEnviarArquivo',
+        url: '/#/file-upload',
       },
       {
           label:'Sobre Nós',
