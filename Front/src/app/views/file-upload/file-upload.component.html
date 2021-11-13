@@ -19,6 +19,8 @@
       <br />
       <br />
 
+      <input type="text" name="author" pInputText size="50" placeholder="Autor" style="width:auto" [(ngModel)]="author" />
+
       <button pButton type="submit" label="Enviar" class="p-button-secondary" (click)="upload(fileUpload.files)"></button>
       
       <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/>
