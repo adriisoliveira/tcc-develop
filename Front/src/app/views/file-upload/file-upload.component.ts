@@ -63,42 +63,48 @@ export class FileUploadComponent implements OnInit {
 
   ngOnInit()  {
     this.items = [
-        {
-            label:'Home',
-            icon:'pi pi-fw pi-home',
-            id: 'btnDashboard',
-            url: '/#/dashboard',
-        },
-        {
-          label:'Resumo',
-          icon:'pi pi-fw pi-book',
-          id: 'btnResumo',
-          url: '/#/resumo-texto',
-        },
-        {
-            label:'Recomendador',
-            icon:'pi pi-fw pi-search-plus',
-            id: 'btnSugestionador',
-            url: '/#/page-rank',
-        },
-        {
-          label:'Enviar Arquivo',
-          icon:'pi pi-fw pi-search-plus',
-          id: 'btnEnviarArquivo',
-          url: '/#/file-upload',
-        },
-        {
-            label:'Sobre Nós',
-            icon:'pi pi-fw pi-info-circle',
-            id: 'btnSugestionador',
-            url: '/#/about',
-        },
-        {
-          label:'Sair',
-          icon:'pi pi-fw pi-power-off',
-          url: '/#/login',
-          id: 'btnQuit',
-      },
+      {
+        label:'Home',
+        icon:'pi pi-fw pi-home',
+        id: 'btnDashboard',
+        url: '/#/dashboard',
+    },
+    {
+      label:'Sumarizador',
+      icon:'pi pi-fw pi-book',
+      id: 'btnResumo',
+      url: '/#/resumo-texto',
+    }, 
+    {
+        label:'Recomendador',
+        icon:'pi pi-fw pi-search-plus',
+        id: 'btnSugestionador',
+        url: '/#/page-rank',
+    },
+    {
+      label:'Formatador',
+      icon:'pi pi-fw pi-pencil',
+      id: 'btnFormatador',
+      url: '/#/formatacao',
+     },
+     {
+      label:'Enviar Arquivo',
+      icon:'pi pi-fw pi-search-plus',
+      id: 'btnEnviarArquivo',
+      url: '/#/file-upload',
+    },
+    {
+        label:'Sobre Nós',
+        icon:'pi pi-fw pi-info-circle',
+        id: 'btnAbout',
+        url: '/#/about',
+    },
+    {
+        label:'Sair',
+        icon:'pi pi-fw pi-power-off',
+        url: '/#/login',
+        id: 'btnQuit',
+    },
       ]
   }
 }
