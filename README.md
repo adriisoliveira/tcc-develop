@@ -1,7 +1,19 @@
 # Collectio
 ### Projeto de conclusão de curso de ciência da computação 2021
 Este projeto inclui um software de repositório, pesquisador e padronizador de arquivos com foco em auxilio de projetos escritos.
-Para seu devido manuseio separaremos em topicos
+Para seu devido manuseio separaremos em topicos.
+
+## Como rodar o programa em sua maquina
+### API Controller
+para rodar o projeto é necessário alterar a string de conexão com o banco de dados na appsettings.json
+caso necessário criar o banco de dados manualmente com o nome "ApiControllerDb" e usar o comando "update-database" no package manager console do projeto 04-Data
+
+### API LUHN
+para rodar a api basta iniciar pycharm, adicionar o interpretador nas configurações de execução e rodar a API.
+
+### Front
+para rodar o front basta abrir o projeto no editor de sua preferencia, usar o comando "npm install / yarn install" para adicionar as dependencias faltantes e depois ng serve para rodar
+
 
 ## Metodos de uso
 Ao iniciar a utilização do programa o usuário se deparará com a tela de login, ao adentrar com seus dados pré cadastrados ele receberá o acesso as demais funcionalidades do programa. 
@@ -9,7 +21,6 @@ Ao iniciar a utilização do programa o usuário se deparará com a tela de logi
 Na tela principal após o login o usuário terá alguns botões em um menu superior a sua disponibilidade, sendo eles: Home, sumarizador, recomendador, formatador, sobre nós e botão de sair.
 
 Todas as abas possuem cartões de instrução de uso para sua respectiva função. 
-
 
 ### Login
 - Universidade cria a conta.
@@ -39,7 +50,7 @@ Todas as abas possuem cartões de instrução de uso para sua respectiva funçã
 
 - Por ultimo a caixa para inserção das referências.
 
-- A seguir haverá os botões para visualização e download de suas caixas anteriores.
+- A seguir haverá os botões para visualização e download na norma ABNT de suas caixas anteriores.
 
 ### XXXXXXXXXX
 
