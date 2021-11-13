@@ -67,3 +67,10 @@ Todas as abas possuem cartões de instrução de uso para sua respectiva funçã
 - Neste botão o usuário se retirará de sua conta do software e seguirá de volta para a tela de login.
 
 
+## OBS:
+Caso alguma funcionalidade não seja realizada de acordo por conta de um erro do tipo CRS, deve-se ir até a pasta do executavel do navegador e executar o comando de liberação. Exemplos: 
+
+- "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp
+- "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp.
+
+
