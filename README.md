@@ -14,6 +14,12 @@ para rodar a api basta iniciar pycharm, adicionar o interpretador nas configura�
 ### Front
 para rodar o front basta abrir o projeto no editor de sua preferencia, usar o comando "npm install / yarn install" para adicionar as dependencias faltantes e depois ng serve para rodar
 
+### API Crawler
+Quando for utilizar a pagina do sugestionador primeiro insira o link que deseja para treinar a inteligencia artificial e clicar no botão de busca. Após o pressionamento do botão, aguarde o "Scrapper".
+
+### Scrapper
+Dentro do projeto web Crawler o Scrapper deve ser selecionado para a build e assim aguardar que ele insira no banco de dados as informações que serão retornadas. Após isso retorne ao front e aplique a palavra chave para busca.
+
 
 ## Metodos de uso
 Ao iniciar a utilização do programa o usuário se deparará com a tela de login, ao adentrar com seus dados pré cadastrados ele receberá o acesso as demais funcionalidades do programa. 
