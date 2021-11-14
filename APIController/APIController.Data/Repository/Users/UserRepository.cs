@@ -11,5 +11,7 @@ namespace APIController.Data.Repository.Users
         public UserRepository(APIControllerDataContext dataContext) : base(dataContext)
         { }
         public IEnumerable<User> GetAll() => DbSet.ToList();
+        public User Add(User user) => DbSet.Add(user).Entity;
+        public User GetByEmail(string email) => DbSet.Where(e => e.Email == email).FirstOrDefault();
     }
 }

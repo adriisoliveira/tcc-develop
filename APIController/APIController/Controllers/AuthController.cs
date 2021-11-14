@@ -2,10 +2,10 @@
 using APIController.Business.Entity.Users;
 using APIController.Business.Interfaces;
 using APIController.Business.Interfaces.Service.Logs;
-using APIController.Models;
+using APIController.Business.Interfaces.Service.Users;
+using APIController.Helpers;
 using APIController.Models.User;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -20,15 +20,18 @@ namespace APIController.Controllers
     {
         private readonly Microsoft.Extensions.Configuration.IConfiguration _config;
         private readonly IApiTokenLogService _apiTokenLogService;
+        private readonly IUserService _userService;
         private readonly IUnitOfWork _uow;
 
         public AuthController(Microsoft.Extensions.Configuration.IConfiguration config,
             IApiTokenLogService apiTokenLogService,
-            IUnitOfWork uow)
+            IUnitOfWork uow,
+            IUserService userService)
         {
             _config = config;
             _apiTokenLogService = apiTokenLogService;
             _uow = uow;
+            _userService = userService;
         }
 
         /// <summary>
@@ -42,11 +45,17 @@ namespace APIController.Controllers
         [HttpPost]
         public IActionResult GenerateToken([FromBody] UserLoginApiModel user)
         {
-            if (user.Login == "admin" && user.Password == "admin")
+            var userDb = _userService.GetByEmail(user.Login);
+            if (
+                //Login via admin
+                (user.Login == "admin" && user.Password == "admin")
+                //Login via banco
+                || (userDb != null && userDb.Password == StringHelper.CreateMD5(user.Password)))
             {
                 var claims = new[]
                 {
-                    new Claim(ClaimTypes.Name, user.Login),
+                    new Claim(ClaimTypes.Name, userDb != null ? userDb.Name : "admin"),
+                    new Claim(ClaimTypes.Email, userDb != null ? userDb.Email: "admin")
                 };
 
                 var credential = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["SecretKey"])),
@@ -60,7 +69,7 @@ namespace APIController.Controllers
                     claims: claims,
                     expires: tokenExpireDate,
                     signingCredentials: credential);
-                
+
                 var jwt = new JwtSecurityTokenHandler().WriteToken(token);
 
                 _apiTokenLogService.Add(new ApiTokenLog(
@@ -73,9 +82,28 @@ namespace APIController.Controllers
                 _uow.Commit();
 
                 return StatusCode(201, new { jwt = jwt });
-                //return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
             }
             return BadRequest("E-mail ou senha incorretos");
+        }
+
+        [Authorize()]
+        [Route("createUser")]
+        [HttpPost]
+        public IActionResult CreateUser([FromBody] UserManageModel user)
+        {
+            try
+            {
+                _userService.Add(new User
+                {
+                    Name = user.Name,
+                    Email = user.Email,
+                    CPF = user.CPF,
+                    Type = user.Type,
+                    Password = StringHelper.CreateMD5(user.Password)
+                });
+                return StatusCode(200);
+            }
+            catch (Exception ex) { return BadRequest("Erro ao criar usuário: " + ex.Message); }
         }
     }
 }

@@ -6,5 +6,7 @@ namespace APIController.Business.Interfaces.Repository.Users
     public interface IUserRepository
     {
         IEnumerable<User> GetAll();
+        User Add(User user);
+        User GetByEmail(string email);
     }
 }
