@@ -1,3 +1,54 @@
 <p-menubar [model]="items" >
 </p-menubar>
 <p></p>
+
+
+<p-card header="Recomendador" [style]="{'width': '78rem', 'margin-bottom': '2em'}">
+    <ng-template pTemplate="header">
+        <img alt="Card" src="assets/showcase/images/usercard.png">
+    </ng-template>
+    <br/>
+    <p>O acervo collectio foi desenvolvido para facilitar a sua busca dentro de páginas de trabalhos e artigos dentro do banco de dados. E para usar é simples:
+    </p>
+    <br/>
+    <p>1. Digite o termo que deseja encontrar no campo "Filtro" e clique no botão de busca</p>
+    <br/>
+    <p>E pronto, rápido e fácil suas buscas são filtradas</p>
+  </p-card>
+  
+  <div>
+  <p-table #dt [columns]="cols" [value]="books" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
+  totalRecords="totalRecords" pageLinks="3">
+  <ng-template pTemplate="caption">
+    <div style="text-align: left;">        
+        <input style="margin-right: 13px;" type="text" pInputText size="50" placeholder="Filtro" style="width:auto" [(ngModel)]="searchItem">
+        <p-button style="padding-left: 16px;" label="Buscar..." icon="pi pi-search" iconPos="right" (click)="downloadSearchFile(searchItem)"></p-button>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+      <th *ngFor="let col of columns">
+        {{col.header}}
+      </th>
+    </tr>
+    <tr>
+        <th *ngFor="let col of columns" [ngSwitch]="col.field">
+        </th>
+    </tr>
+  
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr>
+      <td *ngFor="let col of columns">
+        <ng-container *ngIf="col.field === 'url'">
+          <a href="{{rowData[col.field]}}">{{rowData[col.field]}}</a>
+        </ng-container>
+  
+        <ng-container *ngIf="col.field === 'title'">
+          {{rowData[col.field]}}
+        </ng-container>
+      </td>
+    </tr>
+  </ng-template>
+  </p-table>
+  </div>
