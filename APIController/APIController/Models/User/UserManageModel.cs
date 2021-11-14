@@ -1,15 +1,14 @@
 ﻿using APIController.Business.Enum;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace APIController.Business.Entity.Users
+namespace APIController.Models.User
 {
-    public class User : BaseEntity
+    public class UserManageModel
     {
-        public User()
-        {
-            Id = Guid.NewGuid();
-        }
         [Required]
         [MaxLength(255)]
         public string Name { get; set; }

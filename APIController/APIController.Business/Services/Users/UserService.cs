@@ -16,5 +16,15 @@ namespace APIController.Business.Services.Users
         {
             return _userRepository.GetAll();
         }
+
+        public User GetByEmail(string email)
+        {
+            return _userRepository.GetByEmail(email);
+        }
+
+        public User Add(User user)
+        {
+            return _userRepository.Add(user);
+        }
     }
 }

@@ -17,5 +17,10 @@ namespace APIController.Business.Services.Files
         {
             return _fileRepository.Add(file);
         }
+
+        public Entity.Files.UploadedFile GetById(Guid id)
+        {
+            return _fileRepository.GetById(id);
+        }
     }
 }

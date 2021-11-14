@@ -12,6 +12,17 @@
             <param name="user">Dados de login</param>
             <returns>Token JWT</returns>
         </member>
+        <member name="M:APIController.Controllers.FileController.SaveFile">
+            <summary>
+            Salva o arquivo em banco
+            </summary>
+        </member>
+        <member name="M:APIController.Controllers.FileController.Download(System.Guid)">
+            <summary>
+            Retorna o arquivo da base de dados
+            </summary>
+            <param name="fileId">Id do arquivo</param>
+        </member>
         <member name="M:APIController.Controllers.WebPagesController.GetWebPages(System.String)">
             <summary>
             Retorna todas as páginas que contenham o texto pesquisado (ranqueadas)
