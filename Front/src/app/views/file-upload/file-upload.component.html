@@ -9,32 +9,35 @@
   <br>
   
   <div>
-    <p-card header="Upload de arquivos" [style]="{'width': '78rem', 'margin-bottom': '2em'}">
+    <p-card header="Upload de arquivos" [style]="{'width': '79rem', 'margin-bottom': '2em'}">
       <ng-template pTemplate="header">
       </ng-template>
     <br/><p>O upload de arquivos ocorre de maneira fácil e rápida, basta selecionar o arquivo e informar um autor, ou os autores separados por virgula</p>
       <p>Vale lembrar que apenas documentos autorizados devem ser postados, tal como artigos publicados ou Trabalhos de conclusão de curso ja encerrados</p>
+      <p style="font-size: 8px;">*Upload apenas de arquivos em pdf!</p>
       <p>Contamos com seu bom senso ;)</p>
     </p-card>
     <br/>
-    <br/>
-    <div style="margin-left: 3px;" class="p-grid">
-      <p-card header="" [style]="{'width': '20rem', 'margin-bottom': '2em'}">
+    <div style="justify-content: space-evenly;width: 1262px;">
+      <p-card style="margin-left: 16px;" header="" [style]="{'width': '79rem', 'margin-bottom': '2em'}">
+        <p style="justify-content: space-evenly; text-align: center; font-family: Open Sans;font-size: 16px;margin-bottom: 8px;">Informações</p>
+          <input style="margin-right: 16px;" type="text" name="title" pInputText size="30" placeholder="Titulo" style="width:auto" [(ngModel)]="author" />
+          <input style="margin-left: 16px;" type="text" name="subtitle" pInputText size="30" placeholder="Subtitulo" style="width:auto" [(ngModel)]="author" />
+          <input type="text" name="author" pInputText size="70" placeholder="Autor/Autores" style="width:auto" [(ngModel)]="author" />  
+      </p-card>
+    </div>
+    <div style="margin-left: 3px;margin-top: 16px;" class="p-grid">
+      <p-card header="" [style]="{'width': '10rem', 'margin-bottom': '2em'}">
+        
         <p style="text-align: center;">Selecione o arquivo</p>
         <br/>
         <span>{{fileName}}</span>
         <br/>
         <br/>
-        <button style="margin-left: 90px;" pButton type="button" label="Selecionar" class="p-button-secondary"
+        <button style="margin-left: 15px;" pButton type="button" label="Selecionar" class="p-button-secondary"
         (click)="fileUpload.click()"></button>
       </p-card>
-      <p-card style="margin-left: 36px;" header="" [style]="{'width': '40rem', 'margin-bottom': '2em'}">
-        <p style="text-align: center;">Informe o autor / os autores</p>
-        <br/>
-        <br/>
-        <br/>
-        <input type="text" name="author" pInputText size="84" placeholder="Autor" style="width:auto" [(ngModel)]="author" />
-      </p-card>
+
       <p-card style="margin-left: 36px;" header="" [style]="{'width': '30rem', 'margin-bottom': '2em'}">
         <p>Clique aqui para enviar</p><br/>
         <br/>
