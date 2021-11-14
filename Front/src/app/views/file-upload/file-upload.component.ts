@@ -121,7 +121,6 @@ export class FileUploadComponent implements OnInit {
         url: '/#/login',
         id: 'btnQuit',
     },
-      
   ];
   }
 }

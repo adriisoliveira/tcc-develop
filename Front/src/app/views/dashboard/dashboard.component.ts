@@ -29,7 +29,7 @@ import {MenuItem} from 'primeng/api';
       //menu bar itens
       this.items = [
           
-      {
+        {
           label:'Home',
           icon:'pi pi-fw pi-home',
           id: 'btnDashboard',
@@ -56,13 +56,13 @@ import {MenuItem} from 'primeng/api';
        },
        {
         label:'Acervo',
-        icon:'pi pi-fw pi-search-plus',
+        icon:'pi pi-file-pdf',
         id: 'btnAcervo',
         url: '/#/acervo',
       },
        {
         label:'Enviar Arquivo',
-        icon:'pi pi-fw pi-search-plus',
+        icon:'pi pi-cloud-upload',
         id: 'btnEnviarArquivo',
         url: '/#/file-upload',
       },
