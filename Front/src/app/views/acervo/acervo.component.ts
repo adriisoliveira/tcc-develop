@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import {MenuItem} from 'primeng/api';
-import { HttpHeaders } from '@angular/common/http/http';
+import { HttpHeaders, HttpClient } from '@angular/common/http/http';
 
 @Component({
   selector: 'app-acervo',
@@ -16,6 +16,7 @@ export class AcervoComponent implements OnInit {
 
   constructor(
     private router: Router,
+    // private http: HttpClient
   ) {
     this.searchItem = "";
   }
