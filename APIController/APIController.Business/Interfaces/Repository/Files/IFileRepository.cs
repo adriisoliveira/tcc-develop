@@ -1,7 +1,11 @@
-﻿namespace APIController.Business.Interfaces.Repository.Files
+﻿using APIController.Business.Entity.Files;
+using System;
+
+namespace APIController.Business.Interfaces.Repository.Files
 {
     public interface IFileRepository
     {
-        Entity.Files.UploadedFile Add(Entity.Files.UploadedFile file);
+        UploadedFile Add(UploadedFile file);
+        UploadedFile GetById(Guid id);
     }
 }
