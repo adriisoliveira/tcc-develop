@@ -12,6 +12,12 @@
             <param name="user">Dados de login</param>
             <returns>Token JWT</returns>
         </member>
+        <member name="M:APIController.Controllers.FileController.GetAllFiles(System.Int32)">
+            <summary>
+            Retorna todos os arquivos da base
+            </summary>
+            <param name="maxResults">Quantidade máxima de retornos</param>
+        </member>
         <member name="M:APIController.Controllers.FileController.SaveFile">
             <summary>
             Salva o arquivo em banco

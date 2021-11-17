@@ -26,6 +26,18 @@ namespace APIController.Controllers
         }
 
         /// <summary>
+        /// Retorna todos os arquivos da base
+        /// </summary>
+        /// <param name="maxResults">Quantidade máxima de retornos</param>
+        [HttpGet]
+        [Route("getAll")]
+        public IActionResult GetAllFiles(int maxResults = 25)
+        {
+            var files = _fileService.GetAll();
+            return StatusCode(200, files);
+        }
+
+        /// <summary>
         /// Salva o arquivo em banco
         /// </summary>
         [Route("save")]
@@ -71,7 +83,8 @@ namespace APIController.Controllers
         /// Retorna o arquivo da base de dados
         /// </summary>
         /// <param name="fileId">Id do arquivo</param>
-        [HttpGet("download/{fileId}")]
+        [HttpGet]
+        [Route("download/{fileId}")]
         public IActionResult Download(Guid fileId)
         {
             var fileDb = _fileService.GetById(fileId);
@@ -82,6 +95,5 @@ namespace APIController.Controllers
 
             return File(fileBytes, "application/force-download", fileDb.FileName);
         }
-        
     }
 }

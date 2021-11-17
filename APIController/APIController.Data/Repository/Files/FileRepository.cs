@@ -2,6 +2,7 @@
 using APIController.Business.Interfaces.Repository.Files;
 using APIController.Data.DataContext;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace APIController.Data.Repository.Files
@@ -18,6 +19,11 @@ namespace APIController.Data.Repository.Files
         public UploadedFile GetById(Guid id)
         {
             return DbSet.Where(e => e.Id == id).FirstOrDefault();
+        }
+
+        public IEnumerable<UploadedFile> GetAll()
+        {
+            return DbSet.ToList();
         }
     }
 }
