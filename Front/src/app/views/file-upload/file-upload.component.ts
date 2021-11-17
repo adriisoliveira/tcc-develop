@@ -19,6 +19,8 @@ export class FileUploadComponent implements OnInit {
   items: MenuItem[];
   alertService: AlertService;
   author: String;
+  title: String;
+  subtitle: String;
 
   constructor(
     private router: Router,
@@ -29,6 +31,8 @@ export class FileUploadComponent implements OnInit {
     //this.fileUploadService = new FileUploadService(http);
     this.alertService = new AlertService();
     this.author = "";
+    this.title="";
+    this.subtitle="";
   }
 
   onFileSelected(event) {
@@ -45,6 +49,8 @@ export class FileUploadComponent implements OnInit {
       for (let file of files)
         formData.append(file.name, file);  
     
+        formData.append("title", this.title.toString());
+        formData.append("subtitle", this.subtitle.toString());
         formData.append("author", this.author.toString());
 
         let headers = new HttpHeaders({

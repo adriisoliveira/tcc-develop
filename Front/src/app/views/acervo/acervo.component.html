@@ -16,39 +16,49 @@
     <p>E pronto, rápido e fácil suas buscas são filtradas</p>
   </p-card>
   
-  <!-- <div>
-  <p-table #dt [columns]="cols" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
-  totalRecords="totalRecords" pageLinks="3">
-  <ng-template pTemplate="caption">
-    <div style="text-align: left;">        
-        <input style="margin-right: 13px;" type="text" pInputText size="50" placeholder="Filtro" style="width:auto" [(ngModel)]="searchItem">
-        <p-button style="padding-left: 16px;" label="Buscar..." icon="pi pi-search" iconPos="right"></p-button>
-    </div>
-  </ng-template>
-  <ng-template pTemplate="header" let-columns>
-    <tr>
-      <th *ngFor="let col of columns">
-        {{col.header}}
-      </th>
-    </tr>
-    <tr>
-        <th *ngFor="let col of columns" [ngSwitch]="col.field">
+
+
+  <div>
+    <p-table #dt [columns]="cols" [value]="files" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
+    totalRecords="totalRecords" pageLinks="3">
+    <ng-template pTemplate="caption">
+      <div style="text-align: left;">        
+          <input type="text" pInputText size="50" placeholder="Filtro" style="width:auto" [(ngModel)]="searchItem">
+          <button type="button" pButton (click)="render()" style="width: 40px; height: 30px;">
+            <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+          </button>
+      </div>
+    </ng-template>
+
+    <ng-template pTemplate="header" let-columns>
+      <tr>
+        <th *ngFor="let col of columns">
+          {{col.header}}
         </th>
-    </tr>
-  
-  </ng-template>
-  <ng-template pTemplate="body" let-rowData let-columns="columns">
-    <tr>
-      <td *ngFor="let col of columns">
-        <ng-container *ngIf="col.field === 'url'">
-          <a href="{{rowData[col.field]}}">{{rowData[col.field]}}</a>
-        </ng-container>
-  
-        <ng-container *ngIf="col.field === 'title'">
-          {{rowData[col.field]}}
-        </ng-container>
-      </td>
-    </tr>
-  </ng-template>
-  </p-table>
-  </div> -->
+      </tr>
+      <tr>
+          <th *ngFor="let col of columns" [ngSwitch]="col.field">
+          </th>
+      </tr>
+    
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr>
+        <td *ngFor="let col of columns">  
+          <ng-container *ngIf="col.field === 'title'">
+            {{rowData[col.field]}}
+          </ng-container>
+          <ng-container *ngIf="col.field === 'subtitle'">
+            {{rowData[col.field]}}
+          </ng-container>
+          <ng-container *ngIf="col.field === 'author'">
+            {{rowData[col.field]}}
+          </ng-container>
+          <ng-container *ngIf="col.field === 'action'">
+            <button type="button" pButton (click)="downloadSearchFile(rowData.id)" style="width: 40px; height: 30px;">Download</button>
+          </ng-container>
+        </td>
+      </tr>
+    </ng-template>
+    </p-table>
+    </div>

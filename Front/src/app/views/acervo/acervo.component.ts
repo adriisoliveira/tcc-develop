@@ -2,24 +2,38 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import {MenuItem} from 'primeng/api';
-import { HttpHeaders, HttpClient } from '@angular/common/http/http';
+import {HttpClient, HttpHeaders, HttpEventType, HttpRequest, HttpClientModule} from '@angular/common/http';
+import { Book } from 'src/app/resources/services/book.service';
+import {FileList} from 'src/app/resources/models/FileList';
+
+
 
 @Component({
   selector: 'app-acervo',
   templateUrl: './acervo.component.html',
   styleUrls: ['./acervo.component.scss']
 })
+
+
+
+
 export class AcervoComponent implements OnInit {
 
   items: MenuItem[]; 
   searchItem: String;
+  books: Book[];
+  files: FileList[];
+
+  cols: any[];
+
 
   constructor(
     private router: Router,
-    // private http: HttpClient
+    private http: HttpClient
   ) {
     this.searchItem = "";
   }
+  
 
   ngOnInit(): void {
     this.items = [
@@ -74,35 +88,43 @@ export class AcervoComponent implements OnInit {
         id: 'btnQuit',
     },
   ];
+
+  this.cols = [
+    { field: 'title', header: 'Titulo' },
+    { field: 'subtitle', header: 'Subititulo' },
+    { field: 'author', header: 'Autor' },
+    { field: 'action', header: 'Ação' },
+
+  ];
   }
 
-  // public search():void{
-  //   this.alertService.info('Aguarde...', 'Pesquisando');
-  //   this.bookService.get(this.searchText).
-  //   toPromise().
-  //   then(data => this.books = data).
-  //   catch(data => this.alertService.error('Erro'));
-  //   setTimeout(()=>{
-  //     this.alertService.close()
-  //   }, 3000);
 
-  // }
+  public downloadSearchFile(id){
+    let headers = new HttpHeaders({
+      'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
+    });
 
-  // public downloadSearchFile(id){
-  //   let headers = new HttpHeaders({
-  //     'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
-  //   });
+    this.http.get(`https://localhost:44312/file/download/${id}`, { responseType: 'arraybuffer', headers: headers })
+    .subscribe(response => this.download(response, "application/pdf"));
 
-  //   this.http.get(https://localhost:44312/file/download/${id}, { responseType: 'arraybuffer', headers: headers })
-  //   .subscribe(response => this.download(response, "application/pdf"));
+  }
 
-  // }
+  public download(data: any, fileType: string) {
+      let blob = new Blob([data], { type: fileType });
+      let result = window.open(window.URL.createObjectURL(blob));
+      if (!result || result.closed || typeof result.closed == 'undefined')
+          alert( 'Desative o bloqueador de Pop-up e tente novamente.');
+  }
 
-  // public download(data: any, fileType: string) {
-  //     let blob = new Blob([data], { type: fileType });
-  //     let result = window.open(window.URL.createObjectURL(blob));
-  //     if (!result  result.closed  typeof result.closed == 'undefined')
-  //         alert( 'Desative o bloqueador de Pop-up e tente novamente.');
-  // }
+  public render():void{
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
+      })
+    }
+    this.http.get<FileList[]>(`https://localhost:44312/file/getAll/${this.searchItem}?maxResults=25`, httpOptions)
+      .toPromise().then(data => this.files = data).catch(data=>console.log('Erro'));
+
+  }
 
 }

@@ -7,6 +7,8 @@ import { AcervoComponent } from './acervo.component';
 import {MenubarModule} from 'primeng/menubar';
 import {CardModule} from 'primeng/card';
 import {FieldsetModule} from 'primeng/fieldset';
+import {PanelModule} from 'primeng/panel';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [AcervoComponent],
@@ -15,7 +17,9 @@ import {FieldsetModule} from 'primeng/fieldset';
     AcervoRoutingModule,
     MenubarModule,
     CardModule,
-    FieldsetModule
+    FieldsetModule,
+    PanelModule,
+    ButtonModule
   ]
 })
 export class AcervoModule { }
