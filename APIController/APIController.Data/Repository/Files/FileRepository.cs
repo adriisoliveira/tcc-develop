@@ -29,6 +29,7 @@ namespace APIController.Data.Repository.Files
                 || e.Title.Contains(searchText)
                 || e.Subtitle.Contains(searchText))
                 .Take(maxResults)
+                .OrderBy(e => e.Title)
                 .ToList();
         }
     }
