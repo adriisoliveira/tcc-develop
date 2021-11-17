@@ -17,12 +17,3 @@ C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummariza
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.dll
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.pdb
 C:\Users\Logan\source\repos\APIController\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csprojAssemblyReference.cache
-C:\Users\aoliveira\source\repos\TCC\tcc-37-new\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.deps.json
-C:\Users\aoliveira\source\repos\TCC\tcc-37-new\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.dll
-C:\Users\aoliveira\source\repos\TCC\tcc-37-new\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.pdb
-C:\Users\aoliveira\source\repos\TCC\tcc-37-new\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csprojAssemblyReference.cache
-C:\Users\aoliveira\source\repos\TCC\tcc-37-new\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.AssemblyInfoInputs.cache
-C:\Users\aoliveira\source\repos\TCC\tcc-37-new\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.AssemblyInfo.cs
-C:\Users\aoliveira\source\repos\TCC\tcc-37-new\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csproj.CoreCompileInputs.cache
-C:\Users\aoliveira\source\repos\TCC\tcc-37-new\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.dll
-C:\Users\aoliveira\source\repos\TCC\tcc-37-new\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9C77NT4brmTdyJ5j/cLQ++1RX2ayTHsiSrKncmY0rNgiXKUUStlpCiR5efraOopZeXmogXY52vqatapRkqsB9A==",
+  "dgSpecHash": "kaKJpL4SopsEJmSFcaW6ooMxYfl5Hjs6mFAzDK52WBuJFmVjtgk7fSKHlK+nsHXu5ikh4iCKUazYT/XAsCoPAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\tcc-37-new\\APIController\\APIController.Business\\APIController.Business.csproj",
+  "projectFilePath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

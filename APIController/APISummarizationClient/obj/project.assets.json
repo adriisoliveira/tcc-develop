@@ -112,28 +112,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aoliveira\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Logan\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aoliveira\\source\\repos\\TCC\\tcc-37-new\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+      "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
       "projectName": "APISummarizationClient",
-      "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\tcc-37-new\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
-      "packagesPath": "C:\\Users\\aoliveira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\tcc-37-new\\APIController\\APISummarizationClient\\obj\\",
+      "projectPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+      "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APISummarizationClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\aoliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Logan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -142,13 +137,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.rdisoftware.com/nuget": {},
-        "https://repo.rdisoftware.com/artifactory/api/nuget/rdi-nuget-virtual": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -160,7 +152,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": {
             "target": "Package",
@@ -186,7 +177,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
