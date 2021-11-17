@@ -28,12 +28,13 @@ namespace APIController.Controllers
         /// <summary>
         /// Retorna todos os arquivos da base
         /// </summary>
+        /// <param name="searchText">Busca por texto</param>
         /// <param name="maxResults">Quantidade máxima de retornos</param>
         [HttpGet]
-        [Route("getAll")]
-        public IActionResult GetAllFiles(int maxResults = 25)
+        [Route("getAll/{searchText}")]
+        public IActionResult GetAllFiles(string searchText, int maxResults = 25)
         {
-            var files = _fileService.GetAll();
+            var files = _fileService.GetAll(searchText, maxResults);
             return StatusCode(200, files);
         }
 

@@ -24,9 +24,9 @@ namespace APIController.Business.Services.Files
             return _fileRepository.GetById(id);
         }
 
-        public IEnumerable<Entity.Files.UploadedFile> GetAll()
+        public IEnumerable<Entity.Files.UploadedFile> GetAll(string searchText, int maxResults = 25)
         {
-            return _fileRepository.GetAll();
+            return _fileRepository.GetAll(searchText, maxResults);
         }
     }
 }

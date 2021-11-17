@@ -8,6 +8,6 @@ namespace APIController.Business.Interfaces.Repository.Files
     {
         UploadedFile Add(UploadedFile file);
         UploadedFile GetById(Guid id);
-        IEnumerable<UploadedFile> GetAll();
+        IEnumerable<UploadedFile> GetAll(string searchText, int maxResults = 25);
     }
 }

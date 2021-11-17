@@ -21,9 +21,15 @@ namespace APIController.Data.Repository.Files
             return DbSet.Where(e => e.Id == id).FirstOrDefault();
         }
 
-        public IEnumerable<UploadedFile> GetAll()
+        public IEnumerable<UploadedFile> GetAll(string searchText, int maxResults = 25)
         {
-            return DbSet.ToList();
+            return DbSet
+                .Where(e =>
+                e.Author.Contains(searchText)
+                || e.Title.Contains(searchText)
+                || e.Subtitle.Contains(searchText))
+                .Take(maxResults)
+                .ToList();
         }
     }
 }
