@@ -77,14 +77,13 @@
         <div style="margin-top: 16px;">
             <textarea placeholder="Sumário" rows="3" cols="166" pInputTextarea [(ngModel)]="sumario"></textarea>
         </div>
-    
     </div>
 
     <div style="margin-top: 16px; padding-top: 16px;">
         <b><p style="font-family: Open sans; font-size: 18px; color:#333333;text-align: center;">Elementos textuais</p></b>
         <b><p style="font-family: Open sans; font-size: 14px; color:#333333;text-align: center;">Introdução / Desenvolvimento / Conclusão</p></b>
         <div style="margin-top: 16px;">
-            <textarea placeholder="Introdução" rows="3" cols="166" pInputTextarea [(ngModel)]="introducao"></textarea>
+            <textarea placeholder="Introdução" rows="10" cols="166" pInputTextarea [(ngModel)]="introducao"></textarea>
         </div>
         <div style="margin-top: 16px;">
             <textarea placeholder="Desenvolvimento" rows="3" cols="166" pInputTextarea [(ngModel)]="desenvolvimento"></textarea>
@@ -188,7 +187,7 @@
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Dedicatoria" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="dedicatoria" style="width: 600px;">
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">DEDICATÓRIA</p></b>
+                    <b><p class="title-format">DEDICATÓRIA</p></b>
                     <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{dedicatoria}}</p>
                 </div>
             </p-fieldset>
@@ -198,8 +197,8 @@
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Resumo" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="resumo" style="width: 600px;">
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">RESUMO</p></b>
-                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{resumo}}</p>
+                    <b><p class="title-format">RESUMO</p></b>
+                    <p class="text-format">{{resumo}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -208,8 +207,8 @@
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Abstract" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="abstract" style="width: 600px;"> 
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">ABSTRACT</p></b>
-                    <p>{{abstract}}</p>
+                    <b><p class="title-format">ABSTRACT</p></b>
+                    <p class="text-format">{{abstract}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -218,8 +217,8 @@
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Sumario" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="abstract" style="width: 600px;">
-                    <b><p style="text-align: center;font-family: Arial; font-size: 12px;margin-top: 104px;">SUMÁRIO</p></b>
-                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{abstract}}</p>
+                    <b><p class="title-format">SUMÁRIO</p></b>
+                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{sumario}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -247,10 +246,10 @@
         <p-button (click)="printListas()" label="Download" icon="pi pi-download" iconPos="right"></p-button>
 
         <div style="margin-top: 16px;">
-            <p-fieldset style="margin-top: 16px;" legend="Introdução" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
+            <p-fieldset style="margin-top: 16px;" legend="Sumário" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="sumario" style="width: 600px;">
-                    <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">SUMARIO</p></b>
-                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{sumario}}</p>
+                    <b><p class="title-format">SUMARIO</p></b>
+                    <p class="text-format">{{sumario}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -258,14 +257,9 @@
 
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Introdução" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
-                <div id="introducao" style="width: 600px;">
-                    <b><p 
-                      style="text-align: center;
-                      font-family: Arial; font-size: 14px;
-                      margin-top: 30px;">
-                        Introdução
-                    </p></b>
-                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">{{introducao}}</p>
+                <div id="introducao">
+                    <b><p class="title-format">Introdução</p></b>
+                    <p class="text-format">{{introducao}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -274,8 +268,8 @@
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Desenvolvimento" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="desenvolvimento" style="width: 600px;">
-                    <b><p  style="text-align: justify;font-family: Arial; font-size: 14px;margin-top: 104px;">Desenvolvimento</p></b>
-                    <p>{{desenvolvimento}}</p>
+                    <b><p class="title-format">Desenvolvimento</p></b>
+                    <p class="text-format">{{desenvolvimento}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -285,8 +279,8 @@
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Conclusão" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="conclusao" style="width: 600px;">
-                    <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">CONCLUSÃO</p></b>
-                    <p>{{conclusao}}</p>
+                    <b><p class="title-format">CONCLUSÃO</p></b>
+                    <p class="text-format">{{conclusao}}</p>
                 </div>
             </p-fieldset>
         </div>
@@ -295,8 +289,8 @@
         <div style="margin-top: 16px;">
             <p-fieldset style="margin-top: 16px;" legend="Referências" [toggleable]="true" collapsed="#{controllerFormSectionDisplay.isSectionBClosed}">
                 <div id="referencias" style="width: 600px;">
-                    <b><p style="text-align: center;font-family: Arial; font-size: 14px;margin-top: 104px;">REFERENCIAS</p></b>
-                    <p>{{referencias}}</p>
+                    <b><p class="title-format">REFERENCIAS</p></b>
+                    <p class="text-format">{{referencias}}</p>
                 </div>
             </p-fieldset>
         </div>

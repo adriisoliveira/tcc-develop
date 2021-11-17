@@ -3,9 +3,10 @@ import { Component, OnInit, ElementRef, ViewChild, Optional } from '@angular/cor
 import { Router } from '@angular/router';
 import html2canvas from 'html2canvas';
 import { textAlign } from 'html2canvas/dist/types/css/property-descriptors/text-align';
-import {jsPDF} from 'jspdf';
+import {HTMLOptions, jsPDF} from 'jspdf';
 import {MenuItem} from 'primeng/api';
 import { Options } from 'selenium-webdriver';
+import * as html2pdf from 'html2pdf.js';
 
 @Component({
   selector: 'app-formatacao',
@@ -30,58 +31,55 @@ export class FormatacaoComponent implements OnInit {
     ngOnInit(){
       //menu bar itens
       this.items = [
-          
         {
           label:'Home',
           icon:'pi pi-fw pi-home',
           id: 'btnDashboard',
           url: '/#/dashboard',
-      },
-      {
-        label:'Sumarizador',
-        icon:'pi pi-fw pi-book',
-        id: 'btnResumo',
-        url: '/#/resumo-texto',
-      },
-      
-      {
+        },
+        {
+          label:'Sumarizador',
+          icon:'pi pi-fw pi-book',
+          id: 'btnResumo',
+          url: '/#/resumo-texto',
+        },
+        {
           label:'Recomendador',
           icon:'pi pi-fw pi-search-plus',
           id: 'btnSugestionador',
           url: '/#/page-rank',
-      },
-      {
-        label:'Formatador',
-        icon:'pi pi-fw pi-pencil',
-        id: 'btnSugestionador',
-        url: '/#/formatacao',
-       },
-       {
-        label:'Acervo',
-        icon:'pi pi-file-pdf',
-        id: 'btnAcervo',
-        url: '/#/acervo',
-      },
-       {
-        label:'Enviar Arquivo',
-        icon:'pi pi-cloud-upload',
-        id: 'btnEnviarArquivo',
-        url: '/#/file-upload',
-      },
-      {
+        },
+        {
+          label:'Formatador',
+          icon:'pi pi-fw pi-pencil',
+          id: 'btnSugestionador',
+          url: '/#/formatacao',
+        },
+        {
+          label:'Acervo',
+          icon:'pi pi-file-pdf',
+          id: 'btnAcervo',
+          url: '/#/acervo',
+        },
+        {
+          label:'Enviar Arquivo',
+          icon:'pi pi-cloud-upload',
+          id: 'btnEnviarArquivo',
+          url: '/#/file-upload',
+        },
+        {
           label:'Sobre Nós',
           icon:'pi pi-fw pi-info-circle',
           id: 'btnSugestionador',
           url: '/#/about',
-      },
-      {
+        },
+        {
           label:'Sair',
           icon:'pi pi-fw pi-power-off',
           url: '/#/login',
           id: 'btnQuit',
-      },
-        
-    ];
+        },
+      ];
     }
 
   // printPDF(){
@@ -124,7 +122,7 @@ export class FormatacaoComponent implements OnInit {
   conclusao: string;
   referencias: string;
 
-  salvarDados(){
+salvarDados(){
     this.instituicao;
     this.aluno1;
     this.aluno2;
@@ -150,10 +148,9 @@ export class FormatacaoComponent implements OnInit {
     this.conclusao;
     this.referencias;
     alert("Informações prontas para download")
-  }
+}
 
-  download() {
-
+download() {
     // var doc = new jsPDF();
     // doc.text('20', 20, 20);
     // doc.text('This is client-side Javascript, pumping out a PDF.', 30, 20);
@@ -162,7 +159,6 @@ export class FormatacaoComponent implements OnInit {
 
     // // Save the PDF
     // doc.save('Test.pdf');
-    
 }
 
 GeneratePDF () {
@@ -192,9 +188,7 @@ public downloadPDF() {
   //    'elementHandlers': specialElementHandlers
   //  });
 
-
   //  doc.save('fileName.pdf');
-  
 }
 
 getPDF() {
@@ -220,157 +214,135 @@ getPDF() {
   doc.save('Generated.pdf');
 }
 
-printCapa(): void{
-  var pdf = new jsPDF('p', 'pt', 'a4');
-  var source = document.getElementById("capaDocument");
-  
-  pdf.html(source);
+printCapa(): void {
+  const element: Element = document.getElementById("capaDocument");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'Capa.pdf'
+  }
 
-  // setTimeout é necessário, sem ele a função não tem tempo o bastante de escrever o conteudo do pdf
-  setTimeout(function() {
-    pdf.save('Capa.pdf');
-  }, 2000);
+  html2pdf().from(element).set(opt).save();
 }
 
 printFolhaRosto(): void{
-  let pdf = new jsPDF('portrait', 'px', 'a4');
-  var source = document.getElementById("folhaRosto");
-  
-  pdf.html(source);
+  const element: Element = document.getElementById("folhaRosto");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'FolhaRosto.pdf'
+  }
 
-  setTimeout(function() {
-    pdf.save('Folha de Rosto.pdf');
-  }, 2000);
+  html2pdf().from(element).set(opt).save();
 }
 
 printFichaAprovacao(): void{
-  var pdf = new jsPDF('p', 'pt', 'a4');
-  var source = document.getElementById("fichaAprovacao");
-  
-  pdf.html(source);
+  const element: Element = document.getElementById("fichaAprovacao");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'FichaAprovacao.pdf'
+  }
 
-  setTimeout(function() {
-    pdf.save('Ficha de Aprovação.pdf');
-  }, 2000);
+  html2pdf().from(element).set(opt).save();
 }
 
 printDedicatoria(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
-  var source = document.getElementById("dedicatoria");
-  
-  pdf.html(source);
+  const element: Element = document.getElementById("dedicatoria");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'Dedicatoria.pdf'
+  }
 
-  setTimeout(function() {
-    pdf.save('Dedicatoria.pdf');
-  }, 2000);
+  html2pdf().from(element).set(opt).save();
 }
 
 printResumo(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
-  var source = document.getElementById("resumo");
-  
-  pdf.html(source);
+  const element: Element = document.getElementById("resumo");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'Resumo.pdf'
+  }
 
-  setTimeout(function() {
-    pdf.save('Resumo.docx');
-  }, 2000);
+  html2pdf().from(element).set(opt).save();
 }
 
 printAbstract(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
-  var source = document.getElementById("abstract");
-  
-  pdf.html(source);
+  const element: Element = document.getElementById("abstract");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'Abstract.pdf'
+  }
 
-  setTimeout(function() {
-    pdf.save('Abstract.docx');
-  }, 2000);
+  html2pdf().from(element).set(opt).save();
 }
 
 printListas(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
-  var source = document.getElementById("listas");
-  
-  pdf.html(source);
+  const element: Element = document.getElementById("listas");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'Listas.pdf'
+  }
 
-  setTimeout(function() {
-    pdf.save('Listas.docx');
-  }, 2000);
+  html2pdf().from(element).set(opt).save();
 }
 
 printSumario(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
-  var source = document.getElementById("sumario");
-  
-  pdf.html(source);
+  const element: Element = document.getElementById("sumario");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'Sumario.pdf'
+  }
 
-  setTimeout(function() {
-    pdf.save('Sumario.docx');
-  }, 2000);
+  html2pdf().from(element).set(opt).save();
 }
 
 printIntroducao(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
-  var source = document.getElementById("introducao");
-  
-  pdf.html(source);
+  const element: Element = document.getElementById("introducao");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'Introducao.pdf'
+  }
 
+  html2pdf().from(element).set(opt).save();
+
+  /*var pdf = new jsPDF({
+    orientation: "portrait",
+    unit: "pt",
+    format: "a4"
+  });
+  var source = document.getElementById("introducao");
+
+  pdf.html(source);
   setTimeout(function() {
     pdf.save('Introdução.pdf');
-  }, 2000);
+  }, 2000);*/
 }
 
 printDesenvolvimento(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
-  var source = document.getElementById("desenvolvimento");
-  
-  pdf.html(source);
+  const element: Element = document.getElementById("desenvolvimento");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'Desenvolvimento.pdf'
+  }
 
-  setTimeout(function() {
-    pdf.save('Desenvolvimento.docx');
-  }, 2000);
+  html2pdf().from(element).set(opt).save();
 }
 
 printConclusao(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
-  var source = document.getElementById("conclusao");
-  
-  pdf.html(source);
+  const element: Element = document.getElementById("conclusao");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'Conclusao.pdf'
+  }
 
-  setTimeout(function() {
-    pdf.save('Conclusao.docx');
-  }, 2000);
+  html2pdf().from(element).set(opt).save();
 }
 
 printReferencias(): void{
-  let pdf = new jsPDF('p', 'pt', 'a4');
-  
-  var source = document.getElementById("referencias");
-  
-  pdf.html(source);
+  const element: Element = document.getElementById("referencias");
+  const opt: HTMLOptions = {
+    margin: 30,
+    filename: 'Referencias.pdf'
+  }
 
-  setTimeout(function() {
-    pdf.save('Referencias.docx');
-  }, 2000);
+  html2pdf().from(element).set(opt).save();
 }
-
-// printCapa(): void{
-//   let pdf = new jsPDF('p', 'pt', 'a4');
-  
-//   var source = document.getElementById("documentPrint");
-  
-//   pdf.html(source);
-
-//   setTimeout(function() {
-//     pdf.save('Document.docx');
-//   }, 2000);
-// }
 }

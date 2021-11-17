@@ -1,35 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\Atual_Develop_1311\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {}
+    "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop-pdf\\APIController\\APIController.Business\\APIController.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\Atual_Develop_1311\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {
+    "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop-pdf\\APIController\\APIController.Business\\APIController.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\Atual_Develop_1311\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "projectUniqueName": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop-pdf\\APIController\\APIController.Business\\APIController.Business.csproj",
         "projectName": "APIController.Business",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\Atual_Develop_1311\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
-        "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\Atual_Develop_1311\\tcc-develop\\APIController\\APIController.Business\\obj\\",
+        "projectPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop-pdf\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "packagesPath": "C:\\Users\\johny\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\johny\\Documents\\TCC Projects\\tcc-develop-pdf\\APIController\\APIController.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\johny\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.rdisoftware.com/nuget": {},
-          "https://repo.rdisoftware.com/artifactory/api/nuget/rdi-nuget-virtual": {}
+          "https://www.nuget.org/api/v2": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -61,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
