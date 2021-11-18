@@ -4,6 +4,12 @@ Este projeto inclui um software de repositório, pesquisador e padronizador de a
 Para seu devido manuseio separaremos em topicos.
 
 ## Como rodar o programa em sua maquina
+
+##Inicialmente
+  Utilize a branch de desenvolvimento "develop";
+  Não esqueça de atualizar os node modules;
+  Instale as bibliotecas python necessárias contidas no codigo da API Luhn
+
 ### API Controller
 Para rodar o projeto é necessário alterar a string de conexão com o banco de dados na appsettings.json
 caso necessário criar o banco de dados manualmente com o nome "ApiControllerDb" e usar o comando "update-database" no package manager console do projeto 04-Data
