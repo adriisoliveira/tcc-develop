@@ -50,6 +50,23 @@ namespace WebCrawler.Data.Repository.Url
             return DbSet.OrderBy(e => e.LastIndexing).ToList();
         }
 
+        public IEnumerable<PageUrlBasicInfoDTO> GetAllBasicInfoToIndex()
+        {
+            return DbSet
+                .Include(e => e.Rank)
+                .Select(e => new PageUrlBasicInfoDTO
+                {
+                    PageUrlId = e.Id,
+                    Url = e.Url,
+                    Title = e.Title,
+                    LastIndexing = e.LastIndexing,
+                    LastRanking = e.Rank != null ? (DateTime?)e.Rank.LastRanking : null,
+                    PageRankPonctuation = e.Rank != null ? e.Rank.Ponctuation : 0
+                })
+                .OrderBy(e => e.LastIndexing)
+                .ToList();
+        }
+
         public IEnumerable<PageUrlBasicInfoDTO> GetAllBasicInfo(string searchText)
         {
             var pagesWithSpecifiedWord = DbSet

@@ -128,7 +128,6 @@ C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\bin\Debug\net
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\bin\Debug\netcoreapp3.1\WebCrawler.Data.dll
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\bin\Debug\netcoreapp3.1\WebCrawler.Business.pdb
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\bin\Debug\netcoreapp3.1\WebCrawler.Data.pdb
-C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\obj\Debug\netcoreapp3.1\Crawler.csprojAssemblyReference.cache
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\obj\Debug\netcoreapp3.1\Crawler.AssemblyInfoInputs.cache
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\obj\Debug\netcoreapp3.1\Crawler.AssemblyInfo.cs
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\obj\Debug\netcoreapp3.1\Crawler.csproj.CoreCompileInputs.cache
@@ -136,3 +135,4 @@ C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\obj\Debug\net
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\obj\Debug\netcoreapp3.1\Crawler.dll
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\obj\Debug\netcoreapp3.1\Crawler.pdb
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\obj\Debug\netcoreapp3.1\Crawler.genruntimeconfig.cache
+C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\Crawler\obj\Debug\netcoreapp3.1\Crawler.csprojAssemblyReference.cache
