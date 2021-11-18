@@ -55,7 +55,8 @@
             {{rowData[col.field]}}
           </ng-container>
           <ng-container *ngIf="col.field === 'action'">
-            <button type="button" pButton (click)="downloadSearchFile(rowData.id)" style="width: 40px; height: 30px;">Download</button>
+            <p-button label="Download" icon="pi pi-download" iconPos="right" (click)="downloadSearchFile(rowData.id)" ></p-button>
+            <!-- <button type="button" pButton (click)="downloadSearchFile(rowData.id)" style="width: 40px; height: 30px;">Download</button> -->
           </ng-container>
         </td>
       </tr>
