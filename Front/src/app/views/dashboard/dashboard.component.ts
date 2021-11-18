@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-
+import {HttpClient, HttpHeaders, HttpEventType, HttpRequest, HttpClientModule} from '@angular/common/http';
 import { DataView } from 'src/app/resources/models/DataView';
 import { DataViewService } from 'src/app/resources/services/dataView.service';
 import {MenuItem} from 'primeng/api';
+import { FileView } from 'src/app/resources/models/FileView';
+import { FileViewService } from 'src/app/resources/services/fileView.service';
 
 
 @Component({
@@ -13,20 +15,25 @@ import {MenuItem} from 'primeng/api';
     styleUrls: ['./dashboard.component.scss']
   })
   export class DashboardComponent implements OnInit {
+    [x: string]: any;
   
     items: MenuItem[]; 
     dataViewComponent: DataView[];
+    fileViewComponent: FileView[];
+    cols: any[];
 
     constructor(
+      private http: HttpClient,
       private router: Router,
-      private dataViewService: DataViewService
+      private dataViewService: DataViewService,
+      private fileViewService: FileViewService
       ) { }
   
-    //norvamente :void
-    ngOnInit(){
 
-      this.dataViewService.getDataView().then(dataView =>this.dataViewComponent = dataView);
-      //menu bar itens
+    ngOnInit(){
+      this.fileViewService.render().then(fileView =>this.fileViewComponent = fileView);
+      //this.dataViewService.getDataView().then(dataView =>this.dataViewComponent = dataView);
+
       this.items = [
           
         {
@@ -78,7 +85,12 @@ import {MenuItem} from 'primeng/api';
           url: '/#/login',
           id: 'btnQuit',
       },
-      
+  ];
+
+  this.cols = [
+    { field: 'title', header: 'Titulo' },
+    { field: 'subtitle', header: 'Subititulo' },
+    { field: 'author', header: 'Autor' },
   ];
   
   (function(d, m){
@@ -91,6 +103,16 @@ import {MenuItem} from 'primeng/api';
 })(document, (window as any).kommunicate || {});
 }
 
+    
+    // render(){
+    //   const httpOptions = {
+    //       headers: new HttpHeaders({
+    //         'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
+    //       })
+    //     }
+
+    // return this.http.get<FileList[]>(`https://localhost:44312/file/getAll/?maxResults=25`, httpOptions);
+    // }
   
     /*Metodo para modificar a a tela de Dashbord para Resumo */
     // public doResumo(): void{
@@ -101,5 +123,26 @@ import {MenuItem} from 'primeng/api';
     // public doRank(): void{
     //   this.router.navigate(['page-rank'])
     // }
+
+
+
+
+    public downloadSearchFile(id){
+      let headers = new HttpHeaders({
+        'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
+      });
+  
+      this.http.get(`https://localhost:44312/file/download/${id}`, { responseType: 'arraybuffer', headers: headers })
+      .subscribe(response => this.download(response, "application/pdf"));
+  
+    }
+  
+    public download(data: any, fileType: string) {
+        let blob = new Blob([data], { type: fileType });
+        let result = window.open(window.URL.createObjectURL(blob));
+        if (!result || result.closed || typeof result.closed == 'undefined')
+            alert( 'Desative o bloqueador de Pop-up e tente novamente.');
+    }
+    
   }
   

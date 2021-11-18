@@ -9,6 +9,10 @@
   </p-menubar>
 </div>
 <br>
+<p-card header="Bem vindo ao Collectio" subheader="Seu repositório acadêmico" [style]="{'width': '79rem', 'margin-bottom': '2em'}">
+  <p style="text-align: center;">A plataforma collectio serve para voce, estudante, encontrar facilidades na hora de fazer sua dissertação ou documento acadêmico!</p>
+  <p>Possuimos diversas opções para sua busca ao conhecimento, tal como o acervo e o recomendador. Abaixo voce pode encontrar alguns dos arquivos que ja estão no banco de dados da sua universidade.</p>
+</p-card>
 <div>
   <p-dataView [value]="dataViewComponent" layout="grid">
     <p-header>Prévia</p-header>
@@ -17,11 +21,13 @@
         <div class="grid-card">
           <img style="float: left; display: inline" [src]="'assets/' + dataViewComponent.img" [alt]="dataViewComponent.img"/>
           <div class="grid-content">
-            <div><b>Nome:</b> {{dataViewComponent.name}}</div>
+            <div><b>Title:</b> {{dataViewComponent.name}}</div>
+            <div><b>Subtitulo:</b> {{dataViewComponent.author}}</div>
+            <div><b>Autor</b> {{dataViewComponent.price}}</div>
             <br>
-            <div><b>Autor:</b> {{dataViewComponent.author}}</div>
-            <br>
-            <div><b>R$</b> {{dataViewComponent.price}}</div>
+            <div>
+              <p-button label="Visualizar" icon="pi pi-eye" iconPos="right" (click)="downloadSearchFile(rowData.id)" ></p-button>
+            </div>
           </div>
         </div>
       </div>
