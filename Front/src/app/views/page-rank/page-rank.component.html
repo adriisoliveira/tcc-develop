@@ -34,7 +34,7 @@ totalRecords="totalRecords" pageLinks="3">
       <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
     </button>  
     
-      <p-button style="margin-left: 120px; margin-right: 120px;" label="Analisar" icon="pi pi-check-circle" iconPos="right"></p-button>
+      <p-button class="search" (click)="render()" style="margin-left: 120px; margin-right: 120px;" label="Analisar" icon="pi pi-check-circle" iconPos="right"></p-button>
       
     
 
@@ -44,14 +44,6 @@ totalRecords="totalRecords" pageLinks="3">
       </button>
   </div>
 </ng-template>
-<!-- Delete #dt and this part of code is dont use the global search
-    <ng-template pTemplate="caption">
-  <div style="text-align: right">        
-      <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
-      <input type="text" pInputText size="50" placeholder="Global Filter" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
-  </div>
-</ng-template>
- -->
 <ng-template pTemplate="header" let-columns>
   <tr>
     <th *ngFor="let col of columns">
@@ -59,17 +51,8 @@ totalRecords="totalRecords" pageLinks="3">
     </th>
   </tr>
 
-  <!-- If needed use to filter inside a colun -->
   <tr>
       <th *ngFor="let col of columns" [ngSwitch]="col.field">
-        <!-- <input *ngSwitchCase="'name'" pInputText type="text"
-          (input)="dt.filter($event.target.value, col.field, 'contains')" /> -->
-
-          <!-- use this if we need a costum search, if dont delete te allAuthos
-          from component too used the Dropdown module tu this work -->
-            
-      <!-- <p-dropdown *ngSwitchCase="'author'" [options]="allAuthors" 
-      [style]="{'width':'100%'}" (onChange)="dt.filter($event.value, col.field, 'equals')"></p-dropdown> -->
       </th>
   </tr>
 

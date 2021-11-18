@@ -11,6 +11,7 @@ export class FileList {
     constructor(id: String,fileName : String,path : String,title : String,subtitle : String,author : String,publishDate : String) {
       this.Id = id;
       this.FileName = fileName;
+      this.Title = title;
       this.Path = path;
       this.Subtitle = subtitle;
       this.Author = author;
