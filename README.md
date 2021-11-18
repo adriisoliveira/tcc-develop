@@ -66,6 +66,8 @@ Todas as abas possuem cartões de instrução de uso para sua respectiva funçã
 
 ### Upload de documentos
 
+- Desenvolvida com o intuito de seu acesso ser restrito a professores e secretaria, é através desta interface que o usuário pode subir os documentos no banco.
+
 ### Sobre nós
 - Uma aba para entendimento da empresa, termo e condições de uso, dados e motivos de uso bem como outras informações de relevância.
 
