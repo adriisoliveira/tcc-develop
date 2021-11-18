@@ -5,7 +5,6 @@ Para seu devido manuseio separaremos em topicos.
 
 ## Como rodar o programa em sua maquina
 
-##Inicialmente
   Utilize a branch de desenvolvimento "develop";
   Não esqueça de atualizar os node modules;
   Instale as bibliotecas python necessárias contidas no codigo da API Luhn
