@@ -10,23 +10,26 @@
 </div>
 <br>
 <p-card header="Bem vindo ao Collectio" subheader="Seu repositório acadêmico" [style]="{'width': '79rem', 'margin-bottom': '2em'}">
-  <p style="text-align: center;">A plataforma collectio serve para voce, estudante, encontrar facilidades na hora de fazer sua dissertação ou documento acadêmico!</p>
+  <p>A plataforma collectio serve para voce, estudante, encontrar facilidades na hora de fazer sua dissertação ou documento acadêmico!</p>
   <p>Possuimos diversas opções para sua busca ao conhecimento, tal como o acervo e o recomendador. Abaixo voce pode encontrar alguns dos arquivos que ja estão no banco de dados da sua universidade.</p>
 </p-card>
+
+
 <div>
-  <p-dataView [value]="dataViewComponent" layout="grid">
+  <p-dataView [value]="fileViewComponent" layout="grid">
     <p-header>Prévia</p-header>
-    <ng-template let-dataViewComponent pTemplate="gridItem">
+    <ng-template let-fileViewComponent pTemplate="gridItem">
       <div class="p-col-12 p-md-3" style="justify-content: space-between;">
-        <div class="grid-card">
-          <img style="float: left; display: inline" [src]="'assets/' + dataViewComponent.img" [alt]="dataViewComponent.img"/>
+        <div class="grid-card" >
+          <img class="image-format" src="../../../assets/pdf.png" alt="pdfImage">
           <div class="grid-content">
-            <div><b>Title:</b> {{dataViewComponent.name}}</div>
-            <div><b>Subtitulo:</b> {{dataViewComponent.author}}</div>
-            <div><b>Autor</b> {{dataViewComponent.price}}</div>
+            <div><b>Title:</b> {{fileViewComponent.title}}</div>
             <br>
+            <div><b>Subtitle:</b> {{fileViewComponent.subtitle}}</div>
+            <br>
+            <div><b>Autor/Autores:</b> {{fileViewComponent.author}}</div>
             <div>
-              <p-button label="Visualizar" icon="pi pi-eye" iconPos="right" (click)="downloadSearchFile(rowData.id)" ></p-button>
+            <p-button label="Visualizar" icon="pi pi-eye" iconPos="right" (click)="downloadSearchFile(fileViewComponent.id)" ></p-button>
             </div>
           </div>
         </div>
@@ -34,3 +37,4 @@
     </ng-template>
   </p-dataView>
 </div>
+

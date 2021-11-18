@@ -1,0 +1,15 @@
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\bin\Release\netcoreapp3.1\WebCrawler.Data.deps.json
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\bin\Release\netcoreapp3.1\WebCrawler.Data.runtimeconfig.json
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\bin\Release\netcoreapp3.1\WebCrawler.Data.runtimeconfig.dev.json
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\bin\Release\netcoreapp3.1\WebCrawler.Data.dll
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\bin\Release\netcoreapp3.1\WebCrawler.Data.pdb
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\bin\Release\netcoreapp3.1\WebCrawler.Business.dll
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\bin\Release\netcoreapp3.1\WebCrawler.Business.pdb
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\obj\Release\netcoreapp3.1\WebCrawler.Data.csprojAssemblyReference.cache
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\obj\Release\netcoreapp3.1\WebCrawler.Data.AssemblyInfoInputs.cache
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\obj\Release\netcoreapp3.1\WebCrawler.Data.AssemblyInfo.cs
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\obj\Release\netcoreapp3.1\WebCrawler.Data.csproj.CoreCompileInputs.cache
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\obj\Release\netcoreapp3.1\WebCrawler.Data.csproj.CopyComplete
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\obj\Release\netcoreapp3.1\WebCrawler.Data.dll
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\obj\Release\netcoreapp3.1\WebCrawler.Data.pdb
+C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Data\obj\Release\netcoreapp3.1\WebCrawler.Data.genruntimeconfig.cache

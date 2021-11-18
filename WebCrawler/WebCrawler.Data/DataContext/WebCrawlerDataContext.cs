@@ -21,7 +21,7 @@ namespace WebCrawler.Data.DataContext
         #endregion
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = "Initial Catalog=WebCrawlerDb;Persist Security Info=True;User ID=sa1;Password=sa123456;Data Source=DESKTOP-I32JP22";
+            var connectionString = "Database=WebCrawlerDb;Data Source=AOLIVEIRA-N;Integrated Security=True;";
             optionsBuilder.UseSqlServer(connectionString, e => e.MigrationsAssembly("WebCrawler.Data"));
         }
 

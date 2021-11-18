@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using WebCrawler.Business.DTO;
 using WebCrawler.Business.Entities;
 using WebCrawler.Business.Helpers;
 using WebCrawler.Business.Interfaces;
@@ -15,7 +16,7 @@ namespace WebCrawler.Business.Services
     {
         #region :: Constantes
         private const string CRAWLER_OUTPUT_PREFFIX = "[Crawler]";
-        private const int PAGES_LIMIT = 200;
+        private const int PAGES_LIMIT = 500;
         #endregion
 
         protected string[] _lastPages;
@@ -44,10 +45,14 @@ namespace WebCrawler.Business.Services
             return true;
         }
 
-        public void CrawlThrough(string urlBase)
+        public void CrawlThrough(string urlBase, int maxExecutions, ref int executionCount)
         {
             try
             {
+                executionCount++;
+                if (executionCount > maxExecutions)
+                    return;
+
                 var url = TextFormattingUtils.UrlConformer(urlBase);
                 _pagesCount++;
                 
@@ -81,9 +86,9 @@ namespace WebCrawler.Business.Services
                     foreach (var pageLink in pageLinks.Where(e => !_lastPages.Contains(e)))
                     {
                         if (pageLink.StartsWith("/"))
-                            CrawlThrough(string.Format("{0}{1}", url, pageLink)); //Links pro mesmo site
+                            CrawlThrough(string.Format("{0}{1}", url, pageLink), maxExecutions, ref executionCount); //Links pro mesmo site
                         else
-                            CrawlThrough(pageLink); //Links externos
+                            CrawlThrough(pageLink, maxExecutions, ref executionCount); //Links externos
                     }
             }
             catch (Exception e)
@@ -101,6 +106,11 @@ namespace WebCrawler.Business.Services
         public IEnumerable<PageUrl> GetAllPageUrlsToIndex()
         {
             return _urlRepository.GetAllToIndex();
+        }
+
+        public IEnumerable<PageUrlBasicInfoDTO> GetAllPageUrlBasicInfoToIndex()
+        {
+            return _urlRepository.GetAllBasicInfoToIndex();
         }
 
         public IEnumerable<UrlCrawlerQueue> GetAllUrlCrawlerQueue()

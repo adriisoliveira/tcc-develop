@@ -1,5 +1,11 @@
 export class FileView {
-  
+    // id;
+    // fileName;
+    // path;
+    // title;
+    // subtitle;
+    // author;
+    // publishDate;
     Id: String;
     FileName : String;
     Path : String;

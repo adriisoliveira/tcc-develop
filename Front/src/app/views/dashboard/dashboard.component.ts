@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import {HttpClient, HttpHeaders, HttpEventType, HttpRequest, HttpClientModule} from '@angular/common/http';
-import { DataView } from 'src/app/resources/models/DataView';
-import { DataViewService } from 'src/app/resources/services/dataView.service';
+// import { DataView } from 'src/app/resources/models/DataView';
+// import { DataViewService } from 'src/app/resources/services/dataView.service';
 import {MenuItem} from 'primeng/api';
 import { FileView } from 'src/app/resources/models/FileView';
 import { FileViewService } from 'src/app/resources/services/fileView.service';
@@ -16,23 +16,22 @@ import { FileViewService } from 'src/app/resources/services/fileView.service';
   })
   export class DashboardComponent implements OnInit {
     [x: string]: any;
-  
+    public fileview = [];
+    searchItem: String;
     items: MenuItem[]; 
-    dataViewComponent: DataView[];
     fileViewComponent: FileView[];
     cols: any[];
+    files: FileList[];
 
     constructor(
       private http: HttpClient,
       private router: Router,
-      private dataViewService: DataViewService,
       private fileViewService: FileViewService
       ) { }
   
 
     ngOnInit(){
-      this.fileViewService.render().then(fileView =>this.fileViewComponent = fileView);
-      //this.dataViewService.getDataView().then(dataView =>this.dataViewComponent = dataView);
+      this.fileViewService.render().subscribe(fileViewN => this.fileViewComponent = fileViewN);
 
       this.items = [
           
@@ -91,42 +90,10 @@ import { FileViewService } from 'src/app/resources/services/fileView.service';
     { field: 'title', header: 'Titulo' },
     { field: 'subtitle', header: 'Subititulo' },
     { field: 'author', header: 'Autor' },
+    { field: 'action', header: 'Ação' },
   ];
-  
-  (function(d, m){
-    var kommunicateSettings = 
-        {"appId":"dFH1acvKl0NRhqvHmtnOYRxOipIY5lkP","popupWidget":true,"automaticChatOpenOnNavigation":true};
-    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-    s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-    var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-    (window as any).kommunicate = m; m._globals = kommunicateSettings;
-})(document, (window as any).kommunicate || {});
+
 }
-
-    
-    // render(){
-    //   const httpOptions = {
-    //       headers: new HttpHeaders({
-    //         'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
-    //       })
-    //     }
-
-    // return this.http.get<FileList[]>(`https://localhost:44312/file/getAll/?maxResults=25`, httpOptions);
-    // }
-  
-    /*Metodo para modificar a a tela de Dashbord para Resumo */
-    // public doResumo(): void{
-    //   this.router.navigate(['resumo-texto'])
-    // }
-  
-    // /*Metodo para modificar a a tela de Dashbord para Page Rank */
-    // public doRank(): void{
-    //   this.router.navigate(['page-rank'])
-    // }
-
-
-
-
     public downloadSearchFile(id){
       let headers = new HttpHeaders({
         'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')

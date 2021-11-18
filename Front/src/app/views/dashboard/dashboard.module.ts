@@ -9,6 +9,8 @@ import {MenuItem} from 'primeng/api';//item q vai no componet
 import { DataViewModule } from 'primeng/dataview';
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
+import {FieldsetModule} from 'primeng/fieldset';
+import {PanelModule} from 'primeng/panel';
 
 @NgModule({
   declarations: [DashboardComponent],
@@ -18,7 +20,9 @@ import {ButtonModule} from 'primeng/button';
     MenubarModule, 
     DataViewModule,
     CardModule,
-    ButtonModule
+    ButtonModule,
+    FieldsetModule,
+    PanelModule
   ]
 })
 export class DashboardModule { }
