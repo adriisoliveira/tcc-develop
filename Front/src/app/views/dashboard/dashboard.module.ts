@@ -4,13 +4,12 @@ import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 
-import {MenubarModule} from 'primeng/menubar';
-import {MenuItem} from 'primeng/api';//item q vai no componet
+import { MenubarModule } from 'primeng/menubar';
 import { DataViewModule } from 'primeng/dataview';
-import {CardModule} from 'primeng/card';
-import {ButtonModule} from 'primeng/button';
-import {FieldsetModule} from 'primeng/fieldset';
-import {PanelModule} from 'primeng/panel';
+import { CardModule } from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
+import { FieldsetModule } from 'primeng/fieldset';
+import { PanelModule } from 'primeng/panel';
 
 @NgModule({
   declarations: [DashboardComponent],

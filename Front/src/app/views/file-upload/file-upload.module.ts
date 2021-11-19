@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { FileUploadRoutingModule } from './file-upload-routing.module';
 import { FileUploadComponent } from './file-upload.component';
 import {CardModule} from 'primeng/card';
 import {PanelModule} from 'primeng/panel';
-
 import {MenubarModule} from 'primeng/menubar';
 
 @NgModule({
@@ -18,4 +16,5 @@ import {MenubarModule} from 'primeng/menubar';
     MenubarModule
   ],
 })
+
 export class FileUploadModule { }

@@ -9,6 +9,7 @@ import { LoginService } from '../../resources/services/login.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
+
 export class LoginComponent implements OnInit {
   public requestLogin: RequestLogin;
 
@@ -22,13 +23,11 @@ export class LoginComponent implements OnInit {
     this.requestLogin = new RequestLogin();
   }
 
-  /* Faz chamada pro DOLogin recebe o token da API na variavel data, nesse modelo n esta guardando o valor*/
   public doLogin(): void {
     this.loginService.doLogin(this.requestLogin).subscribe(
       (data) => {
         this.router.navigate(['dashboard']);
-      },
-      (httpError) => {
+      }, (httpError) => {
         this.alertService.error(httpError.error.message);
       }
     );

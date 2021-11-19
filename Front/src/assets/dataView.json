@@ -1,7 +1,0 @@
-{
-    "data": [
-        {"img": "pdf.png", "name": "The Godfather", "price": "10", "author": "Mario Puzo"},
-        {"img": "pdf.png", "name": "The Fellowship of the Ring", "price": "15", "author": "J.R.R. Tolkien"},
-        {"img": "pdf.png", "name": "Harry Potter and the Deathly Hallows", "price": "20", "author": "J.K. Rowling  "}
-    ]
-}

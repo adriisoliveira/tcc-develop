@@ -3,16 +3,16 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { RequestLogin } from '../models/RequestLogin';
 import { ResponseLogin } from '../models/ResponseLogin';
-import {tap} from 'rxjs/operators';
+import { tap } from 'rxjs/operators';
 import { AuthService } from './auth.service';
 
 @Injectable({
   providedIn: 'root',
 })
+
 export class LoginService {
   constructor(private httpClient: HttpClient, private authService: AuthService) {}
 
-  //com o pipe tap o login é encaspulado e fica aqui a resposabilidade atraves do service
   public doLogin(requestLogin: RequestLogin): Observable<ResponseLogin> {
     let headers = new HttpHeaders(); headers = headers.set('Content-Type', 'application/json; charset=utf-8');
 

@@ -1,92 +1,47 @@
 <p-menubar [model]="items">
-    <ng-template pTemplate="start">
-        <img src="../../../favicon1.ico" height="40" class="p-mr-2">
+  <ng-template pTemplate="start">
+    <img src="../../../favicon1.ico" height="40" class="p-mr-2">
+  </ng-template>
+  <ng-template pTemplate="end">
+    <input type="text" pInputText placeholder="Search">
+  </ng-template>
+</p-menubar>
+<br>
+<div>
+  <p-card header="Upload de arquivos" [style]="{'width': '79rem', 'margin-bottom': '2em'}">
+    <ng-template pTemplate="header">
     </ng-template>
-    <ng-template pTemplate="end">
-        <input type="text" pInputText placeholder="Search">
-    </ng-template>
-  </p-menubar>
-  <br>
-  
-  <div>
-    <p-card header="Upload de arquivos" [style]="{'width': '79rem', 'margin-bottom': '2em'}">
-      <ng-template pTemplate="header">
-      </ng-template>
-    <br/><p>O upload de arquivos ocorre de maneira fácil e rápida, basta selecionar o arquivo e informar um autor, ou os autores separados por virgula</p>
-      <p>Vale lembrar que apenas documentos autorizados devem ser postados, tal como artigos publicados ou Trabalhos de conclusão de curso ja encerrados</p>
-      <p style="font-size: 8px;">*Upload apenas de arquivos em pdf!</p>
-      <p>Contamos com seu bom senso ;)</p>
+  <br/><p>O upload de arquivos ocorre de maneira fácil e rápida, basta selecionar o arquivo e informar um autor, ou os autores separados por virgula</p>
+    <p>Vale lembrar que apenas documentos autorizados devem ser postados, tal como artigos publicados ou Trabalhos de conclusão de curso ja encerrados</p>
+    <p style="font-size: 8px;">*Upload apenas de arquivos em pdf!</p>
+    <p>Contamos com seu bom senso ;)</p>
+  </p-card>
+  <br/>
+  <div style="margin-left: 3px;" class="p-grid">
+    <p-card header="" [style]="{'width': '20rem', 'margin-bottom': '2em'}">
+      <p style="text-align: center;">Selecione o arquivo</p>
+      <br/>
+      <span>{{fileName}}</span>
+      <br/>
+      <br/>
+      <button style="margin-left: 30px;" pButton type="button" label="Selecionar" class="p-button-secondary"
+      (click)="fileUpload.click()"></button>
+      <button style="margin-left: 45px;" pButton type="submit" label="Enviar" class="p-button-secondary" (click)="upload(fileUpload.files)"></button>
+      <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/>
     </p-card>
-    <br/>
-    <div style="margin-left: 3px;" class="p-grid">
-      <p-card header="" [style]="{'width': '20rem', 'margin-bottom': '2em'}">
-        <p style="text-align: center;">Selecione o arquivo</p>
-        <br/>
-        <span>{{fileName}}</span>
-        <br/>
-        <br/>
-        <button style="margin-left: 30px;" pButton type="button" label="Selecionar" class="p-button-secondary"
-        (click)="fileUpload.click()"></button>
-        <button style="margin-left: 45px;" pButton type="submit" label="Enviar" class="p-button-secondary" (click)="upload(fileUpload.files)"></button>
-        <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/>
-      </p-card>
-      <p-card>
-        <p style="justify-content: space-evenly; text-align: center; font-family: Open Sans;font-size: 16px;margin-bottom: 16px;">Informações</p>
-        <div class="p-grid">
-          <div class="p-col">
-            <input style="margin-right: 16px;" type="text" name="title" pInputText size="35" placeholder="Titulo" style="width:auto" [(ngModel)]="title" />
-          </div>
-          <div class="p-col">
-            <input style="margin-left: 16px;" type="text" name="subtitle" pInputText size="35" placeholder="Subtitulo" style="width:auto" [(ngModel)]="subtitle" />  
-          </div>
-          <div class="p-col">
-            <input type="text" name="author" pInputText size="75" placeholder="Autor/Autores" style="width:auto" [(ngModel)]="author" />  
-          </div>
+    <p-card>
+      <p style="justify-content: space-evenly; text-align: center; font-family: Open Sans;font-size: 16px;margin-bottom: 16px;">Informações</p>
+      <div class="p-grid">
+        <div class="p-col">
+          <input style="margin-right: 16px;" type="text" name="title" pInputText size="35" placeholder="Titulo" style="width:auto" [(ngModel)]="title" />
         </div>
-      </p-card>
-
-    </div>
-    <!-- <div>
-      <p-card>
-        <p style="justify-content: space-evenly; text-align: center; font-family: Open Sans;font-size: 16px;margin-bottom: 16px;">Informações</p>
-        <div class="p-grid">
-          <div class="p-col">
-            <input style="margin-right: 16px;" type="text" name="title" pInputText size="35" placeholder="Titulo" style="width:auto" [(ngModel)]="title" />
-          </div>
-          <div class="p-col">
-            <input style="margin-left: 16px;" type="text" name="subtitle" pInputText size="35" placeholder="Subtitulo" style="width:auto" [(ngModel)]="subtitle" />  
-          </div>
-          <div class="p-col">
-            <input type="text" name="author" pInputText size="75" placeholder="Autor/Autores" style="width:auto" [(ngModel)]="author" />  
-          </div>
+        <div class="p-col">
+          <input style="margin-left: 16px;" type="text" name="subtitle" pInputText size="35" placeholder="Subtitulo" style="width:auto" [(ngModel)]="subtitle" />  
         </div>
-      </p-card>
-
-      <div style="margin-left: 410px;margin-top: 16px;" class="p-grid">
-        <p-card header="" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
-          
-          <p style="text-align: center;">Selecione o arquivo</p>
-          <br/>
-          <span>{{fileName}}</span>
-          <br/>
-          <br/>
-          <button style="margin-left: 15px;" pButton type="button" label="Selecionar" class="p-button-secondary"(click)="upload(upload.files)"></button>
-          <button style="margin-left: 45px;" pButton type="submit" label="Enviar" class="p-button-secondary" (click)="upload(upload.files)"></button>
-          <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/>
-        </p-card>
-  
-        <p-card style="margin-left: 36px;" header="" [style]="{'width': '30rem', 'margin-bottom': '2em'}">
-          <p>Clique aqui para enviar</p><br/>
-          <br/>
-          <br/>
-          <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/>
-        </p-card>
+        <div class="p-col">
+          <input type="text" name="author" pInputText size="75" placeholder="Autor/Autores" style="width:auto" [(ngModel)]="author" />  
+        </div>
       </div>
-    </div> -->
-    
-    <form>
-      <!-- <button pButton type="submit" label="Enviar" class="p-button-secondary" (click)="upload(fileUpload.files)"></button> -->
-      <!-- <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/> -->
-    </form>
+    </p-card>
   </div>
-
+</div>
