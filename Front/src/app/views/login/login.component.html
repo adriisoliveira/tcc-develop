@@ -1,10 +1,72 @@
-<div class="p-grid p-justify-center card">
+
+
+
+<div class="background">
+<div>
+  <header class="header">
+    <p class="text-right">
+      <a href="https://www.unip.br/" title="Voltar para o site da UNIP">
+        Voltar para o site da UNIP
+      </a>
+    </p>
+  </header>
+</div>
+
+  <div class="main">
+    <div class="p-grid p-dir-col">
+      <img src="../../../assets/logomarca-unip-fundo-transparente.png" class="imagemLogo" alt="">
+      <h1 class="h1">Collectio</h1>
+      <div class="p-col">
+        <!-- <label class="fonts">Usuário:</label> -->
+        <input
+          id="InpLogin"
+          [(ngModel)]="requestLogin.login"
+          class="inputs"
+          type="text"
+          pInputText
+          placeholder="Usuário (Email institucional)"
+        />
+      </div>
+      <div class="p-col">
+        <!-- <label class="fonts">Senha:</label> -->
+        <input
+          id="InpSenha"
+          [(ngModel)]="requestLogin.password"
+          class="inputs"
+          type="password"
+          pInputText
+          placeholder="Senha"
+        />
+      </div>
+      <div class="p-col">
+        <button
+          id="BtnLogin"
+          (click)="doLogin()"
+          pButton
+          type="button"
+          class="btnEntrar"
+        >ENTRAR</button>
+      </div>
+    </div>
+    
+
+    </div>
+
+
+
+
+
+</div>
+
+<!-- <div class="p-grid p-justify-center card">
+
+
   <div class="p-col-10 p-sm-6 p-md-4">
     <p-card>
       <div class="p-grid">
         <div class="p-col-12 text-center">
           <img src="./assets/Collectio_logo_new.png" width="40%" height="50%">
-          <!--<i class="fas fa-car fa-4x" style="color: #007ad9;"></i>-->
+
           <h2>Collectio</h2>
         </div>
         <div class="p-col-12">
@@ -12,7 +74,7 @@
           <input
             id="InpLogin"
             [(ngModel)]="requestLogin.login"
-            class="p-col-12"
+            class="inputs"
             type="text"
             pInputText
           />
@@ -22,7 +84,7 @@
           <input
             id="InpSenha"
             [(ngModel)]="requestLogin.password"
-            class="p-col-12"
+            class="inputs"
             type="password"
             pInputText
           />
@@ -34,10 +96,10 @@
             pButton
             type="button"
             label="Entrar"
-            class="p-col-12"
+            class="btnEntrar"
           ></button>
         </div>
       </div>
     </p-card>
   </div>
-</div>
+</div> -->
