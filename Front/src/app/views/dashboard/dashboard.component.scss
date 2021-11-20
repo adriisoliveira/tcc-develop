@@ -95,7 +95,7 @@ code {
 }
 
 .links > a {
-    color: #9ab;
+    color: #fff100;
     padding: .75em;
     text-align: center;
     text-decoration: none;
@@ -161,48 +161,30 @@ code {
   right: 0;
   background-color: #023d71;
   height: 100px;
-}
-
-#ImgMenuLiso{
-  width:250px ;
-  height:70px ; 
-  margin-top: 7px;
-  margin-left: 10px;
+  width: 100%;
   
 }
-  position: absolute;
-  bottom: 0;
-  left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
-  width: var(--width, calc(100% / var(--items)));
-  --index: 0;
+
+
+#DivMenuLogo{
+  //background-color: red;
+  width: 250px;
+  height: 100px;
+  margin-top: 1px;
+  margin-left: 1%;
+  background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
+  background-size: 99%;
 }
-.links > a:hover ~ .line {
-    opacity: 1;
+#DivMenuSair{
+  //background-color: red;
+  width: 100px;
+  height: 100px;
+  margin-top: 1px;
+  margin-left: 50%;
+  //background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
+  background-size: 99%;
 }
-.linksMenuLiso > a:hover ~ .linksMenuLiso {
-  opacity: 1;
+div{  
+  display: inline-block;
 }
 
-.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
-.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
-.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
-.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
-.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
-.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
-.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
-.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
-.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
-.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
-.links > a:last-of-type:hover ~ .line { --index: var(--items); }
-
-.linksMenuLiso > a:nth-of-type(1):hover ~ .linksMenuLiso { --index: 1; }
-.linksMenuLiso > a:nth-of-type(2):hover ~ .linksMenuLiso { --index: 2; }
-.linksMenuLiso > a:nth-of-type(3):hover ~ .linksMenuLiso { --index: 3; }
-.linksMenuLiso > a:nth-of-type(4):hover ~ .linksMenuLiso { --index: 4; }
-.linksMenuLiso > a:nth-of-type(5):hover ~ .linksMenuLiso { --index: 5; }
-.linksMenuLiso > a:nth-of-type(6):hover ~ .linksMenuLiso { --index: 6; }
-.linksMenuLiso > a:nth-of-type(7):hover ~ .linksMenuLiso { --index: 7; }
-.linksMenuLiso > a:nth-of-type(8):hover ~ .linksMenuLiso { --index: 8; }
-.linksMenuLiso > a:nth-of-type(9):hover ~ .linksMenuLiso { --index: 9; }
-.linksMenuLiso> a:nth-of-type(10):hover ~ .linksMenuLiso { --index: 10; }
-.linksMenuLiso > a:last-of-type:hover ~ .linksMenuLiso { --index: var(--items); }
