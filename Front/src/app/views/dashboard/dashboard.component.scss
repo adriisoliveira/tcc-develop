@@ -175,16 +175,26 @@ code {
   background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
   background-size: 99%;
 }
-#DivMenuSair{
+#DivMenuIndicador{
   //background-color: red;
-  width: 100px;
+  // text-align: center;
+  // font-size: 40px;
+  // text-emphasis-color: red;
+  width: 250px;
   height: 100px;
+  
+}
+#DivMenuIndicadorBtn{
+  background-image:url("../../../assets/MenuIcons/Sair.png");  
+  background-size: 98%;
+  width: 85px;
+  height: 85px;
+  border-radius: 15%;
+  background-color: #023d71;
   margin-top: 1px;
-  margin-left: 50%;
-  //background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
-  background-size: 99%;
+  margin-left: 1000px;
 }
 div{  
-  display: inline-block;
+  display: inline-flex;
 }
 
