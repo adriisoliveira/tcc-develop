@@ -21,18 +21,17 @@
 
   <div id="dataView-format">
     <div>
-      <p-dataView #dv class="dataView-content" [value]="dataViewLocal" layout="grid" [paginator]="true" [rows]="12" filterBy="name">
+      <p-dataView #dv class="dataView-content" [value]="fileViewComponent" layout="grid" [paginator]="true" [rows]="12" filterBy="title">
         <p-header>
           <span class="p-input-icon-left p-mb-2 p-mb-md-0">
             <i class="pi pi-search"></i>
-            <input type="search" pInputText placeholder="Search by Name" (input)="dv.filter($event.target.value)">
+            <input id="inputSearch" type="search" pInputText placeholder="Search by Name" (input)="dv.filter($event.target.value)">
           </span>
         </p-header>
-        <ng-template let-dataViewLocal pTemplate="gridItem">
+        <ng-template let-fileViewComponent pTemplate="gridItem">
           <div class="p-col-12 p-md-3" style="justify-content: space-between;">
             <div class="grid-card">
-              <div>{{dataViewLocal.name}}</div>
-              <!--img class="image-format" src="../../../assets/pdf.png" alt="pdfImage">
+              <img class="image-format" src="../../../assets/pdf.png" alt="pdfImage">
               <div class="grid-content">
                 <div><b>Title:</b> {{fileViewComponent.title}}</div>
                 <br>
@@ -42,7 +41,7 @@
                 <div>
                 <p-button label="Visualizar" icon="pi pi-eye" iconPos="right" (click)="downloadSearchFile(fileViewComponent.id)" ></p-button>
                 </div>
-              </div-->
+              </div>
             </div>
           </div>
         </ng-template>

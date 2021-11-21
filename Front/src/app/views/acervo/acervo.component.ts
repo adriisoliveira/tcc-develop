@@ -124,7 +124,5 @@ export class AcervoComponent implements OnInit {
     }
     this.http.get<FileList[]>(`https://localhost:44312/file/getAll/${this.searchItem}?maxResults=25`, httpOptions)
       .toPromise().then(data => this.files = data).catch(data=>console.log('Erro'));
-
   }
-
 }
