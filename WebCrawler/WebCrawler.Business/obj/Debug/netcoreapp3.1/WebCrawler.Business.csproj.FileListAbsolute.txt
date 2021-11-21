@@ -16,12 +16,13 @@ C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\WebCrawler.Business\o
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.csproj.CoreCompileInputs.cache
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.dll
 C:\Users\Logan\source\repos\Crawler\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.pdb
-C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Business\bin\Debug\netcoreapp3.1\WebCrawler.Business.deps.json
-C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Business\bin\Debug\netcoreapp3.1\WebCrawler.Business.dll
-C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Business\bin\Debug\netcoreapp3.1\WebCrawler.Business.pdb
-C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.csprojAssemblyReference.cache
-C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.AssemblyInfoInputs.cache
-C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.AssemblyInfo.cs
-C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.csproj.CoreCompileInputs.cache
-C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.dll
-C:\Users\aoliveira\source\repos\TCC\crawler\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.pdb
+C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Business\bin\Debug\netcoreapp3.1\WebCrawler.Business.deps.json
+C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Business\bin\Debug\netcoreapp3.1\WebCrawler.Business.dll
+C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Business\bin\Debug\netcoreapp3.1\WebCrawler.Business.pdb
+C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.csproj.AssemblyReference.cache
+C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.AssemblyInfoInputs.cache
+C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.AssemblyInfo.cs
+C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.csproj.CoreCompileInputs.cache
+C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.dll
+C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Business\obj\Debug\netcoreapp3.1\WebCrawler.Business.pdb

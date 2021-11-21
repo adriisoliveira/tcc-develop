@@ -1,6 +1,7 @@
 
 
 //menu2
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet');
 html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
     margin: 0;
@@ -12,14 +13,14 @@ body {
     background-color: #345;
     background-image: linear-gradient(to bottom, #0009, transparent);
     color: #eee;
-    font-family: 'Lato', sans-serif;
+    font-family: sans-serif;
     font-size: 62.5%;
     padding: 0 20px;
     box-sizing: border-box;
 }
 code {
     background: #fff1;
-    font-family: 'sans-serif', monospace;
+    font-family: sans-serif;
     padding: .2em .4em;
 }
 
@@ -78,6 +79,7 @@ code {
     box-shadow: 0 0 32px #0003;
     font-size: 1em;
     font-weight: 200;
+    font-family: sans-serif;
 }
 
 .links > a {
@@ -138,7 +140,6 @@ code {
 .links > a:nth-of-type(9):hover ~ .line { --index: 9; }
 .links > a:nth-of-type(10):hover ~ .line { --index: 10; }
 .links > a:last-of-type:hover ~ .line { --index: var(--items); }
-
 //div menu 
 #DivMenuLiso {
   position: fixed;

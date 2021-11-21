@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\Scrapper\\Scraper.csproj": {}
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\Scrapper\\Scraper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\Scrapper\\Scraper.csproj": {
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\Scrapper\\Scraper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\Scrapper\\Scraper.csproj",
+        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\Scrapper\\Scraper.csproj",
         "projectName": "Scraper",
-        "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\Scrapper\\Scraper.csproj",
-        "packagesPath": "C:\\Users\\aoliveira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\Scrapper\\obj\\",
+        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\Scrapper\\Scraper.csproj",
+        "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\Scrapper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\aoliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -37,11 +35,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
-                "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
+              "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
+                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
               },
-              "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
-                "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj"
+              "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
+                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj"
               }
             }
           }
@@ -70,29 +68,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
+        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
         "projectName": "WebCrawler.Business",
-        "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
-        "packagesPath": "C:\\Users\\aoliveira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Business\\obj\\",
+        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
+        "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\aoliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -143,29 +139,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
+        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
         "projectName": "WebCrawler.Data",
-        "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
-        "packagesPath": "C:\\Users\\aoliveira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Data\\obj\\",
+        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
+        "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\aoliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -180,8 +174,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
-                "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
+              "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
+                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
               }
             }
           }
@@ -222,7 +216,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

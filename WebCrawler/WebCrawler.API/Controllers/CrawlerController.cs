@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Net;
 using WebCrawler.Business.Interfaces;
 using WebCrawler.Business.Interfaces.Services;
@@ -26,20 +27,16 @@ namespace WebCrawler.API.Controllers
         [Route("enqueue")]
         public ActionResult EnqueueUrl(string url)
         {
-            try
+            if(Uri.TryCreate(url, UriKind.Absolute, out Uri result)
+                && (result.Scheme == Uri.UriSchemeHttp || result.Scheme == Uri.UriSchemeHttps))
             {
-                WebRequest request = WebRequest.Create(url);
-                request.GetResponse();
-            }
-            catch
-            {
-                return BadRequest("URL inválida ou inacessível");
+                _crawlerService.EnqueueUrl(url);
+                _uow.Commit();
+
+                return Ok();
             }
 
-            var result = _crawlerService.EnqueueUrl(url);
-            _uow.Commit();
-
-            return Ok();
+            return BadRequest("URL inválida ou inacessível");
         }
     }
 }

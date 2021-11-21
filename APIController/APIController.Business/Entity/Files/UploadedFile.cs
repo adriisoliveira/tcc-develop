@@ -10,13 +10,20 @@ namespace APIController.Business.Entity.Files
             Id = Guid.NewGuid();
         }
 
-        public UploadedFile(string fileName, string path, string title, string subtitle, string author)
+        public UploadedFile(
+            string fileName,
+            string path,
+            string title,
+            string subtitle,
+            string author,
+            string course)
         {
             FileName = fileName;
             Path = path;
             Title = title;
             Subtitle = subtitle;
             Author = author;
+            Course = course;
             PublishDate = DateTime.UtcNow;
         }
 
@@ -39,7 +46,12 @@ namespace APIController.Business.Entity.Files
         [MaxLength(255)]
         public string Author { get; set; }
 
+        [MaxLength(255)]
+        public string Course { get; set; }
+
+        [Required]
         public DateTime PublishDate { get; set; }
+
         public DateTime? WhenUpdated { get; set; }
     }
 }
