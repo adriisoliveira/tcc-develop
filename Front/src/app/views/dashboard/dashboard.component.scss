@@ -3,6 +3,7 @@
   border-style: dotted;
   border-color: black;
   min-height: 129px;
+  
 }
 .grid-content{
   display: inline;
@@ -17,100 +18,99 @@
 //menu2
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
 html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 html, body { min-height: 100%; }
 
 body {
-    background-color: #345;
-    background-image: linear-gradient(to bottom, #0009, transparent);
-    color: #eee;
-    font-family: 'Lato', sans-serif;
-    font-size: 62.5%;
-    padding: 0 20px;
-    box-sizing: border-box;
+  background-color: #345;
+  background-image: linear-gradient(to bottom, #0009, transparent);
+  color: #eee;
+  font-family: 'Lato', sans-serif;
+  font-size: 62.5%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 code {
-    background: #fff1;
-    font-family: 'Inconsolata', monospace;
-    padding: .2em .4em;
+  background: #fff1;
+  font-family: 'Inconsolata', monospace;
+  padding: .2em .4em;
 }
 
 .content {
-    background-color: #fff;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #666;
-    font-size: 1.6em;
-    line-height: 1.4em;
-    margin: 20px auto;
-    margin-top: 80px;
-    padding: 20px;
-    width: 100%;
-    max-width: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #666;
+  font-size: 1.6em;
+  line-height: 1.4em;
+  margin: 20px auto;
+  margin-top: 80px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
 }
 .content ul {
-    margin: .5em 2em;
-    padding: 0;
+  margin: .5em 2em;
+  padding: 0;
 }
 
 #footer {
-    background-color: #246c;
-    background-image: linear-gradient(to bottom, transparent, #0009);
-    border-top: 1px solid #fff3;
-    box-shadow: inset 0 1px 0 #fff3, 0 0 32px #000;
-    overflow: hidden;
-    padding: 8px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9001;
+  background-color: #246c;
+  background-image: linear-gradient(to bottom, transparent, #0009);
+  border-top: 1px solid #fff3;
+  box-shadow: inset 0 1px 0 #fff3, 0 0 32px #000;
+  overflow: hidden;
+  padding: 8px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9001;
 }
 #footer a {
-    color: #85c6f6;
-    padding: 1em 0;
-    text-decoration: none;
+  color: #85c6f6;
+  padding: 1em 0;
+  text-decoration: none;
 }
 #footer ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    font-size: 2em;
-    font-weight: 300;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: 300;
 }
 #footer ul li {
-    padding: 0 .5em;
+  padding: 0 .5em;
 }
 
-/* Appearance */
 .links {
-    background-color: #075ebd;
-    background-image: linear-gradient(to bottom, #0003, transparent);
-    border-bottom: 1px solid #0003;
-    box-shadow: 0 0 32px #0003;
-    font-size: 1em;
-    font-weight: 200;
+  background-color: #075ebd;
+  background-image: linear-gradient(to bottom, #0003, transparent);
+  border-bottom: 1px solid #0003;
+  box-shadow: 0 0 32px #0003;
+  font-size: 1em;
+  font-weight: 200;
 }
 
 .links > a {
-    color: #fff100;
-    padding: .75em;
-    text-align: center;
-    text-decoration: none;
-    transition: all .5s;
+  color: #fff100;
+  padding: .75em;
+  text-align: center;
+  text-decoration: none;
+  transition: all .5s;
 }
 
 .links > a:hover {
-    background: #ffffff06;
-    color: #adf;
+  background: #ffffff06;
+  color: #adf;
 }
 
 .links > .line {
-    background: #68a;
-    height: 1px;
-    pointer-events: none;
+  background: #68a;
+  height: 1px;
+  pointer-events: none;
 }
 
 /* The Magic */
@@ -120,6 +120,7 @@ code {
   top: 85px;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 .links {
     display: grid;
@@ -153,7 +154,6 @@ code {
 .links > a:nth-of-type(10):hover ~ .line { --index: 10; }
 .links > a:last-of-type:hover ~ .line { --index: var(--items); }
 
-//div menu 
 #DivMenuLiso {
   position: fixed;
   top: 0;
@@ -162,9 +162,8 @@ code {
   background-color: #023d71;
   height: 100px;
   width: 100%;
-  
+  z-index:10;
 }
-
 
 #DivMenuLogo{
   //background-color: red;
@@ -174,17 +173,32 @@ code {
   margin-left: 1%;
   background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
   background-size: 99%;
+  z-index:10;
 }
 #DivMenuSair{
-  //background-color: red;
-  width: 100px;
+  //background-color: rgb(236, 179, 20);
+  width: 80px;
   height: 100px;
   margin-top: 1px;
   margin-left: 50%;
-  //background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
+  float: right;
+  //background-image:url("../../../assets/Sair.png");
   background-size: 99%;
+  z-index:10;
 }
+
+#DivOptions{
+  z-index:10;
+}
+
 div{  
   display: inline-block;
 }
 
+#dataView-format{
+  margin-top: 120px;
+  background-color: lawngreen;
+  position: relative;
+  top: 165px; right: 0; bottom: 0; left: 0;
+  z-index: 0;
+}
