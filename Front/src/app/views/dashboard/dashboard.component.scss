@@ -185,7 +185,8 @@ code {
   width: 250px;
   height: 100px;
   font-family: sans-serif;
-  
+  text-align: center;
+  justify-content: center;
 }
 #DivMenuIndicadorBtn{
   background-image:url("../../../assets/MenuIcons/Sair.png");  
@@ -221,11 +222,25 @@ div{
 }
 
 .content{
+  position: absolute;
+  left:10%;
   background: transparent;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
+
+.titleSair{
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 32px;
+  margin-right: 20px;
+  right: 1;
+
+}
+
 
 
 

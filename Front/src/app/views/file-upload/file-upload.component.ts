@@ -21,6 +21,7 @@ export class FileUploadComponent implements OnInit {
   author: String;
   title: String;
   subtitle: String;
+  course: String;
 
   constructor(
     private router: Router,
@@ -33,6 +34,8 @@ export class FileUploadComponent implements OnInit {
     this.author = "";
     this.title="";
     this.subtitle="";
+    this.course = "";
+
   }
 
   onFileSelected(event) {
@@ -52,6 +55,7 @@ export class FileUploadComponent implements OnInit {
         formData.append("title", this.title.toString());
         formData.append("subtitle", this.subtitle.toString());
         formData.append("author", this.author.toString());
+        formData.append("course", this.author.toString());
 
         let headers = new HttpHeaders({
           'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')

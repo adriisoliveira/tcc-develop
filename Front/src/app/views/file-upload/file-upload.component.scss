@@ -174,3 +174,21 @@ code {
 div{  
   display: inline-block;
 }
+
+.content{
+    flex: 1;
+    width: 100%;
+}
+
+.infosUpload{
+    margin-top: 16px;
+    flex-direction: row;
+
+
+}
+
+.fonts{
+font-family: sans-serif;
+font-size: 24px;
+font-weight: bold;
+}

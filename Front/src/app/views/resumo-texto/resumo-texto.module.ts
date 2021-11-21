@@ -9,6 +9,8 @@ import {FieldsetModule} from 'primeng/fieldset';
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
 
+
+
 import {MenubarModule} from 'primeng/menubar';
 
 @NgModule({
@@ -21,7 +23,8 @@ import {MenubarModule} from 'primeng/menubar';
     MenubarModule,
     FieldsetModule,
     CardModule,
-    ButtonModule
+    ButtonModule,
+
   ]
 })
 export class ResumoTextoModule { }

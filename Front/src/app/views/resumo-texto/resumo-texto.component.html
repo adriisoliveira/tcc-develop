@@ -21,12 +21,12 @@
         </nav>
     </header>
   </div>
-  
 </div>
-<p></p><br>
-<div style="margin-top: 130px;">
+<br>
+<div style="margin-top: 120px;">
 
-<div style="margin-top: 36px;">
+
+<div>
     <p-card style="align-self: center;" header="Funcionamento" [style]="{'width': '78rem', 'margin-bottom': '2em'}">
         <br/>
         <p style="align-items: center;">O sumarizador collectio resume para voce qualquer texto de acordo com a proporção escolhida. Aproveite para ter somente as partes principais de qualquer conteúdo que deseje e otimizar seu tempo ao maximo</p>
@@ -37,40 +37,18 @@
 </div>
 
 
-
 <div class="p-grid" style="margin-top: 36px;">
-    <div style="margin-left: 12px; margin-right: 18px;" id="DivResumoBox">
-        <textarea style="font-size: 14px; font-family: Open Sans;" id="TxtAreaResumoBox1" rows="20" class="txtArea" name="resumoBox1" style="width: 45em" 
-        placeholder="Insira aqui o texto para o resumo" [(ngModel)]="toSummarizeText"></textarea>
+        <div style="margin-left: 12px; margin-right: 18px;" id="DivResumoBox">
+            <textarea style="font-size: 14px; font-family: Open Sans;" id="TxtAreaResumoBox1" rows="20" class="txtArea" name="resumoBox1" style="width: 45em" 
+            placeholder="Insira aqui o texto para o resumo" [(ngModel)]="toSummarizeText"></textarea>
+        </div>
+        <div style="margin-left: 20px; margin-right: 12px;" id="DivResumoBox2">
+            <textarea placeholder="Seu texto irá aparecer aqui" style="margin-right: 10px;" id="resumoBox2" name="resumoBox2" rows="20" style="width: 45em" >{{ summarizedText }}</textarea>
+        </div>
     </div>
-    <div style="margin-left: 20px; margin-right: 12px;" id="DivResumoBox2">
-        <textarea placeholder="Seu texto irá aparecer aqui" style="margin-right: 10px;" id="resumoBox2" name="resumoBox2" rows="20" style="width: 45em" >{{ summarizedText }}</textarea>
-    </div>
-</div>
-
 <div style="margin-top: 36px;" class="card">
-    <!-- <div class="p-grid" id="divFormResumo1" >
-        <div class="p-col">
-            <label style="font-size: 30px; font-family: Open Sans;margin-bottom: 36px;"><strong>Insira o texto para o resumo</strong> </label>
-            <div class="box" id="DivResumoBox1">
-                <textarea style="margin-top: 36px; font-size: 14px; font-family: Open Sans;" [rows]="20" cols="80" id="TxtAreaResumoBox1" class="txtArea" name="resumoBox1" style="width: 30em" 
-                placeholder="Insira aqui o texto para o resumo" [(ngModel)]="toSummarizeText"></textarea>
-            </div>
-            <br />
-        </div>
-        <div class="box" id="DivResumoBox2">
-            <textarea placeholder="Seu texto irá aparecer aqui" style="margin-right: 10px;" id="resumoBox2" name="resumoBox2" rows="20" style="width: 30em" >{{ summarizedText }}</textarea>
-        </div>
-    </div>
-    <br />
-     -->
-
      <div class="p-grid">
         <div class="card" style="margin-right: 12px;" id="DivSelectLines">
-            <!-- <p-card [style]="{'width': '20rem', 'margin-bottom': '1em'}">
-                <label style="font-size: 14px; font-family: Open Sans; margin-left: 12px;">Proporção do texto </label>
-                <input style="margin-left: 12px;" type="number" [(ngModel)]="lineQuantity" placeholder="Quantidade de Linhas" min="1" max="10"/>
-            </p-card> -->
             <label style="font-size: 14px; font-family: Open Sans; margin-left: 40px;">Proporção do texto </label>
             <input style="margin-left: 12px;" type="number" [(ngModel)]="lineQuantity" placeholder="Quantidade de Linhas" min="1" max="10"/>
         </div>
@@ -78,9 +56,5 @@
         <p-button style="margin-left: 100px;" class="btnSubmit" label="Enviar Resumo" icon="pi pi-check" iconPos="right" (click)="setSummarizedText()"></p-button>
         
      </div>
-    
-    <!-- <div id="DivBtnSubmit">
-        <button class="btnSubmit" type="button" (click)="setSummarizedText()">Enviar Resumo</button>
-    </div> -->
     <br />
 </div>
