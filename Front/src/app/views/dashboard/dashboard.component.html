@@ -3,10 +3,10 @@
     <div id="DivMenuLogo">
     </div>
     <div id="DivMenuIndicador">
-      
-      <button id="DivMenuIndicadorBtn" >        
-        <a href="/#/login"></a>
-      </button>
+      <form action="/#/login">
+        <button id="DivMenuIndicadorBtn">
+        </button>
+      </form>
     </div>
     <span class="SpanMenuLiso"></span>
   
@@ -25,11 +25,15 @@
       </nav>
   </header>
 </div>
-
-<div style="margin-top: 130px;">
-  <label for="gsearch">Busca:</label>
-  <input type="search" id="gsearch" name="gsearch">
+<div class="content">
+    <form >
+      <input type="search" id="gsearch" name="gsearch" class="inputSearch" placeholder="Buscar...">
+    </form>
 </div>
+
+</div>
+
+
 
 <!-- <div>
   <p-menubar [model]="items">

@@ -162,6 +162,7 @@ code {
   background-color: #023d71;
   height: 100px;
   width: 100%;
+  font-family: sans-serif;
   
 }
 
@@ -174,6 +175,7 @@ code {
   margin-left: 1%;
   background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
   background-size: 99%;
+  font-family: sans-serif;
 }
 #DivMenuIndicador{
   //background-color: red;
@@ -182,19 +184,48 @@ code {
   // text-emphasis-color: red;
   width: 250px;
   height: 100px;
+  font-family: sans-serif;
   
 }
 #DivMenuIndicadorBtn{
   background-image:url("../../../assets/MenuIcons/Sair.png");  
   background-size: 98%;
-  width: 85px;
-  height: 85px;
+  width: 45px;
+  height: 45px;
   border-radius: 15%;
   background-color: #023d71;
   margin-top: 1px;
-  margin-left: 1000px;
+  margin-right: 10px;
+  font-family: sans-serif;
+  align-self: unset;
+  position: absolute;
+  top: 16px;
+  right: 0px;
+  padding: 10px;
 }
 div{  
   display: inline-flex;
 }
+
+.inputSearch{
+  margin-top: 50px;
+  width: 200%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-image: url('../../../assets/searchIcon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+.content{
+  background: transparent;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
