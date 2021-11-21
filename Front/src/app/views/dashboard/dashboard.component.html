@@ -21,18 +21,11 @@
 
   <div id="dataView-format">
     <div>
-      <input #st type="text" pInputText [(ngModel)]="searchItem"/>
-      <button type="button" pButton (click)="teste(dv)">
-        <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
-      </button> 
-    </div>
-
-    <div>
-      <p-dataView class="dataView-content" #dv [value]="dataViewLocal" layout="grid" paginator="true" rows="10" filterBy="name">
+      <p-dataView #dv class="dataView-content" [value]="dataViewLocal" layout="grid" [paginator]="true" [rows]="12" filterBy="name">
         <p-header>
           <span class="p-input-icon-left p-mb-2 p-mb-md-0">
             <i class="pi pi-search"></i>
-            <input type="search" pInputText placeholder="Search by Name" onChange="dv.filter($event.target.value)">
+            <input type="search" pInputText placeholder="Search by Name" (input)="dv.filter($event.target.value)">
           </span>
         </p-header>
         <ng-template let-dataViewLocal pTemplate="gridItem">

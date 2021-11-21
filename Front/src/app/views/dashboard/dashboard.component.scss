@@ -162,6 +162,7 @@ code {
   background-color: #023d71;
   height: 100px;
   width: 100%;
+  display: inline-flex;
   z-index:10;
 }
 
@@ -175,6 +176,7 @@ code {
   background-size: 99%;
   z-index:10;
 }
+
 #DivMenuIndicador{
   //background-color: red;
   // text-align: center;
@@ -182,8 +184,8 @@ code {
   // text-emphasis-color: red;
   width: 250px;
   height: 100px;
-  
 }
+
 #DivMenuIndicadorBtn{
   background-image:url("../../../assets/MenuIcons/Sair.png");  
   background-size: 98%;
@@ -201,9 +203,6 @@ code {
 
 #DivOptions{
   z-index:10;
-}
-
-div{  
   display: inline-flex;
 }
 
