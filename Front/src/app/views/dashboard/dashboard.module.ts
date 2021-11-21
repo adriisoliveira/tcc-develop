@@ -11,6 +11,7 @@ import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
 import {FieldsetModule} from 'primeng/fieldset';
 import {PanelModule} from 'primeng/panel';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [DashboardComponent],
@@ -22,7 +23,8 @@ import {PanelModule} from 'primeng/panel';
     CardModule,
     ButtonModule,
     FieldsetModule,
-    PanelModule
+    PanelModule,
+    FormsModule
   ]
 })
 export class DashboardModule { }

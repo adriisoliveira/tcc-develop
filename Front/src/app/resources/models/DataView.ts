@@ -1,6 +1,5 @@
 export class DataView {
-    img;
-    name;
-    author;
-    price;
-  }
+  name;
+  author;
+  price;
+}

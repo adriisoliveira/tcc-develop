@@ -1,13 +1,12 @@
 <div>
   <div id="DivMenuLiso">
-    <div id="DivMenuLogo">
+    <div id="DivMenuLogo"></div>
+    <div id="DivMenuSair">
     </div>
-
     <span class="SpanMenuLiso"></span>
-  
   </div>
 
-  <div>
+  <div id="DivOptions">
     <header id="header">
       <nav class="links" style="--items: 6;">
           <a href="/#/resumo-texto">SUMARIZADOR</a>
@@ -18,51 +17,44 @@
           <a href="/#/login">SAIR</a>
           <span class="line"></span>
       </nav>
-  </header>
-</div>
+    </header>
+  </div>
 
-<div style="margin-top: 120px;">
-  <label for="gsearch">Busca:</label>
-  <input type="search" id="gsearch" name="gsearch">
-</div>
+  <div id="dataView-format">
+    <div>
+      <input #st type="text" pInputText [(ngModel)]="searchItem"/>
+      <button type="button" pButton (click)="teste(dv)">
+        <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+      </button> 
+    </div>
 
-<!-- <div>
-  <p-menubar [model]="items">
-    <ng-template pTemplate="start">
-      <img src="../../../favicon1.ico" height="40" class="p-mr-2">
-    </ng-template>
-    <ng-template pTemplate="end">
-      <input type="text" pInputText placeholder="Search">
-    </ng-template>
-  </p-menubar>
-</div>
-<br>
-<p-card header="Bem vindo ao Collectio" subheader="Seu repositório acadêmico" [style]="{'width': '79rem', 'margin-bottom': '2em'}">
-  <p>A plataforma collectio serve para voce, estudante, encontrar facilidades na hora de fazer sua dissertação ou documento acadêmico!</p>
-  <p>Possuimos diversas opções para sua busca ao conhecimento, tal como o acervo e o recomendador. Abaixo voce pode encontrar alguns dos arquivos que ja estão no banco de dados da sua universidade.</p>
-</p-card>
-
-
-<div>
-  <p-dataView [value]="fileViewComponent" layout="grid">
-    <p-header>Prévia</p-header>
-    <ng-template let-fileViewComponent pTemplate="gridItem">
-      <div class="p-col-12 p-md-3" style="justify-content: space-between;">
-        <div class="grid-card" >
-          <img class="image-format" src="../../../assets/pdf.png" alt="pdfImage">
-          <div class="grid-content">
-            <div><b>Title:</b> {{fileViewComponent.title}}</div>
-            <br>
-            <div><b>Subtitle:</b> {{fileViewComponent.subtitle}}</div>
-            <br>
-            <div><b>Autor/Autores:</b> {{fileViewComponent.author}}</div>
-            <div>
-            <p-button label="Visualizar" icon="pi pi-eye" iconPos="right" (click)="downloadSearchFile(fileViewComponent.id)" ></p-button>
+    <div>
+      <p-dataView class="dataView-content" #dv [value]="dataViewLocal" layout="grid" paginator="true" rows="10" filterBy="name">
+        <p-header>
+          <span class="p-input-icon-left p-mb-2 p-mb-md-0">
+            <i class="pi pi-search"></i>
+            <input type="search" pInputText placeholder="Search by Name" onChange="dv.filter($event.target.value)">
+          </span>
+        </p-header>
+        <ng-template let-dataViewLocal pTemplate="gridItem">
+          <div class="p-col-12 p-md-3" style="justify-content: space-between;">
+            <div class="grid-card">
+              <div>{{dataViewLocal.name}}</div>
+              <!--img class="image-format" src="../../../assets/pdf.png" alt="pdfImage">
+              <div class="grid-content">
+                <div><b>Title:</b> {{fileViewComponent.title}}</div>
+                <br>
+                <div><b>Subtitle:</b> {{fileViewComponent.subtitle}}</div>
+                <br>
+                <div><b>Autor/Autores:</b> {{fileViewComponent.author}}</div>
+                <div>
+                <p-button label="Visualizar" icon="pi pi-eye" iconPos="right" (click)="downloadSearchFile(fileViewComponent.id)" ></p-button>
+                </div>
+              </div-->
             </div>
           </div>
-        </div>
-      </div>
-    </ng-template>
-  </p-dataView>
-</div> -->
-
+        </ng-template>
+      </p-dataView>
+    </div>
+  </div>
+</div>
