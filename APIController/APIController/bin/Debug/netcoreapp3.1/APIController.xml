@@ -19,6 +19,12 @@
             <param name="searchText">Busca por texto</param>
             <param name="maxResults">Quantidade máxima de retornos</param>
         </member>
+        <member name="M:APIController.Controllers.FileController.GetTopRecent(System.Int32)">
+            <summary>
+            Retorna os arquivos mais recentes
+            </summary>
+            <param name="quantity">Quantidade máxima de arquivos</param>
+        </member>
         <member name="M:APIController.Controllers.FileController.SaveFile">
             <summary>
             Salva o arquivo em banco

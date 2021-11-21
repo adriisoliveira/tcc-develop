@@ -39,6 +39,18 @@ namespace APIController.Controllers
         }
 
         /// <summary>
+        /// Retorna os arquivos mais recentes
+        /// </summary>
+        /// <param name="quantity">Quantidade máxima de arquivos</param>
+        [HttpGet]
+        [Route("topRecent/{quantity}")]
+        public IActionResult GetTopRecent(int quantity = 25)
+        {
+            var files = _fileService.GetTopRecent(quantity);
+            return StatusCode(200, files);
+        }
+
+        /// <summary>
         /// Salva o arquivo em banco
         /// </summary>
         [Route("save")]

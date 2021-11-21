@@ -33,5 +33,13 @@ namespace APIController.Data.Repository.Files
                 .OrderBy(e => e.Title)
                 .ToList();
         }
+
+        public IEnumerable<UploadedFile> GetTopRecent(int quantity)
+        {
+            return DbSet
+                .Take(quantity)
+                .OrderBy(e => e.PublishDate)
+                .ToList();
+        }
     }
 }
