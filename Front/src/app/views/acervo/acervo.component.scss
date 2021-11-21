@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet');
 html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ body {
 }
 code {
     background: #fff1;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'sans-serif', monospace;
     padding: .2em .4em;
 }
 
@@ -148,6 +148,22 @@ code {
   
 }
 
+#DivMenuIndicadorBtn{
+    background-image:url("../../../assets/MenuIcons/Sair.png");  
+    background-size: 98%;
+    width: 45px;
+    height: 45px;
+    border-radius: 15%;
+    background-color: #023d71;
+    margin-top: 1px;
+    margin-right: 10px;
+    font-family: sans-serif;
+    align-self: unset;
+    position: absolute;
+    top: 16px;
+    right: 0px;
+    padding: 10px;
+  }
 
 #DivMenuLogo{
   //background-color: red;
@@ -170,3 +186,13 @@ code {
 div{  
   display: inline-block;
 }
+.titleSair{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-right: 20px;
+    right: 1;
+  
+  }

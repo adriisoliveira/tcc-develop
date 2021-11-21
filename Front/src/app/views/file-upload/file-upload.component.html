@@ -1,10 +1,13 @@
 <div>
-  <div id="DivMenuLiso"> 
+  <div id="DivMenuLiso">
     <div id="DivMenuLogo">
     </div>
-
+    <div id="DivMenuIndicador">
+      <form action="/#/login">
+        <button id="DivMenuIndicadorBtn"><p class="titleSair">SAIR</p></button>
+      </form>
+    </div>
     <span class="SpanMenuLiso"></span>
-  
   </div>
 
   <div>
@@ -68,6 +71,7 @@
 
   
 <div class="content">
+  <div>
     <div><p class="fonts">Informações do arquivo</p></div>
     <div class="infosUpload">
       <input type="text" name="title" pInputText size="75" placeholder="Titulo" style="width:auto" [(ngModel)]="title" />
@@ -75,7 +79,17 @@
       <input type="text" name="title" pInputText size="75" placeholder="Curso" style="width:auto" [(ngModel)]="course" />
       <input type="text" name="author" pInputText size="75" placeholder="Autor/Autores" style="width:auto" [(ngModel)]="author" />  
     </div>
-    <p-button label="Enviar" icon="pi pi-check" iconPos="right"></p-button>
+    
+  </div>
+  <div class="btnArquivos">
+    <div>
+      <button style="margin-left: 30px;" pButton type="button" label="Selecionar" class="p-button-secondary"></button>
+    </div>
+    <div class="btnEnviar" >
+      <p-button label="Enviar" icon="pi pi-check" iconPos="right"></p-button>
+    </div>
+  </div>
+   
 
 </div>
 

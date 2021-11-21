@@ -15,7 +15,7 @@
 }
 
 //menu2
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet');
 html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ body {
 }
 code {
     background: #fff1;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'sans-serif', monospace;
     padding: .2em .4em;
 }
 
@@ -241,6 +241,10 @@ div{
 
 }
 
+.btnEnviar{
+  float: right;
+  margin-left: 100px;
+}
 
 
 
