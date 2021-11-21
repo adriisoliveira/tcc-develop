@@ -172,9 +172,9 @@ code {
   //background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
   background-size: 99%;
 }
-div{  
-  display: inline-block;
-}
+#DivMenuComLink{  
+    display: inline-flex;
+  }
 
 #DivMenuIndicadorBtn{
     background-image:url("../../../assets/MenuIcons/Sair.png");  
