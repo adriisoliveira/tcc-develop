@@ -1,3 +1,24 @@
+.grid-card{
+  border-width: 1px;
+  border-style: dotted;
+  border-color: black;
+  min-height: 129px;
+}
+.grid-content{
+  display: inline;
+  text-align: right;
+}
+
+.image-format{
+  float: left;
+  display: inline;
+}
+
+//menu2
+<<<<<<< HEAD
+=======
+
+>>>>>>> 00af6d1462f02d01d2b1c056995c85e62273db2b
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
 html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
     margin: 0;
@@ -69,35 +90,83 @@ code {
 
 /* Appearance */
 .links {
+<<<<<<< HEAD
     background-color: #075ebd;
+=======
+    background-color: #123;
+>>>>>>> 00af6d1462f02d01d2b1c056995c85e62273db2b
     background-image: linear-gradient(to bottom, #0003, transparent);
     border-bottom: 1px solid #0003;
     box-shadow: 0 0 32px #0003;
     font-size: 1em;
     font-weight: 200;
 }
+<<<<<<< HEAD
 
+=======
+.linksMenuLiso {
+  background-color: rgb(235, 13, 13);
+  background-image: linear-gradient(to bottom, #0003, transparent);
+  border-bottom: 1px solid #0003;
+  box-shadow: 0 0 32px #0003;
+  font-size: 2em;
+  font-weight: 300;
+}
+>>>>>>> 00af6d1462f02d01d2b1c056995c85e62273db2b
 .links > a {
-    color: #fff100;
+    color: #9ab;
     padding: .75em;
     text-align: center;
     text-decoration: none;
     transition: all .5s;
 }
+<<<<<<< HEAD
 
+=======
+.linksMenuLiso > a {
+  color: #9ab;
+  padding: .75em;
+  text-align: center;
+  text-decoration: none;
+  transition: all .5s;
+}
+>>>>>>> 00af6d1462f02d01d2b1c056995c85e62273db2b
 .links > a:hover {
     background: #ffffff06;
     color: #adf;
 }
+<<<<<<< HEAD
 
+=======
+.linksMenuLiso > a:hover {
+  background: #ffffff06;
+  color: #adf;
+}
+>>>>>>> 00af6d1462f02d01d2b1c056995c85e62273db2b
 .links > .line {
     background: #68a;
     height: 1px;
     pointer-events: none;
 }
+<<<<<<< HEAD
 
 /* The Magic */
 
+=======
+.linksMenuLiso > .linksMenuLiso {
+  background: #68a;
+  height: 1px;
+  pointer-events: none;
+}
+
+/* The Magic */
+#headerMenuLiso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+>>>>>>> 00af6d1462f02d01d2b1c056995c85e62273db2b
 #header {
   position: fixed;
   top: 85px;
@@ -109,7 +178,15 @@ code {
     grid-template-columns: repeat(var(--items), 1fr);
     position: relative;
 }
+<<<<<<< HEAD
 
+=======
+.linksMenuLiso {
+  display: grid;
+  grid-template-columns: repeat(var(--items), 1fr);
+  position: relative;
+}
+>>>>>>> 00af6d1462f02d01d2b1c056995c85e62273db2b
 .links > .line {
     opacity: 0;
     transition: all .5s;
@@ -119,10 +196,28 @@ code {
     width: var(--width, calc(100% / var(--items)));
     --index: 0;
 }
+<<<<<<< HEAD
 
 .links > a:hover ~ .line {
     opacity: 1;
 }
+=======
+.linksMenuLiso > .linksMenuLiso {
+  opacity: 0;
+  transition: all .5s;
+  position: absolute;
+  bottom: 0;
+  left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+  width: var(--width, calc(100% / var(--items)));
+  --index: 0;
+}
+.links > a:hover ~ .line {
+    opacity: 1;
+}
+.linksMenuLiso > a:hover ~ .linksMenuLiso {
+  opacity: 1;
+}
+>>>>>>> 00af6d1462f02d01d2b1c056995c85e62273db2b
 
 .links > a:nth-of-type(1):hover ~ .line { --index: 1; }
 .links > a:nth-of-type(2):hover ~ .line { --index: 2; }
@@ -136,6 +231,7 @@ code {
 .links > a:nth-of-type(10):hover ~ .line { --index: 10; }
 .links > a:last-of-type:hover ~ .line { --index: var(--items); }
 
+<<<<<<< HEAD
 //div menu 
 #DivMenuLiso {
   position: fixed;
@@ -144,29 +240,25 @@ code {
   right: 0;
   background-color: #023d71;
   height: 100px;
-  width: 100%;
+}
+
+#ImgMenuLiso{
+  width:250px ;
+  height:70px ; 
+  margin-top: 7px;
+  margin-left: 10px;
   
 }
-
-
-#DivMenuLogo{
-  //background-color: red;
-  width: 250px;
-  height: 100px;
-  margin-top: 1px;
-  margin-left: 1%;
-  background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
-  background-size: 99%;
-}
-#DivMenuSair{
-  //background-color: red;
-  width: 100px;
-  height: 100px;
-  margin-top: 1px;
-  margin-left: 50%;
-  //background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
-  background-size: 99%;
-}
-div{  
-  display: inline-block;
-}
+=======
+.linksMenuLiso > a:nth-of-type(1):hover ~ .linksMenuLiso { --index: 1; }
+.linksMenuLiso > a:nth-of-type(2):hover ~ .linksMenuLiso { --index: 2; }
+.linksMenuLiso > a:nth-of-type(3):hover ~ .linksMenuLiso { --index: 3; }
+.linksMenuLiso > a:nth-of-type(4):hover ~ .linksMenuLiso { --index: 4; }
+.linksMenuLiso > a:nth-of-type(5):hover ~ .linksMenuLiso { --index: 5; }
+.linksMenuLiso > a:nth-of-type(6):hover ~ .linksMenuLiso { --index: 6; }
+.linksMenuLiso > a:nth-of-type(7):hover ~ .linksMenuLiso { --index: 7; }
+.linksMenuLiso > a:nth-of-type(8):hover ~ .linksMenuLiso { --index: 8; }
+.linksMenuLiso > a:nth-of-type(9):hover ~ .linksMenuLiso { --index: 9; }
+.linksMenuLiso> a:nth-of-type(10):hover ~ .linksMenuLiso { --index: 10; }
+.linksMenuLiso > a:last-of-type:hover ~ .linksMenuLiso { --index: var(--items); }
+>>>>>>> 00af6d1462f02d01d2b1c056995c85e62273db2b

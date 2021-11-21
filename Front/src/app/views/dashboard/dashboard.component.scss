@@ -175,12 +175,24 @@ code {
   background-size: 99%;
   z-index:10;
 }
-#DivMenuSair{
-  //background-color: rgb(236, 179, 20);
-  width: 80px;
+#DivMenuIndicador{
+  //background-color: red;
+  // text-align: center;
+  // font-size: 40px;
+  // text-emphasis-color: red;
+  width: 250px;
   height: 100px;
+  
+}
+#DivMenuIndicadorBtn{
+  background-image:url("../../../assets/MenuIcons/Sair.png");  
+  background-size: 98%;
+  width: 85px;
+  height: 85px;
+  border-radius: 15%;
+  background-color: #023d71;
   margin-top: 1px;
-  margin-left: 50%;
+  margin-left: 1000px;
   float: right;
   //background-image:url("../../../assets/Sair.png");
   background-size: 99%;
@@ -192,7 +204,7 @@ code {
 }
 
 div{  
-  display: inline-block;
+  display: inline-flex;
 }
 
 #dataView-format{
