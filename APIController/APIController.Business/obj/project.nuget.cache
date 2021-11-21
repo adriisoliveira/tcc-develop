@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kaKJpL4SopsEJmSFcaW6ooMxYfl5Hjs6mFAzDK52WBuJFmVjtgk7fSKHlK+nsHXu5ikh4iCKUazYT/XAsCoPAw==",
+  "dgSpecHash": "fMELdwz3lq+MNAXU5qcQCAzf8RknX9S7Ruf2JrmlMvd+v9QMYutDV2EwNEk06VY1CpCcHnLXqYk4CqBKm6nYrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Logan\\source\\repos\\APIController\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
+  "projectFilePath": "C:\\Users\\johny\\source\\repos\\tcc-develop-61\\APIController\\APIController.Business\\APIController.Business.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

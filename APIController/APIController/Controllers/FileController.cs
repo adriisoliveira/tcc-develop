@@ -39,6 +39,18 @@ namespace APIController.Controllers
         }
 
         /// <summary>
+        /// Retorna os arquivos mais recentes
+        /// </summary>
+        /// <param name="quantity">Quantidade máxima de arquivos</param>
+        [HttpGet]
+        [Route("topRecent/{quantity}")]
+        public IActionResult GetTopRecent(int quantity = 25)
+        {
+            var files = _fileService.GetTopRecent(quantity);
+            return StatusCode(200, files);
+        }
+
+        /// <summary>
         /// Salva o arquivo em banco
         /// </summary>
         [Route("save")]
@@ -56,6 +68,7 @@ namespace APIController.Controllers
                 var title = Request.Form["title"].ToString() ?? "[Sem Título]";
                 var subtitle = Request.Form["subtitle"].ToString() ?? "";
                 var author = Request.Form["author"].ToString() ?? "[Anônimo]";
+                var course = Request.Form["course"].ToString() ?? "";
 
                 string path = Path.Combine(
                     new DirectoryInfo(_webHostEnvironment.ContentRootPath).Parent.Parent.ToString(),
@@ -69,7 +82,7 @@ namespace APIController.Controllers
                     using (var stream = new FileStream(Path.Combine(path, fileName), FileMode.Create))
                         uploadedFile.CopyTo(stream);
 
-                    _fileService.UploadFile(new Business.Entity.Files.UploadedFile(fileName, path, title, subtitle, author));
+                    _fileService.UploadFile(new Business.Entity.Files.UploadedFile(fileName, path, title, subtitle, author, course));
                     _uow.Commit();
 
                     return StatusCode(200, true);

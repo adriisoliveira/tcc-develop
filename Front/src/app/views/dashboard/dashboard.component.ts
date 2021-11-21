@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
     this.inputSearch = document.getElementById('inputSearch');
     // this.dataViewService.getDataView().then(data => this.dataViewLocal = data);
 
-    this.fileViewService.render(this.inputSearch).subscribe(data => this.fileViewComponent = data);
+    this.fileViewService.render().subscribe(data => this.fileViewComponent = data);
 
     this.menu.menuInit(this.items);
 

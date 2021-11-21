@@ -11,12 +11,12 @@ export class FileViewService {
   files: FileView[];
   constructor(private http: HttpClient) {}
 
-  render(inputSearch):Observable<FileView[]> {
+  render():Observable<FileView[]> {
     const httpOptions = {
       headers: new HttpHeaders({
         'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
       })
     }
-    return this.http.get<any>(`https://localhost:44312/file/getAll/${inputSearch}?maxResults=25`, httpOptions);
+    return this.http.get<any>(`https://localhost:44312/file/topRecent/25`, httpOptions);
   }
 }

@@ -19,10 +19,10 @@
     </header>
   </div>
 
-  <div id="dataView-format">
+  <div id="DivDataView">
     <div>
-      <p-dataView #dv class="dataView-content" [value]="fileViewComponent" layout="grid" [paginator]="true" [rows]="12" filterBy="title">
-        <p-header>
+      <p-dataView #dv id="dataView-content" [value]="fileViewComponent" layout="grid" [paginator]="true" [rows]="12" filterBy="title">
+        <p-header id="dataView-header">
           <span class="p-input-icon-left p-mb-2 p-mb-md-0">
             <i class="pi pi-search"></i>
             <input id="inputSearch" type="search" pInputText placeholder="Search by Name" (input)="dv.filter($event.target.value)">

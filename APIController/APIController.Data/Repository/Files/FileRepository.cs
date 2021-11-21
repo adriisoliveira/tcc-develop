@@ -27,9 +27,18 @@ namespace APIController.Data.Repository.Files
                 .Where(e =>
                 e.Author.Contains(searchText)
                 || e.Title.Contains(searchText)
-                || e.Subtitle.Contains(searchText))
+                || e.Subtitle.Contains(searchText)
+                || e.Course.Contains(searchText))
                 .Take(maxResults)
                 .OrderBy(e => e.Title)
+                .ToList();
+        }
+
+        public IEnumerable<UploadedFile> GetTopRecent(int quantity)
+        {
+            return DbSet
+                .Take(quantity)
+                .OrderBy(e => e.PublishDate)
                 .ToList();
         }
     }
