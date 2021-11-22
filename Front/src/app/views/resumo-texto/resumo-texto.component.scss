@@ -233,18 +233,7 @@ code {
     margin-top: 36px;
 }
 
-.titleSair{
-    font-family: sans-serif;
-    font-size: 14px;
-    color: #fff;
-    font-weight: bold;
-    margin-top: 32px;
-    margin-right: 20px;
-    right: 1;
-  
-  }
-
-  #DivMenuIndicadorBtn{
+#DivMenuIndicadorBtn{
     background-image:url("../../../assets/MenuIcons/Sair.png");  
     background-size: 98%;
     width: 45px;
@@ -252,11 +241,16 @@ code {
     border-radius: 15%;
     background-color: #023d71;
     margin-top: 1px;
-    margin-right: 10px;
-    font-family: sans-serif;
-    align-self: unset;
+    margin-right: 20px;  
     position: absolute;
     top: 16px;
     right: 0px;
-    padding: 10px;
-  }
+    display: inline-table;
+}
+.titleSair{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold; 
+    padding: 45px 0px 0px 0px;
+}

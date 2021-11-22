@@ -178,17 +178,10 @@ code {
   background-size: 99%;
   font-family: sans-serif;
 }
+
 #DivMenuIndicador{
-  //background-color: red;
-  // text-align: center;
-  // font-size: 40px;
-  // text-emphasis-color: red;
-  width: 250px;
-  height: 100px;
-  font-family: sans-serif;
-  text-align: center;
-  justify-content: center;
 }
+
 #DivMenuIndicadorBtn{
   background-image:url("../../../assets/MenuIcons/Sair.png");  
   background-size: 98%;
@@ -197,13 +190,11 @@ code {
   border-radius: 15%;
   background-color: #023d71;
   margin-top: 1px;
-  margin-right: 10px;
-  font-family: sans-serif;
-  align-self: unset;
+  margin-right: 20px;  
   position: absolute;
   top: 16px;
   right: 0px;
-  padding: 10px;
+  display: inline-table;
 }
 #DivMenuComLink{  
   display: inline-flex;
@@ -235,11 +226,8 @@ code {
   font-family: sans-serif;
   font-size: 14px;
   color: #fff;
-  font-weight: bold;
-  margin-top: 32px;
-  margin-right: 20px;
-  right: 1;
-
+  font-weight: bold; 
+  padding: 45px 0px 0px 0px;
 }
 
 .btnEnviar{
