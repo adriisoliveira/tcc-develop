@@ -178,6 +178,17 @@ code {
   background-size: 99%;
   font-family: sans-serif;
 }
+#Diva{
+  //background-color: red;
+  width: 250px;
+  height: 100px;
+  margin-top: 1px;
+  margin-right: 10px;
+  margin-left: 40%;  
+  position: absolute;
+  top: 1px;
+  display: inline-flex;
+} 
 
 #DivMenuIndicador{
 }
@@ -229,7 +240,13 @@ code {
   font-weight: bold; 
   padding: 45px 0px 0px 0px;
 }
-
+.MenuTitle{
+  font-family: sans-serif;
+  font-size: 28px;
+  color: rgb(251, 255, 6);
+  font-weight: bold; 
+  padding: 25px 0px 0px 0px;
+}
 .btnEnviar{
   float: right;
   margin-left: 100px;
