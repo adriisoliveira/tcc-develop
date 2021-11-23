@@ -2,54 +2,49 @@
   <div id="DivMenuLiso"> 
     <div id="DivMenuLogo">
     </div>
-
     <span class="SpanMenuLiso"></span>
-  
   </div>
 
   <div>
     <header id="header">
       <nav class="links" style="--items: 7;">
-          <a href="/#/dashboard">HOME</a>
-          <a href="/#/resumo-texto">SUMARIZADOR</a>
-          <a href="/#/page-rank">RECOMENDADOR</a>
-          <a href="/#/acervo">ACERVO</a>
-          <a href="/#/file-upload">ENVIAR ARQUIVOS</a>
-          <a href="/#/about">SOBRE NÓS</a>
-          <a href="/#/login">SAIR</a>
-          <span class="line"></span>
+        <a href="/#/dashboard">HOME</a>
+        <a href="/#/resumo-texto">SUMARIZADOR</a>
+        <a href="/#/page-rank">RECOMENDADOR</a>
+        <a href="/#/acervo">ACERVO</a>
+        <a href="/#/file-upload">ENVIAR ARQUIVOS</a>
+        <a href="/#/about">SOBRE NÓS</a>
+        <a href="/#/login">SAIR</a>
+        <span class="line"></span>
       </nav>
-  </header>
-</div>
+    </header>
+  </div>
 
-</div>
-<p></p><br>
-<div style="margin-top: 130px;">
+  </div>
+  <p></p><br>
+  <div style="margin-top: 120px;">
 
-
-<p-card header="Recomendador" [style]="{'width': '78rem', 'margin-bottom': '2em'}">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="assets/showcase/images/usercard.png">
-    </ng-template>
+  <div id="divDescricao">
+    <p-header><b><p style="text-align: center; font-size: 24px;">Acervo</p></b></p-header>
     <br/>
-    <p>O acervo collectio foi desenvolvido para facilitar a sua busca dentro de páginas de trabalhos e artigos dentro do banco de dados. E para usar é simples:
-    </p>
+    <p>O acervo collectio foi desenvolvido para facilitar a sua busca dentro de páginas de trabalhos e artigos dentro do banco de dados. E para usar é simples:</p>
     <br/>
-    <p>1. Digite o termo que deseja encontrar no campo "Filtro" e clique no botão de busca</p>
+    <p>&bull; Digite o termo que deseja encontrar no campo "Filtro";</p>
+    <br>
+    <p>&bull; Clique no botão de busca</p>
     <br/>
     <p>E pronto, rápido e fácil suas buscas são filtradas</p>
-  </p-card>
-  
-
-
+  </div>
+  <br>
   <div>
     <p-table #dt [columns]="cols" [value]="files" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
     totalRecords="totalRecords" pageLinks="3">
     <ng-template pTemplate="caption">
-      <div style="text-align: left;">        
-          <input type="text" pInputText size="50" placeholder="Filtro" style="width:auto" [(ngModel)]="searchItem">
-          <button type="button" pButton (click)="render()" style="width: 40px; height: 30px;">
+      <div id="divFilter">        
+          <input id="inputFilter" type="text" pInputText size="50" placeholder="Insira sua busca aqui..." [(ngModel)]="searchItem">
+          <button type="button" pButton (click)="render()" id="btnFilter">
             <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+            <p style="display: inline;">Buscar</p>
           </button>
       </div>
     </ng-template>
@@ -61,11 +56,11 @@
         </th>
       </tr>
       <tr>
-          <th *ngFor="let col of columns" [ngSwitch]="col.field">
-          </th>
+        <th *ngFor="let col of columns" [ngSwitch]="col.field">
+        </th>
       </tr>
-    
     </ng-template>
+    
     <ng-template pTemplate="body" let-rowData let-columns="columns">
       <tr>
         <td *ngFor="let col of columns">  
@@ -80,10 +75,9 @@
           </ng-container>
           <ng-container *ngIf="col.field === 'action'">
             <p-button label="Download" icon="pi pi-download" iconPos="right" (click)="downloadSearchFile(rowData.id)" ></p-button>
-            <!-- <button type="button" pButton (click)="downloadSearchFile(rowData.id)" style="width: 40px; height: 30px;">Download</button> -->
           </ng-container>
         </td>
       </tr>
     </ng-template>
-    </p-table>
-    </div>
+  </p-table>
+</div>

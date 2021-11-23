@@ -167,6 +167,39 @@ code {
   //background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
   background-size: 99%;
 }
-div{  
-  display: inline-block;
+
+#divDescricao{
+    background-color: #ebebeb;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #c2c2c2;
+    padding: 2rem;
+    font-family: sans-serif;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+#acervoTable{
+    background-color: blue;
+}
+
+#divFilter{
+    text-align: justify;
+    width: auto;
+    height: auto;
+}
+
+#inputFilter{
+    width: max-content;
+}
+
+#btnFilter{
+    width: 90px;
+    height: 32px;
+    margin-left: 1rem;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 16px;
 }
