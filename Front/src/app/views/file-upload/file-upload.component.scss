@@ -240,8 +240,6 @@ font-weight: bold;
 .infosUpload{
     margin-top: 16px;
     flex-direction: row;
-
-
 }
 
 .btnEnviar{
@@ -286,12 +284,13 @@ font-weight: bold;
     margin-right: 16px;    
 }
 
-#divContent{
+.divContent{
     margin-top: 120px;
+    // background-color: chartreuse;
 }
 
 .divBoxes {
-    width: 38%;
+    width: 38%; // 38% = 513px... Talvez
     border: solid;
     border-width: 1px;
     border-radius: 20px;
@@ -306,14 +305,14 @@ font-weight: bold;
         0 1px 3px 0 
         rgba(0, 0, 0, 0.12);
     background: #ebebeb;
+    display: inline-table;
 }
 
 #divInfo{
-    display: inline;
-    float: left;
+    margin-left: 10%;
 }
 
 #divInputs{
-    display: inline;
+    margin-right: 10%;
     float: right;
 }

@@ -27,7 +27,7 @@
     </div>  
 </div>
 
-<div id="divContent">
+<div class="divContent">
   <div id="divInfo" class="divBoxes">
     <div class="fontText"><p >Como enviar</p></div>
     <br>
@@ -82,14 +82,10 @@
     </div>
     <span style="font-size: 16px">{{fileName}}</span>
     <div class="btnArquivos">
-      <div>
         <button (click)="fileUpload.click()" style="margin-left: 30px;" pButton type="button" label="Selecionar" class="p-button-secondary"></button>
-      </div>
-      <div class="btnEnviar" >
-        <p-button label="Enviar" (click)="upload(fileUpload.files)"  iconPos="right"></p-button>
+        <p-button label="Enviar" (click)="upload(fileUpload.files)" iconPos="right"></p-button>
         <!-- <button style="margin-left: 45px;" pButton type="submit" label="Enviar" class="p-button-secondary" (click)="upload(fileUpload.files)"></button>
         <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/> -->
-      </div>
     </div>
     <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/>
   </div>
