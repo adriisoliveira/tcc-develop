@@ -71,7 +71,7 @@
             <input 
               class="inputInfoFile" 
               type="text" 
-              name="title" 
+              name="course" 
               pInputText size="55" 
               placeholder="Curso"  
               [(ngModel)]="course" 
@@ -84,26 +84,21 @@
               placeholder="Autor/Autores"  
               [(ngModel)]="author" 
             />  
-            <input 
-              class="inputInfoFile" 
-              type="text" 
-              name="author" 
-              pInputText size="55" 
-              placeholder="Nome do arquivo (importado automaticamente)" 
-              (change)="onFileSelected($event)"
-              readonly=true
-            />  
+             
           </div>
+          <span style="font-size: 16px">{{fileName}}</span>
           <div class="btnArquivos">
             <div>
-              <button style="margin-left: 30px;" pButton type="button" label="Selecionar" class="p-button-secondary" ></button>
+              <button (click)="fileUpload.click()" style="margin-left: 30px;" pButton type="button" label="Selecionar" class="p-button-secondary"></button>
             </div>
             <div class="btnEnviar" >
-              <p-button label="Enviar" icon="pi pi-check" iconPos="right" type="submit" ></p-button>
+              <p-button label="Enviar" (click)="upload(fileUpload.files)"  iconPos="right"></p-button>
               <!-- <button style="margin-left: 45px;" pButton type="submit" label="Enviar" class="p-button-secondary" (click)="upload(fileUpload.files)"></button>
               <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/> -->
             </div>
+
           </div>
+          <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/>
         </div>
     </div>
   
