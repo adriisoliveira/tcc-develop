@@ -28,7 +28,7 @@
 </div>
 <div style="margin-top: 130px;">
 
-<p-card header="Recomendador" [style]="{'width': '78rem', 'margin-bottom': '2em'}">
+<!-- <p-card header="Recomendador" [style]="{'width': '78rem', 'margin-bottom': '2em'}">
   <ng-template pTemplate="header">
       <img alt="Card" src="assets/showcase/images/usercard.png">
   </ng-template>
@@ -42,7 +42,21 @@
   <p>3. Digite o termo que deseja encontrar no campo "Filtro"</p>
   <br/>
   <p>E pronto, rápido e fácil suas buscas são filtradas</p>
-</p-card>
+</p-card> -->
+
+<div id="divDescricao">
+  <p-header id="TitleDescrição"><b><p>O Recomendador</p></b></p-header>
+  <br/>
+  <p>O recomendador collectio foi desenvolvido para facilitar a sua busca dentro de páginas imensas, de maneira a filtrar os links e conteudos mais importantes de acordo com o que voce deseja encontrar. É muito simples:
+  </p>
+  <br/>
+  <p>1. Cole o link da página no campo "Link de busca"</p>
+  <p>2. Clique em analisar para que o programa possa encontrar as melhores páginas</p>
+  <p>3. Digite o termo que deseja encontrar no campo "Filtro"</p>
+  <br/>
+  <p>E pronto, rápido e fácil suas buscas são filtradas</p>
+</div>
+<br>
 
 <div>
 <p-table #dt [columns]="cols" [value]="books" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
@@ -50,11 +64,8 @@ totalRecords="totalRecords" pageLinks="3">
 <ng-template pTemplate="caption">
   <div style="text-align: left;">        
     <input type="text" pInputText size="50" placeholder="Link de busca" style="width:auto" [(ngModel)]="renderUrl">
-    <button type="button" pButton class="search" (click)="render()" style="width: 40px; height: 30px;">
-      <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
-    </button>  
-    
-      <p-button class="search" (click)="render()" style="margin-left: 120px; margin-right: 120px;" label="Analisar" icon="pi pi-check-circle" iconPos="right"></p-button>
+        
+      <p-button class="search" (click)="render()" style="margin-left: 154px; margin-right: 120px;" label="Buscar Link"  iconPos="right"></p-button>
       
     
 
