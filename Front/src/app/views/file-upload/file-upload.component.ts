@@ -39,7 +39,7 @@ export class FileUploadComponent implements OnInit {
   }
 
   onFileSelected(event) {
-    this.fileName = event.target.files[0].name;
+    this.fileName = "Arquivo selecionado: " + event.target.files[0].name;
   }
 
   upload(files) {  
@@ -47,38 +47,38 @@ export class FileUploadComponent implements OnInit {
       return;
     }
     
-      const formData = new FormData();  
-    
-      for (let file of files)
-        formData.append(file.name, file);  
-    
-        formData.append("title", this.title.toString());
-        formData.append("subtitle", this.subtitle.toString());
-        formData.append("author", this.author.toString());
-        formData.append("course", this.author.toString());
+    const formData = new FormData();  
+  
+    for (let file of files)
+      formData.append(file.name, file);  
+  
+      formData.append("title", this.title.toString());
+      formData.append("subtitle", this.subtitle.toString());
+      formData.append("author", this.author.toString());
+      formData.append("course", this.author.toString());
 
-        let headers = new HttpHeaders({
-          'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
-        });
-        
-        const uploadReq = new HttpRequest('POST', 'https://localhost:44312/file/save', formData, {
-          headers: headers,
-          reportProgress: true,
-        });
+      let headers = new HttpHeaders({
+        'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
+      });
       
-        this.http.request(uploadReq).subscribe(event => {
-          if (event.type === HttpEventType.Response)
-          {
-            if(event.status == 200){
-              this.alertService.info('Sucesso', 'Arquivo enviado com sucesso');
-              this.fileName = "";
-              this.author = "";
-            }else{
-              this.alertService.error('Erro', 'O arquivo não pôde ser enviado');
-            }
+      const uploadReq = new HttpRequest('POST', 'https://localhost:44312/file/save', formData, {
+        headers: headers,
+        reportProgress: true,
+      });
+    
+      this.http.request(uploadReq).subscribe(event => {
+        if (event.type === HttpEventType.Response)
+        {
+          if(event.status == 200){
+            this.alertService.info('Sucesso', 'Arquivo enviado com sucesso');
+            this.fileName = "";
+            this.author = "";
+          }else{
+            this.alertService.error('Erro', 'O arquivo não pôde ser enviado');
           }
-        });
-      }
+        }
+      });
+    }
 
   ngOnInit()  {
     this.items = [

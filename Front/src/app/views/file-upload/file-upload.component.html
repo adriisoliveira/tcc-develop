@@ -29,29 +29,28 @@
 
 <div style="margin-top: 130px;">
 
-
-  
-<div class="content">
-  <div>
-    <div><p class="fonts">Informações do arquivo</p></div>
-    <div class="infosUpload">
-      <input type="text" name="title" pInputText size="75" placeholder="Titulo" style="width:auto" [(ngModel)]="title" />
-      <input type="text" name="subtitle" pInputText size="75" placeholder="Subtitulo" style="width:auto" [(ngModel)]="subtitle" />  
-      <input type="text" name="title" pInputText size="75" placeholder="Curso" style="width:auto" [(ngModel)]="course" />
-      <input type="text" name="author" pInputText size="75" placeholder="Autor/Autores" style="width:auto" [(ngModel)]="author" />  
+  <div class="content">
+    <div>
+      <div><p class="fonts">Informações do arquivo</p></div>
+      <div class="infosUpload">
+        <input type="text" name="title" pInputText size="75" placeholder="Titulo" style="width:auto" [(ngModel)]="title" />
+        <input type="text" name="subtitle" pInputText size="75" placeholder="Subtitulo" style="width:auto" [(ngModel)]="subtitle" />  
+        <input type="text" name="title" pInputText size="75" placeholder="Curso" style="width:auto" [(ngModel)]="course" />
+        <input type="text" name="author" pInputText size="75" placeholder="Autor/Autores" style="width:auto" [(ngModel)]="author" />  
+      </div>
+      
+    </div>
+    <span style="font-size: 16px">{{fileName}}</span>
+    <div class="btnArquivos">
+      <div>
+        <button (click)="fileUpload.click()" style="margin-left: 30px;" pButton type="button" label="Selecionar" class="p-button-secondary"></button>
+      </div>
+      <div class="btnEnviar" >
+        <p-button label="Enviar" (click)="upload(fileUpload.files)" icon="pi pi-check" iconPos="right"></p-button>
+      </div>
     </div>
     
+    <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/>
   </div>
-  <div class="btnArquivos">
-    <div>
-      <button style="margin-left: 30px;" pButton type="button" label="Selecionar" class="p-button-secondary"></button>
-    </div>
-    <div class="btnEnviar" >
-      <p-button label="Enviar" icon="pi pi-check" iconPos="right"></p-button>
-    </div>
-  </div>
-   
-
-</div>
 </div>
 
