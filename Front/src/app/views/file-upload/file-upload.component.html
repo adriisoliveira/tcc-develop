@@ -59,7 +59,8 @@
         class="inputInfoFile"
         type="text"
         name="subtitle" 
-        pInputText size="55" 
+        pInputText 
+        size="55" 
         placeholder="Subtitulo" 
         [(ngModel)]="subtitle" 
       />  
@@ -67,26 +68,42 @@
         class="inputInfoFile" 
         type="text" 
         name="course" 
-        pInputText size="55" 
+        pInputText 
+        size="55" 
         placeholder="Curso"  
         [(ngModel)]="course" 
       />
       <input 
-        class="inputInfoFile" t
-        ype="text" 
+        class="inputInfoFile" 
+        type="text" 
         name="author" 
-        pInputText size="55" 
+        pInputText 
+        size="55" 
         placeholder="Autor/Autores"  
         [(ngModel)]="author" 
       />
+      <input 
+        #fileUpload
+        class="inputInfoFile"
+        type="text" 
+        id="fileUpload" 
+        name="fileUpload"
+        readonly="true"
+        pInputText 
+        size="55"
+        placeholder="Arquivo a ser selecionado..."
+        (change)="onFileSelected($event)"
+      />
     </div>
-    <span style="font-size: 16px">{{fileName}}</span>
+    <!--span style="font-size: 16px">{{fileName}}</span-->
     <div class="btnArquivos">
+      <div>
         <button (click)="fileUpload.click()" style="margin-left: 30px;" pButton type="button" label="Selecionar" class="p-button-secondary"></button>
-        <p-button label="Enviar" (click)="upload(fileUpload.files)" iconPos="right"></p-button>
-        <!-- <button style="margin-left: 45px;" pButton type="submit" label="Enviar" class="p-button-secondary" (click)="upload(fileUpload.files)"></button>
-        <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/> -->
+      </div>
+      <div class="btnEnviar" >
+        <p-button label="Enviar" (click)="upload(fileUpload.files)"  iconPos="right"></p-button>
+        <!--button style="margin-left: 45px;" pButton type="submit" label="Enviar" class="p-button-secondary" (click)="upload(fileUpload.files)"></button-->
+      </div>
     </div>
-    <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/>
   </div>
 </div>
