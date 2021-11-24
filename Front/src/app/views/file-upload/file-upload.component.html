@@ -28,30 +28,82 @@
 </div>
 
 <div style="margin-top: 130px;">
-
-
-  
-<div class="content">
-  <div>
-    <div><p class="fonts">Informações do arquivo</p></div>
-    <div class="infosUpload">
-      <input type="text" name="title" pInputText size="75" placeholder="Titulo" style="width:auto" [(ngModel)]="title" />
-      <input type="text" name="subtitle" pInputText size="75" placeholder="Subtitulo" style="width:auto" [(ngModel)]="subtitle" />  
-      <input type="text" name="title" pInputText size="75" placeholder="Curso" style="width:auto" [(ngModel)]="course" />
-      <input type="text" name="author" pInputText size="75" placeholder="Autor/Autores" style="width:auto" [(ngModel)]="author" />  
-    </div>
-    
-  </div>
-  <div class="btnArquivos">
-    <div>
-      <button style="margin-left: 30px;" pButton type="button" label="Selecionar" class="p-button-secondary"></button>
-    </div>
-    <div class="btnEnviar" >
-      <p-button label="Enviar" icon="pi pi-check" iconPos="right"></p-button>
-    </div>
-  </div>
+  <br>
    
-
-</div>
-</div>
-
+      <div class="conteudo">
+        <div class="infos">
+          <br>
+          <div class="fontText"><p >Como enviar</p></div>
+          <br>
+          <div class="textoInfos">
+            <p>- Preencha as informações pedidas;</p>
+            <br>
+            <p>- Selecione seu arquivo diretamente da sua máquina;</p>
+            <br>
+            <p>- Suba somente arquivos em PDF (.pdf)</p>
+            <br>
+            <p>- Clique em enviar</p>
+            <br>
+            <p>- Para consultar o arquivo, basta ir na tela de acervo e buscar por alguma das informações inseridas.</p>
+          </div>
+        </div>
+        <div class="inputs">
+          <br>
+          <div class="fontText"><p >Informações do arquivo</p></div>
+          <div class="infosUpload">
+            <input 
+              class="inputInfoFile" 
+              type="text" 
+              name="title" 
+              pInputText 
+              size="55" 
+              placeholder="Titulo" 
+              [(ngModel)]="title" 
+            />
+            <input 
+              class="inputInfoFile"
+              type="text"
+              name="subtitle" 
+              pInputText size="55" 
+              placeholder="Subtitulo" 
+              [(ngModel)]="subtitle" 
+            />  
+            <input 
+              class="inputInfoFile" 
+              type="text" 
+              name="title" 
+              pInputText size="55" 
+              placeholder="Curso"  
+              [(ngModel)]="course" 
+            />
+            <input 
+              class="inputInfoFile" t
+              ype="text" 
+              name="author" 
+              pInputText size="55" 
+              placeholder="Autor/Autores"  
+              [(ngModel)]="author" 
+            />  
+            <input 
+              class="inputInfoFile" 
+              type="text" 
+              name="author" 
+              pInputText size="55" 
+              placeholder="Nome do arquivo (importado automaticamente)" 
+              (change)="onFileSelected($event)"
+              readonly=true
+            />  
+          </div>
+          <div class="btnArquivos">
+            <div>
+              <button style="margin-left: 30px;" pButton type="button" label="Selecionar" class="p-button-secondary" ></button>
+            </div>
+            <div class="btnEnviar" >
+              <p-button label="Enviar" icon="pi pi-check" iconPos="right" type="submit" ></p-button>
+              <!-- <button style="margin-left: 45px;" pButton type="submit" label="Enviar" class="p-button-secondary" (click)="upload(fileUpload.files)"></button>
+              <input #fileUpload type="file" id="fileUpload" name="fileUpload" class="input-file" (change)="onFileSelected($event)"/> -->
+            </div>
+          </div>
+        </div>
+    </div>
+  
