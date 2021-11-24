@@ -5721,11 +5721,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController\\APIController.csproj",
+      "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController\\APIController.csproj",
       "projectName": "APIController",
-      "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController\\APIController.csproj",
+      "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController\\APIController.csproj",
       "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController\\obj\\",
+      "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5749,14 +5749,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {
-              "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj"
+            "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj": {
+              "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj"
             },
-            "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj": {
-              "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj"
+            "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\APIController.Data.csproj": {
+              "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\APIController.Data.csproj"
             },
-            "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
-              "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj"
+            "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
+              "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APISummarizationClient\\APISummarizationClient.csproj"
             }
           }
         }

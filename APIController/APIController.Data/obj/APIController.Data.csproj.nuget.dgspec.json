@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj": {}
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\APIController.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj",
         "projectName": "APIController.Business",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj",
         "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Business\\obj\\",
+        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj": {
+    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\APIController.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj",
+        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\APIController.Data.csproj",
         "projectName": "APIController.Data",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Data\\APIController.Data.csproj",
+        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\APIController.Data.csproj",
         "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Data\\obj\\",
+        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -96,8 +96,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\APIController\\APIController.Business\\APIController.Business.csproj"
+              "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj": {
+                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj"
               }
             }
           }

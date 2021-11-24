@@ -58,6 +58,7 @@ code {
     color: #85c6f6;
     padding: 1em 0;
     text-decoration: none;
+    z-index: 10;
 }
 #footer ul {
     display: flex;
@@ -65,9 +66,11 @@ code {
     justify-content: center;
     font-size: 2em;
     font-weight: 300;
+    z-index: 10;
 }
 #footer ul li {
     padding: 0 .5em;
+    z-index: 10;
 }
 
 /* Appearance */
@@ -79,6 +82,7 @@ code {
     font-size: 1em;
     font-weight: 200;
     font-family: sans-serif;
+    z-index: 10;
 }
 
 .links > a {
@@ -87,17 +91,20 @@ code {
     text-align: center;
     text-decoration: none;
     transition: all .5s;
+    z-index: 10;
 }
 
 .links > a:hover {
     background: #ffffff06;
     color: #adf;
+    z-index: 10;
 }
 
 .links > .line {
     background: #68a;
     height: 1px;
     pointer-events: none;
+    z-index: 10;
 }
 
 /* The Magic */
@@ -107,11 +114,13 @@ code {
   top: 85px;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 .links {
     display: grid;
     grid-template-columns: repeat(var(--items), 1fr);
     position: relative;
+    z-index: 10;
 }
 
 .links > .line {
@@ -122,10 +131,12 @@ code {
     left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
     width: var(--width, calc(100% / var(--items)));
     --index: 0;
+    z-index: 10;
 }
 
 .links > a:hover ~ .line {
     opacity: 1;
+    z-index: 10;
 }
 
 .links > a:nth-of-type(1):hover ~ .line { --index: 1; }
@@ -149,7 +160,7 @@ code {
   background-color: #023d71;
   height: 100px;
   width: 100%;
-  
+  z-index: 10;
 }
 
 #DivMenuIndicadorBtn{
@@ -165,6 +176,7 @@ code {
     top: 16px;
     right: 0px;
     display: inline-table;
+    z-index: 10;
   }
 
 #DivMenuLogo{
@@ -175,6 +187,7 @@ code {
   margin-left: 1%;
   background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
   background-size: 99%;
+  z-index: 10;
 }
 #DivMenuSair{
   //background-color: red;
@@ -184,9 +197,11 @@ code {
   margin-left: 50%;
   //background-image:url("../../../assets/logomarca-unip-fundo-transparente.png");
   background-size: 99%;
+  z-index: 10;
 }
 #DivMenuComLink{  
     display: inline-flex;
+    z-index: 10;
   }
 
 .titleSair{
@@ -195,6 +210,7 @@ code {
     color: #fff;
     font-weight: bold; 
     padding: 45px 0px 0px 0px;
+    z-index: 10;
 }
 #DivMenuCentralizado{
     width: 250px;
@@ -205,6 +221,7 @@ code {
     position: absolute;
     top: 1px;
     display: inline-flex;
+    z-index: 10;
 }
 .MenuTitle{
     font-family: sans-serif;
@@ -229,5 +246,9 @@ code {
 #TitleDescrição{
     font-family: sans-serif;
     font-size: 24px;
-    text-align: center;
+    text-align: center;    
+}
+
+.table{
+    z-index: 0; 
 }
