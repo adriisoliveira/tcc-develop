@@ -1,8 +1,12 @@
 .grid-card{
   border-width: 1px;
-  border-style: dotted;
-  border-color: black;
-  min-height: 129px;
+  border-style: solid;
+  border-color: #b3b3b3;
+  min-height: 125px;
+  padding: 1rem;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  margin-bottom: 2rem;
 }
 .grid-content{
   display: inline;
@@ -251,5 +255,14 @@ code {
   margin-left: 100px;
 }
 
+#DivOptions{
+  z-index:10;
+  display: inline-flex;
+}
 
+#DivDataView{
+  position: relative;
+  top: 115px; right: 0; bottom: 0; left: 0;
+  z-index: 0;
+}
 
