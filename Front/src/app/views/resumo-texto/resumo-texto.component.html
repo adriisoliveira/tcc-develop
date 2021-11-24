@@ -1,69 +1,65 @@
 <div>
-    <div id="DivMenuLiso">
-      <div id="DivMenuLogo">
-      </div>
-      <div id="DivMenuCentralizado">
-        <p class="MenuTitle">SUMARIZADOR</p>
-      </div>
-      <div id="DivMenuIndicador">
-        <form action="/#/login">
-            <button  onclick="location.href = '/#/login';" id="DivMenuIndicadorBtn" ><p class="titleSair">SAIR</p></button>
-        </form>
-      </div>
+  <div id="DivMenuLiso">
+    <div id="DivMenuLogo">
     </div>
-    
-    <div id="DivMenuComLink">
-      <header id="header">
-          <nav class="links" style="--items:6;">
-              <a href="/#/dashboard">HOME</a>
-              <a href="/#/resumo-texto" >SUMARIZADOR</a>
-              <a href="/#/page-rank">RECOMENDADOR</a>
-              <a href="/#/acervo">ACERVO</a>
-              <a href="/#/file-upload">ENVIAR ARQUIVOS</a>
-              <a href="/#/about">SOBRE NÓS</a>
-              <span class="line"></span>
-          </nav>
-        </header>
-    </div>  
-</div>
-<div style="margin-top: 130px;">
+    <div id="DivMenuCentralizado">
+      <p class="MenuTitle">SUMARIZADOR</p>
+    </div>
+    <div id="DivMenuIndicador">
+      <form action="/#/login">
+        <button  onclick="location.href = '/#/login';" id="DivMenuIndicadorBtn" ><p class="titleSair">SAIR</p></button>
+      </form>
+    </div>
+  </div>
 
-    <div class="cardInfos">
-      <br>
-      <p class="fontText">O sumarizador</p>
-      <br>
-      <p class="textos">O sumarizador collectio resume para voce qualquer texto de acordo com a proporção escolhida. Aproveite para ter somente as partes principais de qualquer conteúdo que deseje e otimizar seu tempo ao maximo</p>
-      <br>
-    </div>
+  <div id="DivMenuComLink">
+    <header id="header">
+      <nav class="links" style="--items:6;">
+        <a href="/#/dashboard">HOME</a>
+        <a href="/#/resumo-texto" >SUMARIZADOR</a>
+        <a href="/#/page-rank">RECOMENDADOR</a>
+        <a href="/#/acervo">ACERVO</a>
+        <a href="/#/file-upload">ENVIAR ARQUIVOS</a>
+        <a href="/#/about">SOBRE NÓS</a>
+        <span class="line"></span>
+      </nav>
+    </header>
+  </div>  
+</div>
+
+<div>
+  <div id="divDescricao">
+    <br>
+    <p class="fontText">O sumarizador</p>
+    <br>
+    <p class="textos">O sumarizador collectio resume para você qualquer texto de acordo com a proporção escolhida. Aproveite para ter somente as partes principais de qualquer conteúdo que deseje e otimizar seu tempo ao maximo</p>
+    <br>
+  </div>
  
   <div>
-    <div class="p-grid" style="margin-top: 36px;">
-      <div style="margin-left: 12px; margin-right: 18px; " id="DivResumoBox">
-          <textarea style="font-size: 14px; font-family: Open Sans;font-size: 20px; " id="TxtAreaResumoBox1" rows="20" class="txtArea" name="resumoBox1" style="width: 45em" 
-          placeholder="Insira aqui o texto para o resumo" [(ngModel)]="toSummarizeText"></textarea>
-      </div>
-      <div style="margin-left: 20px; margin-right: 12px;" id="DivResumoBox2">
-          <textarea placeholder="Seu texto irá aparecer aqui" style="margin-right: 10px;" id="resumoBox2" name="resumoBox2" rows="20" style="width: 45em" >{{ summarizedText }}</textarea>
-      </div>
-  </div>
-  <div style="margin-top: 36px;" class="card">
-   <div class="p-grid">
-      <div class="card" style="margin-right: 12px;" id="DivSelectLines">
+    <div class="p-grid" style="margin-top: 20px; margin-left: 2px; margin-right: 2px; justify-content: space-between;">
+      <textarea id="resumoBox1" name="resumoBox1" class="txtArea" rows="20" 
+        style="float: left;" placeholder="Insira aqui o texto para o resumo" [(ngModel)]="toSummarizeText"></textarea>
+      <textarea id="resumoBox2" name="resumoBox2" class="txtArea" rows="20"
+        style="float: right;" placeholder="Seu texto irá aparecer aqui">{{ summarizedText }}</textarea>
+    </div>
+
+    <div style="margin-top: 36px;" class="card">
+      <div class="p-grid">
+        <div class="card" style="margin-right: 12px;" id="DivSelectLines">
           <label style="font-size: 14px; font-family: Open Sans; margin-left: 40px;">Proporção do texto </label>
           <input style="margin-left: 12px;" type="number" [(ngModel)]="lineQuantity" placeholder="Quantidade de Linhas" min="1" max="10"/>
+        </div>
+        <p-button style="margin-left: 100px;" class="btnSubmit" label="Enviar Resumo" icon="pi pi-arrow-right" iconPos="right" (click)="setSummarizedText()"></p-button>
       </div>
+      <br>
+    </div>
+  </div>
+</div>
   
-      <p-button style="margin-left: 100px;" class="btnSubmit" label="Enviar Resumo" icon="pi pi-arrow-right" iconPos="right" (click)="setSummarizedText()"></p-button>
-       </div>
-  <br />
-  </div>
-  </div>
- 
-  </div>
-  
-  <footer class="footerPrivacity">
-    <small>
-      Copyright ©2021 Collectio. Todos os direitos reservados. 
-    </small>
-    <a href="#/about">Política de Privacidade</a>
-  </footer>
+<footer class="footerPrivacity">
+  <small>
+    Copyright ©2021 Collectio. Todos os direitos reservados. 
+  </small>
+  <a href="#/about">Política de Privacidade</a>
+</footer>

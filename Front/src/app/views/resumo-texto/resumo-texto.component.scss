@@ -8,11 +8,11 @@ textarea:focus-visible{
 .TxtAreaResumoBox1 {
   overflow: auto;
   resize: vertical;
-  font-family: Arial; 
+  font-family: sans-serif; 
   border: 1px solid #eafd41;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   display: block;
-  display: block; 
+  font-size: 16px;
 }
 
 .btnSubmit:hover{
@@ -225,6 +225,7 @@ code {
     top: 1px;
     display: inline-flex;
 }
+
 .MenuTitle{
     font-family: sans-serif;
     font-size: 28px;
@@ -233,31 +234,16 @@ code {
     padding: 25px 0px 0px 0px;
 }
 
-#TxtAreaResumoBox1{
-    background: #dfdddd;
-    font-family: sans-serif;
-    color: #000;
-    border-radius: 8px;
-  }
-
-  #resumoBox2{
-    background: #dfdddd;
-    font-family: sans-serif;
-    color: #000;
-    border-radius: 8px;
-  }
-
-  .cardInfos{
+.cardInfos{
     border:solid;
     border-width: 1px;
     border-radius: 20px;
     border-color: #a6a4a4;
     font-family: sans-serif;
     width: 100%;
-    
-  }
+}
 
-  .fontText{
+.fontText{
     font-family: sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -280,3 +266,23 @@ code {
     text-align: center;
    // background: linear-gradient(135deg,#07366a 0%,#003c7f 100%);
  }
+
+#divDescricao{
+    background-color: #ebebeb;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #c2c2c2;
+    padding: 2rem;
+    font-family: sans-serif;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    margin-top: 120px;
+}
+
+.txtArea{
+    background: #dfdddd;
+    font-family: sans-serif;
+    color: #000;
+    border-radius: 8px;
+    width: 45em;
+}
