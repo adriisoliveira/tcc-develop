@@ -17,6 +17,6 @@ export class FileViewService {
         'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
       })
     }
-    return this.http.get<any>(`https://localhost:44312/file/topRecent/25`, httpOptions);
+    return this.http.get<any>('https://localhost:44312/file/topRecent/25', httpOptions);
   }
 }

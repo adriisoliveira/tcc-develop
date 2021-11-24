@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
-import { DataViewService } from 'src/app/resources/services/dataView.service';
 import { MenuItem } from 'primeng/api';
 import { FileView } from 'src/app/resources/models/FileView';
 import { FileViewService } from 'src/app/resources/services/fileView.service';
-// import { DataView } from 'src/app/resources/models/DataView';
 
 @Component({
     selector: 'app-dashboard',
@@ -17,28 +14,21 @@ export class DashboardComponent implements OnInit {
   [x: string]: any;
   public fileview = [];
   searchItem: String;
-  items: MenuItem[]; 
   fileViewComponent: FileView[];
   cols: any[];
   files: FileList[];
   inputSearch: any;
-  // dataViewLocal: DataView[];
 
   constructor(
     private http: HttpClient,
-    private router: Router,
     private fileViewService: FileViewService,
-    private dataViewService: DataViewService
   ) { }
   
 
   ngOnInit(){
     this.inputSearch = document.getElementById('inputSearch');
-    // this.dataViewService.getDataView().then(data => this.dataViewLocal = data);
 
     this.fileViewService.render().subscribe(data => this.fileViewComponent = data);
-
-    this.menu.menuInit(this.items);
 
     this.cols = [
       { field: 'title', header: 'Titulo' },

@@ -28,5 +28,10 @@ namespace APIController.Business.Services.Files
         {
             return _fileRepository.GetAll(searchText, maxResults);
         }
+
+        public IEnumerable<Entity.Files.UploadedFile> GetTopRecent(int quantity)
+        {
+            return _fileRepository.GetTopRecent(quantity);
+        }
     }
 }
