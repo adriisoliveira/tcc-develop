@@ -15,9 +15,12 @@ textarea:focus-visible{
   font-size: 16px;
 }
 
-.btnSubmit:hover{
-    background: #eafd41; 
-    font-family: Arial;
+.btnSubmit:hover{ 
+    font-family: sans-serif;
+}
+.btnSubmit{
+    margin-left: 90px;  
+    font-size: 40px; 
 }
  
 
@@ -254,7 +257,7 @@ code {
 .textos{
     margin-top: 16px;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     text-align: justify;
     margin-left: 16px;
     margin-right: 16px;    
@@ -274,11 +277,13 @@ code {
     border-width: 1px;
     border-color: #c2c2c2;
     padding: 1rem;
-    font-family: sans-serif;
+    font-family: sans-serif;     
     box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     margin-top: 120px;
-    height:340px;
+    height:210px;
     width:520px;
+    margin-right: 50%;
+    margin-left: 30%;
 }
 
 .txtArea{
@@ -288,4 +293,7 @@ code {
     border-radius: 8px;
     width: 35em;
     font-size: 17px;
+}
+.cardA{
+    margin-left: 40px; 
 }

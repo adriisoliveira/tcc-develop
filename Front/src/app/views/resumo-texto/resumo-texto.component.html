@@ -30,7 +30,7 @@
 <div>
   <div id="divDescricao">
     <br>
-    <p class="fontText">O sumarizador</p>
+    <p class="fontText">O Sumarizador</p>
     <br>
     <p class="textos">O sumarizador collectio resume para você qualquer texto de acordo com a proporção escolhida. Aproveite para ter somente as partes principais de qualquer conteúdo que deseje e otimizar seu tempo ao maximo</p>
     <br>
@@ -46,11 +46,11 @@
 
     <div style="margin-top: 36px;" class="card">
       <div class="p-grid">
-        <div class="card" style="margin-right: 12px;" id="DivSelectLines">
-          <label style="font-size: 14px; font-family: Open Sans; margin-left: 40px;">Proporção do texto em porcentagem</label>
-          <input style="margin-left: 12px;" type="number" [(ngModel)]="lineQuantity" placeholder="Quantidade de Linhas" min="1" max="10"/>
+        <div class="cardA" style="margin-right: 12px;" id="DivSelectLines">
+          <label style="font-size: 20px; font-family: Open Sans; ">Proporção do texto<br> em porcentagem: </label>
+          <input style="margin-left: 20px;" type="number" [(ngModel)]="lineQuantity"  min="1" max="10"/>
         </div>
-        <p-button style="margin-left: 100px;" class="btnSubmit" label="Enviar Resumo"  iconPos="right" (click)="setSummarizedText()"></p-button>
+        <p-button class="btnSubmit" label="Enviar Resumo"  iconPos="right" (click)="setSummarizedText()"></p-button>
       </div>
       <br>
     </div>
