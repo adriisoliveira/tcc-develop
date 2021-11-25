@@ -268,8 +268,6 @@ font-weight: bold;
     justify-content: center;
 }
 
-
-
 .inputInfoFile{
     margin-top: 16px;
     margin-left: 15px;
@@ -295,8 +293,8 @@ font-weight: bold;
     border-width: 1px;
     border-radius: 20px;
     border-color: #c2c2c2;
-    height: 400px;
-    padding: 2rem;
+    height: 344px;
+    padding: 1rem;
     box-shadow: 
         0 2px 1px -1px 
         rgba(0, 0, 0, 0.2), 
@@ -315,4 +313,11 @@ font-weight: bold;
 #divInputs{
     margin-right: 10%;
     float: right;
+}
+
+.footerPrivacy{
+    margin-top: 36px;
+    font-family: sans-serif;
+    text-align: center;
+   // background: linear-gradient(135deg,#07366a 0%,#003c7f 100%);
 }

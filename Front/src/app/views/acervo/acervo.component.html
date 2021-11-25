@@ -26,30 +26,30 @@
       </header>
     </div>  
 </div>
-<div style="margin-top: 120px;">
 
-  <div id="divDescricao">
+<div id="divDescricao">
+  <div>
     <p-header><b><p style="text-align: center; font-size: 24px;">Acervo</p></b></p-header>
     <br/>
     <p>O acervo collectio foi desenvolvido para facilitar a sua busca dentro de páginas de trabalhos e artigos dentro do banco de dados. E para usar é simples:</p>
     <br/>
     <p>&bull; Digite o termo que deseja encontrar no campo "Filtro";</p>
-    <br>
     <p>&bull; Clique no botão de busca</p>
     <br/>
     <p>E pronto, rápido e fácil suas buscas são filtradas</p>
   </div>
-  <br>
-  <div>
-    <p-table class="Table" #dt [columns]="cols" [value]="files" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
-    totalRecords="totalRecords" pageLinks="3">
+</div>  
+<br>
+<div>
+  <p-table class="Table" #dt [columns]="cols" [value]="files" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
+  totalRecords="totalRecords" pageLinks="3">
     <ng-template pTemplate="caption">
       <div id="divFilter">        
-          <input id="inputFilter" type="text" pInputText size="50" placeholder="Insira sua busca aqui..." [(ngModel)]="searchItem">
-          <button type="button" pButton (click)="render()" id="btnFilter">
-            <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
-            <p style="display: inline;">Buscar</p>
-          </button>
+        <input id="inputFilter" type="text" pInputText size="50" placeholder="Insira sua busca aqui..." [(ngModel)]="searchItem">
+        <button type="button" pButton (click)="render()" id="btnFilter">
+          <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+          <p style="display: inline;">Buscar</p>
+        </button>
       </div>
     </ng-template>
 
@@ -84,4 +84,11 @@
       </tr>
     </ng-template>
   </p-table>
-  </div>
+</div>
+
+<footer class="footerPrivacy">
+  <small>
+    Copyright ©2021 Collectio. Todos os direitos reservados. 
+  </small>
+  <a href="#/about">Política de Privacidade</a>
+</footer>
