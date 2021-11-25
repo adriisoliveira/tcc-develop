@@ -3,7 +3,7 @@
     margin-top: 2%;
 }
 textarea:focus-visible{   
-  background: rgb(116, 225, 65);
+  background: rgb(240, 240, 238);
 }
 .TxtAreaResumoBox1 {
   overflow: auto;
@@ -273,10 +273,12 @@ code {
     border-radius: 20px;
     border-width: 1px;
     border-color: #c2c2c2;
-    padding: 2rem;
+    padding: 1rem;
     font-family: sans-serif;
     box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     margin-top: 120px;
+    height:340px;
+    width:520px;
 }
 
 .txtArea{
@@ -284,5 +286,6 @@ code {
     font-family: sans-serif;
     color: #000;
     border-radius: 8px;
-    width: 45em;
+    width: 35em;
+    font-size: 17px;
 }

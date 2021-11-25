@@ -5439,11 +5439,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\Scrapper\\Scraper.csproj",
+      "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\Scrapper\\Scraper.csproj",
       "projectName": "Scraper",
-      "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\Scrapper\\Scraper.csproj",
+      "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\Scrapper\\Scraper.csproj",
       "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\Scrapper\\obj\\",
+      "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\Scrapper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5467,11 +5467,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
-              "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
+            "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
+              "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
             },
-            "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
-              "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj"
+            "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
+              "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj"
             }
           }
         }

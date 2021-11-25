@@ -40,17 +40,17 @@
     <div class="p-grid" style="margin-top: 20px; margin-left: 2px; margin-right: 2px; justify-content: space-between;">
       <textarea id="resumoBox1" name="resumoBox1" class="txtArea" rows="20" 
         style="float: left;" placeholder="Insira aqui o texto para o resumo" [(ngModel)]="toSummarizeText"></textarea>
-      <textarea id="resumoBox2" name="resumoBox2" class="txtArea" rows="20"
+      <textarea id="resumoBox2" name="resumoBox2" class="txtArea" rows="20" readonly="true"
         style="float: right;" placeholder="Seu texto irá aparecer aqui">{{ summarizedText }}</textarea>
     </div>
 
     <div style="margin-top: 36px;" class="card">
       <div class="p-grid">
         <div class="card" style="margin-right: 12px;" id="DivSelectLines">
-          <label style="font-size: 14px; font-family: Open Sans; margin-left: 40px;">Proporção do texto </label>
+          <label style="font-size: 14px; font-family: Open Sans; margin-left: 40px;">Proporção do texto em porcentagem</label>
           <input style="margin-left: 12px;" type="number" [(ngModel)]="lineQuantity" placeholder="Quantidade de Linhas" min="1" max="10"/>
         </div>
-        <p-button style="margin-left: 100px;" class="btnSubmit" label="Enviar Resumo" icon="pi pi-arrow-right" iconPos="right" (click)="setSummarizedText()"></p-button>
+        <p-button style="margin-left: 100px;" class="btnSubmit" label="Enviar Resumo"  iconPos="right" (click)="setSummarizedText()"></p-button>
       </div>
       <br>
     </div>

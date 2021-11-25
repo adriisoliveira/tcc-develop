@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xVk5ooOM7c9xrxFuIz2jKli7nLlYgjsZ0bzhqXlXmUU7sEKymbrD3xrE3Otl8ng/5WJuqAYITHkPRhgK7Gal8A==",
+  "dgSpecHash": "FMDDbxog+AawS6pxow4LQBudQkco/AN8pqsyX1r0PGOI1d1WJ8m99tcYDZblJgQKi49Tz15/YTfZYH+FGdXxcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\outroNome - Copy\\tcc-develop\\WebCrawler\\Crawler\\Crawler.csproj",
+  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\Crawler\\Crawler.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alqueiroz\\.nuget\\packages\\dotnet-stop-words\\1.1.0\\dotnet-stop-words.1.1.0.nupkg.sha512",
     "C:\\Users\\alqueiroz\\.nuget\\packages\\htmlagilitypack\\1.11.34\\htmlagilitypack.1.11.34.nupkg.sha512",

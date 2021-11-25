@@ -44,3 +44,19 @@ C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCraw
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.dll
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.pdb
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.genruntimeconfig.cache
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Data.deps.json
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Data.runtimeconfig.json
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Data.runtimeconfig.dev.json
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Data.dll
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Data.pdb
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Business.dll
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\bin\Debug\netcoreapp3.1\WebCrawler.Business.pdb
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.csproj.AssemblyReference.cache
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.AssemblyInfoInputs.cache
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.AssemblyInfo.cs
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.csproj.CoreCompileInputs.cache
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.csproj.CopyComplete
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.dll
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.pdb
+C:\Users\alqueiroz\Documents\TCC\NovEmbtO_Corre\WebCrawler\WebCrawler.Data\obj\Debug\netcoreapp3.1\WebCrawler.Data.genruntimeconfig.cache

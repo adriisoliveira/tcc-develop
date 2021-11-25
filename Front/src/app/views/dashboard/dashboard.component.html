@@ -29,15 +29,10 @@
   </div>
 
   <div id="divDescricao">
-    <p-header><b><p style="text-align: center; font-size: 24px;">Placeholder</p></b></p-header>
+    <p-header><b><p style="text-align: center; font-size: 24px;">Recomendações de Arquivos Internos</p></b></p-header>
     <br/>
-    <p>Se você estiver lendo isso:</p>
+    <p>Para um filtro avançado nos nossos arquivos, procurar na nossa aba Acervo</p>
     <br/>
-    <p>&bull; Não colocaram texto aqui ainda;</p>
-    <br>
-    <p>&bull; O Alan ainda não conseguiu jogar R6</p>
-    <br/>
-    <p>Até ter um texto apropriado aqui, vai ficar assim</p>
   </div>
   <br>
   <div id="DivDataView">
@@ -46,21 +41,21 @@
         <p-header id="dataView-header" >
           <span class="p-input-icon-left p-mb-2 p-mb-md-0">
             <i class="pi pi-search"></i>
-            <input id="inputSearch" type="search" pInputText placeholder="Search by Name" (input)="dv.filter($event.target.value)">
+            <input id="inputSearch" type="search" pInputText placeholder="Procurar Por Titulo" (input)="dv.filter($event.target.value)">
           </span>
         </p-header>
         <ng-template let-fileViewComponent pTemplate="gridItem">
           <div class="p-col-12 p-md-3" style="justify-content: space-between;">
             <div class="grid-card">
-              <img class="image-format" src="../../../assets/pdf.png" alt="pdfImage">
+              <img class="image-format" src="../../../assets/pdf_2.0.png"  alt="pdfImage">
               <div class="grid-content">
-                <div><b>Title:</b> {{fileViewComponent.title}}</div>
+                <div><b>Titulo:</b> {{fileViewComponent.title}}</div>
                 <br>
-                <div><b>Subtitle:</b> {{fileViewComponent.subtitle}}</div>
+                <div><b>Subtitulo:</b> {{fileViewComponent.subtitle}}</div>
                 <br>
-                <div><b>Autor/Autores:</b> {{fileViewComponent.author}}</div>
+                <div><b>Autor(es):</b> {{fileViewComponent.author}}</div>
                 <br>
-                <div><b>Curso/Cursos:</b> {{fileViewComponent.course}}</div>
+                <div><b>Curso:</b> {{fileViewComponent.course}}</div>
                 <br>
                 <div>
                 <p-button label="Visualizar" icon="pi pi-eye" iconPos="right" (click)="downloadSearchFile(fileViewComponent.id)" ></p-button>
@@ -75,3 +70,9 @@
 
 
 </div>
+<footer class="footerPrivacity">
+  <small>
+    Copyright ©2021 Collectio. Todos os direitos reservados. 
+  </small>
+  <a href="#/about">Política de Privacidade</a>
+</footer>
