@@ -49,20 +49,6 @@ Todas as abas possuem cartões de instrução de uso para sua respectiva funçã
 - Ao lado clique em Analisar para a Inteligencia artificial começar a busca de seus dados.
 - As informações aparecerão abaixo e caso queira filtrar as opções para buscas mais detalhadas ao lado de "Analisar" há a caixa de "Filtro" com o respectivo botão de confirmação da ação após o inserimento da palavra-chave.
 
-### Formatador
-- A primeira caixa dos elementos pré-textuais é o nome da instituição a ser aplicada.
-- Em seguida informe os nomes juntamente ao codigo de identificação do aluno (cada caixa para um aluno respectivo do grupo).
-- Abaixo das caixas de nome dos integrantes insira o titulo do trabalho ao lado o subtitulo na caixa seguinte.
-- As duas caixas pequenas ao lado da caixa de subtitulo informe sua cidade e ano da realização do trabalho.
-- A última caixa dos elementos pré textuais será o texto da folha de rosto.
-
-- A seguir haverá as caixas respectivas para dedicatória, resumo, abstract, lista de ilustrações, lista de tabelas, lista de abreviaturas e siglas e sumário.
-
-- Após a aplicação dos dados anteriores haverá três caixas para escrita da Introdução, Desenvolvimento e Conclusão.
-
-- Por ultimo a caixa para inserção das referências.
-
-- A seguir haverá os botões para visualização e download na norma ABNT de suas caixas anteriores.
 
 ### Upload de documentos
 
