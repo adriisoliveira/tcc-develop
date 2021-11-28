@@ -31,7 +31,7 @@
   <div id="divDescricao">
     <p-header><b><p style="text-align: center; font-size: 24px;">Recomendações de Arquivos Internos</p></b></p-header>
     <br/>
-    <p>Para um filtro avançado nos nossos arquivos, procurar na nossa aba Acervo</p>
+    <p>Para maiores resultados nos nossos arquivos, procurar na nossa aba Acervo</p>
     <br/>
   </div>
   <br>
@@ -58,8 +58,9 @@
                 <div><b>Curso:</b> {{fileViewComponent.course}}</div>
                 <br>
                 <div>
-                <p-button label="Visualizar" icon="pi pi-eye" iconPos="right" (click)="downloadSearchFile(fileViewComponent.id)" ></p-button>
                 </div>
+                <p-button class="botaoVisualizar" label="Visualizar" icon="pi pi-eye" iconPos="right" (click)="downloadSearchFile(fileViewComponent.id)" ></p-button>
+
               </div>
             </div>
           </div>

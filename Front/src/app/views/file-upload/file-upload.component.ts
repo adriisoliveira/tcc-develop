@@ -55,7 +55,7 @@ export class FileUploadComponent implements OnInit {
       formData.append("title", this.title.toString());
       formData.append("subtitle", this.subtitle.toString());
       formData.append("author", this.author.toString());
-      formData.append("course", this.author.toString());
+      formData.append("course", this.course.toString());
 
       let headers = new HttpHeaders({
         'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
@@ -73,6 +73,7 @@ export class FileUploadComponent implements OnInit {
             this.alertService.info('Sucesso', 'Arquivo enviado com sucesso');
             this.fileName = "";
             this.author = "";
+            window.location.reload();
           }else{
             this.alertService.error('Erro', 'O arquivo não pôde ser enviado');
           }

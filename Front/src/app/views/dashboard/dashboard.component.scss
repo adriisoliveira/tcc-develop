@@ -2,16 +2,24 @@
   border-width: 1px;
   border-style: solid;
   border-color: #b3b3b3;
-  min-height: 125px;
+  min-height: 350px;
   padding: 1rem;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   margin-bottom: 2rem;
   background-color: #ebebeb;
 }
+
+.botaoVisualizar{
+  
+  bottom: 0px;
+  float: right;
+}
+
 .grid-content{
   display: inline;
   text-align: right;
+  max-width: 100px;
 }
 
 .image-format{
