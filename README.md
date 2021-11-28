@@ -67,4 +67,8 @@ Caso alguma funcionalidade não seja realizada de acordo por conta de um erro do
 - "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp
 - "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp.
 
+Para executar os testes basta utilizar a documentação da plataforma Opentest e executar o script de Regressão
+
+- Documentação: https://getopentest.org/
+
 
