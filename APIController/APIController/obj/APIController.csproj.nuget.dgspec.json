@@ -1,26 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController\\APIController.csproj": {}
+    "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController\\APIController.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj": {
+    "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Business\\APIController.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "projectUniqueName": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Business\\APIController.Business.csproj",
         "projectName": "APIController.Business",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj",
-        "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\obj\\",
+        "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Business\\APIController.Business.csproj",
+        "packagesPath": "C:\\Users\\aoliveira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aoliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -61,27 +63,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\APIController.Data.csproj": {
+    "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Data\\APIController.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\APIController.Data.csproj",
+        "projectUniqueName": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Data\\APIController.Data.csproj",
         "projectName": "APIController.Data",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\APIController.Data.csproj",
-        "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\obj\\",
+        "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Data\\APIController.Data.csproj",
+        "packagesPath": "C:\\Users\\aoliveira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aoliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -96,8 +100,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj"
+              "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Business\\APIController.Business.csproj": {
+                "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Business\\APIController.Business.csproj"
               }
             }
           }
@@ -146,27 +150,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController\\APIController.csproj": {
+    "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController\\APIController.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController\\APIController.csproj",
+        "projectUniqueName": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController\\APIController.csproj",
         "projectName": "APIController",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController\\APIController.csproj",
-        "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController\\obj\\",
+        "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController\\APIController.csproj",
+        "packagesPath": "C:\\Users\\aoliveira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aoliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -181,14 +187,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj"
+              "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Business\\APIController.Business.csproj": {
+                "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Business\\APIController.Business.csproj"
               },
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\APIController.Data.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Data\\APIController.Data.csproj"
+              "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Data\\APIController.Data.csproj": {
+                "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Data\\APIController.Data.csproj"
               },
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APISummarizationClient\\APISummarizationClient.csproj"
+              "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
+                "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APISummarizationClient\\APISummarizationClient.csproj"
               }
             }
           }
@@ -250,27 +256,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
+    "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APISummarizationClient\\APISummarizationClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+        "projectUniqueName": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
         "projectName": "APISummarizationClient",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
-        "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APISummarizationClient\\obj\\",
+        "projectPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+        "packagesPath": "C:\\Users\\aoliveira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APISummarizationClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aoliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -321,7 +329,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

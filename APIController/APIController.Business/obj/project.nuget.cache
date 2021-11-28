@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "it8x234AzdHicF9AGcjPtZULo2Ds6yVP5Y8czEyS64mNplTJNuBgd6Mx+J1Fd5ea8Ymqli9Ysucda5t6auBF0Q==",
+  "dgSpecHash": "kiJWgqgb3E65sthOmtlcBnSa562MsVm+lnXRwAW27bRBFIp4FQTRpuW8IIzvbMc3E+vEWk7mqiR6OChANFt17A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\APIController\\APIController.Business\\APIController.Business.csproj",
+  "projectFilePath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APIController.Business\\APIController.Business.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
