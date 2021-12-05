@@ -27,6 +27,7 @@ namespace APIController.Controllers
             IApiTokenLogService apiTokenLogService,
             IUnitOfWork uow,
             IUserService userService)
+            : base(userService)
         {
             _config = config;
             _apiTokenLogService = apiTokenLogService;

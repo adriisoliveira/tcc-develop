@@ -17,6 +17,7 @@ namespace APIController.Controllers
         public IApiAccessLogService _apiAccessLogService;
         public IApiClient _client;
         public TesteController(IUserService userService, IApiAccessLogService apiAccessLogService, IApiClient client)
+            : base(userService)
         {
             _userService = userService;
             _apiAccessLogService = apiAccessLogService;

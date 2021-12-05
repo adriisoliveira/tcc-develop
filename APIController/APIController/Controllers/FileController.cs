@@ -1,11 +1,18 @@
-﻿using APIController.Business.Interfaces;
+﻿using APIController.Business.Enum;
+using APIController.Business.Interfaces;
 using APIController.Business.Interfaces.Service.Files;
+using APIController.Business.Interfaces.Service.Users;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net.Http.Headers;
+using System.Security.AccessControl;
+using System.Security.Claims;
+using System.Threading;
 
 namespace APIController.Controllers
 {
@@ -16,13 +23,16 @@ namespace APIController.Controllers
     {
         private IWebHostEnvironment _webHostEnvironment;
         private IFileService _fileService;
+        private IUserService _userService;
         private readonly IUnitOfWork _uow;
 
-        public FileController(IWebHostEnvironment webHostEnvironment, IFileService fileService, IUnitOfWork uow) : base()
+        public FileController(IWebHostEnvironment webHostEnvironment, IFileService fileService, IUnitOfWork uow, IUserService userService) 
+            : base(userService)
         {
             _webHostEnvironment = webHostEnvironment;
             _fileService = fileService;
             _uow = uow;
+            _userService = userService;
         }
 
         /// <summary>
@@ -39,18 +49,6 @@ namespace APIController.Controllers
         }
 
         /// <summary>
-        /// Retorna os arquivos mais recentes
-        /// </summary>
-        /// <param name="quantity">Quantidade máxima de arquivos</param>
-        [HttpGet]
-        [Route("topRecent/{quantity}")]
-        public IActionResult GetTopRecent(int quantity = 25)
-        {
-            var files = _fileService.GetTopRecent(quantity);
-            return StatusCode(200, files);
-        }
-
-        /// <summary>
         /// Salva o arquivo em banco
         /// </summary>
         [Route("save")]
@@ -59,6 +57,8 @@ namespace APIController.Controllers
         {
             try
             {
+                CheckAccess(HttpContext, UserType.InstitutionAdministrator | UserType.Teacher);
+
                 var uploadedFile = Request.Form.Files[0];
                 var fileName =
                     string.Format("{0}_{1}",
@@ -108,6 +108,30 @@ namespace APIController.Controllers
             byte[] fileBytes = System.IO.File.ReadAllBytes(fileDb.Path + "/" + fileDb.FileName);
 
             return File(fileBytes, "application/force-download", fileDb.FileName);
+        }
+
+        /// <summary>
+        /// Remove o arquivo da base de dados
+        /// </summary>
+        /// <param name="fileId">Id do arquivo</param>
+        [HttpDelete]
+        [Route("remove/{fileId}")]
+        public IActionResult Remove(Guid fileId)
+        {
+            var file = _fileService.GetById(fileId);
+            var path = file.Path;
+            var fileName = file.FileName;
+
+            _fileService.Remove(fileId);
+            if (System.IO.File.Exists(path + "/" + fileName))
+            {
+                try
+                {
+                    System.IO.File.Delete(path + "/" + fileName);
+                }
+                catch (System.IO.IOException e) { }
+            }
+            return StatusCode(200, true);
         }
     }
 }

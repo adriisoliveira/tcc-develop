@@ -27,63 +27,65 @@
   </div>  
 </div>
 
-<div id="divDescricao">
-  <div>
-    <p-header><b><p style="text-align: center; font-size: 24px;">Acervo</p></b></p-header>
-    <br/>
-    <p>O acervo collectio foi desenvolvido para facilitar a sua busca dentro de páginas de trabalhos e artigos dentro do banco de dados. E para usar é simples:</p>
-    <br/>
-    <p>&bull; Digite o termo que deseja encontrar no campo "Filtro";</p>
-    <p>&bull; Clique no botão de busca</p>
-    <br/>
-    <p>E pronto, rápido e fácil suas buscas são filtradas</p>
-  </div>
-</div>  
-<br>
 <div>
-  <p-table class="Table" #dt [columns]="cols" [value]="files" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
-  totalRecords="totalRecords" pageLinks="3">
-    <ng-template pTemplate="caption">
-      <div id="divFilter">        
-        <input id="inputFilter" type="text" pInputText size="50" placeholder="Insira sua busca aqui..." [(ngModel)]="searchItem">
-        <button type="button" pButton (click)="render()" id="btnFilter">
-          <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
-          <p style="display: inline;">Buscar</p>
-        </button>
-      </div>
-    </ng-template>
+  <div id="divDescricao">
+    <div>
+      <p-header><b><p style="text-align: center; font-size: 24px;">Acervo</p></b></p-header>
+      <br/>
+      <p>O acervo collectio foi desenvolvido para facilitar a sua busca dentro de páginas de trabalhos e artigos dentro do banco de dados. E para usar é simples:</p>
+      <br/>
+      <p>&bull; Digite o termo que deseja encontrar no campo "Filtro";</p>
+      <p>&bull; Clique no botão de busca</p>
+      <br/>
+      <p>E pronto, rápido e fácil suas buscas são filtradas</p>
+    </div>
+  </div>  
+  <br>
+  <div>
+    <p-table class="Table" #dt [columns]="cols" [value]="files" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]"
+    totalRecords="totalRecords" pageLinks="3">
+      <ng-template pTemplate="caption">
+        <div id="divFilter">        
+          <input id="inputFilter" type="text" pInputText size="50" placeholder="Insira sua busca aqui..." [(ngModel)]="searchItem">
+          <button type="button" pButton (click)="render()" id="btnFilter">
+            <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+            <p style="display: inline;">Buscar</p>
+          </button>
+        </div>
+      </ng-template>
 
-    <ng-template pTemplate="header" let-columns>
-      <tr>
-        <th *ngFor="let col of columns">
-          {{col.header}}
-        </th>
-      </tr>
-      <tr>
-        <th *ngFor="let col of columns" [ngSwitch]="col.field">
-        </th>
-      </tr>
-    </ng-template>
-    
-    <ng-template pTemplate="body" let-rowData let-columns="columns">
-      <tr>
-        <td *ngFor="let col of columns">  
-          <ng-container *ngIf="col.field === 'title'">
-            {{rowData[col.field]}}
-          </ng-container>
-          <ng-container *ngIf="col.field === 'subtitle'">
-            {{rowData[col.field]}}
-          </ng-container>
-          <ng-container *ngIf="col.field === 'author'">
-            {{rowData[col.field]}}
-          </ng-container>
-          <ng-container *ngIf="col.field === 'action'">
-            <p-button label="Download" icon="pi pi-download" iconPos="right" (click)="downloadSearchFile(rowData.id)" ></p-button>
-          </ng-container>
-        </td>
-      </tr>
-    </ng-template>
-  </p-table>
+      <ng-template pTemplate="header" let-columns>
+        <tr>
+          <th *ngFor="let col of columns">
+            {{col.header}}
+          </th>
+        </tr>
+        <tr>
+          <th *ngFor="let col of columns" [ngSwitch]="col.field">
+          </th>
+        </tr>
+      </ng-template>
+      
+      <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr>
+          <td *ngFor="let col of columns">  
+            <ng-container *ngIf="col.field === 'title'">
+              {{rowData[col.field]}}
+            </ng-container>
+            <ng-container *ngIf="col.field === 'subtitle'">
+              {{rowData[col.field]}}
+            </ng-container>
+            <ng-container *ngIf="col.field === 'author'">
+              {{rowData[col.field]}}
+            </ng-container>
+            <ng-container *ngIf="col.field === 'action'">
+              <p-button label="Download" icon="pi pi-download" iconPos="right" (click)="downloadSearchFile(rowData.id)" ></p-button>
+            </ng-container>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
 </div>
 
 <footer class="footerPrivacy">

@@ -3,9 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { BookDataComponent } from './book-data/book-data.component';
 import { AuthGuardService } from './resources/services/auth-guard.service';
 import { LoginComponent } from './views/login/login.component';
-import { ResumoTextoModule } from './views/resumo-texto/resumo-texto.module';
-import { AboutComponent } from './views/about/about.component';
-
 
 /**Declarar o obj dos modulos */
 const routes: Routes = [
