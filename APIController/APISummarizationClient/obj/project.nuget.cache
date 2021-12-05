@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "vGgr1RVSg6YYhpDWd+2kdHggxgG0cG1/n9KtqG3kABmIm9GUzh8yVaFDtqOuNCgojN59fY+TohDwvqA3vhGU4A==",
+  "dgSpecHash": "nWrU2U/Yq6gmPRNnqe4FTLCJv9Zf6pPl0TvOLSEQmeDamFeP9/6GYD5FnOdA+3bz0TtQVtXsduDMt+jNtbqACQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aoliveira\\source\\repos\\TCC\\api-controller\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
+  "projectFilePath": "C:\\Users\\johny\\source\\repos\\tcc-develop\\APIController\\APISummarizationClient\\APISummarizationClient.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\aoliveira\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\aoliveira\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
-    "C:\\Users\\aoliveira\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\johny\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\johny\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\johny\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

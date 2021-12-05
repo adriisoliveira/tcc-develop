@@ -26,3 +26,12 @@ C:\Users\aoliveira\source\repos\TCC\api-controller\APIController\APISummarizatio
 C:\Users\aoliveira\source\repos\TCC\api-controller\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csproj.CoreCompileInputs.cache
 C:\Users\aoliveira\source\repos\TCC\api-controller\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.dll
 C:\Users\aoliveira\source\repos\TCC\api-controller\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.pdb
+C:\Users\johny\source\repos\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.deps.json
+C:\Users\johny\source\repos\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.dll
+C:\Users\johny\source\repos\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.pdb
+C:\Users\johny\source\repos\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johny\source\repos\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.AssemblyInfoInputs.cache
+C:\Users\johny\source\repos\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.AssemblyInfo.cs
+C:\Users\johny\source\repos\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csproj.CoreCompileInputs.cache
+C:\Users\johny\source\repos\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.dll
+C:\Users\johny\source\repos\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.pdb
