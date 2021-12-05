@@ -1,4 +1,5 @@
-﻿using APIController.Models.WebPages;
+﻿using APIController.Business.Interfaces.Service.Users;
+using APIController.Models.WebPages;
 using APISummarizationClient.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +19,8 @@ namespace APIController.Controllers
     {
         protected IApiClient _client;
         protected string _crawlerHost;
-        public WebPagesController(IApiClient client, IConfiguration configuration)
+        public WebPagesController(IApiClient client, IConfiguration configuration, IUserService userService)
+            : base(userService)
         {
             _client = client;
             _crawlerHost = configuration.GetSection("ClientConnections:Crawler")["Host"];

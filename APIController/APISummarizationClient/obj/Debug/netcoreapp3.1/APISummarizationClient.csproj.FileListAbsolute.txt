@@ -27,3 +27,12 @@ C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APIS
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csproj.CoreCompileInputs.cache
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.dll
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.pdb
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.deps.json
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.dll
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APISummarizationClient\bin\Debug\netcoreapp3.1\APISummarizationClient.pdb
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csprojAssemblyReference.cache
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.AssemblyInfoInputs.cache
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.AssemblyInfo.cs
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.csproj.CoreCompileInputs.cache
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.dll
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APISummarizationClient\obj\Debug\netcoreapp3.1\APISummarizationClient.pdb

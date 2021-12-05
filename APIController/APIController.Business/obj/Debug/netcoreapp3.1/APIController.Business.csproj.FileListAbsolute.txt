@@ -36,3 +36,12 @@ C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APIC
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.csproj.CoreCompileInputs.cache
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.dll
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.pdb
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Business\bin\Debug\netcoreapp3.1\APIController.Business.deps.json
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Business\bin\Debug\netcoreapp3.1\APIController.Business.dll
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Business\bin\Debug\netcoreapp3.1\APIController.Business.pdb
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.csprojAssemblyReference.cache
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.AssemblyInfoInputs.cache
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.AssemblyInfo.cs
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.csproj.CoreCompileInputs.cache
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.dll
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Business\obj\Debug\netcoreapp3.1\APIController.Business.pdb

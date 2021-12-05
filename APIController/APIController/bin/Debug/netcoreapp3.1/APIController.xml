@@ -12,6 +12,12 @@
             <param name="user">Dados de login</param>
             <returns>Token JWT</returns>
         </member>
+        <member name="M:APIController.Controllers.BaseController.CheckAccess(Microsoft.AspNetCore.Http.HttpContext,APIController.Business.Enum.UserType)">
+            <summary>
+            Define se o usuário logado pode ou não acessar o determinado método de acordo com os tipos de usuário permitidos
+            </summary>
+            <param name="allowedUserType">Tipo de usuário permitido (podendo ser único ou em formado de Flags (UserType.X | UserType.Y | ...)</param>
+        </member>
         <member name="M:APIController.Controllers.FileController.GetAllFiles(System.String,System.Int32)">
             <summary>
             Retorna todos os arquivos da base
@@ -27,6 +33,12 @@
         <member name="M:APIController.Controllers.FileController.Download(System.Guid)">
             <summary>
             Retorna o arquivo da base de dados
+            </summary>
+            <param name="fileId">Id do arquivo</param>
+        </member>
+        <member name="M:APIController.Controllers.FileController.Remove(System.Guid)">
+            <summary>
+            Remove o arquivo da base de dados
             </summary>
             <param name="fileId">Id do arquivo</param>
         </member>

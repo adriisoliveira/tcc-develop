@@ -60,3 +60,18 @@ C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APIC
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.dll
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.pdb
 C:\Users\alqueiroz\Documents\TCC\outroNome - Copy\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.genruntimeconfig.cache
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.deps.json
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.runtimeconfig.json
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.runtimeconfig.dev.json
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.dll
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Data.pdb
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Business.dll
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\bin\Debug\netcoreapp3.1\APIController.Business.pdb
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.csprojAssemblyReference.cache
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.AssemblyInfoInputs.cache
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.AssemblyInfo.cs
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.csproj.CoreCompileInputs.cache
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.csproj.CopyComplete
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.dll
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.pdb
+C:\Users\Logan\Desktop\apresentacao-tcc\tcc-develop\APIController\APIController.Data\obj\Debug\netcoreapp3.1\APIController.Data.genruntimeconfig.cache

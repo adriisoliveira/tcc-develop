@@ -28,5 +28,11 @@ namespace APIController.Business.Services.Files
         {
             return _fileRepository.GetAll(searchText, maxResults);
         }
+
+        public void Remove(Guid fileId)
+        {
+            var file = _fileRepository.GetById(fileId);
+            _fileRepository.Remove(file);
+        }
     }
 }

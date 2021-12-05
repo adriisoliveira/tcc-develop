@@ -33,5 +33,10 @@ namespace APIController.Data.Repository.Files
                 .OrderBy(e => e.Title)
                 .ToList();
         }
+
+        public void Remove(UploadedFile file)
+        {
+            DbSet.Remove(file);
+        }
     }
 }
