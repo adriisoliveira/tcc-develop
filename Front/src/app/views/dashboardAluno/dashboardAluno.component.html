@@ -1,0 +1,99 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div>
+  <div id="DivMenuLiso">
+    <div id="DivMenuLogo">
+    </div>
+    <div id="DivMenuCentralizado">
+      <p class="MenuTitle">PÁGINA INICIAL</p>
+    </div>
+    <div id="DivMenuIndicador">
+      <form action="/#/login">
+        <button id="DivMenuIndicadorBtn"></button>
+      </form>
+    </div>
+  </div>
+
+  <div id="DivMenuComLink">
+    <header id="header">
+      <nav class="links" style="--items: 6;">
+        <a href="/#/dashboard" style="color: #fff100;"><img class="imgMenu" src="../../../assets/HomeOn.png"><strong>HOME</strong></a>
+        <a ><img class="imgMenu" src="../../../assets/AboutOff.png"><strong>Placeholder</strong></a>
+        <a href="/#/about"><img class="imgMenu" src="../../../assets/AboutOff.png"><strong>SOBRE NÓS</strong></a>
+        <span class="line"></span>
+      </nav>
+    </header>
+  </div>
+</div>
+
+<div>
+  <div id=divContent>
+    <div class="divDiv">
+      <a href="/#/resumo-texto">
+        <div class="divDash">
+          <img class="imgDash" src="../../../assets/SummyOff.png"><br><strong>SUMARIZADOR</strong>
+        </div>
+      </a>
+    </div>
+    <div class="divDiv">
+      <a href="/#/page-rank">
+        <div  class="divDash">
+          <img class="imgDash" src="../../../assets/RecomendadorOff.png"><br><strong>RECOMENDADOR</strong>
+        </div>
+      </a>
+    </div>
+    <div class="divDiv">
+      <a href="/#/acervo">
+        <div  class="divDash">
+          <img class="imgDash" src="../../../assets/AcervoOff.png"><br><strong>ACERVO</strong>
+        </div>
+      </a>
+    </div>
+    <div class="divDiv">
+      <a href="/#/about">
+        <div  class="divDash">
+          <img class="imgDash" src="../../../assets/AboutOff.png"><br><strong>SOBRE NÓS</strong>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br>
+  <div id="DivDataView">
+    <div>
+      <p-dataView #dv id="dataView-content" [value]="fileViewComponent" layout="grid" [paginator]="true" [rows]="12" filterBy="title">
+        <p-header id="dataView-header" >
+          <span class="p-input-icon-left p-mb-2 p-mb-md-0">
+            <i class="pi pi-search"></i>
+            <input id="inputSearch" type="search" pInputText placeholder="Procurar Por Titulo" (input)="dv.filter($event.target.value)">
+          </span>
+        </p-header>
+        <ng-template let-fileViewComponent pTemplate="gridItem">
+          <div class="p-col-12 p-md-3" style="justify-content: space-between;">
+            <div class="grid-card">
+              <img class="grid-image" src="../../../assets/pdf_2.0.png"  alt="pdfImage">
+              <div class="grid-content">
+                <div><b>Titulo:</b> {{fileViewComponent.title}}</div>
+                <br>
+                <div><b>Subtitulo:</b> {{fileViewComponent.subtitle}}</div>
+                <br>
+                <div><b>Autor(es):</b> {{fileViewComponent.author}}</div>
+                <br>
+                <div><b>Curso:</b> {{fileViewComponent.course}}</div>
+                <br>
+                <div>
+                </div>
+                <p-button class="botaoVisualizar" label="Visualizar" icon="pi pi-eye" iconPos="right" (click)="downloadSearchFile(fileViewComponent.id)" ></p-button>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </p-dataView>
+    </div>
+  </div>
+</div>
+
+<footer class="footerPrivacy">
+  <small>
+    Copyright ©2021 Collectio. Todos os direitos reservados. 
+  </small>
+  <a href="#/about"><small>Política de Privacidade</small></a>
+</footer>

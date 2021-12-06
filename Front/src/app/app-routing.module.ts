@@ -21,6 +21,15 @@ const routes: Routes = [
       ),
   },
 
+  {
+    path: 'dashboardAluno',
+    canActivate: [AuthGuardService],//com isso configura a guarde rota
+    loadChildren: () =>
+      import('./views/dashboardAluno/dashboardAluno.module').then(
+        (m) => m.DashboardAlunoModule
+      ),
+  },
+
   /**m = Modulo then recebe modulo M e retorna uma restu .... module*/
   {path:'resumo-texto', 
   loadChildren: () =>

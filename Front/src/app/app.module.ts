@@ -12,11 +12,10 @@ import { LoginComponent } from './views/login/login.component';
 import { BookDataComponent } from './book-data/book-data.component';
 import { TableModule } from 'primeng/table';
 import { PageRankComponent } from './views/page-rank/page-rank.component';
-import {FileUploadComponent} from './views/file-upload/file-upload.component';
-import {DropdownModule} from 'primeng/dropdown'; 
+import { FileUploadComponent} from './views/file-upload/file-upload.component';
+import { DropdownModule} from 'primeng/dropdown'; 
 import { AcervoComponent } from './views/acervo/acervo.component';
-
-import {MenubarModule} from 'primeng/menubar';
+import { MenubarModule } from 'primeng/menubar';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, BookDataComponent, PageRankComponent, FileUploadComponent, AcervoComponent],

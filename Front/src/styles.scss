@@ -15,6 +15,7 @@ body {
   background-color: $background-color;
   color: $font-color;
 }
+
 .text-center {
   text-align: center;
 }
@@ -215,6 +216,7 @@ code {
 }
 
 .footerPrivacy{
+  display: block;
   margin-top: 36px;
   font-family: sans-serif;
   text-align: center;

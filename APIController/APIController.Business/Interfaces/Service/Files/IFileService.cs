@@ -8,6 +8,7 @@ namespace APIController.Business.Interfaces.Service.Files
         Entity.Files.UploadedFile UploadFile(Entity.Files.UploadedFile file);
         Entity.Files.UploadedFile GetById(Guid id);
         IEnumerable<Entity.Files.UploadedFile> GetAll(string searchText, int maxResults = 25);
+        IEnumerable<Entity.Files.UploadedFile> GetTopRecent(int quantity);
         void Remove(Guid fileId);
     }
 }

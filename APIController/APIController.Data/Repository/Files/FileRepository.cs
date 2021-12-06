@@ -34,6 +34,14 @@ namespace APIController.Data.Repository.Files
                 .ToList();
         }
 
+        public IEnumerable<UploadedFile> GetTopRecent(int quantity)
+        {
+            return DbSet
+                .Take(quantity)
+                .OrderBy(e => e.PublishDate)
+                .ToList();
+        }
+
         public void Remove(UploadedFile file)
         {
             DbSet.Remove(file);
