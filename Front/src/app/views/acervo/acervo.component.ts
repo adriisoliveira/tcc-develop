@@ -96,7 +96,7 @@ export class AcervoComponent implements OnInit {
     });
 
     this.http.get(`https://localhost:44312/file/download/${id}`, { responseType: 'arraybuffer', headers: headers })
-    .subscribe(response => this.download(response, "application/pdf"));
+      .subscribe(response => this.download(response, "application/pdf"));
   }
 
   public removeSearchFile(id) {

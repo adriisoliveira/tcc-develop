@@ -2,6 +2,7 @@
 using APIController.Business.Interfaces;
 using APIController.Business.Interfaces.Service.Files;
 using APIController.Business.Interfaces.Service.Users;
+using APIController.Controllers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -133,7 +134,13 @@ namespace APIController.Controllers
             var file = _fileService.GetById(fileId);
             var path = file.Path;
             var fileName = file.FileName;
-
+            try
+            {
+                CheckAccess(HttpContext, UserType.InstitutionAdministrator | UserType.Teacher);
+            } catch (Exception e)
+            {
+                return StatusCode(405, "Acesso negado");
+            }
             _fileService.Remove(fileId);
             if (System.IO.File.Exists(path + "/" + fileName))
             {
@@ -143,7 +150,7 @@ namespace APIController.Controllers
                 }
                 catch (System.IO.IOException e) { }
             }
-            return StatusCode(200, true);
+            return StatusCode(200, true);}
         }
     }
 }

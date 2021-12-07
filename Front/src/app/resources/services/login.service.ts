@@ -27,9 +27,8 @@ export class LoginService {
     let headers = new HttpHeaders({
       'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
     });
-    console.log("Teste");
-    this.authService.saveUserType('Student');
-    // this.httpClient.get(`https://localhost:44312/auth/getType/${email}`)
-    // .subscribe(response => this.authService.saveUserType(response['userType']));
+    
+    this.httpClient.get(`https://localhost:44312/auth/getType/${email}`)
+      .subscribe(response => this.authService.saveUserType(response['userType']));
   }
 }
