@@ -2,6 +2,7 @@ import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 
 import {MenuItem} from 'primeng/api';
+import { AuthService } from 'src/app/resources/services/auth.service';
 import {AlertService} from '../../resources/services/alert.service';
 import { Book, BookService } from '../../resources/services/book.service';
 
@@ -28,7 +29,8 @@ export class PageRankComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private bookService: BookService
+    private bookService: BookService,
+    private authServ: AuthService
   ) {
     this.searchText = "";
     this.renderUrl = "";
@@ -135,8 +137,9 @@ export class PageRankComponent implements OnInit {
     }, 3000);
 
   }
-  // public doBackToMenu(): void{
-  //     this.router.navigate(['dashboard'])
-  // }
+
+  public isStudent(): boolean{
+    return this.authServ.getUserType() == 'Student';
+  }
 
 }

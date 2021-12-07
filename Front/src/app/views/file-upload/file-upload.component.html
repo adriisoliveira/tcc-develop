@@ -1,4 +1,5 @@
-<div>
+<strong *ngIf="isStudent()">ACESSO NEGADO!!!</strong>
+<div *ngIf="!isStudent()">
   <div id="DivMenuLiso">
     <div id="DivMenuLogo">
     </div>
@@ -27,24 +28,18 @@
     </div>  
 </div>
 
-<div class="divContent">
+<div class="divContent" *ngIf="!isStudent()">
   <div id="divInfo" class="divBoxes">
     <br>
     <div class="fontText"><p >Como enviar</p></div>
     <br>
     <div class="textoInfos">
-      <p>&bull; Preencha as informações pedidas;</p>
-      <br>
-      <p>&bull; Selecione seu arquivo diretamente da sua máquina;</p>
-      <br>
-      <p>&bull; Suba somente arquivos em PDF (.pdf)</p>
-      <br>
-      <p>&bull; Clique em enviar</p>
-      <br>
-      <p>&bull; Para consultar o arquivo, basta ir na tela de acervo e buscar por alguma das informações inseridas.</p>
-      <br>
+      <p>&bull; Preencha as informações pedidas;</p><br>
+      <p>&bull; Selecione seu arquivo diretamente da sua máquina;</p><br>
+      <p>&bull; Suba somente arquivos em PDF (.pdf)</p><br>
+      <p>&bull; Clique em enviar</p><br>
+      <p>&bull; Para consultar o arquivo, basta ir na tela de acervo e buscar por alguma das informações inseridas.</p><br>
       <p>&bull; Dentro da página inicial também será possivel a visualização da sua recente importação a partir da busca!</p> 
-      <br><br>  
     </div>
   </div>
   <div id="divInputs" class="divBoxes">
@@ -103,7 +98,7 @@
   </div>
 </div>
 
-<footer class="footerPrivacy">
+<footer *ngIf="isStudent()" class="footerPrivacy">
   <small>
     Copyright ©2021 Collectio. Todos os direitos reservados. 
   </small>

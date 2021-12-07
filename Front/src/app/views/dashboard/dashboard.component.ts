@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { MenuItem } from 'primeng/api';
 import { FileView } from 'src/app/resources/models/FileView';
 import { FileViewService } from 'src/app/resources/services/fileView.service';
+import { AuthService } from 'src/app/resources/services/auth.service';
 
 @Component({
     selector: 'app-dashboard',
@@ -21,6 +22,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(
     private http: HttpClient,
+    private authServ: AuthService,
     private fileViewService: FileViewService,
   ) { }
   
@@ -53,5 +55,9 @@ export class DashboardComponent implements OnInit {
     let result = window.open(window.URL.createObjectURL(blob));
     if (!result || result.closed || typeof result.closed == 'undefined')
       alert('Desative o bloqueador de Pop-up e tente novamente.');
+  }
+
+  public isStudent(): boolean{
+    return this.authServ.getUserType() == 'Student';
   }
 }

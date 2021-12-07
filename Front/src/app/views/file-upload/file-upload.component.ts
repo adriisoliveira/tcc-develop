@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 import { AlertService } from '../../resources/services/alert.service';
 import { HttpClient, HttpHeaders, HttpEventType, HttpRequest } from '@angular/common/http';
+import { AuthService } from 'src/app/resources/services/auth.service';
 
 @Component({
   selector: 'app-file-upload',
@@ -22,7 +23,7 @@ export class FileUploadComponent implements OnInit {
 
   constructor(
     private router: Router,
-    //private fileUploadService: FileUploadService,
+    private authServ: AuthService,
     private http: HttpClient
   ) {
     this.fileName = "";
@@ -131,5 +132,9 @@ export class FileUploadComponent implements OnInit {
         id: 'btnQuit',
       },
     ];
+  }
+  
+  public isStudent(): boolean{
+    return this.authServ.getUserType() == 'Student';
   }
 }

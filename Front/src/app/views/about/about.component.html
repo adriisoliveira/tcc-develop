@@ -19,7 +19,7 @@
           <a href="/#/resumo-texto"><img src="../../../assets/SummyOff.png"><strong>SUMARIZADOR</strong></a>
           <a href="/#/page-rank"><img src="../../../assets/RecomendadorOff.png"><strong>RECOMENDADOR</strong></a>
           <a href="/#/acervo"><img src="../../../assets/AcervoOff.png"><strong>ACERVO</strong></a>
-          <a href="/#/file-upload"><img src="../../../assets/UploadOff.png"><strong>ENVIAR ARQUIVOS</strong></a>
+          <a href="/#/file-upload" *ngIf="!isStudent()"><img src="../../../assets/UploadOff.png"><strong>ENVIAR ARQUIVOS</strong></a>
           <a href="/#/about" style="color: #fff100;"><img src="../../../assets/AboutOn.png"><strong>SOBRE NÓS</strong></a>
           <span class="line"></span>
         </nav>

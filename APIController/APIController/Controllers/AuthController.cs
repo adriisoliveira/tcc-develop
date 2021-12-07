@@ -1,5 +1,6 @@
 ﻿using APIController.Business.Entity.Logs;
 using APIController.Business.Entity.Users;
+using APIController.Business.Enum;
 using APIController.Business.Interfaces;
 using APIController.Business.Interfaces.Service.Logs;
 using APIController.Business.Interfaces.Service.Users;
@@ -56,7 +57,8 @@ namespace APIController.Controllers
                 var claims = new[]
                 {
                     new Claim(ClaimTypes.Name, userDb != null ? userDb.Name : "admin"),
-                    new Claim(ClaimTypes.Email, userDb != null ? userDb.Email: "admin")
+                    new Claim(ClaimTypes.Email, userDb != null ? userDb.Email: "admin"),
+                    new Claim(ClaimTypes.UserData, userDb != null ? userDb.Type.ToString(): UserType.InstitutionAdministrator.ToString())
                 };
 
                 var credential = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["SecretKey"])),
@@ -105,6 +107,18 @@ namespace APIController.Controllers
                 return StatusCode(200);
             }
             catch (Exception ex) { return BadRequest("Erro ao criar usuário: " + ex.Message); }
+        }
+
+        [Route("getType/{email}")]
+        [HttpGet]
+        public IActionResult GetUseType(string email)
+        {
+            try
+            {
+                var user = _userService.GetByEmail(email);
+                return StatusCode(200, new { UserType = user.Type.ToString() } );
+            }
+            catch (Exception ex) { return BadRequest("Erro: " + ex.Message); }
         }
     }
 }

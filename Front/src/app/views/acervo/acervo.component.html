@@ -19,7 +19,7 @@
         <a href="/#/resumo-texto"><img src="../../../assets/SummyOff.png"><strong>SUMARIZADOR</strong></a>
         <a href="/#/page-rank"><img src="../../../assets/RecomendadorOff.png"><strong>RECOMENDADOR</strong></a>
         <a href="/#/acervo" style="color: #fff100;"><img src="../../../assets/AcervoOn.png"><strong>ACERVO</strong></a>
-        <a href="/#/file-upload"><img src="../../../assets/UploadOff.png"><strong>ENVIAR ARQUIVOS</strong></a>
+        <a *ngIf="!isStudent()" href="/#/file-upload"><img src="../../../assets/UploadOff.png"><strong>ENVIAR ARQUIVOS</strong></a>
         <a href="/#/about"><img src="../../../assets/AboutOff.png"><strong>SOBRE NÓS</strong></a>
         <span class="line"></span>
       </nav>
@@ -32,11 +32,9 @@
     <div>
       <p-header><b><p style="text-align: center; font-size: 24px;">Acervo</p></b></p-header>
       <br/>
-      <p>O acervo collectio foi desenvolvido para facilitar a sua busca dentro de páginas de trabalhos e artigos dentro do banco de dados. E para usar é simples:</p>
-      <br/>
+      <p>O acervo collectio foi desenvolvido para facilitar a sua busca dentro de páginas de trabalhos e artigos dentro do banco de dados. E para usar é simples:</p><br/>
       <p>&bull; Digite o termo que deseja encontrar no campo "Filtro";</p>
-      <p>&bull; Clique no botão de busca</p>
-      <br/>
+      <p>&bull; Clique no botão de busca</p><br/>
       <p>E pronto, rápido e fácil suas buscas são filtradas</p>
     </div>
   </div>  
@@ -79,7 +77,8 @@
               {{rowData[col.field]}}
             </ng-container>
             <ng-container *ngIf="col.field === 'action'">
-              <p-button label="Download" icon="pi pi-download" iconPos="right" (click)="downloadSearchFile(rowData.id)" ></p-button>
+              <p-button label="Download" icon="pi pi-download" iconPos="right" (click)="downloadSearchFile(rowData.id)"></p-button>
+              <p-button  *ngIf="!isStudent()" label="Remover" icon="pi pi-trash" iconPos="right" (click)="removeSearchFile(rowData.id)"></p-button>
             </ng-container>
           </td>
         </tr>

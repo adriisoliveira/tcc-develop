@@ -17,7 +17,16 @@
     <header id="header">
       <nav class="links" style="--items: 6;">
         <a href="/#/dashboard" style="color: #fff100;"><img class="imgMenu" src="../../../assets/HomeOn.png"><strong>HOME</strong></a>
-        <a ><img class="imgMenu" src="../../../assets/AboutOff.png"><strong>Placeholder</strong></a>
+        
+        <div id="dropdown">
+          <button id="btnDropdown"><img style="width: 10px; height: auto;" src="../../../assets/dropdown.png"><strong>SERVIÇOS</strong></button>
+          <div id="dropdown-content">
+            <a href="/#/resumo-texto"><strong>Sumarizador</strong></a>
+            <a href="/#/page-rank"><strong>Recomendador</strong></a>
+            <a href="/#/acervo"><strong>Acervo</strong></a>
+            <a href="/#/about"><strong>Sobre Nós</strong></a>
+          </div>
+        </div>
         <a href="/#/about"><img class="imgMenu" src="../../../assets/AboutOff.png"><strong>SOBRE NÓS</strong></a>
         <span class="line"></span>
       </nav>
@@ -30,7 +39,7 @@
     <div class="divDiv">
       <a href="/#/resumo-texto">
         <div class="divDash">
-          <img class="imgDash" src="../../../assets/SummyOff.png"><br><strong>SUMARIZADOR</strong>
+          <img class="imgDash" style="margin-left: 25%" src="../../../assets/SummyOff.png"><br><strong>SUMARIZADOR</strong>
         </div>
       </a>
     </div>
@@ -56,8 +65,7 @@
       </a>
     </div>
   </div>
-  <br>
-  <div id="DivDataView">
+  <!-- <div id="DivDataView">
     <div>
       <p-dataView #dv id="dataView-content" [value]="fileViewComponent" layout="grid" [paginator]="true" [rows]="12" filterBy="title">
         <p-header id="dataView-header" >
@@ -88,7 +96,7 @@
         </ng-template>
       </p-dataView>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <footer class="footerPrivacy">

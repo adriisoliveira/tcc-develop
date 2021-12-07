@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
-import {MenuItem} from 'primeng/api';
-import {HttpClient, HttpHeaders, HttpEventType, HttpRequest, HttpClientModule} from '@angular/common/http';
+import { MenuItem} from 'primeng/api';
+import { HttpClient, HttpHeaders, HttpEventType, HttpRequest, HttpClientModule } from '@angular/common/http';
 import { Book } from 'src/app/resources/services/book.service';
-import {FileList} from 'src/app/resources/models/FileList';
-
-
+import { FileList } from 'src/app/resources/models/FileList';
+import { AlertService } from 'src/app/resources/services/alert.service';
+import { AuthService } from 'src/app/resources/services/auth.service';
 
 @Component({
   selector: 'app-acervo',
@@ -14,90 +13,82 @@ import {FileList} from 'src/app/resources/models/FileList';
   styleUrls: ['./acervo.component.scss']
 })
 
-
-
-
 export class AcervoComponent implements OnInit {
-
   items: MenuItem[]; 
   searchItem: String;
   books: Book[];
   files: FileList[];
-
+  alertService : AlertService;
   cols: any[];
-
 
   constructor(
     private router: Router,
-    private http: HttpClient
+    private http: HttpClient,
+    private authServ: AuthService
   ) {
     this.searchItem = "";
+    this.alertService = new AlertService();
   }
   
-
   ngOnInit(): void {
-    this.items = [
-          
+    this.items = [  
       {
         label:'Home',
         icon:'pi pi-fw pi-home',
         id: 'btnDashboard',
         url: '/#/dashboard',
-    },
-    {
-      label:'Sumarizador',
-      icon:'pi pi-fw pi-book',
-      id: 'btnResumo',
-      url: '/#/resumo-texto',
-    },
-    
-    {
+      },
+      {
+        label:'Sumarizador',
+        icon:'pi pi-fw pi-book',
+        id: 'btnResumo',
+        url: '/#/resumo-texto',
+      },
+      {
         label:'Recomendador',
         icon:'pi pi-fw pi-search-plus',
         id: 'btnSugestionador',
         url: '/#/page-rank',
-    },
-    {
-      label:'Formatador',
-      icon:'pi pi-fw pi-pencil',
-      id: 'btnSugestionador',
-      url: '/#/formatacao',
-     },
-     {
-      label:'Acervo',
-      icon:'pi pi-file-pdf',
-      id: 'btnAcervo',
-      url: '/#/acervo',
-    },
-     {
-      label:'Enviar Arquivo',
-      icon:'pi pi-cloud-upload',
-      id: 'btnEnviarArquivo',
-      url: '/#/file-upload',
-    },
-    {
+      },
+      {
+        label:'Formatador',
+        icon:'pi pi-fw pi-pencil',
+        id: 'btnSugestionador',
+        url: '/#/formatacao',
+      },
+      {
+        label:'Acervo',
+        icon:'pi pi-file-pdf',
+        id: 'btnAcervo',
+        url: '/#/acervo',
+      },
+      {
+        label:'Enviar Arquivo',
+        icon:'pi pi-cloud-upload',
+        id: 'btnEnviarArquivo',
+        url: '/#/file-upload',
+      },
+      {
         label:'Sobre Nós',
         icon:'pi pi-fw pi-info-circle',
         id: 'btnSugestionador',
         url: '/#/about',
-    },
-    {
+      },
+      {
         label:'Sair',
         icon:'pi pi-fw pi-power-off',
         url: '/#/login',
         id: 'btnQuit',
-    },
-  ];
+      },
+    ];
 
-  this.cols = [
-    { field: 'title', header: 'Titulo' },
-    { field: 'subtitle', header: 'Subititulo' },
-    { field: 'author', header: 'Autor' },
-    { field: 'action', header: 'Ação' },
-
-  ];
+    this.cols = [
+      { field: 'title', header: 'Titulo' },
+      { field: 'subtitle', header: 'Subititulo' },
+      { field: 'author', header: 'Autor' },
+      { field: 'action', header: 'Ação' },
+    ];
   }
-
 
   public downloadSearchFile(id){
     let headers = new HttpHeaders({
@@ -106,14 +97,26 @@ export class AcervoComponent implements OnInit {
 
     this.http.get(`https://localhost:44312/file/download/${id}`, { responseType: 'arraybuffer', headers: headers })
     .subscribe(response => this.download(response, "application/pdf"));
-
   }
 
+  public removeSearchFile(id) {
+    //try {
+      let headers = new HttpHeaders({
+        'Authorization' : 'bearer '+ localStorage.getItem('loginResponseJwt')
+      });
+
+      this.http.delete(`https://localhost:44312/file/remove/${id}`, { responseType: 'arraybuffer', headers: headers })
+        .subscribe();
+    /*} catch {
+      this.alertService.error('Erro ao deletar!');
+    }*/
+  }
+  
   public download(data: any, fileType: string) {
-      let blob = new Blob([data], { type: fileType });
-      let result = window.open(window.URL.createObjectURL(blob));
-      if (!result || result.closed || typeof result.closed == 'undefined')
-          alert( 'Desative o bloqueador de Pop-up e tente novamente.');
+    let blob = new Blob([data], { type: fileType });
+    let result = window.open(window.URL.createObjectURL(blob));
+    if (!result || result.closed || typeof result.closed == 'undefined')
+      alert('Desative o bloqueador de Pop-up e tente novamente.');
   }
 
   public render():void{
@@ -124,7 +127,9 @@ export class AcervoComponent implements OnInit {
     }
     this.http.get<FileList[]>(`https://localhost:44312/file/getAll/${this.searchItem}?maxResults=25`, httpOptions)
       .toPromise().then(data => this.files = data).catch(data=>console.log('Erro'));
-
   }
 
+  public isStudent(): boolean{
+    return this.authServ.getUserType() == 'Student';
+  }
 }

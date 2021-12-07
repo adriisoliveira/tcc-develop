@@ -30,4 +30,12 @@ export class AuthService {
     this.loginResponse.jwt = jwt;
     ///TODO: trocar LocalStorage por Cookie
   }
+
+  public saveUserType(userType): void {
+    localStorage.setItem('userType', userType);
+  }
+
+  public getUserType() : any {
+    return localStorage.getItem('userType');
+  }
 }

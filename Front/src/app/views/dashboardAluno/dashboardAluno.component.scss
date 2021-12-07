@@ -1,3 +1,9 @@
+@media only screen and (max-width: 600px) {
+  .links > a {
+    display: none;
+  }
+}
+
 body {
   background-color: #345;
   background-image: linear-gradient(to bottom, #0009, transparent);
@@ -16,6 +22,57 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+// start dropdown
+// se precisar do código em outro lugar, copiar para o style.scss e trocar os ids para class
+#dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+#dropdown button {
+  display: inline;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#btnDropdown {
+  background-color: transparent;
+  border: none;
+}
+
+#btnDropdown > strong {
+  font-family: sans-serif;
+  display: inline;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 200;
+}
+
+#dropdown-content {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  background-color: #075ebd;
+  margin-top: 46px;
+  width: 100%;
+}
+
+#dropdown-content a {
+  color: #ffffff;
+  border: solid 0.5px rgb(40, 123, 201);
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+}
+
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+// end dropdown
 
 #divContent{
   margin-top: 120px;
@@ -48,7 +105,7 @@ body {
 .divDash > img {
   width: 60%;
   height: auto;
-  margin-left: 25%;
+  margin-left: 20%;
   margin-bottom: 5%;
   margin-right: 25%;
 }
@@ -112,5 +169,5 @@ body {
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 5px;
 }
