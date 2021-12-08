@@ -1,14 +1,16 @@
 .content {
-    margin-left: 30%;
-    margin-top: 2%;
+  margin-left: 30%;
+  margin-top: 2%;
 }
-textarea:focus-visible {   
+
+textarea:focus-visible {
   background: rgb(240, 240, 238);
 }
+
 .TxtAreaResumoBox1 {
   overflow: auto;
   resize: vertical;
-  font-family: sans-serif; 
+  font-family: sans-serif;
   border: 1px solid #eafd41;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   display: block;
@@ -16,64 +18,50 @@ textarea:focus-visible {
 }
 
 .btnSubmit:hover { 
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
+
 .btnSubmit {
-    margin-left: 90px;  
-    font-size: 40px; 
+  margin-left: 90px;
+  font-size: 40px;
 }
 
 body {
-    background-color: #345;
-    background-image: linear-gradient(to bottom, #0009, transparent);
-    color: #eee;
-    font-family: sans-serif;
-    font-size: 62.5%;
-    padding: 0 20px;
-    box-sizing: border-box;
+  background-color: #345;
+  background-image: linear-gradient(to bottom, #0009, transparent);
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 62.5%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .cardInfos {
-    border:solid;
-    border-width: 1px;
-    border-radius: 20px;
-    border-color: #a6a4a4;
-    font-family: sans-serif;
-    width: 100%;
+  border:solid;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: #a6a4a4;
+  font-family: sans-serif;
+  width: 100%;
 }
 
 .fontText {
-    font-family: sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    justify-content: center;
-}
-
-.textos {
-    margin-top: 16px;
-    font-family: sans-serif;
-    font-size: 17px;
-    text-align: justify;
-    margin-left: 16px;
-    margin-right: 16px;    
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
 }
 
 .txtArea {
-    background: #dfdddd;
-    font-family: sans-serif;
-    color: #000;
-    border-radius: 8px;
-    width: 35em;
-    font-size: 17px;
-}
-.cardA {
-    margin-left: 40px; 
+  background: #dfdddd;
+  font-family: sans-serif;
+  color: #000;
+  border-radius: 8px;
+  width: 35em;
+  font-size: 17px;
 }
 
-img {
-    display: inline;
-    width: 20px;
-    height: 18px;
-    margin-right: 10px;
+.cardA {
+  margin-left: 40px;
 }

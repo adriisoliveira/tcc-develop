@@ -19,6 +19,8 @@
 .grid-card > img {
   float: left;
   display: inline;
+  width: 30%;
+  height: auto;
 }
 
 .inputSearch{
@@ -63,11 +65,4 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-img {
-  display: inline;
-  width: 20px;
-  height: 18px;
-  margin-right: 10px;
 }
