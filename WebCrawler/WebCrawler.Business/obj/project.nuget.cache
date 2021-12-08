@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "g9ze6SH7yxlBnX841ZFCdrXMlFuTn81xxadlblE31vWpwjF1x6h3u5AVAwkyKSzRJRl8pEjpRC+zrOMe9iXZxg==",
+  "dgSpecHash": "jRsqhsPNGJqKvLZEYX7DTbgCbCJ45EvX/uOF6u8UC6irAYd7ekcNGlD59dh5Ns9A8k0AjOL7Cc7HEMRWgpb1xw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
+  "projectFilePath": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\alqueiroz\\.nuget\\packages\\dotnet-stop-words\\1.1.0\\dotnet-stop-words.1.1.0.nupkg.sha512",
-    "C:\\Users\\alqueiroz\\.nuget\\packages\\htmlagilitypack\\1.11.34\\htmlagilitypack.1.11.34.nupkg.sha512",
-    "C:\\Users\\alqueiroz\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\johny\\.nuget\\packages\\dotnet-stop-words\\1.1.0\\dotnet-stop-words.1.1.0.nupkg.sha512",
+    "C:\\Users\\johny\\.nuget\\packages\\htmlagilitypack\\1.11.34\\htmlagilitypack.1.11.34.nupkg.sha512",
+    "C:\\Users\\johny\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

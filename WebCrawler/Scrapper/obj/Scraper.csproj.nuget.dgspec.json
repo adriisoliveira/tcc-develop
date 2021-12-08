@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\Scrapper\\Scraper.csproj": {}
+    "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\Scrapper\\Scraper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\Scrapper\\Scraper.csproj": {
+    "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\Scrapper\\Scraper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\Scrapper\\Scraper.csproj",
+        "projectUniqueName": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\Scrapper\\Scraper.csproj",
         "projectName": "Scraper",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\Scrapper\\Scraper.csproj",
-        "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\Scrapper\\obj\\",
+        "projectPath": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\Scrapper\\Scraper.csproj",
+        "packagesPath": "C:\\Users\\johny\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\Scrapper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\johny\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,19 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.rdisoftware.com/nuget": {},
-          "https://repo.rdisoftware.com/artifactory/api/nuget/rdi-nuget-virtual": {}
+          "https://www.nuget.org/api/v2": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
+              "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
+                "projectPath": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
               },
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj"
+              "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
+                "projectPath": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj"
               }
             }
           }
@@ -68,25 +65,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
+    "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
+        "projectUniqueName": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
         "projectName": "WebCrawler.Business",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
-        "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Business\\obj\\",
+        "projectPath": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj",
+        "packagesPath": "C:\\Users\\johny\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\johny\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -95,9 +91,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.rdisoftware.com/nuget": {},
-          "https://repo.rdisoftware.com/artifactory/api/nuget/rdi-nuget-virtual": {}
+          "https://www.nuget.org/api/v2": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -139,25 +133,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
+    "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
+        "projectUniqueName": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
         "projectName": "WebCrawler.Data",
-        "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
-        "packagesPath": "C:\\Users\\alqueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Data\\obj\\",
+        "projectPath": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Data\\WebCrawler.Data.csproj",
+        "packagesPath": "C:\\Users\\johny\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alqueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\johny\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -166,16 +159,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.rdisoftware.com/nuget": {},
-          "https://repo.rdisoftware.com/artifactory/api/nuget/rdi-nuget-virtual": {}
+          "https://www.nuget.org/api/v2": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
-                "projectPath": "C:\\Users\\alqueiroz\\Documents\\TCC\\NovEmbtO_Corre\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
+              "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj": {
+                "projectPath": "C:\\Users\\johny\\source\\repos\\tcc-develop\\WebCrawler\\WebCrawler.Business\\WebCrawler.Business.csproj"
               }
             }
           }
@@ -216,7 +207,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
