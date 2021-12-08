@@ -1,5 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div>
+<strong *ngIf="isStudent()">ACESSO NEGADO!!!</strong>
+<div *ngIf="!isStudent()">
   <div id="DivMenuLiso">
     <div id="DivMenuLogo">
     </div>
@@ -28,7 +29,7 @@
   </div>
 </div>
 
-<div>
+<div *ngIf="!isStudent()">
   <div id="divDescricao">
     <p-header><b><p class="pTitle">Recomendações</p></b></p-header>
     <br/>
@@ -69,7 +70,7 @@
   </div>
 </div>
 
-<footer class="footerPrivacy">
+<footer *ngIf="!isStudent()" class="footerPrivacy">
   <small>
     Copyright ©2021 Collectio. Todos os direitos reservados. 
   </small>

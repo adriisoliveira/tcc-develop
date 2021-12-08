@@ -15,7 +15,8 @@
   <div id="DivMenuComLink">
     <header id="header">
         <nav class="links" style="--items: 6;">
-          <a href="/#/dashboard"><img src="../../../assets/HomeOff.png"><strong>HOME</strong></a>
+          <a *ngIf="!isStudent()" href="/#/dashboard"><img src="../../../assets/HomeOff.png"><strong>HOME</strong></a>
+          <a *ngIf="isStudent()" href="/#/dashboardAluno"><img src="../../../assets/HomeOff.png"><strong>HOME</strong></a>
           <a href="/#/resumo-texto"><img src="../../../assets/SummyOff.png"><strong>SUMARIZADOR</strong></a>
           <a href="/#/page-rank"><img src="../../../assets/RecomendadorOff.png"><strong>RECOMENDADOR</strong></a>
           <a href="/#/acervo"><img src="../../../assets/AcervoOff.png"><strong>ACERVO</strong></a>

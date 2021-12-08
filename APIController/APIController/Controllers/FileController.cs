@@ -57,8 +57,16 @@ namespace APIController.Controllers
         [Route("topRecent/{quantity}")]
         public IActionResult GetTopRecent(int quantity = 25)
         {
-            var files = _fileService.GetTopRecent(quantity);
-            return StatusCode(200, files);
+            try
+            {
+                CheckAccess(HttpContext, UserType.InstitutionAdministrator | UserType.Teacher);
+
+                var files = _fileService.GetTopRecent(quantity);
+                return StatusCode(200, files);
+            } catch (Exception e)
+            {
+                return StatusCode(401, "Acesso negado: " + e);
+            }
         }
 
         /// <summary>
@@ -134,13 +142,15 @@ namespace APIController.Controllers
             var file = _fileService.GetById(fileId);
             var path = file.Path;
             var fileName = file.FileName;
+
             try
             {
                 CheckAccess(HttpContext, UserType.InstitutionAdministrator | UserType.Teacher);
             } catch (Exception e)
             {
-                return StatusCode(405, "Acesso negado");
+                StatusCode(401, e);
             }
+
             _fileService.Remove(fileId);
             if (System.IO.File.Exists(path + "/" + fileName))
             {
@@ -150,6 +160,7 @@ namespace APIController.Controllers
                 }
                 catch (System.IO.IOException e) { }
             }
-            return StatusCode(200, true);}
+            return StatusCode(200, true);
         }
     }
+}
